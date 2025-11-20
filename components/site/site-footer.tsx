@@ -108,7 +108,7 @@ export function SiteFooter() {
         <div>
           <h3 className="text-sm font-semibold">Follow</h3>
           <div className="mt-3 flex items-center gap-3">
-            <a href="#" aria-label="Follow on Facebook" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/people/Priority-Dispatch-LLC/61583967450265/" aria-label="Follow on Facebook" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
               <Facebook className="h-5 w-5" /><span className="sr-only">Facebook</span>
             </a>
             <a href="#" aria-label="Follow on LinkedIn" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
