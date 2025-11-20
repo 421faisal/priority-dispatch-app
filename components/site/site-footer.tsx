@@ -1,7 +1,7 @@
 "use client"
 
 import { Facebook, Linkedin, Instagram } from "lucide-react"
-<<<<<<< HEAD
+
 async function onFooterSubmit(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
 
@@ -10,23 +10,27 @@ async function onFooterSubmit(e: React.FormEvent<HTMLFormElement>) {
 
   const data = {
     name: formData.get("name"),
+    phone: formData.get("phone"),
+    email: formData.get("email"),
   };
 
-  const res = await fetch("/api/contact", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data),
-  });
+  try {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
 
-  if (res.ok) {
-    alert("Thank you! We will contact you soon.");
-    form.reset();
-  } else {
-    alert("Failed to send. Please try again.");
+    if (res.ok) {
+      alert("Thank you! We will contact you soon.");
+      form.reset();
+    } else {
+      alert("Failed to send. Please try again.");
+    }
+  } catch (err) {
+    alert("Something went wrong. Please try again.");
   }
 }
-=======
->>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
 
 export function SiteFooter() {
   return (
@@ -42,12 +46,7 @@ export function SiteFooter() {
           </div>
           <form
             className="grid w-full grid-cols-1 gap-2 md:w-auto md:grid-cols-4 md:items-center"
-<<<<<<< HEAD
-           onSubmit={onFooterSubmit}
-
-=======
-            onSubmit={(e) => e.preventDefault()}
->>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
+            onSubmit={onFooterSubmit}
           >
             <input
               type="text"
@@ -91,94 +90,43 @@ export function SiteFooter() {
         <div>
           <h3 className="text-sm font-semibold">Quick Links</h3>
           <ul className="mt-3 space-y-2 text-sm opacity-90">
-            <li>
-              <a href="#services" className="hover:opacity-80">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="hover:opacity-80">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#why" className="hover:opacity-80">
-                Why Choose Us
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:opacity-80">
-                Contact Us
-              </a>
-            </li>
+            <li><a href="#services" className="hover:opacity-80">Services</a></li>
+            <li><a href="#about" className="hover:opacity-80">About Us</a></li>
+            <li><a href="#why" className="hover:opacity-80">Why Choose Us</a></li>
+            <li><a href="#contact" className="hover:opacity-80">Contact Us</a></li>
           </ul>
         </div>
         <div>
           <h3 className="text-sm font-semibold">Contact</h3>
           <ul className="mt-3 space-y-2 text-sm opacity-90">
-<<<<<<< HEAD
             <li>The Priority Dispatch</li>
-            <li>804 brack st Kissimmee ,Fl 34744, USA</li>
-            <li> (+1) 689-314-8347</li>
+            <li>804 Brack St, Kissimmee, FL 34744, USA</li>
+            <li>(+1) 689-314-8347</li>
             <li>prioritydispatch4u@gmail.com</li>
-=======
-            <li>123 Logistics Way</li>
-            <li>Transport City, USA</li>
-            <li>(+1) 555-123-4567</li>
-            <li>hello@prioritydispatch.com</li>
->>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
           </ul>
         </div>
         <div>
           <h3 className="text-sm font-semibold">Follow</h3>
           <div className="mt-3 flex items-center gap-3">
-            <a
-              href="#"
-              aria-label="Follow on Facebook"
-              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Facebook className="h-5 w-5" />
-              <span className="sr-only">Facebook</span>
+            <a href="#" aria-label="Follow on Facebook" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
+              <Facebook className="h-5 w-5" /><span className="sr-only">Facebook</span>
             </a>
-            <a
-              href="#"
-              aria-label="Follow on LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
+            <a href="#" aria-label="Follow on LinkedIn" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" /><span className="sr-only">LinkedIn</span>
             </a>
-            <a
-<<<<<<< HEAD
-              href="https://www.instagram.com/priority_dispatch?igsh=cmZmczdnOW1uYTJ3"
-=======
-              href="#"
->>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
-              aria-label="Follow on Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram className="h-5 w-5" />
-              <span className="sr-only">Instagram</span>
+            <a href="https://www.instagram.com/priority_dispatch?igsh=cmZmczdnOW1uYTJ3" aria-label="Follow on Instagram" className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15" target="_blank" rel="noopener noreferrer">
+              <Instagram className="h-5 w-5" /><span className="sr-only">Instagram</span>
             </a>
           </div>
         </div>
       </div>
+
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 text-xs opacity-80">
           <span>© {new Date().getFullYear()} Priority Dispatch. All rights reserved.</span>
           <div className="space-x-3">
-            <a href="#" className="hover:opacity-80">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:opacity-80">
-              Terms
-            </a>
+            <a href="#" className="hover:opacity-80">Privacy Policy</a>
+            <a href="#" className="hover:opacity-80">Terms</a>
           </div>
         </div>
       </div>
