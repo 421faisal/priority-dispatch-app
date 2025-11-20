@@ -13,6 +13,7 @@ export function Contact() {
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
 
+<<<<<<< HEAD
 async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
   setLoading(true);
@@ -58,6 +59,31 @@ async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
   }
 }
 
+=======
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setLoading(true)
+    try {
+      const form = e.currentTarget
+      const formData = new FormData(form)
+      // In a real app, send formData to your API route.
+      await new Promise((r) => setTimeout(r, 800))
+      toast({
+        title: "Request received",
+        description: "We will contact you shortly.",
+      })
+      form.reset()
+    } catch (err) {
+      toast({
+        title: "Something went wrong",
+        description: "Please try again.",
+        variant: "destructive",
+      })
+    } finally {
+      setLoading(false)
+    }
+  }
+>>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
 
   return (
     <section id="contact" className="bg-primary text-primary-foreground">
@@ -67,10 +93,17 @@ async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
           <p className="mt-3 text-foreground/90">Tell us what you’re looking for and we’ll get back to you promptly.</p>
           <ul className="mt-6 space-y-2 text-sm opacity-90">
             <li>
+<<<<<<< HEAD
               Phone: <span className="font-medium">(+1) 689-314-8347</span>
             </li>
             <li>
               Email: <span className="font-medium">prioritydispatch4u@gmail.com</span>
+=======
+              Phone: <span className="font-medium">(+1) 555-123-4567</span>
+            </li>
+            <li>
+              Email: <span className="font-medium">hello@prioritydispatch.com</span>
+>>>>>>> f3caf306670e7818f7db129771be84d5b25a6806
             </li>
           </ul>
         </div>
