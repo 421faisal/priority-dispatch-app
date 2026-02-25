@@ -8,15 +8,15 @@ export async function POST(req: Request) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS, // Your App Password
+        user: process.env.GMAIL_USER, // Your Gmail address
+        pass: process.env.GMAIL_APP_PASSWORD, // Your App Password
       },
     });
 
     // Send email
     await transporter.sendMail({
-      from: email || process.env.EMAIL_USER, // sender
-      to: process.env.EMAIL_USER, // receiver
+      from: email || process.env.GMAIL_USER, // sender
+      to: process.env.GMAIL_USER, // receiver
       subject: `New Contact Form Submission`,
       text: `
 Name: ${name || "Not provided"}
