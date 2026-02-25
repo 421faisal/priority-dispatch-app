@@ -13,51 +13,50 @@ export function Contact() {
   const { toast } = useToast()
   const [loading, setLoading] = useState(false)
 
-async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-  e.preventDefault();
-  setLoading(true);
+  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setLoading(true);
 
-  try {
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    try {
+      const form = e.currentTarget;
+      const formData = new FormData(form);
 
-    const data = {
-      name: formData.get("name"),
-      phone: formData.get("phone"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-    };
+      const data = {
+        name: formData.get("name"),
+        phone: formData.get("phone"),
+        email: formData.get("email"),
+        message: formData.get("message"),
+      };
 
-    const res = await fetch("/api/contact", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
-
-    if (res.ok) {
-      toast({
-        title: "✅ Message Sent!",
-        description: "We will contact you shortly.",
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
-      form.reset();
-    } else {
+
+      if (res.ok) {
+        toast({
+          title: "✅ Message Sent!",
+          description: "We will contact you shortly.",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "❌ Failed to Send",
+          description: "Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (err) {
       toast({
-        title: "❌ Failed to Send",
+        title: "❌ Error",
         description: "Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setLoading(false);
     }
-  } catch (err) {
-    toast({
-      title: "❌ Error",
-      description: "Please try again.",
-      variant: "destructive",
-    });
-  } finally {
-    setLoading(false);
   }
-}
-
 
   return (
     <section id="contact" className="bg-primary text-primary-foreground">

@@ -53,6 +53,7 @@ const jsonLd = {
   telephone: '+16893148347',
   email: 'prioritydispatch4u@gmail.com',
   url: 'https://prioritydispatchllc.com'
+
 }
 
 export default function RootLayout({
