@@ -15,7 +15,8 @@ export async function POST(req: Request) {
 
     // Send email
     await transporter.sendMail({
-      from: email || process.env.GMAIL_USER, // sender
+      from: process.env.GMAIL_USER, // ALWAYS send from authenticated user
+      replyTo: email, // Set the reply-to address to the form submitter
       to: process.env.GMAIL_USER, // receiver
       subject: `New Contact Form Submission`,
       text: `

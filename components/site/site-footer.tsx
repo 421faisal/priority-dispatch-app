@@ -9,6 +9,8 @@ async function onFooterSubmit(e: any) {
 
   const data = {
     name: formData.get("name"),
+    phone: formData.get("phone"),
+    email: formData.get("email"),
   };
 
   const res = await fetch("/api/contact", {

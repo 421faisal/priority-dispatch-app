@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { WhatsAppFloating } from '@/components/site/whatsapp-floating'
 import { SmoothScroll } from '@/components/site/smooth-scroll'
+import { Toaster } from '@/components/ui/toaster'
 import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -71,6 +72,7 @@ export default function RootLayout({
         <SmoothScroll />
         {children}
         <WhatsAppFloating />
+        <Toaster />
         <Analytics />
       </body>
     </html>
