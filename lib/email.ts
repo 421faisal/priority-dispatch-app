@@ -12,16 +12,27 @@ interface EmailPayload {
 }
 
 export const sendEmail = async (data: EmailPayload) => {
+    const user = process.env.GMAIL_USER;
+    const pass = process.env.GMAIL_APP_PASSWORD;
+
+    if (!user || !pass) {
+        throw new Error(
+            "Email environment variables are not set. Please configure GMAIL_USER and GMAIL_APP_PASSWORD.",
+        );
+    }
+
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        host: "smtp.gmail.com",
+        port: 465,
+        secure: true,
         auth: {
-            user: process.env.GMAIL_USER, // e.g., prioritydispatch4u@gmail.com
-            pass: process.env.GMAIL_APP_PASSWORD, // 16-character App Password
+            user,
+            pass,
         },
     });
 
     return await transporter.sendMail({
-        from: process.env.GMAIL_USER,
+        from: user,
         to: data.to,
         subject: data.subject,
         html: data.html,

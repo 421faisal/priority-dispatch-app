@@ -81,26 +81,47 @@ export async function submitCarrierSignup(formData: FormData) {
   `;
 
     try {
-        if (process.env.GMAIL_USER && process.env.GMAIL_APP_PASSWORD) {
-            await sendEmail({
-                to: process.env.GMAIL_USER, // Set to receive at the same address or any other preferred
-                subject: `Carrier Setup Packet - ${companyName} (${equipmentType})`,
-                html: htmlContent,
-                attachments: attachments,
+        const hasUser = !!process.env.GMAIL_USER;
+        const hasPass = !!process.env.GMAIL_APP_PASSWORD;
+
+        if (!hasUser || !hasPass) {
+            console.error("Email credentials are missing for carrier setup submission.", {
+                hasUser,
+                hasPass,
             });
-            console.log("Email sent successfully!");
-        } else {
-            console.warn("Email credentials not found in env variables. Bypassing email send.");
+
+            return {
+                success: false,
+                message:
+                    "We couldn't send your setup packet because our email service isn't configured correctly. " +
+                    "Please contact us directly at prioritydispatch4u@gmail.com or by phone while we resolve this.",
+            };
         }
+
+        await sendEmail({
+            to: process.env.GMAIL_USER!, // Receive at the configured inbox
+            subject: `Carrier Setup Packet - ${companyName} (${equipmentType})`,
+            html: htmlContent,
+            attachments: attachments,
+        });
+
+        console.log("Carrier setup email sent successfully.", {
+            attachmentCount: attachments.length,
+        });
     } catch (err) {
-        console.error("Error sending email:", err);
-        return { success: false, message: "Failed to send the setup packet. Please try again or contact us directly." };
+        console.error("Error sending carrier setup email:", err);
+        return {
+            success: false,
+            message:
+                "Failed to send the setup packet. Please try again or contact us directly at prioritydispatch4u@gmail.com.",
+        };
     }
 
-    revalidatePath('/carrier-setup')
+    revalidatePath("/carrier-setup");
 
     return {
         success: true,
-        message: "Thank you! Your setup packet has been securely submitted. A member of our onboarding team will contact you shortly."
-    }
+        message:
+            "Thank you! Your setup packet has been securely submitted. A member of our onboarding team will contact you shortly.",
+    };
 }

@@ -10,10 +10,12 @@ import { CheckCircle2, UploadCloud, Truck, FileText, User } from "lucide-react"
 export default function CarrierSetupPage() {
     const [isSubmitting, setIsSubmitting] = useState(false)
     const [successMessage, setSuccessMessage] = useState("")
+    const [errorMessage, setErrorMessage] = useState("")
 
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         setIsSubmitting(true)
+        setErrorMessage("")
 
         const form = e.currentTarget
         const formData = new FormData(form)
@@ -22,10 +24,17 @@ export default function CarrierSetupPage() {
             if (res.success) {
                 setSuccessMessage(res.message)
                 form.reset()
+            } else {
+                setErrorMessage(
+                    res.message ||
+                        "We couldn't submit your setup packet. Please try again or contact us directly.",
+                )
             }
         } catch (error) {
             console.error(error)
-            alert("An error occurred during submission. Please try again.")
+            setErrorMessage(
+                "An unexpected error occurred during submission. Please try again or contact us directly.",
+            )
         } finally {
             setIsSubmitting(false)
         }
@@ -60,6 +69,12 @@ export default function CarrierSetupPage() {
                             </div>
                         ) : (
                             <form onSubmit={handleSubmit} className="space-y-8 rounded-xl bg-card p-6 shadow-lg md:p-10 border border-border">
+
+                                {errorMessage && (
+                                    <div className="rounded-md border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700 dark:border-red-900/60 dark:bg-red-900/20 dark:text-red-200">
+                                        {errorMessage}
+                                    </div>
+                                )}
 
                                 {/* Section 1: Personal Info */}
                                 <div className="space-y-4">
