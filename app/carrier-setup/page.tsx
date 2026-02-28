@@ -12,6 +12,30 @@ export default function CarrierSetupPage() {
     const [successMessage, setSuccessMessage] = useState("")
     const [errorMessage, setErrorMessage] = useState("")
 
+    const MAX_TOTAL_SIZE = 4 * 1024 * 1024 // 4MB total limit (Vercel serverless limit)
+    const MAX_FILE_SIZE = 2 * 1024 * 1024  // 2MB per file
+
+    function validateFiles(formData: FormData): string | null {
+        const fileFields = ["mcCertificate", "w9", "coi", "noticeOfAssignment", "cdl"]
+        let totalSize = 0
+
+        for (const field of fileFields) {
+            const file = formData.get(field) as File | null
+            if (file && file.size > 0) {
+                if (file.size > MAX_FILE_SIZE) {
+                    return `"${file.name}" is too large (${(file.size / 1024 / 1024).toFixed(1)}MB). Each file must be under 2MB. Please compress or resize it.`
+                }
+                totalSize += file.size
+            }
+        }
+
+        if (totalSize > MAX_TOTAL_SIZE) {
+            return `Total file size is ${(totalSize / 1024 / 1024).toFixed(1)}MB, but the maximum is 4MB. Please compress your documents or use smaller images.`
+        }
+
+        return null
+    }
+
     async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault()
         setIsSubmitting(true)
@@ -19,6 +43,15 @@ export default function CarrierSetupPage() {
 
         const form = e.currentTarget
         const formData = new FormData(form)
+
+        // Validate file sizes before uploading
+        const fileError = validateFiles(formData)
+        if (fileError) {
+            setErrorMessage(fileError)
+            setIsSubmitting(false)
+            return
+        }
+
         try {
             const res = await submitCarrierSignup(formData)
             if (res.success) {
@@ -27,14 +60,22 @@ export default function CarrierSetupPage() {
             } else {
                 setErrorMessage(
                     res.message ||
-                        "We couldn't submit your setup packet. Please try again or contact us directly.",
+                    "We couldn't submit your setup packet. Please try again or contact us directly.",
                 )
             }
-        } catch (error) {
+        } catch (error: any) {
             console.error(error)
-            setErrorMessage(
-                "An unexpected error occurred during submission. Please try again or contact us directly.",
-            )
+            // Detect Vercel body size limit error
+            const msg = error?.message || ""
+            if (msg.includes("Body exceeded") || msg.includes("413") || msg.includes("Too Large")) {
+                setErrorMessage(
+                    "Your files are too large for our server. Please compress your PDFs (under 2MB each) and try again, or email them directly to prioritydispatch4u@gmail.com.",
+                )
+            } else {
+                setErrorMessage(
+                    "An unexpected error occurred during submission. Please try again or contact us directly at prioritydispatch4u@gmail.com.",
+                )
+            }
         } finally {
             setIsSubmitting(false)
         }
@@ -146,7 +187,7 @@ export default function CarrierSetupPage() {
                                         <FileText className="h-5 w-5 text-accent" />
                                         <h2>Required Documents</h2>
                                     </div>
-                                    <p className="text-sm text-muted-foreground">Please upload clear PDF or image files (max 5MB each).</p>
+                                    <p className="text-sm text-muted-foreground">Please upload clear PDF or image files (max 2MB each, 4MB total).</p>
 
                                     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                                         <div className="space-y-2">
