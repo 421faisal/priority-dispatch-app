@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { createTransport } from "nodemailer";
 
 interface EmailPayload {
     to: string;
@@ -21,7 +21,7 @@ export const sendEmail = async (data: EmailPayload) => {
         );
     }
 
-    const transporter = nodemailer.createTransport({
+    const transporter = createTransport({
         host: "smtp.gmail.com",
         port: 465,
         secure: true,
@@ -31,11 +31,14 @@ export const sendEmail = async (data: EmailPayload) => {
         },
     });
 
-    return await transporter.sendMail({
-        from: user,
+    const info = await transporter.sendMail({
+        from: `"Priority Dispatch LLC" <${user}>`,
         to: data.to,
         subject: data.subject,
         html: data.html,
         attachments: data.attachments,
     });
+
+    console.log("Email sent:", info.messageId);
+    return info;
 };
