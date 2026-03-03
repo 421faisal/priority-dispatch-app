@@ -1,5 +1,12 @@
+import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
+
+export const metadata: Metadata = {
+    title: "Privacy Policy | Priority Dispatch LLC",
+    description: "Read Priority Dispatch LLC's privacy policy. Learn how we collect, use, and protect your personal information when using our freight dispatching services.",
+    alternates: { canonical: "https://prioritydispatchllc.com/privacy" },
+}
 
 export default function PrivacyPage() {
     return (

@@ -69,7 +69,7 @@ export function Services() {
         </div>
 
         <Reveal className="mt-8 flex justify-center" delayMs={150}>
-          <a href="/#contact">
+          <a href="/contact">
             <Button className="bg-accent text-accent-foreground hover:opacity-90">Contact Us for Custom Solutions</Button>
           </a>
         </Reveal>

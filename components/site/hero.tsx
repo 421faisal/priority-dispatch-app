@@ -18,10 +18,11 @@ export function Hero() {
             <Reveal>
               <div className="max-w-2xl">
                 <h1 className="text-balance text-4xl font-extrabold leading-tight md:text-6xl">
-                  PRIORITY DISPATCH LLC
+                  Expert Freight Dispatching Services
                 </h1>
+                <p className="mt-1 text-xl font-semibold text-accent md:text-2xl">Priority Dispatch LLC</p>
                 <p className="mt-4 text-pretty text-base opacity-95 md:text-lg">
-                  Your Road to Reliable Revenue. We specialize in dispatching Reefers, Dry Vans, Box Trucks, Flatbeds, and more. Speed, Reliability, Results.
+                  Looking for reliable freight dispatching? Priority Dispatch LLC specializes in dispatching Reefers, Dry Vans, Box Trucks, Flatbeds, and more. We connect owner-operators with the highest-paying loads across all 48 states — delivering speed, reliability, and results every mile.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a href="/carrier-setup">
@@ -29,7 +30,7 @@ export function Hero() {
                       Carrier Setup
                     </Button>
                   </a>
-                  <a href="/#services">
+                  <a href="/services">
                     <Button
                       size="lg"
                       variant="outline"

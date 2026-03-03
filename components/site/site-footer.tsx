@@ -87,13 +87,13 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">Quick Links</h3>
           <ul className="mt-3 space-y-2 text-sm opacity-90">
             <li>
-              <a href="/#services" className="hover:opacity-80">
+              <a href="/services" className="hover:opacity-80">
                 Services
               </a>
             </li>
             <li>
-              <a href="/#about" className="hover:opacity-80">
-                About Us
+              <a href="/about-owner" className="hover:opacity-80">
+                Our Team
               </a>
             </li>
             <li>
@@ -102,12 +102,22 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href="/#why" className="hover:opacity-80">
-                Why Choose Us
+              <a href="/areas-we-serve" className="hover:opacity-80">
+                Areas We Serve
               </a>
             </li>
             <li>
-              <a href="/#contact" className="hover:opacity-80">
+              <a href="/blog" className="hover:opacity-80">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="/faq" className="hover:opacity-80">
+                FAQ
+              </a>
+            </li>
+            <li>
+              <a href="/contact" className="hover:opacity-80">
                 Contact Us
               </a>
             </li>
@@ -117,16 +127,26 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">Contact</h3>
           <ul className="mt-3 space-y-2 text-sm opacity-90">
             <li>Priority Dispatch LLC</li>
-            <li>804 brack st Kissimmee ,Fl 34744, USA</li>
+            <li>804 brack st Kissimmee, FL 34744, USA</li>
             <li>(+1) 689-314-8347</li>
             <li>prioritydispatch4u@gmail.com</li>
+            <li>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Priority+Dispatch+LLC+Kissimmee+FL"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent hover:underline font-medium"
+              >
+                View Google Business Profile
+              </a>
+            </li>
           </ul>
         </div>
         <div>
           <h3 className="text-sm font-semibold">Follow</h3>
           <div className="mt-3 flex items-center gap-3">
             <a
-              href="#"
+              href="https://www.facebook.com/share/1CKZQBUsui/"
               aria-label="Follow on Facebook"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
@@ -136,7 +156,7 @@ export function SiteFooter() {
               <span className="sr-only">Facebook</span>
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/muhammad-faisal-bilal"
               aria-label="Follow on LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
@@ -146,7 +166,7 @@ export function SiteFooter() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="https://www.instagram.com/priority_dispatch?igsh=cmZmczdnOW1uYTJ3"
+              href="https://www.instagram.com/m_faisal_balal?igsh=dHAwM2FtdGthc3A5"
               aria-label="Follow on Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"

@@ -25,8 +25,31 @@ const items = [
 ]
 
 export function Testimonials() {
+  const reviewSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Priority Dispatch LLC",
+    url: "https://prioritydispatchllc.com",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: "5",
+      reviewCount: String(items.length),
+      bestRating: "5",
+    },
+    review: items.map((t) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: t.author.split(",")[0] },
+      reviewRating: { "@type": "Rating", ratingValue: String(t.rating), bestRating: "5" },
+      reviewBody: t.quote,
+    })),
+  }
+
   return (
     <section id="testimonials" className="bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
         <Reveal>
           <h2 className="text-balance text-center text-2xl font-semibold md:text-3xl">What Carriers Say</h2>

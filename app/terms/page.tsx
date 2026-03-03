@@ -1,5 +1,12 @@
+import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
+
+export const metadata: Metadata = {
+    title: "Terms of Service | Priority Dispatch LLC",
+    description: "Review the terms of service for Priority Dispatch LLC freight dispatching services. Understand your rights and responsibilities as a carrier partner.",
+    alternates: { canonical: "https://prioritydispatchllc.com/terms" },
+}
 
 export default function TermsPage() {
     return (

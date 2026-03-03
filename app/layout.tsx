@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
   title: 'Priority Dispatch LLC | Freight Dispatching Services',
-  description: 'Priority Dispatch LLC provides expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators. Your road to reliable revenue, speed, and results.',
+  description: 'Priority Dispatch LLC provides expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators. Reliable revenue and results.',
   keywords: 'freight dispatching, truck dispatch, priority dispatch llc, reefer dispatch, dry van dispatch, box truck dispatch, owner operator services',
   openGraph: {
     title: 'Priority Dispatch LLC | Freight Dispatching Services',
@@ -57,6 +57,18 @@ const jsonLd = {
 
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://prioritydispatchllc.com' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://prioritydispatchllc.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Carrier Setup', item: 'https://prioritydispatchllc.com/carrier-setup' },
+    { '@type': 'ListItem', position: 4, name: 'FAQ', item: 'https://prioritydispatchllc.com/faq' },
+    { '@type': 'ListItem', position: 5, name: 'About', item: 'https://prioritydispatchllc.com/about-owner' },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -68,6 +80,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <SmoothScroll />
         {children}

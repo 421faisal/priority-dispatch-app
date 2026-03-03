@@ -7,13 +7,14 @@ import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 const nav = [
-  { href: "/#home", label: "Home" },
-  { href: "/#services", label: "Services" },
-  { href: "/#about", label: "About Us" },
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/about-owner", label: "Our Team" },
   { href: "/carrier-setup", label: "Carrier Setup" },
-  { href: "/#why", label: "Why Choose Us" },
-  { href: "/#testimonials", label: "Testimonials" },
-  { href: "/#contact", label: "Contact Us" },
+  { href: "/areas-we-serve", label: "Areas We Serve" },
+  { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/contact", label: "Contact Us" },
 ]
 
 export function SiteHeader() {
@@ -22,7 +23,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 bg-primary/95 text-primary-foreground shadow-md backdrop-blur-sm border-b border-border/50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
-        <Link href="/#home" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <img src="/images/logo-priority-dispatch.png" alt="Priority Dispatch LLC" className="h-[60px] md:h-[72px] lg:h-[80px] w-auto object-contain drop-shadow-sm transition-all" />
           <div className="hidden sm:flex flex-col ml-1">
             <span className="text-base md:text-lg lg:text-xl font-bold tracking-widest leading-none">PRIORITY DISPATCH</span>
@@ -40,7 +41,7 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
-          <a href="/#contact">
+          <a href="/contact">
             <Button className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors shadow-sm">
               Request a Quote
             </Button>
@@ -67,7 +68,7 @@ export function SiteHeader() {
               {item.label}
             </a>
           ))}
-          <a href="/#contact" onClick={() => setOpen(false)}>
+          <a href="/contact" onClick={() => setOpen(false)}>
             <Button className="w-full bg-accent text-accent-foreground hover:opacity-90">Request a Quote</Button>
           </a>
         </nav>

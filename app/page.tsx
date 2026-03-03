@@ -5,6 +5,7 @@ import { Services } from "@/components/site/services"
 import { Stats } from "@/components/site/stats"
 import { Testimonials } from "@/components/site/testimonials"
 import { Contact } from "@/components/site/contact"
+import { BlogPreview } from "@/components/site/blog-preview"
 import { SiteFooter } from "@/components/site/site-footer"
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
       <Services />
       <Stats />
       <Testimonials />
+      <BlogPreview />
       <Contact />
       <SiteFooter />
     </main>
