@@ -8,9 +8,9 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Priority Dispatch LLC | Freight Dispatching Services',
-  description: 'Priority Dispatch LLC provides expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators. Reliable revenue and results.',
-  keywords: 'freight dispatching, truck dispatch, priority dispatch llc, reefer dispatch, dry van dispatch, box truck dispatch, owner operator services',
+  title: 'Priority Dispatch LLC | Professional Freight Dispatching for Trucking Fleets',
+  description: 'Priority Dispatch LLC delivers elite freight dispatching services for Reefers, Dry Vans, Box Trucks, and Flatbeds. We maximize carrier revenue with elite load planning and 24/7 support.',
+  keywords: 'priority dispatch llc, freight dispatching, trucking dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, owner operator dispatch',
   openGraph: {
     title: 'Priority Dispatch LLC | Freight Dispatching Services',
     description: 'Expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators.',

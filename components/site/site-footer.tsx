@@ -146,7 +146,7 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">Follow</h3>
           <div className="mt-3 flex items-center gap-3">
             <a
-              href="https://www.facebook.com/share/1CKZQBUsui/"
+              href="https://www.facebook.com/"
               aria-label="Follow on Facebook"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
@@ -166,7 +166,7 @@ export function SiteFooter() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="https://www.instagram.com/m_faisal_balal?igsh=dHAwM2FtdGthc3A5"
+              href="https://www.instagram.com/"
               aria-label="Follow on Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"

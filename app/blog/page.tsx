@@ -14,6 +14,41 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        title: "The EPA 2027 Pre-Buy Strategy: Why Carriers Are Buying Now",
+        slug: "epa-2027-pre-buy-strategy",
+        excerpt: "A massive regulatory shift is coming in 2027 with the EPA NOx standards, causing a surge in Class 8 truck orders in 2026. Discover the pre-buy strategy.",
+        date: "March 12, 2026",
+        author: "Priority Dispatch",
+    },
+    {
+        title: "Combatting Freight Fraud and Digital Theft in 2026",
+        slug: "combatting-freight-fraud-2026",
+        excerpt: "Freight fraud and double brokering have reached record highs. Learn the 2026 carrier vetting checklist and how to detect chameleon carriers.",
+        date: "March 12, 2026",
+        author: "Priority Dispatch",
+    },
+    {
+        title: "AI Dispatching vs. Human Intuition: The Co-Pilot Model",
+        slug: "ai-dispatching-co-pilot-model",
+        excerpt: "Fully autonomous trucks are delayed, but AI dispatching is a baseline in 2026. See how the Human-in-the-Loop model uncovers hidden backhauls.",
+        date: "March 12, 2026",
+        author: "Priority Dispatch",
+    },
+    {
+        title: "The Non-Domiciled CDL Crackdown and Capacity Tightening",
+        slug: "dot-cdl-crackdown-capacity-tightening",
+        excerpt: "The DOT crackdown on non-domiciled CDLs could remove 200,000 drivers. Analyze how this capacity shortage will cause a spot rate recovery.",
+        date: "March 12, 2026",
+        author: "Priority Dispatch",
+    },
+    {
+        title: "Micro-Niche Specialization: The Rise of Reefer and Flatbed",
+        slug: "micro-niche-reefer-flatbed",
+        excerpt: "While dry van rates stabilize, Reefer and Flatbed demand is exploding. Explore our transition guide to high-paying trucking niches.",
+        date: "March 12, 2026",
+        author: "Priority Dispatch",
+    },
+    {
         title: "What Is Freight Dispatching? A Complete Guide for 2026",
         slug: "what-is-freight-dispatching",
         excerpt: "Learn how professional dispatching services can transform your trucking business by handling rate negotiations, scheduling, and back‑office work.",

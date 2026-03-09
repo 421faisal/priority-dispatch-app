@@ -13,6 +13,7 @@ const nav = [
   { href: "/carrier-setup", label: "Carrier Setup" },
   { href: "/areas-we-serve", label: "Areas We Serve" },
   { href: "/blog", label: "Blog" },
+  { href: "/toolbox", label: "Toolbox" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact Us" },
 ]
