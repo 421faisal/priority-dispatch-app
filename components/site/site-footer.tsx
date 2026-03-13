@@ -1,6 +1,6 @@
 "use client"
 
-import { Facebook, Linkedin, Instagram } from "lucide-react"
+import { Facebook, Linkedin, Instagram, Twitter } from "lucide-react"
 async function onFooterSubmit(e: any) {
   e.preventDefault();
 
@@ -129,12 +129,19 @@ export function SiteFooter() {
             <li>Priority Dispatch LLC</li>
             <li>804 brack st Kissimmee, FL 34744, USA</li>
             <li>(+1) 689-314-8347</li>
-            <li>prioritydispatch4u@gmail.com</li>
+            <li>
+              <a
+                href="/contact"
+                className="text-accent hover:underline font-medium"
+              >
+                Send us a Message
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Priority+Dispatch+LLC+Kissimmee+FL"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer nofollow"
                 className="text-accent hover:underline font-medium"
               >
                 View Google Business Profile
@@ -146,7 +153,7 @@ export function SiteFooter() {
           <h3 className="text-sm font-semibold">Follow</h3>
           <div className="mt-3 flex items-center gap-3">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/prioritydispatchllc"
               aria-label="Follow on Facebook"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
@@ -154,6 +161,26 @@ export function SiteFooter() {
             >
               <Facebook className="h-5 w-5" />
               <span className="sr-only">Facebook</span>
+            </a>
+            <a
+              href="https://www.instagram.com/priority_dispatch"
+              aria-label="Follow on Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram className="h-5 w-5" />
+              <span className="sr-only">Instagram</span>
+            </a>
+            <a
+              href="https://twitter.com/PriorityDispatch"
+              aria-label="Follow on X (Twitter)"
+              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Twitter className="h-5 w-5" />
+              <span className="sr-only">X (Twitter)</span>
             </a>
             <a
               href="https://www.linkedin.com/in/muhammad-faisal-bilal"
@@ -164,16 +191,6 @@ export function SiteFooter() {
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              aria-label="Follow on Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Instagram className="h-5 w-5" />
-              <span className="sr-only">Instagram</span>
             </a>
           </div>
         </div>

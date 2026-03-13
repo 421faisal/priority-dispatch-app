@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { WhatsAppFloating } from '@/components/site/whatsapp-floating'
@@ -8,8 +9,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Priority Dispatch LLC | Professional Freight Dispatching for Trucking Fleets',
-  description: 'Priority Dispatch LLC delivers elite freight dispatching services for Reefers, Dry Vans, Box Trucks, and Flatbeds. We maximize carrier revenue with elite load planning and 24/7 support.',
+  title: 'Priority Dispatch LLC | Freight Dispatching Services',
+  description: 'Priority Dispatch LLC delivers elite freight dispatching for Reefers, Dry Vans, Box Trucks & Flatbeds. Maximize carrier revenue with 24/7 support.',
   keywords: 'priority dispatch llc, freight dispatching, trucking dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, owner operator dispatch',
   openGraph: {
     title: 'Priority Dispatch LLC | Freight Dispatching Services',
@@ -26,6 +27,13 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@PriorityDispatch',
+    title: 'Priority Dispatch LLC | Freight Dispatching Services',
+    description: 'Expert freight dispatching for Reefers, Dry Vans, Box Trucks & Flatbeds. 24/7 support.',
+    images: ['/images/hero-truck.jpg'],
   },
   icons: {
     icon: "/images/logo-priority-dispatch.png",
@@ -77,6 +85,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`font-sans ${inter.variable}`} suppressHydrationWarning>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
