@@ -42,6 +42,16 @@ export default function BlogPostBrokerage() {
                         </div>
                     </Reveal>
 
+                    <Reveal delayMs={80}>
+                        <div className="relative mb-10 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
+                            <img
+                                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop"
+                                alt="Digital freight brokerage and logistics technology platform in 2026."
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+                    </Reveal>
+
                     <Reveal delayMs={100}>
                         <div className="prose prose-slate dark:prose-invert max-w-none mt-10 space-y-6 text-lg leading-relaxed text-foreground/90">
                             <p className="text-xl leading-relaxed text-muted-foreground italic">
