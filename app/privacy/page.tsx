@@ -34,7 +34,7 @@ export default function PrivacyPage() {
                         <p>We take reasonable measures to help protect your personal information from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction.</p>
 
                         <h2>5. Contact Us</h2>
-                        <p>If you have any questions about this Privacy Policy, please contact us at prioritydispatch4u@gmail.com.</p>
+                        <p>If you have any questions about this Privacy Policy, please <a href="/contact" className="text-accent hover:underline font-medium">contact us here</a>.</p>
                     </div>
                 </section>
             </main>

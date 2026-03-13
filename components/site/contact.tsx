@@ -78,7 +78,7 @@ export function Contact() {
               Phone: <span className="font-medium">(+1) 689-314-8347</span>
             </li>
             <li>
-              Email: <span className="font-medium">prioritydispatch4u@gmail.com</span>
+              Email: <a href="/contact" className="font-medium underline hover:opacity-80">Use our contact form</a>
             </li>
           </ul>
         </div>

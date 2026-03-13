@@ -48,6 +48,8 @@ export default function BlogPostOutlook() {
                                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2670&auto=format&fit=crop"
                                 alt="Freight trucks on a highway representing the 2026 freight market outlook and recovery."
                                 className="object-cover w-full h-full"
+                                fetchPriority="high"
+                                loading="eager"
                             />
                         </div>
                     </Reveal>
@@ -147,6 +149,7 @@ export default function BlogPostOutlook() {
                                 src="/images/Offical%20Pic%20.png"
                                 alt="Muhammad Faisal Bilal"
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
+                                loading="lazy"
                             />
                             <div className="text-center md:text-left">
                                 <h4 className="text-xl font-bold">About the Author</h4>

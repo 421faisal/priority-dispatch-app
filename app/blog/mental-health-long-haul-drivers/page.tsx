@@ -48,6 +48,8 @@ export default function BlogPostMentalHealth() {
                                 src="https://images.unsplash.com/photo-1494783367193-149034c05e8f?q=80&w=2670&auto=format&fit=crop"
                                 alt="Truck driver on a long open road at sunset — mental health and wellness for long-haul drivers in 2026."
                                 className="object-cover w-full h-full"
+                                fetchPriority="high"
+                                loading="eager"
                             />
                         </div>
                     </Reveal>
@@ -150,6 +152,7 @@ export default function BlogPostMentalHealth() {
                                 src="/images/Offical%20Pic%20.png"
                                 alt="Muhammad Faisal Bilal"
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
+                                loading="lazy"
                             />
                             <div className="text-center md:text-left">
                                 <h4 className="text-xl font-bold">About the Author</h4>

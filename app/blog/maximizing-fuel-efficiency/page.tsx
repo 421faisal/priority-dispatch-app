@@ -48,6 +48,8 @@ export default function BlogPostFuel() {
                                 src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=2670&auto=format&fit=crop"
                                 alt="A semi-truck on an open highway — maximizing fuel efficiency strategies for trucking fleets in 2026."
                                 className="object-cover w-full h-full"
+                                fetchPriority="high"
+                                loading="eager"
                             />
                         </div>
                     </Reveal>
@@ -162,6 +164,7 @@ export default function BlogPostFuel() {
                                 src="/images/Offical%20Pic%20.png"
                                 alt="Muhammad Faisal Bilal"
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
+                                loading="lazy"
                             />
                             <div className="text-center md:text-left">
                                 <h4 className="text-xl font-bold">About the Author</h4>

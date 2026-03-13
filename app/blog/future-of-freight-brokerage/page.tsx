@@ -48,6 +48,8 @@ export default function BlogPostBrokerage() {
                                 src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2670&auto=format&fit=crop"
                                 alt="Digital freight brokerage and logistics technology platform in 2026."
                                 className="object-cover w-full h-full"
+                                fetchPriority="high"
+                                loading="eager"
                             />
                         </div>
                     </Reveal>
@@ -144,6 +146,7 @@ export default function BlogPostBrokerage() {
                                 src="/images/Offical%20Pic%20.png"
                                 alt="Muhammad Faisal Bilal"
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
+                                loading="lazy"
                             />
                             <div className="text-center md:text-left">
                                 <h4 className="text-xl font-bold">About the Author</h4>

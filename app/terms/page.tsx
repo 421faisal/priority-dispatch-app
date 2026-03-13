@@ -37,7 +37,7 @@ export default function TermsPage() {
                         <p>We reserve the right to modify these terms at any time. Your continued use of the service constitutes your acceptance of the new terms.</p>
 
                         <h2>6. Contact Us</h2>
-                        <p>If you have any questions about these Terms of Service, please contact us at prioritydispatch4u@gmail.com.</p>
+                        <p>If you have any questions about these Terms of Service, please <a href="/contact" className="text-accent hover:underline font-medium">contact us here</a>.</p>
                     </div>
                 </section>
             </main>
