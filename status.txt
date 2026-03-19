@@ -1,0 +1,31 @@
+ M app/blog/ai-dispatching-co-pilot-model/page.tsx
+ M app/blog/ai-machine-learning-dispatching/page.tsx
+ M app/blog/autonomous-trucks-2026/page.tsx
+ M app/blog/combatting-freight-fraud-2026/page.tsx
+ M app/blog/dot-cdl-crackdown-capacity-tightening/page.tsx
+ M app/blog/driver-retention-strategies-2026/page.tsx
+ M app/blog/eld-compliance-checklist-2026/page.tsx
+ M app/blog/epa-2027-pre-buy-strategy/page.tsx
+ M app/blog/evolution-of-logistics/page.tsx
+ M app/blog/how-to-choose-dispatch-service/page.tsx
+ M app/blog/intermodal-vs-over-the-road/page.tsx
+ M app/blog/last-mile-logistics-box-trucks/page.tsx
+ M app/blog/micro-niche-reefer-flatbed/page.tsx
+ M app/blog/owner-operator-guide/page.tsx
+ M app/blog/page.tsx
+ M app/blog/reefer-market-deep-dive/page.tsx
+ M app/blog/scaling-trucking-fleet-guide/page.tsx
+ M app/blog/what-is-freight-dispatching/page.tsx
+ M app/layout.tsx
+ M app/services/page.tsx
+ M components/site/site-header.tsx
+?? app/blog/how-to-start-trucking-company-llc-mc-authority/
+?? app/blog/impact-of-autonomous-trucking-2026/
+?? app/blog/insider-trucking-dispatch-tips-faisal/
+?? app/blog/navigating-freight-rate-rebound/
+?? app/blog/sustainability-ev-trucks-future/
+?? app/services/new-carrier-setup/
+?? porcelain_status.txt
+?? status.txt
+?? temp_status.txt
+?? update_images.js

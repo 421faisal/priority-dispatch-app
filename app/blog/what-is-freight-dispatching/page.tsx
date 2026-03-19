@@ -104,8 +104,8 @@ export default function BlogPost1() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.pexels.com/photos/1122409/pexels-photo-1122409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="A convoy of trucks executing a long-haul supply run during winter conditions."
                                 className="h-24 w-24 rounded-full object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">

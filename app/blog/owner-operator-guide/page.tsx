@@ -100,8 +100,8 @@ export default function BlogPost2() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Supply chain experts analyzing route optimization data on a digital spreadsheet."
                                 className="h-24 w-24 rounded-full object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">

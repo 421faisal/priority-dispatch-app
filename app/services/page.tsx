@@ -13,6 +13,7 @@ import {
     BadgeCheck,
     Clock,
     ArrowRight,
+    Briefcase,
 } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -64,6 +65,12 @@ const coreServices = [
 ]
 
 const additionalServices = [
+    {
+        icon: Briefcase,
+        title: "New Carrier Setup & MC Lease",
+        desc: "Complete A-to-Z setup for new carriers and investors. We handle LLC formation, free website creation, MC Authority, BOC-3, UCR, 2290, IFTA, IRP plates, and state permits. We expertly guide you through the compliance maze, ensuring your MC is active and insurance is bound before finalizing complex permits.",
+        href: "/services/new-carrier-setup"
+    },
     {
         icon: MapPinned,
         title: "Smart Lane Planning",
@@ -198,6 +205,11 @@ export default function ServicesPage() {
                                     <div>
                                         <h3 className="font-bold">{svc.title}</h3>
                                         <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{svc.desc}</p>
+                                        {'href' in svc && svc.href && (
+                                            <a href={svc.href} className="mt-3 inline-flex items-center text-sm font-bold text-accent hover:underline">
+                                                Learn More <ArrowRight className="ml-1 h-3 w-3" />
+                                            </a>
+                                        )}
                                     </div>
                                 </div>
                             </Reveal>

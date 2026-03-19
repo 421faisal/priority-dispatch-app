@@ -84,8 +84,8 @@ export default function BlogPostRetention() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.unsplash.com/photo-1580674684081-776dd8f78a70?auto=format&fit=crop&q=80"
+                                alt="Massive shipping containers stacked at a bustling international port."
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">

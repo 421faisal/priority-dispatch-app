@@ -83,8 +83,8 @@ export default function BlogPostLastMile() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="A powerful semi-truck parked under a blazing sky, representing immense freight capacity."
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">

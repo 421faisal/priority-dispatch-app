@@ -32,26 +32,30 @@ export function SiteHeader() {
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
-          {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-opacity"
-            >
-              {item.label}
-            </a>
-          ))}
-          <a href="/contact">
-            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors shadow-sm">
-              Request a Quote
-            </Button>
-          </a>
-        </nav>
+        <div className="flex items-center gap-3 md:gap-6">
 
-        <button className="md:hidden" aria-label="Toggle navigation" onClick={() => setOpen((v) => !v)}>
-          <Menu className="h-6 w-6" />
-        </button>
+          
+          <nav className="hidden items-center gap-6 md:flex">
+            {nav.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-opacity"
+              >
+                {item.label}
+              </a>
+            ))}
+            <a href="/contact">
+              <Button className="bg-accent text-accent-foreground hover:bg-accent/90 transition-colors shadow-sm">
+                Request a Quote
+              </Button>
+            </a>
+          </nav>
+
+          <button className="md:hidden" aria-label="Toggle navigation" onClick={() => setOpen((v) => !v)}>
+            <Menu className="h-6 w-6" />
+          </button>
+        </div>
       </div>
 
       {/* mobile menu */}

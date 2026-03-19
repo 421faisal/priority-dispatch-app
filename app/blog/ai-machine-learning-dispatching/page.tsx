@@ -83,8 +83,8 @@ export default function BlogPostAI() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&q=80"
+                                alt="Sunrise over a busy commercial highway with an 18-wheeler transporting freight."
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">

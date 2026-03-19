@@ -83,8 +83,8 @@ export default function BlogPostScaling() {
                     <Reveal delayMs={200}>
                         <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border">
                             <img
-                                src="/images/Offical%20Pic%20.png"
-                                alt="Muhammad Faisal Bilal"
+                                src="https://images.pexels.com/photos/6169002/pexels-photo-6169002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="A distribution center worker carefully scanning and loading vital cargo."
                                 className="h-24 w-24 rounded-2xl object-cover border-2 border-accent"
                             />
                             <div className="text-center md:text-left">
