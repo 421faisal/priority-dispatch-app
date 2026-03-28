@@ -83,8 +83,8 @@ export function CarrierSetupForm() {
         return (
             <div className="rounded-xl border border-green-200 bg-green-50 p-8 text-center shadow-sm dark:border-green-900 dark:bg-green-900/20">
                 <CheckCircle2 className="mx-auto h-16 w-16 text-green-500" />
-                <h2 className="mt-6 text-2xl font-bold text-gray-900 dark:text-gray-100">Setup Packet Submitted!</h2>
-                <p className="mt-2 pl-4 pr-4 text-lg text-gray-600 dark:text-gray-300">{successMessage}</p>
+                <h2 className="mt-6 text-2xl font-bold text-foreground">Setup Packet Submitted!</h2>
+                <p className="mt-2 pl-4 pr-4 text-lg text-muted-foreground">{successMessage}</p>
                 <Button
                     className="mt-8 bg-green-600 hover:bg-green-700"
                     onClick={() => setSuccessMessage("")}

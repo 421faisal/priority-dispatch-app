@@ -9,12 +9,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Priority Dispatch LLC | Freight Dispatching Services',
-  description: 'Priority Dispatch LLC delivers elite freight dispatching for Reefers, Dry Vans, Box Trucks & Flatbeds. Maximize carrier revenue with 24/7 support.',
-  keywords: 'priority dispatch llc, freight dispatching, trucking dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, owner operator dispatch',
+  title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
+  description: 'Need a truck dispatcher? Priority Dispatch LLC finds high-paying loads for owner operators across all 48 states. Reefers, Dry Vans, Box Trucks & Flatbeds. 24/7 support. No contracts.',
+  keywords: 'truck dispatcher, dispatch services, owner operator dispatch, find loads, load booking, freight dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, priority dispatch llc',
   openGraph: {
-    title: 'Priority Dispatch LLC | Freight Dispatching Services',
-    description: 'Expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators.',
+    title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
+    description: 'Professional truck dispatcher services for owner operators. We find high-paying loads across all 48 states. 24/7 support. No contracts.',
     url: 'https://prioritydispatchllc.com',
     siteName: 'Priority Dispatch LLC',
     images: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
         url: '/images/hero-truck.jpg',
         width: 1200,
         height: 630,
-        alt: 'Priority Dispatch LLC - Freight Dispatching',
+        alt: 'Priority Dispatch LLC - Truck Dispatcher for Owner Operators',
       },
     ],
     locale: 'en_US',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@PriorityDispatch',
-    title: 'Priority Dispatch LLC | Freight Dispatching Services',
-    description: 'Expert freight dispatching for Reefers, Dry Vans, Box Trucks & Flatbeds. 24/7 support.',
+    title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
+    description: 'Professional truck dispatcher finding high-paying loads for owner operators. 24/7 support. No contracts.',
     images: ['/images/hero-truck.jpg'],
   },
   icons: {
@@ -52,22 +52,57 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'Organization'],
   name: 'Priority Dispatch LLC',
   image: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
-  description: 'Expert freight dispatching for Reefers, Dry Vans, Box Trucks, and Owner-Operators. Reliable revenue, speed, and results.',
+  description: 'Professional truck dispatcher services for owner-operators. We find high-paying loads, negotiate rates, and handle all paperwork across all 48 US states.',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '804 brack st',
+    streetAddress: '804 Brack St',
     addressLocality: 'Kissimmee',
     addressRegion: 'FL',
     postalCode: '34744',
     addressCountry: 'US'
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 28.2999,
+    longitude: -81.4076
+  },
   telephone: '+16893148347',
   email: 'prioritydispatch4u@gmail.com',
-  url: 'https://prioritydispatchllc.com'
-
+  url: 'https://prioritydispatchllc.com',
+  areaServed: {
+    '@type': 'Country',
+    name: 'United States'
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+16893148347',
+    contactType: 'customer service',
+    areaServed: 'US',
+    availableLanguage: 'English',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+      opens: '00:00',
+      closes: '23:59'
+    }
+  },
+  founder: {
+    '@type': 'Person',
+    name: 'Muhammad Faisal Bilal',
+    jobTitle: 'Founder & CEO',
+    url: 'https://www.linkedin.com/in/muhammad-faisal-bilal'
+  },
+  numberOfEmployees: {
+    '@type': 'QuantitativeValue',
+    value: 10
+  },
+  sameAs: [
+    'https://www.facebook.com/PriorityDispatchLLC',
+    'https://www.instagram.com/prioritydispatchllc'
+  ]
 }
 
 const breadcrumbSchema = {
@@ -91,18 +126,16 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Preconnect to external image/script origins for faster mobile LCP */}
-        <link rel="preconnect" href="https://images.unsplash.com" />
-        <link rel="dns-prefetch" href="https://images.unsplash.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://connect.facebook.net" />
       </head>
       <body className={`font-sans ${inter.variable}`} suppressHydrationWarning>
-        {/* Google Analytics */}
+        {/* Google Analytics — lazyOnload for performance */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-LP1X3P58HM"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -110,8 +143,8 @@ export default function RootLayout({
             gtag('config', 'G-LP1X3P58HM');
           `}
         </Script>
-        {/* Facebook Pixel */}
-        <Script id="facebook-pixel" strategy="afterInteractive">
+        {/* Facebook Pixel — lazyOnload for performance */}
+        <Script id="facebook-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

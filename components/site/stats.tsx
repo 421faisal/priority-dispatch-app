@@ -41,11 +41,11 @@ export function Stats() {
     <section id="why" className="bg-muted">
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
         <Reveal>
-          <h2 className="text-balance text-center text-2xl font-semibold md:text-3xl">Why Choose Us</h2>
+          <h2 className="text-balance text-center text-2xl font-semibold md:text-3xl">Why Owner-Operators Choose Us</h2>
         </Reveal>
         <Reveal className="mx-auto mt-2 max-w-2xl">
           <p className="text-center text-foreground/70">
-            Data-backed performance, dependable communication, and relentless focus on your bottom line.
+            Here&apos;s what you get when you work with a truck dispatcher from Priority Dispatch LLC.
           </p>
         </Reveal>
 

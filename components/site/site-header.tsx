@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
 import Link from "next/link"
+import { useState } from "react"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
@@ -33,8 +33,6 @@ export function SiteHeader() {
         </Link>
 
         <div className="flex items-center gap-3 md:gap-6">
-
-          
           <nav className="hidden items-center gap-6 md:flex">
             {nav.map((item) => (
               <a
@@ -81,3 +79,4 @@ export function SiteHeader() {
     </header>
   )
 }
+

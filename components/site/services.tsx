@@ -4,21 +4,21 @@ import Reveal from "@/components/site/reveal"
 
 const items = [
   {
-    image: "/images/services/dispatch.jpg",
-    title: "Dispatching",
-    desc: "Fast, high-paying load booking for Reefers, Dry Vans, Box Trucks, and more with proactive lane scouting and smart route optimization.",
+    image: "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800",
+    title: "Truck Dispatching",
+    desc: "Your truck dispatcher finds high-paying loads every day — for Reefers, Dry Vans, Box Trucks, and more. So you spend more time driving and less time searching.",
     bullets: ["Daily load opportunities", "Broker vetting", "Rate confirmations"],
   },
   {
-    image: "/images/services/carrier-support.jpg",
+    image: "https://images.pexels.com/photos/6869648/pexels-photo-6869648.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Carrier Support",
-    desc: "24/7 assistance for drivers and fleets. We handle calls, paperwork, and compliance so you can drive.",
-    bullets: ["24/7 phone + email", "Setups & paperwork", "Detention negotiation"],
+    desc: "You get real 24/7 support — not a voicemail. We handle calls, paperwork, and compliance. That means you can focus on what you do best: driving.",
+    bullets: ["24/7 phone + email", "Carrier setup & paperwork", "Detention negotiation"],
   },
   {
-    image: "/images/services/load-management.jpg",
+    image: "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800",
     title: "Load Management",
-    desc: "Complete back-office: invoicing, detention claims, POD audits, and collections tracking.",
+    desc: "We take care of the back-office so you don't have to. Invoicing, detention claims, POD audits — all handled by your freight dispatch team.",
     bullets: ["Clean invoicing", "POD & BOL audits", "Claims + collections"],
   },
 ]

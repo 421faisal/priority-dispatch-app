@@ -55,8 +55,8 @@
   --card-foreground: #ffffff;
   --popover: #000000;
   --popover-foreground: #ffffff;
-  --primary: #001f3f;
-  /* deep navy */
+  --primary: #3b82f6;
+  /* lighter blue for dark mode contrast */
   --primary-foreground: #ffffff;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
@@ -70,7 +70,7 @@
   --border: #1f1f1f;
   /* dark neutral */
   --input: #1f1f1f;
-  --ring: #001f3f;
+  --ring: #3b82f6;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);

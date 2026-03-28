@@ -14,6 +14,12 @@ import {
     Clock,
     ArrowRight,
     Briefcase,
+    CheckCircle2,
+    Star,
+    TrendingUp,
+    Users,
+    Award,
+    PhoneCall,
 } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -39,6 +45,7 @@ const coreServices = [
             "Multi-board & broker network access",
             "Equipment-specific matchmaking",
         ],
+        image: "/images/services-dispatch.jpg",
     },
     {
         icon: Headset,
@@ -50,6 +57,7 @@ const coreServices = [
             "Shipper/receiver communication",
             "Detention & layover negotiation",
         ],
+        image: "/images/services-carrier.jpg",
     },
     {
         icon: FileText,
@@ -61,6 +69,7 @@ const coreServices = [
             "Detention & TONU claims",
             "Collections follow-up",
         ],
+        image: "/images/services-load.jpg",
     },
 ]
 
@@ -68,7 +77,7 @@ const additionalServices = [
     {
         icon: Briefcase,
         title: "New Carrier Setup & MC Lease",
-        desc: "Complete A-to-Z setup for new carriers and investors. We handle LLC formation, free website creation, MC Authority, BOC-3, UCR, 2290, IFTA, IRP plates, and state permits. We expertly guide you through the compliance maze, ensuring your MC is active and insurance is bound before finalizing complex permits.",
+        desc: "Complete A-to-Z setup for new carriers and investors. We handle LLC formation, free website creation, MC Authority, BOC-3, UCR, 2290, IFTA, IRP plates, and state permits.",
         href: "/services/new-carrier-setup"
     },
     {
@@ -96,6 +105,36 @@ const additionalServices = [
         title: "Dedicated Dispatcher",
         desc: "One dedicated point of contact who learns your lanes, preferences, and revenue goals—no rotating teams.",
     },
+]
+
+const howItWorks = [
+    {
+        step: "01",
+        title: "Get Set Up in 24 Hours",
+        desc: "Sign a simple dispatch agreement. We collect your MC number, insurance, and equipment details — and we're ready to find your first load within 24 hours.",
+    },
+    {
+        step: "02",
+        title: "We Hunt, You Drive",
+        desc: "While you're on the road, we're monitoring load boards, negotiating rates, and securing the most profitable freight for your next move.",
+    },
+    {
+        step: "03",
+        title: "We Handle All Paperwork",
+        desc: "Rate confirmations, BOL audits, POD submissions, detention claims — your dispatcher handles it all so you never waste time on admin.",
+    },
+    {
+        step: "04",
+        title: "Get Paid Faster",
+        desc: "We invoice brokers immediately upon delivery and follow up aggressively. Most of our carriers are paid within 5–7 business days.",
+    },
+]
+
+const stats = [
+    { icon: TrendingUp, value: "18–25%", label: "Average Revenue Increase" },
+    { icon: Users, value: "150+", label: "Active Carrier Partners" },
+    { icon: Award, value: "4.9/5", label: "Average Carrier Rating" },
+    { icon: Clock, value: "24/7", label: "Support Coverage" },
 ]
 
 const serviceSchema = {
@@ -128,54 +167,130 @@ export default function ServicesPage() {
             />
 
             {/* Hero */}
-            <section className="bg-primary text-primary-foreground">
-                <div className="mx-auto max-w-4xl px-4 py-14 text-center md:py-20">
+            <section className="relative overflow-hidden bg-primary text-primary-foreground">
+                <div className="absolute inset-0 opacity-10"
+                    style={{ backgroundImage: "radial-gradient(circle at 25% 50%, #ff6700 0%, transparent 60%), radial-gradient(circle at 75% 50%, #0055a5 0%, transparent 60%)" }}
+                />
+                <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
                     <Reveal>
-                        <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
-                            Our Services
-                        </h1>
-                    </Reveal>
-                    <Reveal delayMs={80}>
-                        <p className="mx-auto mt-4 max-w-2xl text-lg opacity-90">
-                            Comprehensive freight dispatching solutions built to maximize your
-                            revenue, reduce downtime, and keep your operation running smoothly.
-                        </p>
+                        <div className="mx-auto max-w-3xl text-center">
+                            <span className="inline-flex items-center gap-2 mb-4 rounded-full bg-accent/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-accent">
+                                Full-Service Dispatch
+                            </span>
+                            <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl leading-tight">
+                                Everything Your Trucking Business Needs to{" "}
+                                <span className="text-accent">Dominate</span>
+                            </h1>
+                            <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
+                                From load booking and rate negotiation to 24/7 support and back-office paperwork — we handle everything so you can focus entirely on driving profitably.
+                            </p>
+                            <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+                                <a href="/carrier-setup">
+                                    <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/25 text-base font-bold px-8">
+                                        Start Working With Us
+                                        <ArrowRight className="ml-2 h-5 w-5" />
+                                    </Button>
+                                </a>
+                                <a href="/contact">
+                                    <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8">
+                                        <PhoneCall className="mr-2 h-5 w-5" />
+                                        Talk to a Dispatcher
+                                    </Button>
+                                </a>
+                            </div>
+                        </div>
                     </Reveal>
                 </div>
             </section>
 
+            {/* Stats Bar */}
+            <section className="bg-accent/5 border-y border-border">
+                <div className="mx-auto max-w-6xl px-4 py-8">
+                    <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+                        {stats.map((s, i) => (
+                            <Reveal key={s.label} delayMs={80 * i}>
+                                <div className="flex flex-col items-center text-center gap-2">
+                                    <s.icon className="h-6 w-6 text-accent" />
+                                    <span className="text-3xl font-extrabold text-foreground">{s.value}</span>
+                                    <span className="text-sm text-muted-foreground font-medium">{s.label}</span>
+                                </div>
+                            </Reveal>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Core Services */}
-            <section className="bg-background">
-                <div className="mx-auto max-w-6xl px-4 py-14 md:py-20">
+            <section className="bg-background py-20 md:py-28">
+                <div className="mx-auto max-w-6xl px-4">
                     <Reveal>
-                        <h2 className="text-center text-3xl font-extrabold tracking-tight md:text-4xl">
-                            Core Solutions
-                        </h2>
-                        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-                            The backbone of our dispatching partnership—everything you need from load
-                            booking to getting paid.
-                        </p>
+                        <div className="text-center mb-14">
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">Core Solutions</h2>
+                            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+                                The backbone of our dispatching partnership — everything you need from load booking to getting paid.
+                            </p>
+                        </div>
                     </Reveal>
 
-                    <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3">
+                    <div className="space-y-12">
                         {coreServices.map((svc, i) => (
                             <Reveal key={svc.title} delayMs={100 * i}>
-                                <div className="group flex h-full flex-col rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg">
-                                    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-                                        <svc.icon className="h-6 w-6" />
+                                <div className={`flex flex-col gap-8 rounded-2xl border border-border overflow-hidden shadow-sm transition-shadow hover:shadow-lg md:flex-row ${i % 2 === 1 ? "md:flex-row-reverse" : ""}`}>
+                                    <div className="relative md:w-2/5 min-h-[250px]">
+                                        <img
+                                            src={svc.image}
+                                            alt={svc.title}
+                                            className="absolute inset-0 w-full h-full object-cover"
+                                        />
+                                        <div className="absolute inset-0 bg-primary/50" />
+                                        <div className="relative z-10 flex h-full items-end p-6">
+                                            <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-accent text-accent-foreground shadow-lg">
+                                                <svc.icon className="h-7 w-7" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <h3 className="mt-4 text-xl font-bold">{svc.title}</h3>
-                                    <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
-                                        {svc.desc}
-                                    </p>
-                                    <ul className="mt-5 space-y-2 border-t border-border pt-4">
-                                        {svc.bullets.map((b) => (
-                                            <li key={b} className="flex items-center gap-2 text-sm text-muted-foreground">
-                                                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                                                {b}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                    <div className="flex-1 p-6 md:p-8 flex flex-col justify-center">
+                                        <h3 className="text-2xl font-bold mb-3">{svc.title}</h3>
+                                        <p className="text-muted-foreground leading-relaxed mb-5">{svc.desc}</p>
+                                        <ul className="space-y-2">
+                                            {svc.bullets.map((b) => (
+                                                <li key={b} className="flex items-center gap-2 text-sm font-medium">
+                                                    <CheckCircle2 className="h-4 w-4 text-accent shrink-0" />
+                                                    {b}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </Reveal>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* How It Works */}
+            <section className="bg-muted py-20 md:py-28">
+                <div className="mx-auto max-w-6xl px-4">
+                    <Reveal>
+                        <div className="text-center mb-14">
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">How It Works</h2>
+                            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+                                From first contact to consistent loads — we make it seamless.
+                            </p>
+                        </div>
+                    </Reveal>
+                    <div className="grid gap-8 md:grid-cols-4">
+                        {howItWorks.map((step, i) => (
+                            <Reveal key={step.step} delayMs={80 * i}>
+                                <div className="relative bg-card border border-border rounded-2xl p-6 shadow-sm text-center hover:-translate-y-1 transition-transform duration-300">
+                                    <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent/10 text-accent font-extrabold text-lg">
+                                        {step.step}
+                                    </div>
+                                    <h3 className="font-bold text-lg mb-2">{step.title}</h3>
+                                    <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
+                                    {i < howItWorks.length - 1 && (
+                                        <div className="hidden md:block absolute top-10 -right-4 text-muted-foreground/30 text-2xl">›</div>
+                                    )}
                                 </div>
                             </Reveal>
                         ))}
@@ -184,26 +299,28 @@ export default function ServicesPage() {
             </section>
 
             {/* Additional Services */}
-            <section className="bg-muted">
-                <div className="mx-auto max-w-6xl px-4 py-14 md:py-20">
+            <section className="bg-background py-20 md:py-28">
+                <div className="mx-auto max-w-6xl px-4">
                     <Reveal>
-                        <h2 className="text-center text-3xl font-extrabold tracking-tight md:text-4xl">
-                            Additional Services
-                        </h2>
-                        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-                            Beyond dispatching—tools and support that give you a competitive edge on the road.
-                        </p>
+                        <div className="text-center mb-14">
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
+                                Additional Services
+                            </h2>
+                            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+                                Beyond dispatching — tools and support that give you a competitive edge on the road.
+                            </p>
+                        </div>
                     </Reveal>
 
-                    <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                         {additionalServices.map((svc, i) => (
                             <Reveal key={svc.title} delayMs={80 * i}>
-                                <div className="group flex items-start gap-4 rounded-xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
-                                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent text-accent-foreground">
+                                <div className="group flex items-start gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md hover:border-accent/30">
+                                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground shadow-sm">
                                         <svc.icon className="h-5 w-5" />
                                     </span>
                                     <div>
-                                        <h3 className="font-bold">{svc.title}</h3>
+                                        <h3 className="font-bold text-base">{svc.title}</h3>
                                         <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{svc.desc}</p>
                                         {'href' in svc && svc.href && (
                                             <a href={svc.href} className="mt-3 inline-flex items-center text-sm font-bold text-accent hover:underline">
@@ -218,22 +335,35 @@ export default function ServicesPage() {
                 </div>
             </section>
 
+            {/* Value Proof / Testimonial */}
+            <section className="bg-primary text-primary-foreground py-16 md:py-20">
+                <div className="mx-auto max-w-4xl px-4 text-center">
+                    <Reveal>
+                        <Star className="h-8 w-8 text-accent mx-auto mb-4" />
+                        <p className="text-2xl font-bold italic leading-relaxed opacity-90 max-w-3xl mx-auto">
+                            &ldquo;Since joining Priority Dispatch, my revenue per mile went from $2.10 to $2.85 in the first month. They found loads I never knew existed and my deadhead dropped from 22% to 8%.&rdquo;
+                        </p>
+                        <p className="mt-6 font-semibold opacity-70">— Carlos M., Reefer Owner-Operator, Texas</p>
+                    </Reveal>
+                </div>
+            </section>
+
             {/* CTA */}
-            <section className="bg-primary text-primary-foreground">
-                <div className="mx-auto max-w-4xl px-4 py-14 text-center md:py-20">
+            <section className="bg-background border-t border-border py-20 md:py-28">
+                <div className="mx-auto max-w-4xl px-4 text-center">
                     <Reveal>
                         <h2 className="text-3xl font-extrabold md:text-4xl">
                             Ready to Maximize Your Earnings?
                         </h2>
-                        <p className="mx-auto mt-4 max-w-xl opacity-90">
+                        <p className="mx-auto mt-4 max-w-xl text-muted-foreground leading-relaxed">
                             Join the carriers who trust Priority Dispatch LLC for reliable loads,
-                            expert support, and higher revenue per mile.
+                            expert support, and higher revenue per mile. No long-term contracts. Cancel anytime.
                         </p>
                     </Reveal>
                     <Reveal delayMs={100}>
                         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                             <a href="/carrier-setup">
-                                <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90 shadow-md">
+                                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-md text-base font-bold px-8">
                                     Carrier Setup
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
@@ -242,7 +372,7 @@ export default function ServicesPage() {
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 transition-colors"
+                                    className="border-border text-foreground hover:bg-muted transition-colors text-base px-8"
                                 >
                                     Contact Us
                                 </Button>

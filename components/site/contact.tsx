@@ -87,8 +87,8 @@ export function Contact() {
           {status === "success" ? (
             <div className="flex flex-col items-center justify-center py-8 text-center">
               <CheckCircle2 className="h-14 w-14 text-green-500" />
-              <h3 className="mt-4 text-xl font-bold text-gray-900 dark:text-gray-100">Message Sent!</h3>
-              <p className="mt-2 text-gray-600 dark:text-gray-300">
+              <h3 className="mt-4 text-xl font-bold text-foreground">Message Sent!</h3>
+              <p className="mt-2 text-muted-foreground">
                 Thank you for reaching out. We&apos;ll get back to you shortly.
               </p>
               <Button
