@@ -65,59 +65,59 @@ export default function BlogPostMentalHealth() {
                     <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The most dangerous, unpredictable component of a modern Class-8 commercial vehicle is explicitly not the heavy diesel engine; it is entirely the fragile human mind of a driver who has not slept correctly, has not spoken to a loved one in days, and feels fundamentally invisible to society. In 2026, the logistics industry is finally waking up to the massive, undeniable <strong>Mental Health Crisis</strong> ravaging America's highways. This comprehensive guide explores the absolute clinical science of isolation, the devastating "Road Diet" serotonin trap, and the rise of Human-Centric Dispatching.
+                                Long-haul trucking is more than just a job; it's a lifestyle that can take a toll on your mental well-being. Isolation, irregular sleep, and the pressure of the road are real challenges. In 2026, the industry is finally starting to prioritize mental health. This guide explores how drivers can stay healthy, connected, and focused while out on the road.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <Brain className="h-8 w-8 text-accent shrink-0" />
-                                The Clinical Science of Social Isolation
+                                Understanding the Toll of Isolation
                             </h2>
                             <p>
-                                Extensive peer-reviewed clinical research explicitly demonstrates that chronic social isolation actively triggers and stimulates the exact same physiological regions of the human brain as severe physical pain. In 2026, Over-The-Road (OTR) drivers are frequently dispatched on continuous, relentless long-haul routes remaining strictly away from their literal homes for 3 to 4 uninterrupted weeks at a time. The cumulative psychological toll of this extreme "cab-prison" isolation is statistically the #1 primary factor driving terminal industry burnout, severe depression, and catastrophic safety highway incidents.
+                                Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"—it's a factor that affects safety and long-term career satisfaction.
                             </p>
                             <p>
-                                <strong>The Institutional Fix:</strong> At <strong>Priority Dispatch LLC</strong>, we have fundamentally rewritten our internal operational rulebook by strictly mandating <strong>"Non-Freight Calls."</strong> Our highly trained fleet managers are explicitly required to call their assigned drivers at least once a week purely to ask, "How are you doing today?" with absolutely no mention of freight loads, ELD hours, or delivery deadlines. This shockingly simple, incredibly powerful human connection has mathematically successfully reduced our internal carrier turnover by a staggering 25%.
+                                **The Priority Dispatch Approach:** We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a massive difference in a driver's day.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <Activity className="h-8 w-8 text-accent shrink-0" />
-                                The "Road Diet" and the Serotonin Trap
+                                Fueling Your Mind: Diet and Mental Clarity
                             </h2>
                             <p>
-                                A driver's mental health is intimately, biologically linked directly to their gut microbiome. The traditional "Truck Stop Diet" consisting entirely of high-sugar, heavily processed, aggressively deep-fried foods actively causes massive systemic biological inflammation. Clinically, this directly causes severe <strong>"Neuro-Inflammation,"</strong> directly severely limiting the brain's ability to naturally successfully produce Serotonin. This physically leads to intense brain fog, severe chronic fatigue, and heavy clinical depression.
+                                What you eat affects how you feel. The "truck stop diet" of processed, high-sugar foods can lead to brain fog and fatigue. While it's hard to find healthy options on the road, small changes can improve your mental clarity.
                             </p>
                             <p>
-                                2026 medical logistics research explicitly shows that professional drivers who strictly meticulously maintain a <strong>Clean-Cab Diet</strong> (investing in a cab refrigerator, heavily utilizing high lean protein, maintaining extreme hydration, and strictly eliminating completely processed sugars) report a massive 40% higher baseline job satisfaction metric and drastically lower instances of mid-day crash-fatigue.
+                                Many successful owner-operators now invest in cab refrigerators and meal-prep their own food. Staying hydrated and reducing sugar isn't just about physical health—it's about keeping your mind sharp and avoiding the "mid-day crash" that can lead to irritation or exhaustion.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <ShieldPlus className="h-8 w-8 text-accent shrink-0" />
-                                Highway Trauma and the "Roadside Witness"
+                                Handling Trauma on the Road
                             </h2>
                             <p>
-                                Professional commercial drivers are very frequently the absolute first agonizing responders to horrific, highly traumatic multi-vehicle highway accidents. Historically, the brutal trucking industry told drivers to simply "tough it out" and aggressively keep pushing the freight. In 2026, progressive highly advanced fleets have successfully officially implemented the critical <strong>"Trauma Incident Reset."</strong> 
+                                Truck drivers are often the first on the scene of highway accidents. Witnessing trauma is a part of the job that many are told to "just push through," but that's not a sustainable strategy. 
                             </p>
                             <div className="bg-muted border-l-4 border-accent p-6 rounded-r-xl my-8">
-                                <h4 className="font-bold text-lg mb-2 text-foreground">The Protocol</h4>
+                                <h4 className="font-bold text-lg mb-2 text-foreground">The Standard of Care</h4>
                                 <p className="text-base text-muted-foreground m-0">
-                                    If an active driver explicitly visually witnesses a massive critical highway accident or a severe fatality, they are instantly, immediately authorized by dispatch for an explicitly paid 3-day operational reset. During this strict cooldown period, the driver is provided immediate, confidential access to highly specialized tele-therapy professionals. We absolutely explicitly do not "push through" human trauma for the sake of an arbitrary delivery deadline.
+                                    If you witness a serious incident, you need time to process it. Progressive fleets now offer "trauma resets"—paid time off to speak with a professional or simply decompress before getting back behind the wheel. Your safety, and the safety of everyone on the road, depends on your mental state.
                                 </p>
                             </div>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <Users className="h-8 w-8 text-accent shrink-0" />
-                                Virtual CB: The Rise of Digital Mental-Health Communities
+                                Connection in the Digital Age
                             </h2>
                             <p>
-                                The traditional physical CB radio has largely died, but the distinctly intense human need for connection has not. 2026 has witnessed the massive explosion of heavily moderated, driver-only, purely audio digital channels where professionals can safely vent, laugh, and instantly privately connect with their peers while safely rolling down the interstate. These robust digital "Round-tables" are successfully entirely actively replacing the historically toxic, deeply negative environment of pure social media with highly positive, real-time peer emotional support.
+                                The CB radio might be quieter than it used to be, but digital communities are filling the gap. Whether it's driver-only audio channels or moderated forums, staying connected with your peers is vital. Having a space to vent, share tips, or just have a laugh helps combat the feeling of being alone on the road.
                             </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: You Are Not Alone</h2>
+                            <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: You're Not Driving Alone</h2>
                             <p>
-                                American freight logistics is profoundly a massive interconnected team sport. If you are silently struggling heavily in the cab, you must reach out. The absolute highway road is undeniably long, incredibly dark, and brutally demanding, but you definitively absolutely do not have to drive it entirely alone.
+                                Trucking is the backbone of the country, but it shouldn't come at the cost of your mental health. If you're feeling overwhelmed, reach out. Whether it's to a fellow driver, a friend, or your dispatcher, talking about the challenges of the road is the first step in managing them.
                             </p>
                             <p>
-                                <strong>Priority Dispatch LLC</strong> is widely recognized as an absolute safe operational haven for deeply stressed commercial owner-operators. <a href="/contact" className="text-accent font-bold hover:underline">Connect with our dedicated fleet managers today</a> and successfully actively join a comprehensive logistics team that profoundly genuinely cares about the person sitting silently strictly behind the steering wheel.
+                                At **Priority Dispatch LLC**, we treat our carriers like partners, not just unit numbers. We value the person behind the wheel and are committed to supporting your success, both on and off the road. <a href="/contact" className="text-accent font-bold hover:underline">Join a team that actually listens.</a>
                             </p>
                         </Reveal>
 
@@ -132,7 +132,7 @@ export default function BlogPostMentalHealth() {
                                 <div className="text-center md:text-left">
                                     <h4 className="text-2xl font-bold text-primary mb-2">About the Author</h4>
                                     <p className="mt-2 text-muted-foreground leading-relaxed text-sm md:text-base">
-                                        <strong>Muhammad Faisal Bilal</strong> is the highly esteemed CEO of Priority Dispatch LLC and a deeply certified, heavily experienced Mental Health First Aid clinical instructor strictly for the commercial transportation industry. He has aggressively publicly advocated for mandatory federal "Mental Health Highway Resets" within the official FMCSA Hours of Service (HOS) regulatory framework.
+                                        **Muhammad Faisal Bilal** is the CEO of Priority Dispatch LLC and a dedicated advocate for driver well-being. He works to modernize the dispatching industry by focusing on human-centric strategies that improve both carrier profitability and driver quality of life.
                                     </p>
                                     <a
                                         href="https://www.linkedin.com/in/muhammad-faisal-bilal"
