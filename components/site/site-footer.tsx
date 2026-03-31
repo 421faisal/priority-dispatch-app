@@ -173,7 +173,7 @@ export function SiteFooter() {
               <span className="sr-only">Instagram</span>
             </a>
             <a
-              href="https://twitter.com/PriorityDispatch"
+              href="https://twitter.com/PDispatch4u"
               aria-label="Follow on X (Twitter)"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
