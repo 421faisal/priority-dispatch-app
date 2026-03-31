@@ -183,7 +183,7 @@ export function SiteFooter() {
               <span className="sr-only">X (Twitter)</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/muhammad-faisal-bilal"
+              href="https://www.linkedin.com/company/priority-dispatch-llc/"
               aria-label="Follow on LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15"
               target="_blank"
