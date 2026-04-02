@@ -4,7 +4,7 @@ export async function GET() {
     const content = `# Priority Dispatch LLC
 Expert freight dispatching services for owner-operators and carrier fleets specializing in Reefers, Dry Vans, Box Trucks, Flatbeds, and Step Decks.
 
-## Core Services
+## Core Services Helpful
 - Freight Dispatching: Load searching and aggressive rate negotiation.
 - 24/7 Carrier Support: Night and weekend tracking and emergency assistance.
 - Back-Office Management: Invoicing, broker vetting, and paperwork.
