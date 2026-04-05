@@ -197,6 +197,76 @@ export default function AboutOwnerPage() {
                 </div>
             </section>
 
+            {/* ── Meet Our Team ── */}
+            <section className="bg-background/50 border-t border-border">
+                <div className="mx-auto max-w-6xl px-4 py-14 md:py-20">
+                    <Reveal>
+                        <div className="text-center mb-12">
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">Meet Our Team</h2>
+                            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+                                The dedicated professionals driving Priority Dispatch LLC forward.
+                            </p>
+                        </div>
+                    </Reveal>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        {/* Member: Fatima Qasim */}
+                        <Reveal delayMs={100}>
+                            <div className="group flex flex-col items-center text-center p-8 rounded-2xl bg-card border border-border shadow-sm hover:shadow-lg transition-all h-full">
+                                <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent/50 transition-colors">
+                                    <img 
+                                        src="https://ui-avatars.com/api/?name=Fatima+Qasim&background=1e293b&color=ffffff&size=400" 
+                                        alt="Fatima Qasim" 
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold">Fatima Qasim</h3>
+                                <div className="text-accent text-sm font-bold mb-4 tracking-wider uppercase mt-1">Social Media Manager</div>
+                                <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-grow">
+                                    The backbone of our digital presence, Fatima handles all social media strategy and execution to help our business and our carriers grow.
+                                </p>
+                                <a 
+                                    href="https://www.linkedin.com/in/fatima-qasim-29284932b/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#0A66C2] transition-colors"
+                                >
+                                    <Linkedin className="w-5 h-5" />
+                                    Connect on LinkedIn
+                                </a>
+                            </div>
+                        </Reveal>
+
+                        {/* Member: Ambreen Zulfiqar */}
+                        <Reveal delayMs={200}>
+                            <div className="group flex flex-col items-center text-center p-8 rounded-2xl bg-card border border-border shadow-sm hover:shadow-lg transition-all h-full">
+                                <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent/50 transition-colors bg-muted flex items-center justify-center">
+                                    <img 
+                                        src="/images/ambreen-seo.jpeg" 
+                                        alt="Ambreen Zulfiqar" 
+                                        className="w-full h-full object-cover"
+                                    />
+                                </div>
+                                <h3 className="text-2xl font-bold">Ambreen Zulfiqar</h3>
+                                <div className="text-accent text-sm font-bold mb-4 tracking-wider uppercase mt-1">SEO Intern</div>
+                                <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-grow">
+                                    Assisting with our search engine optimization strategy and digital growth initiatives as a valued intern on our marketing team.
+                                </p>
+                                <a 
+                                    href="https://www.linkedin.com/in/ambreen-memon-2125753a0?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#0A66C2] transition-colors"
+                                >
+                                    <Linkedin className="w-5 h-5" />
+                                    Connect on LinkedIn
+                                </a>
+                            </div>
+                        </Reveal>
+                    </div>
+                </div>
+            </section>
+
             {/* ── Story / Extended Bio ── */}
             <section className="bg-muted">
                 <div className="mx-auto max-w-4xl px-4 py-14 md:py-20">
