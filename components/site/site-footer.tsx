@@ -1,6 +1,6 @@
 "use client"
 
-import { Facebook, Linkedin, Instagram, Twitter } from "lucide-react"
+import { Facebook, Linkedin, Instagram, Twitter, Youtube } from "lucide-react"
 async function onFooterSubmit(e: any) {
   e.preventDefault();
 
@@ -191,6 +191,16 @@ export function SiteFooter() {
             >
               <Linkedin className="h-5 w-5" />
               <span className="sr-only">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.youtube.com/@prioritydispatch4u"
+              aria-label="Follow on YouTube"
+              className="flex h-9 w-9 items-center justify-center rounded-md bg-primary-foreground/10 hover:bg-primary-foreground/15 text-red-500 hover:text-red-400"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Youtube className="h-5 w-5" />
+              <span className="sr-only">YouTube</span>
             </a>
           </div>
         </div>
