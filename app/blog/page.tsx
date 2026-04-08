@@ -191,8 +191,15 @@ const posts = [
     {
         title: "How to Choose the Best Truck Dispatch Service",
         slug: "how-to-choose-dispatch-service",
-        excerpt: "Not all dispatching services are created equal. Here is what to look for when choosing a partner for your carrier business.",
+        excerpt: "Not all dispatch services are created equal. Here is what to look for when choosing a partner for your carrier business.",
         date: "February 25, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
+        title: "How to Use Load Boards Effectively as an Owner‑Operator",
+        slug: "how-to-use-load-boards",
+        excerpt: "Load boards can flood your truck with freight — or waste hours of dead time. Here's how owner‑operators and small fleets can use them strategically to find better rates, avoid bad brokers, and keep wheels turning.",
+        date: "April 8, 2026",
         author: "Muhammad Faisal Bilal",
     }
 ]
