@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "@/components/site/site-header";
 import { SiteFooter } from "@/components/site/site-footer";
 import Reveal from "@/components/site/reveal";
-import { Calendar, User, ArrowLeft, CheckSquare } from "lucide-react";
+import { Calendar, User, ArrowLeft, CheckSquare, TrendingUp, BarChart3, Users } from "lucide-react";
 import { BlogArticleSchema } from "@/components/site/blog-article-schema";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function BlogPost() {
         description="Load boards can flood your truck with freight — or waste hours of dead time. Here's how owner‑operators and small fleets can use them strategically to find better rates, avoid bad brokers, and keep wheels turning."
         datePublished="2026-04-08"
         slug="how-to-use-load-boards"
-        imageUrl="/images/blog/load-boards-hero.jpg"
+        imageUrl="/images/blog/load-boards-hero.png"
       />
       <article className="py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -56,7 +56,7 @@ export default function BlogPost() {
           <Reveal delayMs={100}>
             <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
               <img
-                src="/images/blog/load-boards-hero.jpg"
+                src="/images/blog/load-boards-hero.png"
                 alt="Owner‑operator reviewing a digital load board on a tablet in a truck cab"
                 className="object-cover w-full h-full"
               />
@@ -95,8 +95,16 @@ export default function BlogPost() {
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
+              <BarChart3 className="h-8 w-8 text-accent" />
               Layer Rate Intelligence Into Every Search
             </h2>
+            <div className="relative my-8 aspect-[21/9] overflow-hidden rounded-xl border border-border shadow-md">
+              <img
+                src="/images/blog/rate-intelligence.png"
+                alt="Digital visualization of freight rate analytics and trends"
+                className="object-cover w-full h-full opacity-90 transition-opacity hover:opacity-100"
+              />
+            </div>
             <p>
               Most tier‑one load boards now include lane‑level rate analytics that show you the average spot rate on any given corridor over the past 7, 30, and 90 days. Use this data before calling on a load. If a broker posts $2.10/mile on a lane averaging $2.60, you have negotiating leverage and you know it. If the lane average is $2.05, that post may actually be fair. Rate intelligence turns guesswork into data‑driven negotiation.
             </p>
@@ -105,6 +113,7 @@ export default function BlogPost() {
             </p>
 
             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
+              <Users className="h-8 w-8 text-accent" />
               Build Relationships, Not Just Transactions
             </h2>
             <p>
