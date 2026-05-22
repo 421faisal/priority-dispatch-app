@@ -1,12 +1,77 @@
+"use client"
+
+import { useEffect, useMemo, useRef, useState } from "react"
 import { Truck, Clock, TrendingUp, ShieldCheck, FileText, Fuel, Headset, BadgeCheck, MapPinned } from "lucide-react"
 import Reveal from "@/components/site/reveal"
 
+function StatValue({
+  target,
+  suffix = "",
+  prefix = "",
+  durationMs = 1000,
+  start,
+}: {
+  target: number
+  suffix?: string
+  prefix?: string
+  durationMs?: number
+  start: boolean
+}) {
+  const [value, setValue] = useState(0)
+
+  useEffect(() => {
+    if (!start) return
+    const startTime = performance.now()
+
+    const tick = (now: number) => {
+      const elapsed = now - startTime
+      const progress = Math.min(elapsed / durationMs, 1)
+      setValue(Math.round(target * progress))
+      if (progress < 1) {
+        requestAnimationFrame(tick)
+      }
+    }
+
+    requestAnimationFrame(tick)
+  }, [durationMs, start, target])
+
+  return (
+    <span>
+      {prefix}
+      {value}
+      {suffix}
+    </span>
+  )
+}
+
 export function Stats() {
+  const sectionRef = useRef<HTMLElement | null>(null)
+  const [showCount, setShowCount] = useState(false)
+
   const stats = [
-    { value: "98%", label: "Load Success Rate", icon: Truck },
-    { value: "24/7", label: "Support Availability", icon: Clock },
-    { value: "+100%", label: "Carrier Profitability", icon: TrendingUp },
+    { target: 98, suffix: "%", label: "On-Time Pickup & Delivery", icon: Truck },
+    { target: 24, suffix: "/7", label: "Dispatcher Support Coverage", icon: Clock },
+    { target: 500, suffix: "+", label: "Owner-Operators & Fleets Supported", icon: TrendingUp },
   ]
+
+  useEffect(() => {
+    const element = sectionRef.current
+    if (!element) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const first = entries[0]
+        if (first.isIntersecting) {
+          setShowCount(true)
+          observer.disconnect()
+        }
+      },
+      { threshold: 0.35 },
+    )
+
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [])
 
   const offers = [
     {
@@ -37,8 +102,29 @@ export function Stats() {
     },
   ]
 
+  const processSteps = useMemo(
+    () => [
+      {
+        step: "Step 1",
+        title: "Sign Up",
+        desc: "Complete carrier setup with your MC details, equipment type, and lanes.",
+      },
+      {
+        step: "Step 2",
+        title: "Get Loads",
+        desc: "We source, negotiate, and present high-paying loads that match your goals.",
+      },
+      {
+        step: "Step 3",
+        title: "Get Paid",
+        desc: "You haul while we manage confirmations, PODs, invoicing, and detention follow-up.",
+      },
+    ],
+    [],
+  )
+
   return (
-    <section id="why" className="bg-muted">
+    <section id="why" className="bg-muted" ref={sectionRef}>
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-20">
         <Reveal>
           <h2 className="text-balance text-center text-2xl font-semibold md:text-3xl">Why Owner-Operators Choose Us</h2>
@@ -57,9 +143,26 @@ export function Stats() {
                   <span className="flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground">
                     <s.icon className="h-5 w-5" aria-hidden />
                   </span>
-                  <div className="text-3xl font-bold text-primary">{s.value}</div>
+                  <div className="text-3xl font-bold text-primary">
+                    <StatValue target={s.target} suffix={s.suffix} start={showCount} />
+                  </div>
                 </div>
                 <div className="mt-2 text-center text-sm text-foreground/70">{s.label}</div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="mt-12">
+          <h3 className="text-center text-xl font-semibold md:text-2xl">How It Works</h3>
+        </Reveal>
+        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+          {processSteps.map((step, i) => (
+            <Reveal key={step.step} delayMs={90 * i}>
+              <div className="rounded-lg border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md">
+                <p className="text-xs font-bold uppercase tracking-wider text-accent">{step.step}</p>
+                <p className="mt-2 text-lg font-semibold">{step.title}</p>
+                <p className="mt-2 text-sm text-foreground/70">{step.desc}</p>
               </div>
             </Reveal>
           ))}

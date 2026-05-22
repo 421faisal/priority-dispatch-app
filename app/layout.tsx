@@ -9,6 +9,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://prioritydispatchllc.com'),
   title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
   description: 'Need a truck dispatcher? Priority Dispatch LLC finds high-paying loads for owner operators across all 48 states. Reefers, Dry Vans, Box Trucks & Flatbeds. 24/7 support. No contracts.',
   keywords: 'truck dispatcher, dispatch services, owner operator dispatch, find loads, load booking, freight dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, priority dispatch llc',

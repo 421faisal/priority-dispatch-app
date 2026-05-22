@@ -14,6 +14,27 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        title: "What Does TSA Certified Mean in Trucking?",
+        slug: "what-is-tsa-certified-trucking",
+        excerpt: "TSA certification unlocks air cargo and high-security freight in trucking. Learn how to become TSA certified and access premium expedited loads.",
+        date: "May 22, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
+        title: "What Is a TWIC Card in Trucking?",
+        slug: "what-is-twic-card-trucking",
+        excerpt: "A TWIC card opens the door to high-paying port loads. Learn what it is, how to get one, and how to find premium maritime freight opportunities.",
+        date: "May 22, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
+        title: "What Is a Bonded Carrier in Trucking?",
+        slug: "what-is-bonded-carrier-trucking",
+        excerpt: "Learn what a bonded carrier is in trucking, how to become one, and why owner-operators work with dispatch services to find bonded freight opportunities.",
+        date: "May 22, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
         title: "How to Start a Trucking Company: From LLC to IRP Plates",
         slug: "how-to-start-trucking-company-llc-mc-authority",
         excerpt: "The ultimate A-to-Z guide on setting up your carrier authority. Learn exactly how to get your LLC, MC Authority, BOC-3, UCR, and Interstate permits.",

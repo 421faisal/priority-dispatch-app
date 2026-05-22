@@ -3,7 +3,6 @@ import { Hero } from "@/components/site/hero"
 import { WhatIsDispatcher } from "@/components/site/what-is-dispatcher"
 import { About } from "@/components/site/about"
 import { Services } from "@/components/site/services"
-import { HowDispatchWorks } from "@/components/site/how-dispatch-works"
 import { Benefits } from "@/components/site/benefits"
 import { HowWeFindLoads } from "@/components/site/how-we-find-loads"
 import { Stats } from "@/components/site/stats"
@@ -22,7 +21,6 @@ export default function HomePage() {
       <WhatIsDispatcher />
       <About />
       <Services />
-      <HowDispatchWorks />
       <Benefits />
       <HowWeFindLoads />
       <Stats />

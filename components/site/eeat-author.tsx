@@ -12,13 +12,15 @@ export function EEATAuthor() {
 
               {/* Photo side */}
               <div className="relative flex flex-col items-center justify-center bg-primary px-8 py-10 text-primary-foreground">
-                <img
-                  src="/images/Offical%20Pic%20.png"
-                  alt="Muhammad Faisal Bilal — Founder of Priority Dispatch LLC"
-                  className="h-32 w-32 rounded-full object-cover border-4 border-accent shadow-lg"
-                />
-                <h3 className="mt-4 text-xl font-bold text-center">Muhammad Faisal Bilal</h3>
-                <p className="mt-1 text-sm opacity-80 text-center">Founder &amp; CEO, Priority Dispatch LLC</p>
+                <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-4 border-accent shadow-xl bg-muted">
+                  <img
+                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
+                    alt="Muhammad Faisal Bilal — Founder of Priority Dispatch LLC"
+                    className="h-full w-full object-cover object-top"
+                  />
+                </div>
+                <h3 className="mt-6 text-xl font-bold text-center">Muhammad Faisal Bilal</h3>
+                <p className="mt-2 text-sm opacity-80 text-center">Founder &amp; CEO, Priority Dispatch LLC</p>
                 <a
                   href="https://www.linkedin.com/in/muhammad-faisal-bilal"
                   target="_blank"

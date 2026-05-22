@@ -156,7 +156,7 @@ export default function BlogPostStartCompany() {
                         <Reveal delayMs={250}>
                             <div className="mt-16 rounded-2xl bg-muted p-8 flex flex-col md:flex-row items-center gap-6 border border-border shadow-sm">
                                 <img
-                                    src="/images/Offical%20Pic%20.png"
+                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
                                     alt="Muhammad Faisal Bilal"
                                     className="h-28 w-28 rounded-full object-cover border-4 border-accent shrink-0 shadow-md"
                                 />

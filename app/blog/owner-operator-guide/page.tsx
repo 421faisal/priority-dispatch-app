@@ -216,7 +216,7 @@ export default function BlogPostOwnerOperator() {
                             <div className="mt-16 rounded-2xl bg-card p-8 flex flex-col md:flex-row items-center gap-8 border border-border shadow-lg relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
                                 <img
-                                    src="/images/Offical%20Pic%20.png"
+                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
                                     alt="Muhammad Faisal Bilal"
                                     className="h-28 w-28 rounded-full object-cover border-4 border-accent/20 shrink-0 relative z-10"
                                 />

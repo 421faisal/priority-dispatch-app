@@ -192,7 +192,7 @@ export default function ServicesPage() {
                                     </Button>
                                 </a>
                                 <a href="/contact">
-                                    <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8">
+                                    <Button size="lg" variant="outline" className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors text-base px-8">
                                         <PhoneCall className="mr-2 h-5 w-5" />
                                         Talk to a Dispatcher
                                     </Button>

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         url: "https://prioritydispatchllc.com/about-owner",
         images: [
             {
-                url: "/images/Offical Pic .png",
+                url: "/images/muhammad-faisal-bilal-founder-priority-dispatch.png",
                 width: 600,
                 height: 600,
                 alt: "Muhammad Faisal Bilal — Founder of Priority Dispatch LLC",
@@ -58,7 +58,7 @@ const personSchema = {
         "https://www.instagram.com/m_faisal_balal",
         "https://www.linkedin.com/in/muhammad-faisal-bilal",
     ],
-    image: "https://prioritydispatchllc.com/images/Offical%20Pic%20.png",
+    image: "https://prioritydispatchllc.com/images/muhammad-faisal-bilal-founder-priority-dispatch.png",
     url: "https://prioritydispatchllc.com/about-owner",
 }
 
@@ -84,9 +84,9 @@ export default function AboutOwnerPage() {
                             <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
                             <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto overflow-hidden rounded-2xl border-2 border-accent/20 bg-muted shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)]">
                                 <img
-                                    src="/images/Offical%20Pic%20.png"
+                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
                                     alt="Muhammad Faisal Bilal — Founder of Priority Dispatch LLC"
-                                    className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60" />
                                 <div className="absolute bottom-6 left-6 right-6">
@@ -209,61 +209,43 @@ export default function AboutOwnerPage() {
                         </div>
                     </Reveal>
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {/* Member: Fatima Qasim */}
-                        <Reveal delayMs={100}>
-                            <div className="group flex flex-col items-center text-center p-8 rounded-2xl bg-card border border-border shadow-sm hover:shadow-lg transition-all h-full">
-                                <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent/50 transition-colors">
-                                    <img 
-                                        src="https://ui-avatars.com/api/?name=Fatima+Qasim&background=1e293b&color=ffffff&size=400" 
-                                        alt="Fatima Qasim" 
-                                        className="w-full h-full object-cover"
-                                    />
+                    <Reveal delayMs={100}>
+                        <div className="max-w-3xl mx-auto">
+                            <div className="relative p-8 md:p-10 rounded-2xl bg-gradient-to-br from-card to-muted border border-border shadow-lg overflow-hidden">
+                                {/* Decorative accent */}
+                                <div className="absolute top-0 left-0 w-2 h-full bg-accent"></div>
+                                
+                                <div className="relative">
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <div className="h-1 w-12 bg-accent rounded-full"></div>
+                                        <span className="text-accent text-xs font-bold uppercase tracking-widest">Social Media Manager</span>
+                                    </div>
+                                    
+                                    <h3 className="text-3xl md:text-4xl font-extrabold mb-6 bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+                                        Fatima Qasim
+                                    </h3>
+                                    
+                                    <p className="text-lg leading-relaxed text-muted-foreground mb-6">
+                                        The backbone of our digital presence, <span className="font-semibold text-foreground">Fatima Qasim</span> orchestrates every aspect of Priority Dispatch LLC's social media strategy. From crafting compelling content that resonates with owner-operators to analyzing engagement metrics that drive real business growth, she ensures our carriers and our brand stay connected, visible, and thriving in the digital landscape.
+                                    </p>
+                                    
+                                    <p className="text-base leading-relaxed text-muted-foreground mb-8">
+                                        With a keen eye for trends and a deep understanding of the trucking industry's unique challenges, Fatima transforms complex logistics concepts into engaging stories that educate, inspire, and build community across all our platforms.
+                                    </p>
+                                    
+                                    <a 
+                                        href="https://www.linkedin.com/in/fatima-qasim-29284932b/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A66C2] text-white rounded-lg font-semibold hover:bg-[#004182] transition-colors shadow-md"
+                                    >
+                                        <Linkedin className="w-5 h-5" />
+                                        Connect on LinkedIn
+                                    </a>
                                 </div>
-                                <h3 className="text-2xl font-bold">Fatima Qasim</h3>
-                                <div className="text-accent text-sm font-bold mb-4 tracking-wider uppercase mt-1">Social Media Manager</div>
-                                <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-grow">
-                                    The backbone of our digital presence, Fatima handles all social media strategy and execution to help our business and our carriers grow.
-                                </p>
-                                <a 
-                                    href="https://www.linkedin.com/in/fatima-qasim-29284932b/" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#0A66C2] transition-colors"
-                                >
-                                    <Linkedin className="w-5 h-5" />
-                                    Connect on LinkedIn
-                                </a>
                             </div>
-                        </Reveal>
-
-                        {/* Member: Ambreen Zulfiqar */}
-                        <Reveal delayMs={200}>
-                            <div className="group flex flex-col items-center text-center p-8 rounded-2xl bg-card border border-border shadow-sm hover:shadow-lg transition-all h-full">
-                                <div className="relative w-32 h-32 mb-6 rounded-full overflow-hidden border-4 border-muted group-hover:border-accent/50 transition-colors bg-muted flex items-center justify-center">
-                                    <img 
-                                        src="/images/ambreen-seo.jpeg" 
-                                        alt="Ambreen Zulfiqar" 
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <h3 className="text-2xl font-bold">Ambreen Zulfiqar</h3>
-                                <div className="text-accent text-sm font-bold mb-4 tracking-wider uppercase mt-1">SEO Intern</div>
-                                <p className="text-muted-foreground text-sm leading-relaxed mb-8 flex-grow">
-                                    Assisting with our search engine optimization strategy and digital growth initiatives as a valued intern on our marketing team.
-                                </p>
-                                <a 
-                                    href="https://www.linkedin.com/in/ambreen-memon-2125753a0?utm_source=share_via&utm_content=profile&utm_medium=member_android" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="mt-auto inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[#0A66C2] transition-colors"
-                                >
-                                    <Linkedin className="w-5 h-5" />
-                                    Connect on LinkedIn
-                                </a>
-                            </div>
-                        </Reveal>
-                    </div>
+                        </div>
+                    </Reveal>
                 </div>
             </section>
 
