@@ -14,6 +14,13 @@ export const metadata: Metadata = {
 
 const posts = [
     {
+        title: "How New Trucking Companies Can Survive the First 90 Days — And How MC Leasing Helps",
+        slug: "how-to-survive-new-trucking-authority-mc-leasing",
+        excerpt: "New trucking companies face brutal first-90-day challenges. Learn how MC leasing works, when it helps, and how Priority Dispatch LLC supports new owner-operators from day one.",
+        date: "May 25, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
         title: "What Does TSA Certified Mean in Trucking?",
         slug: "what-is-tsa-certified-trucking",
         excerpt: "TSA certification unlocks air cargo and high-security freight in trucking. Learn how to become TSA certified and access premium expedited loads.",

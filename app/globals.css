@@ -135,4 +135,178 @@
   body {
     @apply bg-muted text-foreground;
   }
+
+  /* Performance optimizations */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Improve scrolling performance */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Optimize images for performance */
+  img {
+    content-visibility: auto;
+  }
+
+  /* Prevent layout shift */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Optimize animations */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Improve touch targets for mobile */
+  @media (max-width: 768px) {
+    button, a, input, select, textarea {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+
+  /* Prevent text overflow on small screens */
+  h1, h2, h3, h4, h5, h6, p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+
+  /* Optimize font loading */
+  @font-face {
+    font-display: swap;
+  }
+}
+
+/* Additional responsive utilities */
+@layer utilities {
+  /* Container queries for better responsiveness */
+  .container-responsive {
+    container-type: inline-size;
+  }
+
+  /* Fluid typography */
+  .text-fluid-sm {
+    font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1rem);
+  }
+
+  .text-fluid-base {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  }
+
+  .text-fluid-lg {
+    font-size: clamp(1.125rem, 1rem + 0.625vw, 1.5rem);
+  }
+
+  .text-fluid-xl {
+    font-size: clamp(1.25rem, 1.1rem + 0.75vw, 1.875rem);
+  }
+
+  .text-fluid-2xl {
+    font-size: clamp(1.5rem, 1.3rem + 1vw, 2.25rem);
+  }
+
+  .text-fluid-3xl {
+    font-size: clamp(1.875rem, 1.6rem + 1.375vw, 3rem);
+  }
+
+  .text-fluid-4xl {
+    font-size: clamp(2.25rem, 1.9rem + 1.75vw, 3.75rem);
+  }
+
+  /* Responsive spacing */
+  .space-fluid-sm {
+    gap: clamp(0.5rem, 0.4rem + 0.5vw, 1rem);
+  }
+
+  .space-fluid-md {
+    gap: clamp(1rem, 0.8rem + 1vw, 2rem);
+  }
+
+  .space-fluid-lg {
+    gap: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+  }
+
+  /* Performance: GPU acceleration for animations */
+  .gpu-accelerate {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Lazy loading optimization */
+  .lazy-load {
+    content-visibility: auto;
+    contain-intrinsic-size: 0 500px;
+  }
+}
+
+/* Mobile-first responsive breakpoints */
+@media (max-width: 640px) {
+  /* Optimize for small mobile devices */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Reduce motion on mobile for performance */
+  * {
+    animation-duration: 0.3s !important;
+    transition-duration: 0.2s !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  /* Tablet portrait optimizations */
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Tablet landscape optimizations */
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktop optimizations */
+  .container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Print styles for better performance */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
 }
