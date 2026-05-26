@@ -221,29 +221,21 @@ export default function BlogPostELD() {
                         </Reveal>
 
                         {/* Author Bio */}
+                        {/* Author Bio */}
                         <Reveal delayMs={250}>
-                            <div className="mt-16 rounded-2xl bg-card p-8 flex flex-col md:flex-row items-center gap-8 border border-border shadow-lg relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none"></div>
-                                <img
-                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
-                                    alt="Muhammad Faisal Bilal"
-                                    className="h-28 w-28 rounded-full object-cover border-4 border-accent/20 shrink-0 relative z-10"
-                                />
-                                <div className="text-center md:text-left relative z-10">
-                                    <h4 className="text-2xl font-bold mb-2">About the Author</h4>
-                                    <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
-                                        <strong>Muhammad Faisal Bilal</strong> serves as the critically analytical CEO of Priority Dispatch LLC. Possessing incredibly rare, dual-sided expertise in hardcore enterprise data-architecting and brutal trench-level logistics operations, he is a nationally recognized forensic authority on ELD data structures. He personally engineered the firm's heavily guarded compliance pipeline that consistently successfully defends hundreds of independent partner carriers against intense, mathematically driven federal audits.
-                                    </p>
-                                    <a
-                                        href="https://www.linkedin.com/in/muhammad-faisal-bilal"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="inline-flex items-center justify-center md:justify-start gap-2 text-primary bg-accent hover:bg-accent/90 px-4 py-2 rounded-lg font-bold transition-all transform hover:scale-105"
-                                    >
-                                        <Linkedin className="h-4 w-4" />
-                                        Connect on LinkedIn
-                                    </a>
-                                </div>
+                            <div className="mt-12 p-6 bg-card border border-border rounded-xl">
+                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
+                                    <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
+                                </p>
+                                <a 
+                                    href="https://www.linkedin.com/in/muhammad-faisal-bilal" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
+                                >
+                                    Connect on LinkedIn →
+                                </a>
                             </div>
                         </Reveal>
                     </div>

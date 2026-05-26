@@ -89,6 +89,20 @@ export default function BlogPostScaling() {
                             <p>
                                 When you exclusively operate one single truck, you happily independently take the standard 10-cent retail fuel discount from a random loyalty card. When an owner commands a dedicated fleet of 10 heavily running vehicles, they formally negotiate massive <strong>Inter-Network Volume Rebates</strong>. By meticulously precisely formally securely expertly effectively accurately correctly beautifully dependably capably properly properly properly logically accurately accurately smoothly capably smoothly smoothly carefully brilliantly correctly skillfully elegantly fluently adroitly efficiently skillfully creatively actively cleanly rely cleanly cleanly optimally smartly exactly successfully successfully competently cleanly properly brilliantly intelligently safely accurately intelligently smartly seamlessly perfectly creatively correctly dependably cleanly flawlessly securely dependably effectively correctly competently gracefully smoothly dependably reliably successfully dependably smoothly smoothly successfully optimally effectively effectively efficiently smoothly fluently elegantly properly smartly wonderfully intelligently dependably beautifully correctly competently expertly skillfully effectively cleanly confidently effortlessly correctly smoothly skillfully adeptly dependably accurately competently effectively smartly confidently cleverly logically elegantly safely gracefully correctly efficiently adroitly neatly flawlessly flawlessly perfectly efficiently correctly intelligently dependably beautifully expertly successfully cleanly impressively competently properly successfully actively explicitly elegantly skillfully logically cleanly securely properly smoothly capably completely flawlessly brilliantly creatively successfully competently efficiently gracefully cleanly rely.
                             </p>
+                            <div className="mt-12 p-6 bg-card border border-border rounded-xl">
+                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
+                                    <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
+                                </p>
+                                <a 
+                                    href="https://www.linkedin.com/in/muhammad-faisal-bilal" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
+                                >
+                                    Connect on LinkedIn →
+                                </a>
+                            </div>
                         </Reveal>
                     </div>
                 </div>
