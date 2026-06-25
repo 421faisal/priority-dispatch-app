@@ -62,10 +62,10 @@ export default function BlogPostFuel() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Diesel fuel is the single largest expense for any carrier. In a market where every cent counts, maximizing fuel efficiency isn't just about maintenance—it's a financial strategy. This guide breaks down the latest in fuel-saving technology, from predictive cruise control to the reality of hydrogen hybrids.
+                                Diesel fuel is the single largest expense for any carrier. In a market where every cent counts, maximizing fuel efficiency isn't just about maintenanceâ€”it's a financial strategy. This guide breaks down the latest in fuel-saving technology, from predictive cruise control to the reality of hydrogen hybrids.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -106,10 +106,10 @@ export default function BlogPostFuel() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Data Over Intuition</h2>
                             <p>
-                                Fuel efficiency in 2026 is an engineering challenge, not a guessing game. By combining the right technology with smart dispatching, independent fleets can compete with—and out-earn—the mega-carriers. 
+                                Fuel efficiency in 2026 is an engineering challenge, not a guessing game. By combining the right technology with smart dispatching, independent fleets can compete withâ€”and out-earnâ€”the mega-carriers. 
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, we help you analyze your fleet's "burn rate" and find the lanes that make the most sense for your equipment. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us today</a> and let’s start optimizing your bottom line.
+                                At <strong>Priority Dispatch LLC</strong>, we help you analyze your fleet's "burn rate" and find the lanes that make the most sense for your equipment. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us today</a> and letâ€™s start optimizing your bottom line.
                             </p>
                         </Reveal>
 
@@ -127,7 +127,7 @@ export default function BlogPostFuel() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

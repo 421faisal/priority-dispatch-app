@@ -22,7 +22,7 @@ export default function BlogPostLastMile() {
                 description="A comprehensive analysis detailing the massive explosive financial growth of urban box truck logistics, Dark Store fulfillment centers, and White-Glove delivery premiums."
                 datePublished="2026-03-19"
                 slug="last-mile-logistics-box-trucks"
-                imageUrl="/images/blog/hero-warehouse-freight.jpg"
+                imageUrl="/images/blog/hero-warehouse.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -55,14 +55,14 @@ export default function BlogPostLastMile() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse-freight.jpg"
+                                src="/images/blog/hero-warehouse.jpg"
                                 alt="A hyper-modern urban distribution dark-store hub where electric box trucks are systematically loaded for intense last-mile residential delivery in 2026."
                                 className="object-cover w-full h-full"
                             />
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The "Final Mile" is universally acknowledged as the most fundamentally expensive, intensely complex, and rapidly growing segment of the interconnected global supply chain ecosystem. In 2026, industry data reveals that this short final leg of delivery structurally accounts for a staggering 53% of total end-to-end logistics costs. For independent owner-operators acting with 26-foot non-CDL box trucks, this represents a golden era of profitability. This 2,500-word guide thoroughly explores the massive economic rise of "Dark Stores," the extreme profitability of the White-Glove premium, and exactly why urban logistics remains the ultimate recession-proof niche.
@@ -142,7 +142,7 @@ export default function BlogPostLastMile() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn Ã¢â€ â€™
                                 </a>
                             </div>
                         </Reveal>

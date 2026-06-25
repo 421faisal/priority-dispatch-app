@@ -62,7 +62,7 @@ export default function BlogPostRetention() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The trucking industry has been talking about a "driver shortage" for 20 years. But the truth is simpler: there isn't a shortage of drivers; there's a shortage of good jobs. In 2026, the carriers that are winning are the ones who treat their drivers like partners, not steering wheel holders.
@@ -95,7 +95,7 @@ export default function BlogPostRetention() {
                                 Technology that Helps, Not micromanages
                             </h2>
                             <p>
-                                Most drivers hate ELDs and cameras because they feel like they’re being watched by Big Brother. Use technology to solve the driver's problems, not just your own.
+                                Most drivers hate ELDs and cameras because they feel like theyâ€™re being watched by Big Brother. Use technology to solve the driver's problems, not just your own.
                             </p>
                             <p>
                                 <strong>Home-Time Predictability:</strong> Use your dispatch software to track "Home-Time Deficit." If a driver hasn't been home in 14 days, your system should automatically prioritize a load that gets them back to their zip code. At Priority Dispatch, we prioritize driver well-being because a happy driver is a safe driver.
@@ -124,7 +124,7 @@ export default function BlogPostRetention() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

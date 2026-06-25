@@ -62,7 +62,7 @@ export default function BlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 Freight fraud, identity theft, and the proliferation of "Chameleon Carriers" have exploded to horrifying record highs this year, draining an estimated <strong>$1.2 Billion annually</strong> from the global and domestic supply chain. In 2026, these criminals are no longer solitary actors in basements; they are highly sophisticated, multi-national cyber-syndicates utilizing AI voice clones, digital IP spoofing, and forged FMCSA data. This 2,500+ word manifesto dissects the anatomy of modern freight scams and provides the absolute zero-tolerance vetting protocols you must implement to protect your motor carrier authority and your livelihood.
@@ -99,7 +99,7 @@ export default function BlogPost() {
                                 Fraudsters are actively scraping audio clips from corporate LinkedIn videos, YouTube interviews, and podcast appearances made by prominent logistics executives and broker agents. They feed this audio into AI tools to create perfect <strong>Voice Deepfakes</strong>. 
                             </p>
                             <p>
-                                When an owner-operator calls the phone number provided on a fake rate confirmation, the AI—sounding exactly like the broker the carrier has known for five years—answers the phone, complete with local colloquialisms, and successfully "verifies" the fraudulent load.
+                                When an owner-operator calls the phone number provided on a fake rate confirmation, the AIâ€”sounding exactly like the broker the carrier has known for five yearsâ€”answers the phone, complete with local colloquialisms, and successfully "verifies" the fraudulent load.
                             </p>
                             
                             <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
@@ -161,10 +161,10 @@ export default function BlogPost() {
                                 The SAFE Freight Act & Legislative Relief
                             </h2>
                             <p>
-                                Recognizing the catastrophic bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing America’s Freight Economy). 
+                                Recognizing the catastrophic bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing Americaâ€™s Freight Economy). 
                             </p>
                             <p>
-                                This legislation aggressively seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and You’re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
+                                This legislation aggressively seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and Youâ€™re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
                             </p>
                             <p>
                                 However, federal laws iterate slowly, and carrier bankruptcies happen quickly. Until the FMCSA establishes a biometrically secured national dispatch portal, your only defense is aggressive offense.
@@ -186,7 +186,7 @@ export default function BlogPost() {
                                 As an independent owner-operator gripping a steering wheel for 11 hours a day, attempting to perform enterprise-grade cyber investigations on your smartphone between weigh stations is an impossible expectation. You require a dedicated human firewall.
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our absolute DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your uncompromising defensive line. We do not just secure premium freight—we guarantee that the invoice mathematically clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
+                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our absolute DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your uncompromising defensive line. We do not just secure premium freightâ€”we guarantee that the invoice mathematically clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
                             </p>
 
                             {/* Internal Links */}
@@ -206,7 +206,7 @@ export default function BlogPost() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch FAQ — Security & Billing</a> 
+                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch FAQ â€” Security & Billing</a> 
                                             <br/><span className="text-sm text-muted-foreground">Find out exactly how we process your invoices to non-recourse factoring companies to eliminate payment risk.</span>
                                         </span>
                                     </li>
@@ -228,7 +228,7 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

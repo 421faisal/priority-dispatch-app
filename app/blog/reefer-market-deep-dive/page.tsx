@@ -55,14 +55,14 @@ export default function BlogPostReefer() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse-freight.jpg"
+                                src="/images/blog/hero-warehouse.jpg"
                                 alt="A modern 53' refrigerated trailer utilizing advanced IoT temperature sensors undergoing a strict calibration check at a distribution center."
                                 className="object-cover w-full h-full"
                             />
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The global "Cold Chain" serves as the literal nervous system of the entire planetary food, chemical, and medical supply. While pulling a standard dry van allows for minor operational errors, pulling a refrigerated trailer (Reefer) demands absolute, unyielding precision. In 2026, it is no longer sufficient to simply "keep the freight cold." This exhaustive, 2,500-word market analysis examines the hyper-lucrative transition to Pharma-Grade (GDP) transport, the complex science of the 'Banana-to-Beef' multi-temp transition, and how proprietary AI-driven dispatching algorithms are shielding reefer carriers from catastrophic six-figure cargo claims while pushing their gross revenue metrics to the absolute crest of the logistics industry.
@@ -76,7 +76,7 @@ export default function BlogPostReefer() {
                                 Unlike the notoriously volatile dry van sector, which routinely crashes when consumer retail spending drops, the refrigerated freight market possesses a built-in economic floor. Regardless of inflation, geopolitical tension, or stock market corrections, human populations require fresh produce, frozen proteins, and temperature-sensitive biological medicines.
                             </p>
                             <p>
-                                In 2026, the baseline spot rates for temperature-controlled freight are consistently maintaining a $0.60 to $0.85 per mile premium over dry van equivalents. During peak seasonal localized crunches—such as the massive citrus harvest in California's Imperial Valley or the concentrated onion seasons out of the Pacific Northwest—spot rates frequently spike into the astonishing $3.80 to $4.50 per mile territory. Yet, capturing these astronomical rates requires far more than merely connecting a Carrier unit to the front of a trailer; it requires a meticulously calibrated dispatch strategy.
+                                In 2026, the baseline spot rates for temperature-controlled freight are consistently maintaining a $0.60 to $0.85 per mile premium over dry van equivalents. During peak seasonal localized crunchesÃ¢â‚¬â€such as the massive citrus harvest in California's Imperial Valley or the concentrated onion seasons out of the Pacific NorthwestÃ¢â‚¬â€spot rates frequently spike into the astonishing $3.80 to $4.50 per mile territory. Yet, capturing these astronomical rates requires far more than merely connecting a Carrier unit to the front of a trailer; it requires a meticulously calibrated dispatch strategy.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -126,13 +126,13 @@ export default function BlogPostReefer() {
                                 Operational Complexity: The Banana-to-Beef Transition
                             </h2>
                             <p>
-                                A reefer owner-operator does not have the luxury of simply sweeping out the trailer and dropping onto the next load. They must operate as localized microbiologists and atmospheric managers. The most challenging operational scenario in 2026 is managing extreme multi-temp transitions—often referred to in the industry as the <strong>"Banana-to-Beef" curve</strong>.
+                                A reefer owner-operator does not have the luxury of simply sweeping out the trailer and dropping onto the next load. They must operate as localized microbiologists and atmospheric managers. The most challenging operational scenario in 2026 is managing extreme multi-temp transitionsÃ¢â‚¬â€often referred to in the industry as the <strong>"Banana-to-Beef" curve</strong>.
                             </p>
                             <p>
-                                <strong>The Science of the Load:</strong> Bananas are heavily respiring biological entities. They must be transported at exactly 56°F to 58°F. If the temperature hits 54°F, they suffer catastrophic "chill damage" and turn grey. If the temperature breaches 60°F, they rapidly ripen and rot in transit. Crucially, they emit enormous amounts of ethylene gas and moisture while traveling.
+                                <strong>The Science of the Load:</strong> Bananas are heavily respiring biological entities. They must be transported at exactly 56Ã‚Â°F to 58Ã‚Â°F. If the temperature hits 54Ã‚Â°F, they suffer catastrophic "chill damage" and turn grey. If the temperature breaches 60Ã‚Â°F, they rapidly ripen and rot in transit. Crucially, they emit enormous amounts of ethylene gas and moisture while traveling.
                             </p>
                             <p>
-                                If an owner-operator delivers a load of bananas and their dispatcher immediately books a deep-chill load of frozen beef (-10°F) right afterward, massive problems arise. The residual moisture and ethylene gas trapped deeply inside the corrugated aluminum floor grooves and fiberglass walls will instantly freeze into a thick sheet of contaminated ice. When the frozen beef is unloaded, the receiver will reject it entirely due to "Legacy Odor contamination."
+                                If an owner-operator delivers a load of bananas and their dispatcher immediately books a deep-chill load of frozen beef (-10Ã‚Â°F) right afterward, massive problems arise. The residual moisture and ethylene gas trapped deeply inside the corrugated aluminum floor grooves and fiberglass walls will instantly freeze into a thick sheet of contaminated ice. When the frozen beef is unloaded, the receiver will reject it entirely due to "Legacy Odor contamination."
                             </p>
                             <p>
                                 <strong>The 2026 Solution:</strong> Advanced carriers utilize forced-air Ozone-Ionization cannons between drastically different loads. Ozone generators permanently obliterate all organic molecules and bacteria lingering from previous freight within 45 minutes. A highly skilled dispatcher at Priority Dispatch LLC actively calculates these intricate "wash-out" windows into the total freight rate negotiation, ensuring the driver is heavily compensated for the technical downtime necessary to prep the equipment for a deep-freeze transition.
@@ -143,7 +143,7 @@ export default function BlogPostReefer() {
                                 Secondary Fuel Savings: AI-Driven Defrost Cycles
                             </h2>
                             <p>
-                                Running a Thermo King or Carrier unit consumes massive amounts of secondary diesel fuel—often up to 1 gallon per hour depending on ambient outside temperatures. Keeping fuel costs suppressed is the absolute key to high-margin reefer operations.
+                                Running a Thermo King or Carrier unit consumes massive amounts of secondary diesel fuelÃ¢â‚¬â€often up to 1 gallon per hour depending on ambient outside temperatures. Keeping fuel costs suppressed is the absolute key to high-margin reefer operations.
                             </p>
                             <p>
                                 Historically, reefer units were set to a "blind" mechanical timer, initiating an immensely fuel-heavy defrost cycle every 4 to 6 hours. The unit would aggressively melt ice off the internal evaporator coil, even if no ice was physically present, wasting thousands of dollars in diesel over the course of a fiscal year.
@@ -152,7 +152,7 @@ export default function BlogPostReefer() {
                                 The 2026 technical leap is <strong>Acoustic Imaging AI</strong>. Modern reefer units are now equipped with highly sensitive acoustic microphones positioned near the evaporator coil. The AI continuously "listens" to the precise sound signature of the air rushing through the metal fins. When microscopic frost begins to accumulate, the pitch of the airflow subtly changes. <em>Only then</em> does the computer initiate a surgical, highly abbreviated defrost cycle. 
                             </p>
                             <p>
-                                This singular technological advancement is currently saving owner-operators up to 15% in secondary fuel consumption annually—pure profit that drops directly to the bottom line.
+                                This singular technological advancement is currently saving owner-operators up to 15% in secondary fuel consumption annuallyÃ¢â‚¬â€pure profit that drops directly to the bottom line.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -226,7 +226,7 @@ export default function BlogPostReefer() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn Ã¢â€ â€™
                                 </a>
                             </div>
                         </Reveal>

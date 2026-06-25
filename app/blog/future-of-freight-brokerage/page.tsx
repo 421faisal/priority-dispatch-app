@@ -55,14 +55,14 @@ export default function BlogPostBrokerage() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse-freight.jpg"
+                                src="/images/blog/hero-warehouse.jpg"
                                 alt="A hyper-advanced digital brokerage interface matching physical freight explicitly using highly aggressive Deep AI algorithms and Web3 blockchain tools."
                                 className="object-cover w-full h-full"
                             />
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 For nearly exactly forty-five years following the monumental deregulation of the American trucking industry in 1980, the standard freight broker incredibly successfully existed as an incredibly lucrative, relatively low-tech "information gatekeeper." Massive 3PL logistics corporations structurally derived absolutely staggering billions in profits simply by possessing a physical Rolodex of shippers while simultaneously actively hiding that specific corporate contact data securely from independent motor carriers. However, as the 2026 market cycle furiously accelerates, that highly archaic "middleman" business model is experiencing a violent, irrevocable mass-extinction event. The exact definitive line physically separating a standard "brokerage firm" from a highly intense "Silicon Valley algorithmic software platform" has been completely eradicated. This incredibly deep, 2,600-word technical manifesto directly explores the absolute meteoric rise of elite Digital Freight Matching (DFM) architectures, the financial "Tokenization" of capacity loads, and deeply explains why the heavily specialized, "High-Touch" human logistical architect is now vastly more financially valuable than at any prior point in global transportation history.
@@ -76,7 +76,7 @@ export default function BlogPostBrokerage() {
                                 Less than a decade ago, a standard entry-level freight broker mathematically expended roughly 85% of their total daily operational bandwidth aggressively executing cold-calls directly to small motor carriers, frantically begging operators to physically cover highly undesirable, cheap commodity freight lanes. A broker's perceived baseline value was fundamentally strictly tied directly to how incredibly rapidly they could physically hammer a desk telephone while actively cross-referencing three separate clunky DAT load board tabs.
                             </p>
                             <p>
-                                By 2026, this highly manual, error-prone model is viewed as a complete logistical dinosaur. Heavy-hitting <strong>Digital Freight Matching (DFM) Platforms</strong>—originating from the massive algorithmic DNA forged by early disruptors like Convoy (now utilizing their highly optimized 2.0 architecture), Uber Freight, and AWS-backed Amazon Relay—now absolutely flawlessly handle over 92% of standard, routine, palletized Dry Van load matching completely without a single human finger ever physically depressing a keyboard key.
+                                By 2026, this highly manual, error-prone model is viewed as a complete logistical dinosaur. Heavy-hitting <strong>Digital Freight Matching (DFM) Platforms</strong>Ã¢â‚¬â€originating from the massive algorithmic DNA forged by early disruptors like Convoy (now utilizing their highly optimized 2.0 architecture), Uber Freight, and AWS-backed Amazon RelayÃ¢â‚¬â€now absolutely flawlessly handle over 92% of standard, routine, palletized Dry Van load matching completely without a single human finger ever physically depressing a keyboard key.
                             </p>
                             
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
@@ -128,7 +128,7 @@ export default function BlogPostBrokerage() {
                                 As incredible as heavy algorithmic matching is, the 2024 logistics ecosystem unfortunately birthed a massive plague of "Double-Brokering." Deeply malicious overseas syndicates utilized sophisticated digital scrapers to maliciously steal active MC authority numbers, perfectly impersonating highly legitimate American trucking firms to maliciously intercept and aggressively hold massive shipper freight completely hostage.
                             </p>
                             <p>
-                                The 2026 technological countermeasure is the immediate deployment of <strong>Zero-Knowledge Security Load Boards</strong>. Utilizing hyper-advanced cryptographic math protocols originating purely from the highly guarded Web3 tech sector, an independent carrier can currently algorithmically <em>prove</em> to a massive platform exactly that they physically possess a highly compliant semi-truck, mathematically prove they clearly hold $1M in valid active cargo insurance, and perfectly prove their pristine FMCSA compliance—all incredibly <em>without</em> specifically transmitting their actual, highly vulnerable MC numerical data or revealing their exact geolocated GPS coordinates. It effectively establishes an environment of completely "Anonymized, Absolute Trust." The double-broker scam entirely mathematically disintegrates because the scammer physically lacks the cryptographic hash key physically embedded deeply within the real truck's onboard ECM.
+                                The 2026 technological countermeasure is the immediate deployment of <strong>Zero-Knowledge Security Load Boards</strong>. Utilizing hyper-advanced cryptographic math protocols originating purely from the highly guarded Web3 tech sector, an independent carrier can currently algorithmically <em>prove</em> to a massive platform exactly that they physically possess a highly compliant semi-truck, mathematically prove they clearly hold $1M in valid active cargo insurance, and perfectly prove their pristine FMCSA complianceÃ¢â‚¬â€all incredibly <em>without</em> specifically transmitting their actual, highly vulnerable MC numerical data or revealing their exact geolocated GPS coordinates. It effectively establishes an environment of completely "Anonymized, Absolute Trust." The double-broker scam entirely mathematically disintegrates because the scammer physically lacks the cryptographic hash key physically embedded deeply within the real truck's onboard ECM.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -147,7 +147,7 @@ export default function BlogPostBrokerage() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Total Harmony in the Optimized Machine</h2>
                             <p>
-                                The aggressive future of high-level brokerage isn’t solely about coldly replacing the intensely capable human operator with a silicon server blade; it is emphatically explicitly about heavily automating the entirely boring, brutally routing tasks precisely so that highly elite human intellects can explicitly concentrate on comprehensively solving severely hard, incredibly lucrative logistical anomalies. 
+                                The aggressive future of high-level brokerage isnÃ¢â‚¬â„¢t solely about coldly replacing the intensely capable human operator with a silicon server blade; it is emphatically explicitly about heavily automating the entirely boring, brutally routing tasks precisely so that highly elite human intellects can explicitly concentrate on comprehensively solving severely hard, incredibly lucrative logistical anomalies. 
                             </p>
                             <p>
                                 <strong>Priority Dispatch LLC</strong> fluently successfully navigates both of these highly intense opposing worlds. We heavily deploy massive, enterprise-grade DFM API infrastructure purely for incredible market volume and pinpoint accurate rate awareness, while simultaneously deploying our intensely savvy, deeply analytical human architectures to meticulously manage massive carrier relationships, intensely navigate heavily corrupted compliance traps, and aggressively capture incredibly lucrative premium profit margins on highly demanding dedicated spot lanes. <a href="/contact" className="text-accent font-bold hover:underline">Connect with Priority Dispatch today</a> and forcibly leverage the absolute most powerful combination of raw computational mathematics and absolutely unmatched human logistical combat experience natively available on the 2026 freight market.
@@ -199,7 +199,7 @@ export default function BlogPostBrokerage() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn Ã¢â€ â€™
                                 </a>
                             </div>
                         </Reveal>

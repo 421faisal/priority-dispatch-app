@@ -22,7 +22,7 @@ export default function BlogPostAutonomousImpact() {
                 description="Economic deep dive into how AI trucking is shifting jobs toward remote operations, human-rescue fleets, and massive local drayage opportunities."
                 datePublished="2026-03-19"
                 slug="impact-of-autonomous-trucking-2026"
-                imageUrl="/images/blog/hero-autonomous.jpg"
+                imageUrl="/images/blog/hero-autonomous-truck.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -55,17 +55,17 @@ export default function BlogPostAutonomousImpact() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-autonomous.jpg"
+                                src="/images/blog/hero-autonomous-truck.jpg"
                                 alt="Driver monitoring a convoy of autonomous trucks from a secure remote command center."
                                 className="object-cover w-full h-full"
                             />
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                For over a decade, massive tech-conglomerates and aggressive venture capital firms confidently predicted the absolute, total displacement of the human truck driver. However, as Level 4 Autonomous Trucks physically integrate onto public American highways in 2026, the doomsday economic narrative has completely collapsed. Instead of mass unemployment, the autonomous revolution is aggressively fracturing the logistics labor market—birthing incredibly lucrative new specializations, generating a massive boom in urban drayage, and heavily rewarding drivers who transition from analog steering wheels to digital command centers. This comprehensive 2,500-word analysis completely dissects the true economic reality, the cyber-hijacking risks, and the highly profitable "Human Rescue" economy currently taking hold.
+                                For over a decade, massive tech-conglomerates and aggressive venture capital firms confidently predicted the absolute, total displacement of the human truck driver. However, as Level 4 Autonomous Trucks physically integrate onto public American highways in 2026, the doomsday economic narrative has completely collapsed. Instead of mass unemployment, the autonomous revolution is aggressively fracturing the logistics labor marketÃ¢â‚¬â€birthing incredibly lucrative new specializations, generating a massive boom in urban drayage, and heavily rewarding drivers who transition from analog steering wheels to digital command centers. This comprehensive 2,500-word analysis completely dissects the true economic reality, the cyber-hijacking risks, and the highly profitable "Human Rescue" economy currently taking hold.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -73,7 +73,7 @@ export default function BlogPostAutonomousImpact() {
                                 Edge Cases and the "Safe Stop" Dilemma
                             </h2>
                             <p>
-                                The fundamental flaw in early autonomous predictions was the severe underestimation of the chaotic unpredictability of open public roads. In 2026, even the most advanced, mathematically flawless AI algorithms routinely encounter "Edge Cases"—scenarios completely absent from their petabytes of training data. 
+                                The fundamental flaw in early autonomous predictions was the severe underestimation of the chaotic unpredictability of open public roads. In 2026, even the most advanced, mathematically flawless AI algorithms routinely encounter "Edge Cases"Ã¢â‚¬â€scenarios completely absent from their petabytes of training data. 
                             </p>
                             <p>
                                 What happens when an autonomous truck encounters a severely overturned livestock trailer blocking three out of four lanes, while a frantic local police officer utilizes non-standard, aggressive hand gestures to illegally route traffic down a tight, opposite-direction shoulder heavily littered with sharp metal debris?
@@ -107,7 +107,7 @@ export default function BlogPostAutonomousImpact() {
                                 Not every AI failure requires a physical human extraction. An enormous percentage of the displaced OTR driving workforce is legally transitioning into heavily fortified "Tele-Operations" facilities.
                             </p>
                             <p>
-                                When an autonomous truck encounters a mild obstruction (e.g., a vaguely parked construction vehicle partially occluding the lane), it halts and pings the command center via dedicated, military-grade 5G/Starlink arrays. A human operator—essentially a veteran trucker sitting at a massive desk equipped with an intricate steering apparatus and a 360-degree array of ultra-high-definition monitors—briefly seizes direct remote control of the massive vehicle. They legally and smoothly navigate the truck around the minor obstacle from 1,400 miles away, and seamlessly return control back to the onboard computer.
+                                When an autonomous truck encounters a mild obstruction (e.g., a vaguely parked construction vehicle partially occluding the lane), it halts and pings the command center via dedicated, military-grade 5G/Starlink arrays. A human operatorÃ¢â‚¬â€essentially a veteran trucker sitting at a massive desk equipped with an intricate steering apparatus and a 360-degree array of ultra-high-definition monitorsÃ¢â‚¬â€briefly seizes direct remote control of the massive vehicle. They legally and smoothly navigate the truck around the minor obstacle from 1,400 miles away, and seamlessly return control back to the onboard computer.
                             </p>
                             <p>
                                 This represents a massive quality-of-life evolution. Veteran drivers suffering from brutal chronic back pain or severe knee degradation from decades of clutching are now leveraging their invaluable intuitive road knowledge from a highly ergonomic, heavily air-conditioned command center based primarily in Austin, Texas or Atlanta, Georgia.
@@ -156,7 +156,7 @@ export default function BlogPostAutonomousImpact() {
                                 The "End of the Truck Driver" was an incredibly effective marketing slogan utilized by tech companies to raise rapid venture capital. The brutal economic reality of 2026 proves exactly the opposite. Autonomous technology is not fundamentally replacing the human professional; it is actively serving as a massive force multiplier that severely elevates the human driver's economic value by removing the monotonous portions of the job and heavily monetizing their crisis-resolution abilities.
                             </p>
                             <p>
-                                The independent motor carrier who stubbornly insists on maintaining a poorly-managed, high-friction, 2,800-mile trans-continental solo-driver model will systematically bleed capital fighting against the automated fleets. However, the elite carrier who aggressively pivots into extreme specialization—mastering intense regional drayage, high-value hazmat, and heavily protected human-required lanes—will forge incredible generational wealth.
+                                The independent motor carrier who stubbornly insists on maintaining a poorly-managed, high-friction, 2,800-mile trans-continental solo-driver model will systematically bleed capital fighting against the automated fleets. However, the elite carrier who aggressively pivots into extreme specializationÃ¢â‚¬â€mastering intense regional drayage, high-value hazmat, and heavily protected human-required lanesÃ¢â‚¬â€will forge incredible generational wealth.
                             </p>
                             <p>
                                 <strong>Priority Dispatch LLC</strong> represents your tactical compass through this massive disruption. We heavily rely on aggressive data analytics to maneuver our partnered owner-operators away from strictly automated highway lanes and directly into the incredibly lucrative, specialized, human-dependent freight sectors that algorithms cannot touch. <a href="/contact" className="text-accent font-bold hover:underline">Contact our executive dispatch analysts today</a> to heavily future-proof your motor carrier operation against the sweeping technological tide.
@@ -208,7 +208,7 @@ export default function BlogPostAutonomousImpact() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn Ã¢â€ â€™
                                 </a>
                             </div>
                         </Reveal>

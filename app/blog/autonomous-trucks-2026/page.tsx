@@ -62,7 +62,7 @@ export default function BlogPostAutonomous() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The long-expected, deeply feared, and highly capitalized arrival of self-driving commercial vehicles has finally breached the public highways in 2026. However, the multi-billion-dollar reality does not remotely resemble the simplistic science fiction that Silicon Valley heavily promised a decade ago. Rather than instantly rendering the 3.5 million American human truck drivers obsolete overnight, the autonomous trucking revolution has manifested as an incredibly massive, structurally complex logistical hybrid. This exhaustive 2,500-word technical analysis dissects the precise 2026 hardware stacks powering these vehicles, the explosive growth of the "Transfer Hub" real estate model, and the rigid state-by-state regulatory gridlock defining exactly where these machines are legally allowed to operate.
@@ -125,7 +125,7 @@ export default function BlogPostAutonomous() {
                                 <strong>How it Operates:</strong> Massive, heavily automated "Transfer Hubs" (often spanning 80 to 100 acres) have been aggressively constructed directly adjacent to crucial interstate exits outside major metro boundaries (e.g., Dallas, Phoenix, Atlanta). 
                             </p>
                             <p>
-                                A human driver acting as a local "Drayage Specialist" picks up the loaded trailer directly from the chaotic shipper facility and expertly navigates the complicated urban traffic out to the Transfer Hub. The human driver drops the trailer in a holding lane. The Level 4 Autonomous Truck then automatically couples to the trailer and legally proceeds to execute the agonizingly monotonous 800-mile highway sprint to the destination Transfer Hub layout—operating mathematically for 22 hours per day because machines possess no Federal Hours of Service (HOS) restrictions. Once it arrives, a second local human driver takes the trailer to execute the complex final urban delivery.
+                                A human driver acting as a local "Drayage Specialist" picks up the loaded trailer directly from the chaotic shipper facility and expertly navigates the complicated urban traffic out to the Transfer Hub. The human driver drops the trailer in a holding lane. The Level 4 Autonomous Truck then automatically couples to the trailer and legally proceeds to execute the agonizingly monotonous 800-mile highway sprint to the destination Transfer Hub layoutâ€”operating mathematically for 22 hours per day because machines possess no Federal Hours of Service (HOS) restrictions. Once it arrives, a second local human driver takes the trailer to execute the complex final urban delivery.
                             </p>
                             <p>
                                 The profound reality is that autonomous trucks are not competing with local drivers; they are actively generating hundreds of thousands of high-paying local jobs by fundamentally fracturing long-haul routes into highly specialized drayage segments.
@@ -153,7 +153,7 @@ export default function BlogPostAutonomous() {
                                 The Economics of Autonomous Deployment
                             </h2>
                             <p>
-                                An incredibly common misconception is that autonomous trucks drastically reduce overall shipping costs. In reality, a Level 4 autonomous Class 8 truck currently costs between <strong>$320,000 and $380,000</strong>—more than double the capital expenditure of a standard $160,000 human-driven configuration. 
+                                An incredibly common misconception is that autonomous trucks drastically reduce overall shipping costs. In reality, a Level 4 autonomous Class 8 truck currently costs between <strong>$320,000 and $380,000</strong>â€”more than double the capital expenditure of a standard $160,000 human-driven configuration. 
                             </p>
                             <p>
                                 Furthermore, the ongoing operational costs surrounding massive AI server maintenance, highly complex 4G/5G continuous satellite telematic subscriptions, and astronomical cybersecurity liability insurance policies are incredibly steep.
@@ -215,7 +215,7 @@ export default function BlogPostAutonomous() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

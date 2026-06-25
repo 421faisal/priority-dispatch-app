@@ -63,14 +63,14 @@ export default function TWICCardBlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                A TWIC card is one of the most important credentials for truck drivers working around ports and secure maritime facilities. Without it, drivers may be denied entry to many ports across the United States — which means missing out on consistently profitable freight.
+                                A TWIC card is one of the most important credentials for truck drivers working around ports and secure maritime facilities. Without it, drivers may be denied entry to many ports across the United States â€” which means missing out on consistently profitable freight.
                             </p>
 
                             <p>
-                                Whether you are a new CDL holder or a seasoned owner-operator, understanding the TWIC card process — and knowing how to leverage it commercially — gives you a competitive edge. Partnering with a dispatch company like <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> ensures your TWIC certification translates directly into booked loads.
+                                Whether you are a new CDL holder or a seasoned owner-operator, understanding the TWIC card process â€” and knowing how to leverage it commercially â€” gives you a competitive edge. Partnering with a dispatch company like <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> ensures your TWIC certification translates directly into booked loads.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -108,7 +108,7 @@ export default function TWICCardBlogPost() {
                             </ul>
 
                             <p>
-                                Many brokers specifically search for TWIC-certified drivers because port freight is highly active and profitable. At <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, we maintain relationships with brokers who regularly need TWIC-ready owner-operators — and we prioritize matching our drivers with these premium lanes.
+                                Many brokers specifically search for TWIC-certified drivers because port freight is highly active and profitable. At <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, we maintain relationships with brokers who regularly need TWIC-ready owner-operators â€” and we prioritize matching our drivers with these premium lanes.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -284,7 +284,7 @@ export default function TWICCardBlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

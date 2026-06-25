@@ -62,7 +62,7 @@ export default function BlogPostMicroNiche() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The traditional dry van freight market is a brutal race to the bottom. In 2026, if you are hauling standard "box" freight, you are directly competing with mega-fleets and autonomous corridors. To survive and thrive in this era, independent carriers must specialize. This guide breaks down the "Micro-Niche" strategy: how to successfully pivot your operation into the highly lucrative worlds of Reefer (temperature-controlled) and Flatbed (open-deck) freight logistics.
@@ -76,7 +76,7 @@ export default function BlogPostMicroNiche() {
                                 In 2026, refrigerated trucking is absolutely no longer just about hauling fresh strawberries from California. The explosion of high-value pharmaceuticals, specifically specialized delicate biologics and targeted medicines, has created a severe "Cold Chain" capacity crisis in the American supply chain.
                             </p>
                             <p>
-                                <strong>Why The Market Pays a Premium:</strong> These specialized clinical loads explicitly require flawless temperature precision and continuous satellite-linked real-time digital logging. A delicate pharmaceutical load moving across the country can easily command premium spot rates as high as $6.50 per mile. The staggering cost of refrigeration failure is a massive, uninsurable cargo destruction claim—which is exactly why intelligent corporate shippers will happily pay top-tier rates for guaranteed absolute mechanical perfection.
+                                <strong>Why The Market Pays a Premium:</strong> These specialized clinical loads explicitly require flawless temperature precision and continuous satellite-linked real-time digital logging. A delicate pharmaceutical load moving across the country can easily command premium spot rates as high as $6.50 per mile. The staggering cost of refrigeration failure is a massive, uninsurable cargo destruction claimâ€”which is exactly why intelligent corporate shippers will happily pay top-tier rates for guaranteed absolute mechanical perfection.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -134,7 +134,7 @@ export default function BlogPostMicroNiche() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

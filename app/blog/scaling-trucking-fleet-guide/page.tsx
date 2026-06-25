@@ -55,14 +55,14 @@ export default function BlogPostScaling() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse-freight.jpg"
+                                src="/images/blog/hero-warehouse.jpg"
                                 alt="A meticulously organized fleet of multiple heavy-duty logistics trucks securely parked at a growing terminal headquarters."
                                 className="object-cover w-full h-full"
                             />
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 Successfully adding your very first hired driver and a second truck is an experimental risk; successfully maintaining a fleet of five is a complete structural transformation. In 2026, scaling a trucking operation is absolutely no longer about simply "buying more heavy iron." It is exclusively about actively building an ironclad operational system. This definitive guide breaks down the notorious "5-Truck Wall," corporate fuel-card arbitrage, and exactly why your very first internal hire should actually be an operational dispatcher, rather than just another driver.
@@ -100,7 +100,7 @@ export default function BlogPostScaling() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn Ã¢â€ â€™
                                 </a>
                             </div>
                         </Reveal>

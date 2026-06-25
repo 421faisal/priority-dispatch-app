@@ -18,7 +18,7 @@ export default function BlogPost() {
         <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
             <SiteHeader />
             <BlogArticleSchema
-                title="How New Trucking Companies Can Survive the First 90 Days — And How MC Leasing Helps"
+                title="How New Trucking Companies Can Survive the First 90 Days â€” And How MC Leasing Helps"
                 description="A comprehensive tactical guide detailing the 'No New MC' barrier, the strategic mechanics of MC leasing, and the survival blueprints every new owner-operator needs to cross the 90-day milestone profitably."
                 datePublished="2026-05-25"
                 slug="how-to-survive-new-trucking-authority-mc-leasing"
@@ -42,7 +42,7 @@ export default function BlogPost() {
                                 </span>
                             </div>
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                How New Trucking Companies Can Survive the First 90 Days — And How MC Leasing Helps
+                                How New Trucking Companies Can Survive the First 90 Days â€” And How MC Leasing Helps
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">
@@ -72,10 +72,10 @@ export default function BlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Starting a trucking company is an exciting milestone—until reality hits on day one. You quickly discover that your brand-new authority is frozen out of high-paying freight, factoring companies hold your payments, and brokers reject your carrier packet with the dreaded phrase: <strong>&ldquo;No New MC.&rdquo;</strong> For most new owner-operators and small fleets, the first 90 days are a brutal stress test. The good news is you do not have to navigate this alone. <a href="/" className="text-accent font-bold hover:underline">Priority Dispatch LLC</a> was built specifically to help new carriers overcome these exact barriers through expert MC leasing support, professional dispatch services, and real-world operational guidance.
+                                Starting a trucking company is an exciting milestoneâ€”until reality hits on day one. You quickly discover that your brand-new authority is frozen out of high-paying freight, factoring companies hold your payments, and brokers reject your carrier packet with the dreaded phrase: <strong>&ldquo;No New MC.&rdquo;</strong> For most new owner-operators and small fleets, the first 90 days are a brutal stress test. The good news is you do not have to navigate this alone. <a href="/" className="text-accent font-bold hover:underline">Priority Dispatch LLC</a> was built specifically to help new carriers overcome these exact barriers through expert MC leasing support, professional dispatch services, and real-world operational guidance.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -83,7 +83,7 @@ export default function BlogPost() {
                                 Why Brokers Avoid New MC Authorities
                             </h2>
                             <p>
-                                In the logistics industry, a &ldquo;new MC&rdquo; typically refers to an active carrier authority under 90 days old—and sometimes under 6 months, depending on the broker&rsquo;s internal compliance policy. 
+                                In the logistics industry, a &ldquo;new MC&rdquo; typically refers to an active carrier authority under 90 days oldâ€”and sometimes under 6 months, depending on the broker&rsquo;s internal compliance policy. 
                             </p>
                             <p>
                                 While it feels like an unfair gatekeeping tactic, brokers avoid brand-new authorities due to legitimate industry risks:
@@ -95,7 +95,7 @@ export default function BlogPost() {
                                 <li><strong>Zero Performance History:</strong> A lack of safety scores or dispatch records makes risk assessment difficult.</li>
                             </ul>
                             <p>
-                                The frustrating reality is that none of these concerns may apply to you. You may have years of clean CDL driving experience, premium equipment, and full insurance coverage—yet brokers will still reject your carrier packets simply because your MC number is brand new.
+                                The frustrating reality is that none of these concerns may apply to you. You may have years of clean CDL driving experience, premium equipment, and full insurance coverageâ€”yet brokers will still reject your carrier packets simply because your MC number is brand new.
                             </p>
                             <p>
                                 This is exactly why smart owner-operators utilize <a href="/services" className="text-accent font-bold hover:underline">our services</a> as a vital bridge to bypass this barrier entirely.
@@ -106,7 +106,7 @@ export default function BlogPost() {
                                 What Is MC Leasing?
                             </h2>
                             <p>
-                                MC leasing—often referred to as leasing onto another carrier—means temporarily operating your truck under another established carrier&rsquo;s active Motor Carrier (MC) authority instead of booking loads under your own new authority.
+                                MC leasingâ€”often referred to as leasing onto another carrierâ€”means temporarily operating your truck under another established carrier&rsquo;s active Motor Carrier (MC) authority instead of booking loads under your own new authority.
                             </p>
                             <p>
                                 Rather than booking loads directly with a brand-new authority that brokers distrust, you run under an established company that already possesses:
@@ -181,23 +181,23 @@ export default function BlogPost() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-foreground/90 pl-0 list-none">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <span className="text-green-500 font-bold">âœ“</span>
                                             Your carrier authority is brand new (under 90 days).
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <span className="text-green-500 font-bold">âœ“</span>
                                             Brokers keep rejecting your carrier packets due to MC age.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <span className="text-green-500 font-bold">âœ“</span>
                                             You need immediate, consistent cash flow to survive.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <span className="text-green-500 font-bold">âœ“</span>
                                             Your truck is sitting idle, burning cash in parking lots.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <span className="text-green-500 font-bold">âœ“</span>
                                             You want professional help navigating complex broker negotiations.
                                         </li>
                                     </ul>
@@ -209,23 +209,23 @@ export default function BlogPost() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-foreground/90 pl-0 list-none">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <span className="text-red-500 font-bold">âœ—</span>
                                             Your MC already has strong, established broker relationships.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <span className="text-red-500 font-bold">âœ—</span>
                                             You already have dedicated, direct shipper contracts in place.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <span className="text-red-500 font-bold">âœ—</span>
                                             The leasing company&rsquo;s commission percentages drain your net margins.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <span className="text-red-500 font-bold">âœ—</span>
                                             The lease contract terms are unclear, long-term, or restrictive.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <span className="text-red-500 font-bold">âœ—</span>
                                             You demand complete operational control and billing setup immediately.
                                         </li>
                                     </ul>
@@ -459,7 +459,7 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

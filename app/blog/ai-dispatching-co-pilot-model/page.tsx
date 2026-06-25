@@ -62,10 +62,10 @@ export default function BlogPostCoPilot() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The early 2020s "Digital Freight" revolution aggressively promised to replace human dispatchers entirely with perfect, frictionless algorithms. Tech startups burned billions of dollars attempting to create the "Uber-ization of Freight." But in 2026, the data from the asphalt is unarguably clear: fully automated, human-less dispatching systems are fundamentally failing to capture the volatile, heavily nuanced reality of the American supply chain. Success today exclusively belongs to the "Human-in-the-Loop" or Co-Pilot model—where AI executes the brutal data-crunching, and experienced human operators execute the complex relationship crushing. This comprehensive, 2,500-word operational manifesto explains exactly how the symbiosis of silicon and human soul is currently quietly building the most financially profitable independent fleets in the history of logistics.
+                                The early 2020s "Digital Freight" revolution aggressively promised to replace human dispatchers entirely with perfect, frictionless algorithms. Tech startups burned billions of dollars attempting to create the "Uber-ization of Freight." But in 2026, the data from the asphalt is unarguably clear: fully automated, human-less dispatching systems are fundamentally failing to capture the volatile, heavily nuanced reality of the American supply chain. Success today exclusively belongs to the "Human-in-the-Loop" or Co-Pilot modelâ€”where AI executes the brutal data-crunching, and experienced human operators execute the complex relationship crushing. This comprehensive, 2,500-word operational manifesto explains exactly how the symbiosis of silicon and human soul is currently quietly building the most financially profitable independent fleets in the history of logistics.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -97,7 +97,7 @@ export default function BlogPostCoPilot() {
                                         <div>
                                             <h4 className="font-bold text-lg mb-1 text-foreground">1. Predictive Lane Harvesting</h4>
                                             <p className="text-muted-foreground text-base">
-                                                AI scrapes not just the global DAT and Truckstop load boards, but thousands of hidden, private broker API endpoints simultaneously. It actively constructs "Tri-Hauls" and "Circuit Routes"—non-obvious, multi-day routes that utilize obscure, secondary backhaul markets to turn a standard $2.20/mile trip into a $2.95/mile continuous revenue loop before the truck ever leaves its home base.
+                                                AI scrapes not just the global DAT and Truckstop load boards, but thousands of hidden, private broker API endpoints simultaneously. It actively constructs "Tri-Hauls" and "Circuit Routes"â€”non-obvious, multi-day routes that utilize obscure, secondary backhaul markets to turn a standard $2.20/mile trip into a $2.95/mile continuous revenue loop before the truck ever leaves its home base.
                                             </p>
                                         </div>
                                     </li>
@@ -132,7 +132,7 @@ export default function BlogPostCoPilot() {
 
                             <h3 className="text-2xl font-bold mt-8 mb-4">Tactical Empathy & Crisis Resolution</h3>
                             <p>
-                                When a catastrophic event happens—for example, a 2024 Peterbilt suffers a blown transmission actuator at 2:00 AM in the middle of a torrential downpour in Nebraska while hauling $80,000 of fresh strawberries—an AI app simply flashes a generic "Load Delayed / ETA Missed" alert and automatically penalizes the carrier's internal score. 
+                                When a catastrophic event happensâ€”for example, a 2024 Peterbilt suffers a blown transmission actuator at 2:00 AM in the middle of a torrential downpour in Nebraska while hauling $80,000 of fresh strawberriesâ€”an AI app simply flashes a generic "Load Delayed / ETA Missed" alert and automatically penalizes the carrier's internal score. 
                             </p>
                             <p>
                                 In the Co-Pilot model, the AI detects the catastrophic drop in vehicle speed and instantly alerts the human dispatcher. The dispatcher immediately initiates emergency protocols: calling the nearest mobile heavy-duty diesel mechanic within a 50-mile radius, calling the broker directly to pre-emptively manage the receiver's expectations, and psychologically calming the stranded driver. This intense, high-value human intervention frequently turns a potential $15,000 cargo claim into a minor logistical hiccup, permanently solidifying trust with the broker.
@@ -140,7 +140,7 @@ export default function BlogPostCoPilot() {
 
                             <h3 className="text-2xl font-bold mt-8 mb-4">Extreme Asymmetric Negotiation</h3>
                             <p>
-                                Machines calculate standard medians; humans extract maximums. A human dispatcher utilizing Co-Pilot software possesses a terrifying informational advantage over the average freight broker. The dispatcher looks at their screen and sees what the broker has historically paid on this exact lane over the last 30 days, their current company-wide volume, and their direct behavioral patterns. The human uses this hard data to confidently execute asymmetric negotiation—employing calculated silence, leveraging driver loyalty, and understanding the precise moment a broker is desperate enough to entirely blow their budget to cover a failing priority load.
+                                Machines calculate standard medians; humans extract maximums. A human dispatcher utilizing Co-Pilot software possesses a terrifying informational advantage over the average freight broker. The dispatcher looks at their screen and sees what the broker has historically paid on this exact lane over the last 30 days, their current company-wide volume, and their direct behavioral patterns. The human uses this hard data to confidently execute asymmetric negotiationâ€”employing calculated silence, leveraging driver loyalty, and understanding the precise moment a broker is desperate enough to entirely blow their budget to cover a failing priority load.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -211,7 +211,7 @@ export default function BlogPostCoPilot() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

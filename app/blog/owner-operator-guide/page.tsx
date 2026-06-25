@@ -62,10 +62,10 @@ export default function BlogPostOwnerOperator() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Being an owner-operator in 2026 is no longer just about "driving a truck"—it is about managing a highly mobile, high-capital enterprise. The staggering difference between a driver who nets $50,000 a year and an operator who nets $150,000+ is rarely the number of miles they turn; it is the sheer quality and operational excellence of their business strategy. Let's delve deeply into the exact financial, mechanical, and logistical tactics that top-tier carriers use to dominate the freight market.
+                                Being an owner-operator in 2026 is no longer just about "driving a truck"â€”it is about managing a highly mobile, high-capital enterprise. The staggering difference between a driver who nets $50,000 a year and an operator who nets $150,000+ is rarely the number of miles they turn; it is the sheer quality and operational excellence of their business strategy. Let's delve deeply into the exact financial, mechanical, and logistical tactics that top-tier carriers use to dominate the freight market.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -105,10 +105,10 @@ export default function BlogPostOwnerOperator() {
                                 How do you consistently book loads above your break-even point in a volatile market? By ignoring the "A to B" mindset and embracing the <strong>Triangulation Strategy</strong>.
                             </p>
                             <p>
-                                Over 60% of new owner-operators fail in their first 18 months because they chase the absolutely highest inbound spot rate without calculating the outbound exit. If you book an incredible $4.50/mile load plunging deep into southern Florida (Miami/Homestead), you will feel like a genius—until you realize there is absolutely zero outbound freight to extract you. You will be forced to deadhead 350 miles back up to Jacksonville or Atlanta, mathematically destroying the profit you made on the inbound trip.
+                                Over 60% of new owner-operators fail in their first 18 months because they chase the absolutely highest inbound spot rate without calculating the outbound exit. If you book an incredible $4.50/mile load plunging deep into southern Florida (Miami/Homestead), you will feel like a geniusâ€”until you realize there is absolutely zero outbound freight to extract you. You will be forced to deadhead 350 miles back up to Jacksonville or Atlanta, mathematically destroying the profit you made on the inbound trip.
                             </p>
                             <p>
-                                A master owner-operator, supported by a professional dispatch team, creates regional <em>Circuits</em>. Running the Midwest Triangle (Chicago → Columbus → Indianapolis → Chicago) might only yield consecutive $2.75/mile loads, but hitting that average consistently, with zero deadhead across a 3,000-mile week, will radically out-earn the driver chasing single boom-or-bust cross-country loads.
+                                A master owner-operator, supported by a professional dispatch team, creates regional <em>Circuits</em>. Running the Midwest Triangle (Chicago â†’ Columbus â†’ Indianapolis â†’ Chicago) might only yield consecutive $2.75/mile loads, but hitting that average consistently, with zero deadhead across a 3,000-mile week, will radically out-earn the driver chasing single boom-or-bust cross-country loads.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -130,7 +130,7 @@ export default function BlogPostOwnerOperator() {
                                 Resale Value & The Digital Maintenance Passport
                             </h2>
                             <p>
-                                With the looming EPA "Clean Trucks Plan" regulations going fully active in 2027, the value of robust, well-maintained 2020–2026 internal combustion trucks is experiencing a massive spike on the secondary market. Top owner-operators are no longer relying on crumpled paper receipts in the glovebox for maintenance records.
+                                With the looming EPA "Clean Trucks Plan" regulations going fully active in 2027, the value of robust, well-maintained 2020â€“2026 internal combustion trucks is experiencing a massive spike on the secondary market. Top owner-operators are no longer relying on crumpled paper receipts in the glovebox for maintenance records.
                             </p>
                             <p>
                                 They are maintaining strict <strong>Digital Maintenance Passports</strong>. By utilizing cloud-app software synced directly with the truck's ECM port, every preventative PM service, every oil viscosity test, and every DPF cleaning is actively logged via sensors. When it is time to upgrade or expand to a second unit, having a verifiable, blockchain-secured history of your maintenance adds an immediate 15% to 20% to the truck's resale value compared to a truck with zero verifiable history.
@@ -147,7 +147,7 @@ export default function BlogPostOwnerOperator() {
                                 By explicitly allowing your insurance provider to access an AI-powered, forward-and-inward facing dashcam feed (like Motive or Samsara), highly safe owner-operators are unlocking aggressive "Performance Rebates" that literally send cash back to the carrier.
                             </p>
                             <p>
-                                The AI camera instantly detects hard braking, distracted driving, and following-distance violations. If your quarterly safety score remains in the top 90th percentile, premium discounts of up to 22% are now standard. Safer driving in 2026 isn't just a moral imperative or a DOT checkbox—it is a direct financial stimulus package for your LLC.
+                                The AI camera instantly detects hard braking, distracted driving, and following-distance violations. If your quarterly safety score remains in the top 90th percentile, premium discounts of up to 22% are now standard. Safer driving in 2026 isn't just a moral imperative or a DOT checkboxâ€”it is a direct financial stimulus package for your LLC.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -166,7 +166,7 @@ export default function BlogPostOwnerOperator() {
                                 You cannot grow from 1 truck to a 3-truck micro-fleet if you are completely exhausted from driving 11 hours and then spending 3 hours fighting brokers for $0.20 extra a mile while trying to fill out carrier packets on your steering wheel.
                             </p>
                             <p>
-                                Making the crucial jump from a single unit to a multi-truck operation requires an iron-clad back-office infrastructure. A professional truck dispatch agency provides exactly that—the massive negotiation leverage, the factoring integration, the lane analytics, and the 24/7 crisis support of a 50-truck corporate fleet, available at the low fractional cost of a single-digit percentage per load.
+                                Making the crucial jump from a single unit to a multi-truck operation requires an iron-clad back-office infrastructure. A professional truck dispatch agency provides exactly thatâ€”the massive negotiation leverage, the factoring integration, the lane analytics, and the 24/7 crisis support of a 50-truck corporate fleet, available at the low fractional cost of a single-digit percentage per load.
                             </p>
                             <p>
                                 <strong>Priority Dispatch LLC</strong> is your committed partner in radical growth. We don't want you to just survive the volatile spot market; we want you to conquer it and build an empire. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us immediately today</a>, hand off the chaotic backend administrative war, and let's strictly focus on driving unparalleled profitability straight into your bank account.
@@ -182,21 +182,21 @@ export default function BlogPostOwnerOperator() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup — Join Priority Dispatch LLC in 24 Hours</a> 
+                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup â€” Join Priority Dispatch LLC in 24 Hours</a> 
                                             <br/><span className="text-sm text-muted-foreground">The absolutely fastest path to onboard your MC authority and start hauling premium spot-market freight.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Our Dispatch Services — What We Do for You</a> 
+                                            <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Our Dispatch Services â€” What We Do for You</a> 
                                             <br/><span className="text-sm text-muted-foreground">From aggressively negotiating Dry Van rates to managing complex Reefer temp-control contracts, see exactly how we operate.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/toolbox" className="text-foreground font-bold hover:text-accent transition-colors">Trucking Toolbox — Profit Per Mile Calculator</a> 
+                                            <a href="/toolbox" className="text-foreground font-bold hover:text-accent transition-colors">Trucking Toolbox â€” Profit Per Mile Calculator</a> 
                                             <br/><span className="text-sm text-muted-foreground">Access our suite of free, interactive tools to instantly calculate your operating break-even and lane profitability.</span>
                                         </span>
                                     </li>
@@ -225,7 +225,7 @@ export default function BlogPostOwnerOperator() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

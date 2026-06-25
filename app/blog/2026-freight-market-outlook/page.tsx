@@ -62,7 +62,7 @@ export default function BlogPostOutlook() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The freight recession of 2023 and 2024 was brutal. We all felt it. But as we move deep into 2026, the market has finally turned the corner. If you are an owner-operator or small fleet owner, this is the exact moment you transition from "surviving" to "growing." Here is a no-nonsense look at where rates are heading and where the best freight is moving this year.
@@ -87,7 +87,7 @@ export default function BlogPostOutlook() {
                                 Mexico is now the #1 trading partner of the United States. Massive corporations have moved their factories out of Asia and directly across the Southern border to avoid supply chain disruptions. 
                             </p>
                             <p>
-                                For American truck drivers, this is the biggest opportunity in the last twenty years. The "Silicon Border" — stretching from Laredo down to McAllen and across to Otay Mesa, CA — is pumping out electronics, auto parts, and goods that need to reach the Midwest fast.
+                                For American truck drivers, this is the biggest opportunity in the last twenty years. The "Silicon Border" â€” stretching from Laredo down to McAllen and across to Otay Mesa, CA â€” is pumping out electronics, auto parts, and goods that need to reach the Midwest fast.
                             </p>
 
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
@@ -200,7 +200,7 @@ export default function BlogPostOutlook() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

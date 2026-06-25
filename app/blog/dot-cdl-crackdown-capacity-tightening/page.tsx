@@ -62,7 +62,7 @@ export default function BlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The trucking industry is facing a significant regulatory shift. A federal crackdown on fraudulently obtained "Non-Domiciled" Commercial Driver's Licenses (CDLs) is set to remove thousands of drivers from the market by late 2026. This capacity tightening will have a major impact on spot rates and contract negotiations. Here is how your fleet can navigate the coming "supply shock."
@@ -94,7 +94,7 @@ export default function BlogPost() {
                                     Regional Impact: The "Hot Zones"
                                 </h3>
                                 <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                                    The impact isn't the same everywhere. Areas that relied heavily on these labor pools—like Texas, Florida, and major port cities—are seeing the biggest capacity drops. 
+                                    The impact isn't the same everywhere. Areas that relied heavily on these labor poolsâ€”like Texas, Florida, and major port citiesâ€”are seeing the biggest capacity drops. 
                                 </p>
                                 <p className="text-base text-foreground font-semibold leading-relaxed">
                                     In many cases, spot rates in these regions have already started to climb as brokers struggle to find qualified, legal drivers to move their freight.
@@ -138,7 +138,7 @@ export default function BlogPost() {
                                     <div>
                                         <h4 className="font-bold text-lg text-foreground mb-1">Execute the Immediate "Pre-Audit" Defensive Scrub</h4>
                                         <p className="text-muted-foreground text-base">
-                                            Do not assume your drivers are perfectly compliant. You must aggressively pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your heavily guarded MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipment—even if the driver lied to you—your company faces an immediate, highly devastating "Out-of-Service" (OOS) federal mandate.
+                                            Do not assume your drivers are perfectly compliant. You must aggressively pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your heavily guarded MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipmentâ€”even if the driver lied to youâ€”your company faces an immediate, highly devastating "Out-of-Service" (OOS) federal mandate.
                                         </p>
                                     </div>
                                 </li>
@@ -212,7 +212,7 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

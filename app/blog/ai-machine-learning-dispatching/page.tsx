@@ -62,7 +62,7 @@ export default function BlogPostAI() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The violent industry paradigm shift separating the "survivors" from the "market dominators" in 2026 is entirely defined by the transition from static software logic into generative, self-learning artificial intelligence. While the previous decade was consumed by the proliferation of simple digital load boards and basic GPS tracking apps, the current decade is an absolute arms race of autonomous negotiation algorithms and massively predictive load harvesting. This 2,700-word engineering deep dive critically explores the bleeding-edge technical architecture of modern Artificial Intelligence in dispatching, how mega-brokers are using it against you, and exactly how small carriers must rapidly adapt these identical ML models to wildly out-earn massive corporate fleets.
@@ -73,7 +73,7 @@ export default function BlogPostAI() {
                                 Generative LLMs: Weaponizing the Dispatch Office
                             </h2>
                             <p>
-                                In 2026, highly specialized Large Language Models (LLMs)—specifically fine-tuned on decades of complex transportation legal documentation, broker communication histories, and dynamic freight commodities—are routinely performing the brutal administrative duties of five senior logistics officers simultaneously. These models do not merely "chatter" via basic a customer support chatbot; they actively parse thousands of broker email solicitations, parse unstructured load details, verify dense 18-page PDF carrier packets, and digitally extract the exact financial terms from messy rate confirmations in milliseconds.
+                                In 2026, highly specialized Large Language Models (LLMs)â€”specifically fine-tuned on decades of complex transportation legal documentation, broker communication histories, and dynamic freight commoditiesâ€”are routinely performing the brutal administrative duties of five senior logistics officers simultaneously. These models do not merely "chatter" via basic a customer support chatbot; they actively parse thousands of broker email solicitations, parse unstructured load details, verify dense 18-page PDF carrier packets, and digitally extract the exact financial terms from messy rate confirmations in milliseconds.
                             </p>
                             <p>
                                 <strong>The Asymmetric Negotiation Edge:</strong> Our proprietary neural network pipeline deployed at <strong>Priority Dispatch LLC</strong> actively utilizes customized LLMs explicitly trained on advanced behavioral sentiment analysis. When an external broker emails one of our human dispatchers attempting to move a distressed load, the AI instantly overlays a psychological evaluation of the text. It identifies precisely when a broker is completely exposed and operating under severe duress via specific, nuanced phrasing analysis (e.g., detecting subtle shifts in urgency between phrases like "need covered today" versus "priority MUST move immediately team ready"). 
@@ -143,7 +143,7 @@ export default function BlogPostAI() {
                                 Avoiding the "Black Box": The Necessity of Explainable AI
                             </h2>
                             <p>
-                                The profound danger of rapid AI adoption occurring within amateur operations in 2026 is an absolute reliance on the "Black Box" model—a terrifying situation where an algorithm blindly dictates that a truck must drive 700 deadhead miles to secure a specific load, but fundamentally cannot mathematically explain to the human dispatcher <em>why</em> that decision was made. If an AI hallucinates or calculates based on corrupted broker API data, it can bankrupt a company in three days.
+                                The profound danger of rapid AI adoption occurring within amateur operations in 2026 is an absolute reliance on the "Black Box" modelâ€”a terrifying situation where an algorithm blindly dictates that a truck must drive 700 deadhead miles to secure a specific load, but fundamentally cannot mathematically explain to the human dispatcher <em>why</em> that decision was made. If an AI hallucinates or calculates based on corrupted broker API data, it can bankrupt a company in three days.
                             </p>
                             <p>
                                 At Priority Dispatch LLC, our strict engineering doctrine mandates <strong>Explainable AI (XAI)</strong>. Our neural models are strictly forced to generate real-time "Reasoning Check-Sum Reports" directly to our senior human dispatchers. If the machine recommends rejecting an apparently extremely lucrative $6.00/mile emergency load, it must supply the exact data vector causing the rejection (e.g., "Broker credit score plummeted 34 points in 12 hours" or "Route passes through mathematically extreme blizzard activity rendering the per-hour revenue negative"). The final, ultimate execution trigger on any high-stakes maneuver always remains securely within a highly trained human hand.
@@ -151,7 +151,7 @@ export default function BlogPostAI() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Equip Your Business with Commercial Armor</h2>
                             <p>
-                                Artificial Intelligence and Deep Machine Learning are not theoretical "future" technologies arriving eventually; they are the active, highly aggressive weapons currently being used against you by massive broker logistics algorithms right now, today, on every single load you negotiate. Implementing these models does not eliminate the hard-working truck driver or the dedicated dispatcher—they simply remove the dangerous blind spots and the horrific mathematical inefficiencies from the deeply flawed human logistical process.
+                                Artificial Intelligence and Deep Machine Learning are not theoretical "future" technologies arriving eventually; they are the active, highly aggressive weapons currently being used against you by massive broker logistics algorithms right now, today, on every single load you negotiate. Implementing these models does not eliminate the hard-working truck driver or the dedicated dispatcherâ€”they simply remove the dangerous blind spots and the horrific mathematical inefficiencies from the deeply flawed human logistical process.
                             </p>
                             <p>
                                 By deeply democratizing the power of high-level enterprise computing, the barrier to extreme profitability is suddenly shattered for the single-truck operator. **Priority Dispatch LLC** is fundamentally structured as an elite technology consortium actively masquerading as a logistics dispatch company. We hand the smallest independent carrier the terrifying processing power of an enormous Fortune 500 logistics department. <a href="/contact" className="text-accent font-bold hover:underline">Connect with our data integration engineers immediately</a>, let us bolt our proprietary neural engines directly onto your Motor Carrier Authority, and ensure you remain the apex operator on the highway system.
@@ -203,7 +203,7 @@ export default function BlogPostAI() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

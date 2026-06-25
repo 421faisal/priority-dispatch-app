@@ -63,7 +63,7 @@ export default function BondedCarrierBlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 In the trucking and logistics industry, a bonded carrier is a transportation company authorized to move freight under customs bond. This allows carriers to transport imported goods that have not yet cleared customs within the United States or across borders.
@@ -115,7 +115,7 @@ export default function BondedCarrierBlogPost() {
                                 <div className="space-y-6">
                                     <div>
                                         <h4 className="text-lg font-bold mb-2">Step 1: Obtain Operating Authority</h4>
-                                        <p className="text-muted-foreground">The carrier must first hold active MC authority, a USDOT number, and commercial insurance — all regulated by the FMCSA.</p>
+                                        <p className="text-muted-foreground">The carrier must first hold active MC authority, a USDOT number, and commercial insurance â€” all regulated by the FMCSA.</p>
                                     </div>
                                     <div>
                                         <h4 className="text-lg font-bold mb-2">Step 2: Apply for a Customs Bond</h4>
@@ -133,7 +133,7 @@ export default function BondedCarrierBlogPost() {
                             </div>
 
                             <p>
-                                Not sure where to start? <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> — our dispatch team regularly works with owner-operators handling bonded and port freight and can guide you toward the right freight lanes for your authority level.
+                                Not sure where to start? <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> â€” our dispatch team regularly works with owner-operators handling bonded and port freight and can guide you toward the right freight lanes for your authority level.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -155,7 +155,7 @@ export default function BondedCarrierBlogPost() {
                                     <tbody>
                                         <tr>
                                             <td className="border border-border px-6 py-3">Customs Bond</td>
-                                            <td className="border border-border px-6 py-3">$500 – $5,000 per year</td>
+                                            <td className="border border-border px-6 py-3">$500 â€“ $5,000 per year</td>
                                         </tr>
                                         <tr className="bg-muted/30">
                                             <td className="border border-border px-6 py-3">Insurance Updates</td>
@@ -163,7 +163,7 @@ export default function BondedCarrierBlogPost() {
                                         </tr>
                                         <tr>
                                             <td className="border border-border px-6 py-3">Compliance Fees</td>
-                                            <td className="border border-border px-6 py-3">$100 – $500</td>
+                                            <td className="border border-border px-6 py-3">$100 â€“ $500</td>
                                         </tr>
                                         <tr className="bg-muted/30">
                                             <td className="border border-border px-6 py-3">Administrative Costs</td>
@@ -193,7 +193,7 @@ export default function BondedCarrierBlogPost() {
                                 <div className="p-6 bg-card border border-border rounded-xl">
                                     <h3 className="text-xl font-bold mb-3">Port and Border Freight Opportunities</h3>
                                     <p className="text-muted-foreground">
-                                        Carriers can move shipments from ports, rail ramps, bonded warehouses, and international crossings — all typically higher-paying freight categories.
+                                        Carriers can move shipments from ports, rail ramps, bonded warehouses, and international crossings â€” all typically higher-paying freight categories.
                                     </p>
                                 </div>
 
@@ -218,25 +218,25 @@ export default function BondedCarrierBlogPost() {
                             </h2>
                             <ul className="space-y-2 my-6">
                                 <li className="flex items-start gap-2">
-                                    <span className="text-accent font-bold">•</span>
+                                    <span className="text-accent font-bold">â€¢</span>
                                     <span>More paperwork and documentation requirements</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-accent font-bold">•</span>
+                                    <span className="text-accent font-bold">â€¢</span>
                                     <span>Strict customs compliance timelines</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-accent font-bold">•</span>
+                                    <span className="text-accent font-bold">â€¢</span>
                                     <span>Higher insurance requirements than standard freight</span>
                                 </li>
                                 <li className="flex items-start gap-2">
-                                    <span className="text-accent font-bold">•</span>
+                                    <span className="text-accent font-bold">â€¢</span>
                                     <span>Possible audits and government inspections</span>
                                 </li>
                             </ul>
 
                             <p>
-                                Many owner-operators find the additional revenue worth the effort. If managing paperwork feels overwhelming, Priority Dispatch LLC handles broker communication, load booking, and freight documentation on your behalf — so you stay focused on driving.
+                                Many owner-operators find the additional revenue worth the effort. If managing paperwork feels overwhelming, Priority Dispatch LLC handles broker communication, load booking, and freight documentation on your behalf â€” so you stay focused on driving.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6">FAQs About Bonded Carriers</h2>
@@ -308,7 +308,7 @@ export default function BondedCarrierBlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

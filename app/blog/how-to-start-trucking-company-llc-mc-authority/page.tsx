@@ -62,10 +62,10 @@ export default function BlogPostStartCompany() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Starting a trucking company is one of the most rewarding ways to build a business in America, but it is also one of the most complex. It’s not just about buying a truck and finding a load. From federal safety audits to insurance minimums, one wrong step can cost you thousands in delays. This guide is a no-nonsense roadmap to getting your MC Authority active and your business profitable in 2026.
+                                Starting a trucking company is one of the most rewarding ways to build a business in America, but it is also one of the most complex. Itâ€™s not just about buying a truck and finding a load. From federal safety audits to insurance minimums, one wrong step can cost you thousands in delays. This guide is a no-nonsense roadmap to getting your MC Authority active and your business profitable in 2026.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -76,7 +76,7 @@ export default function BlogPostStartCompany() {
                                 Every trucking empire starts with a piece of paper. For 99% of owner-operators, a <strong>Limited Liability Company (LLC)</strong> is the best way to go. 
                             </p>
                             <p>
-                                Never operate as a Sole Proprietorship. In trucking, the liability is too high. If there’s an accident, an LLC protects your personal assets—like your home and savings—from being targeted in a lawsuit. Once your LLC is filed with your Secretary of State, get your EIN from the IRS. 
+                                Never operate as a Sole Proprietorship. In trucking, the liability is too high. If thereâ€™s an accident, an LLC protects your personal assetsâ€”like your home and savingsâ€”from being targeted in a lawsuit. Once your LLC is filed with your Secretary of State, get your EIN from the IRS. 
                             </p>
                             <p>
                                 <strong>Pro Tip:</strong> When filing for your EIN, make sure you use <strong>NAICS Code 484121</strong> (General Freight Trucking). Using a vague code can make it harder to get a business bank account or factor your invoices later.
@@ -87,7 +87,7 @@ export default function BlogPostStartCompany() {
                                 Phase 2: The FMCSA Gauntlet
                             </h2>
                             <p>
-                                Once your business is legal, you need your "hunting license"—your MC Authority. You’ll file with the FMCSA and pay the $300 federal fee for your DOT and MC numbers.
+                                Once your business is legal, you need your "hunting license"â€”your MC Authority. Youâ€™ll file with the FMCSA and pay the $300 federal fee for your DOT and MC numbers.
                             </p>
                             
                             <div className="bg-red-500/10 border-l-4 border-red-500 rounded-r-xl p-6 my-8 shadow-sm">
@@ -104,7 +104,7 @@ export default function BlogPostStartCompany() {
                                 <strong>The 21-Day Vetting Period:</strong> After you file, your MC Number will be in a "Pending" status for 21 days. This is the protest period. To get it "Active," you must complete these three steps:
                             </p>
                             <ul className="list-disc pl-6 space-y-4 my-6">
-                                <li><strong>BOC-3 Filing:</strong> You need a process agent in every state you drive through. It’s a simple filing that usually costs around $50.</li>
+                                <li><strong>BOC-3 Filing:</strong> You need a process agent in every state you drive through. Itâ€™s a simple filing that usually costs around $50.</li>
                                 <li><strong>Proof of Insurance:</strong> You need $1,000,000 in Auto Liability and at least $100,000 in Cargo Insurance. Your insurance company must file this proof directly with the FMCSA (Form BMC-91X).</li>
                                 <li><strong>UCR (Unified Carrier Registration):</strong> This is a yearly fee based on your fleet size. You must pay this before you cross state lines.</li>
                             </ul>
@@ -114,10 +114,10 @@ export default function BlogPostStartCompany() {
                                 Phase 3: The "Plate Problem" (IRP and 2290)
                             </h2>
                             <p>
-                                You have the truck and the authority, but you still need plates. You’ll need <strong>IRP (International Registration Plan)</strong> plates to drive interstate. 
+                                You have the truck and the authority, but you still need plates. Youâ€™ll need <strong>IRP (International Registration Plan)</strong> plates to drive interstate. 
                             </p>
                             <p>
-                                Before you can get plates, you must pay your <strong>Heavy Vehicle Use Tax (Form 2290)</strong>. This is a $550 annual tax for any truck over 55,000 lbs. You’ll also need your <strong>IFTA (International Fuel Tax Agreement)</strong> stickers to report the fuel you burn in each state.
+                                Before you can get plates, you must pay your <strong>Heavy Vehicle Use Tax (Form 2290)</strong>. This is a $550 annual tax for any truck over 55,000 lbs. Youâ€™ll also need your <strong>IFTA (International Fuel Tax Agreement)</strong> stickers to report the fuel you burn in each state.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -137,7 +137,7 @@ export default function BlogPostStartCompany() {
                                 Phase 5: From 1 to 5 Trucks
                             </h2>
                             <p>
-                                Moving from one truck to three is the hardest jump. You can't drive and dispatch at the same time. This is where most owner-operators fail—they get overwhelmed by the paperwork and stop being profitable on the road.
+                                Moving from one truck to three is the hardest jump. You can't drive and dispatch at the same time. This is where most owner-operators failâ€”they get overwhelmed by the paperwork and stop being profitable on the road.
                             </p>
                             <p>
                                 That is where <strong>Priority Dispatch LLC</strong> comes in. We handle the back-office, the negotiation, and the compliance, so you can focus on building your fleet.
@@ -145,7 +145,7 @@ export default function BlogPostStartCompany() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion</h2>
                             <p>
-                                Starting a trucking company is the most complex way to make money in America, but it’s also one of the most rewarding. In 2026, the carriers who follow the rules are the only ones who will be around in 2030.
+                                Starting a trucking company is the most complex way to make money in America, but itâ€™s also one of the most rewarding. In 2026, the carriers who follow the rules are the only ones who will be around in 2030.
                             </p>
                             <p>
                                 Partner with <strong>Priority Dispatch LLC</strong> today. We handle the headaches so you can handle the driving. <a href="/contact" className="text-accent font-bold hover:underline">Contact us today</a> for a free consultation on starting your fleet.
@@ -166,7 +166,7 @@ export default function BlogPostStartCompany() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

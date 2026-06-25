@@ -62,10 +62,10 @@ export default function BlogPost() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The federal "Clean Trucks Plan" is officially, irrevocably here. As we brutally navigate through mid-2026, the entire American trucking industry is actively staring down the rapidly approaching barrel of the <strong>2027 EPA Heavy-Duty Engine and Vehicle Standards</strong>. Industry analysts are accurately comparing this impending regulatory tsunami directly to the notorious 2007-2010 emissions era—a highly destructive period of technological forced-adoption that violently bankrupted thousands of financially unprepared small carriers due to horrific mechanical unreliability and catastrophic downtime. This is not simply a minor algorithmic update or a "larger DPF filter"; this is a total, ground-up reimagining of diesel engine architecture. This extremely comprehensive, 2,600-word engineering and financial manifesto deeply examines why exactly executing an aggressive "Pre-Buy" of 2026 OEM equipment is absolutely no longer optional for independent carriers who explicitly intend to remain operational and profitable in 2027 and the decade beyond.
+                                The federal "Clean Trucks Plan" is officially, irrevocably here. As we brutally navigate through mid-2026, the entire American trucking industry is actively staring down the rapidly approaching barrel of the <strong>2027 EPA Heavy-Duty Engine and Vehicle Standards</strong>. Industry analysts are accurately comparing this impending regulatory tsunami directly to the notorious 2007-2010 emissions eraâ€”a highly destructive period of technological forced-adoption that violently bankrupted thousands of financially unprepared small carriers due to horrific mechanical unreliability and catastrophic downtime. This is not simply a minor algorithmic update or a "larger DPF filter"; this is a total, ground-up reimagining of diesel engine architecture. This extremely comprehensive, 2,600-word engineering and financial manifesto deeply examines why exactly executing an aggressive "Pre-Buy" of 2026 OEM equipment is absolutely no longer optional for independent carriers who explicitly intend to remain operational and profitable in 2027 and the decade beyond.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -150,7 +150,7 @@ export default function BlogPost() {
                                 Many financially illiterate operators assume that purchasing a 2026 truck right before a major 2027 technological shift will render the 2026 equipment obsolete or heavily depreciated. In the complex economics of heavy-duty trucking, the absolute reverse is mathematically true.
                             </p>
                             <p>
-                                <strong>The "Refuge" Asset:</strong> Historically, whenever a massively unpopular, highly complex mechanical mandate is violently forced onto the market—as identically witnessed during the catastrophic 2007 DPF mandate and the 2010 SCR mandate—the exact previous model year's equipment violently <em>appreciates</em> in secondary market value once the new fleet begins failing on the shoulders of the highway.
+                                <strong>The "Refuge" Asset:</strong> Historically, whenever a massively unpopular, highly complex mechanical mandate is violently forced onto the marketâ€”as identically witnessed during the catastrophic 2007 DPF mandate and the 2010 SCR mandateâ€”the exact previous model year's equipment violently <em>appreciates</em> in secondary market value once the new fleet begins failing on the shoulders of the highway.
                             </p>
                             <p>
                                 An impeccably maintained 2026 Peterbilt 579 boasting roughly 350,000 miles in the year 2029 will highly likely command a significantly greater financial premium in the used-truck market than a 2027 model exhibiting the exact same mileage. In 2029, small carriers will be absolutely frantic to purchase the "simpler," pre-2027 technology to escape the brutal downtime associated with faulty 2027 dual-dosing SCR electronics. Your 2026 Pre-Buy truck is not merely an operational tool; it represents a massively appreciating, heavily insulated financial hedge fund.
@@ -236,7 +236,7 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

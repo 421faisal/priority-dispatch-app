@@ -62,7 +62,7 @@ export default function BlogPostELD() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The concept of "fudging the paper logbook" was completely eradicated in 2017 with the original ELD mandate. However, in 2026, the federal enforcement landscape has brutally evolved far beyond simple electronic logging. Regulatory compliance is no longer a manual, physical check-box executed by a State Trooper holding a clipboard on a highway shoulder; it is a ruthless, continuously executing algorithmic data stream. With the incredibly aggressive introduction of Level 8 Wireless Roadside Inspections and the FMCSA's sweeping deployment of automated "Ghost Log" detection engines, the margin for human administrative error has aggressively vanished to exactly zero. This exhaustive 2,600-word command manual provides the absolute definitive checklist, the underlying technological mechanics of federal enforcement AI, and the exact defensive protocols required to protect your operating authority from catastrophic shutdown in 2026.
@@ -73,13 +73,13 @@ export default function BlogPostELD() {
                                 The Inescapable Reality: Level 8 Wireless Inspections
                             </h2>
                             <p>
-                                The absolute most catastrophic shift in 2026 Commercial Vehicle Safety Alliance (CVSA) enforcement is the active, massive implementation of <strong>Level 8 Electronic Inspections</strong>. Unlike a standard Level 1 or Level 2 inspection—which fundamentally requires a physical lane diversion, a mechanical brake check, and human dialogue—a Level 8 inspection executes silently and invisibly while your truck is heavily loaded and moving at 67 MPH down a federal interstate.
+                                The absolute most catastrophic shift in 2026 Commercial Vehicle Safety Alliance (CVSA) enforcement is the active, massive implementation of <strong>Level 8 Electronic Inspections</strong>. Unlike a standard Level 1 or Level 2 inspectionâ€”which fundamentally requires a physical lane diversion, a mechanical brake check, and human dialogueâ€”a Level 8 inspection executes silently and invisibly while your truck is heavily loaded and moving at 67 MPH down a federal interstate.
                             </p>
                             <p>
                                 <strong>The Mechanical Architecture:</strong> Heavily militarized sensor gantries erected at state-line borders, major toll plazas, and automated weigh stations actively query your vehicle's ELD transponder wirelessly via 5G-V2X protocols. In approximately 0.4 seconds, the federal system instantly downloads and verifies your precise Hours of Service (HOS) compliance, your exact CDL validity, your registered medical certificate status, your active unified carrier registration (UCR), and your IFTA credentials. 
                             </p>
                             <p>
-                                If your electronic data packet is absolutely flawless, your pre-pass transponder flashes green, and you mathematically bypass the scale. However, if your ELD transmits a single anomalous data point—such as a driver actively operating in hour 11.2 of an 11-hour drive shift, or a medical card that officially expired 14 hours ago—the system immediately executes a "Bypass Denied." The gantry aggressively flags the license plate via Automated License Plate Readers (ALPR), instantly alerts the physical Highway Patrol intercept cruisers stationed three miles ahead, and legally forces a highly punitive, incredibly invasive Level 1 physical inspection. A failed Level 8 ping essentially guarantees a devastating 4-hour delay and a massive hit to your internal CSA score.
+                                If your electronic data packet is absolutely flawless, your pre-pass transponder flashes green, and you mathematically bypass the scale. However, if your ELD transmits a single anomalous data pointâ€”such as a driver actively operating in hour 11.2 of an 11-hour drive shift, or a medical card that officially expired 14 hours agoâ€”the system immediately executes a "Bypass Denied." The gantry aggressively flags the license plate via Automated License Plate Readers (ALPR), instantly alerts the physical Highway Patrol intercept cruisers stationed three miles ahead, and legally forces a highly punitive, incredibly invasive Level 1 physical inspection. A failed Level 8 ping essentially guarantees a devastating 4-hour delay and a massive hit to your internal CSA score.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -132,7 +132,7 @@ export default function BlogPostELD() {
                                         <div>
                                             <h4 className="font-bold text-lg text-foreground mb-1">Demand Absolute "Data Sovereignty"</h4>
                                             <p className="text-muted-foreground text-base">
-                                                Never trust a budget ELD provider. Verify immediately that your ELD software legally permits you to export your massive, raw <code>.csv</code> telematic data files. In the terrifying event of an aggressive federal litigation dispute or a catastrophic personal injury lawsuit against your company, you explicitly require the raw hardware data—not the sanitized, highly summarized PDF that the provider's legal department hands you.
+                                                Never trust a budget ELD provider. Verify immediately that your ELD software legally permits you to export your massive, raw <code>.csv</code> telematic data files. In the terrifying event of an aggressive federal litigation dispute or a catastrophic personal injury lawsuit against your company, you explicitly require the raw hardware dataâ€”not the sanitized, highly summarized PDF that the provider's legal department hands you.
                                             </p>
                                         </div>
                                     </li>
@@ -168,10 +168,10 @@ export default function BlogPostELD() {
                                 The Financial Power of "Satisfactory" Ratings
                             </h2>
                             <p>
-                                Many amateur owner-operators incorrectly view ELD compliance strictly as a punitive tax—an annoying burden they must barely pass to avoid getting violently shut down. In truth, operating in 2026 heavily transforms compliance into a massive, heavily leveraged defensive financial weapon against your competitors.
+                                Many amateur owner-operators incorrectly view ELD compliance strictly as a punitive taxâ€”an annoying burden they must barely pass to avoid getting violently shut down. In truth, operating in 2026 heavily transforms compliance into a massive, heavily leveraged defensive financial weapon against your competitors.
                             </p>
                             <p>
-                                The massive insurance syndicates heavily utilize an operator's CSA (Compliance, Safety, Accountability) score algorithms to instantly calculate premium costs. An operator holding a flawless, mathematically pristine "Satisfactory" safety rating combined with zero HOS violations will secure highly premium commercial liability insurance at approximately $14,000 per truck, per year. A competitor sporting a heavily flagged "Conditional" rating due to repeated HOS offenses will be violently charged $28,000 to $34,000—or face total, unceremonious cancellation.
+                                The massive insurance syndicates heavily utilize an operator's CSA (Compliance, Safety, Accountability) score algorithms to instantly calculate premium costs. An operator holding a flawless, mathematically pristine "Satisfactory" safety rating combined with zero HOS violations will secure highly premium commercial liability insurance at approximately $14,000 per truck, per year. A competitor sporting a heavily flagged "Conditional" rating due to repeated HOS offenses will be violently charged $28,000 to $34,000â€”or face total, unceremonious cancellation.
                             </p>
                             <p>
                                 Furthermore, elite, high-margin shippers (e.g., aerospace manufacturers, Department of Defense contractors, and high-value pharmaceutical distributors) actively utilize automated API scripts to instantly block carriers boasting elevated CSA scores from ever accessing their freight network. Perfect compliance is literally the mathematical key required to unlock the most lucrative freight sectors in existence.
@@ -234,7 +234,7 @@ export default function BlogPostELD() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

@@ -60,13 +60,13 @@ export default function BlogPost() {
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
-                                <p className="text-accent text-sm tracking-widest uppercase font-extrabold mb-2">Sustainability · Electric Logistics · Future of Freight</p>
+                                <p className="text-accent text-sm tracking-widest uppercase font-extrabold mb-2">Sustainability Â· Electric Logistics Â· Future of Freight</p>
                                 <h2 className="text-white text-3xl md:text-4xl font-bold">The 2026 EV Paradigm Shift</h2>
                             </div>
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 Electric semi-trucks are no longer just prototypes in a press release. In 2026, the Tesla Semi, Freightliner eCascadia, and others are hauling real freight. But for the owner-operator, the transition is packed with both opportunity and extreme financial risk. This guide breaks down what you need to know before you move away from diesel.
@@ -102,7 +102,7 @@ export default function BlogPost() {
                                 Why Shippers are Paying a "Green Premium"
                             </h2>
                             <p>
-                                Shippers—especially Fortune 500 companies—are under massive pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
+                                Shippersâ€”especially Fortune 500 companiesâ€”are under massive pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
                             </p>
                             <p>
                                 At <strong>Priority Dispatch LLC</strong>, we help our carriers secure these high-paying contracts. If you've invested in an EV truck, you shouldn't be hunting for cheap loads on a standard load board. You should be in high-value, dedicated lanes where shippers are willing to pay for your sustainability.
@@ -139,7 +139,7 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

@@ -62,7 +62,7 @@ export default function BlogPostChooseDispatch() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 The dispatching industry in 2026 has increasingly become a "Wild West." Between fly-by-night scam offices and offshore basement operators who disappear after booking your first sub-par load, choosing the wrong partner can bankrupt a small carrier in weeks. This comprehensive 2,500-word deep dive provides the elite vetting checklist you need to separate the genuine logistics professionals from the dangerous pretenders.
@@ -76,7 +76,7 @@ export default function BlogPostChooseDispatch() {
                                 In 2026, the barrier to entry for claiming you run a "freight dispatching service" is terrifically low. It technically only requires a laptop and a monthly subscription to DAT or Truckstop. Consequently, thousands of offshore offices and untrained individuals are heavily marketing themselves as "U.S. Based Dispatch Services." 
                             </p>
                             <p>
-                                These operators frequently tempt carriers with incredibly low fees—often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
+                                These operators frequently tempt carriers with incredibly low feesâ€”often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
                             </p>
 
                             <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
@@ -114,7 +114,7 @@ export default function BlogPostChooseDispatch() {
                                     <div className="absolute top-0 right-0 w-16 h-16 bg-red-500/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
                                     <FileWarning className="h-8 w-8 text-red-500 mb-4" />
                                     <h4 className="text-xl font-bold text-foreground mb-3">Flat Fee Model (Proceed with Caution)</h4>
-                                    <p className="text-sm leading-relaxed mb-4">Usually $200–$400 per week, per truck. While mathematically cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
+                                    <p className="text-sm leading-relaxed mb-4">Usually $200â€“$400 per week, per truck. While mathematically cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
                                     <ul className="text-sm space-y-2 mt-4 text-muted-foreground">
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> High risk of "Lazy Dispatching."</li>
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> The dispatcher gets paid $300 whether they book you a $4.00/mile load or a $1.50/mile load.</li>
@@ -199,14 +199,14 @@ export default function BlogPostChooseDispatch() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">FAQ — How Much Does a Truck Dispatcher Cost?</a> 
+                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">FAQ â€” How Much Does a Truck Dispatcher Cost?</a> 
                                             <br/><span className="text-sm text-muted-foreground">A totally transparent breakdown of our fee structures and exactly what you receive for your investment.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup — Start Getting Loads in 24 Hours</a> 
+                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup â€” Start Getting Loads in 24 Hours</a> 
                                             <br/><span className="text-sm text-muted-foreground">Our streamlined onboarding process designed to get you out of the driveway and onto profitable lanes immediately.</span>
                                         </span>
                                     </li>
@@ -235,7 +235,7 @@ export default function BlogPostChooseDispatch() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

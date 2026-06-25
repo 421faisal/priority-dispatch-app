@@ -62,7 +62,7 @@ export default function BlogPostMentalHealth() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
                                 Long-haul trucking is more than just a job; it's a lifestyle that can take a toll on your mental well-being. Isolation, irregular sleep, and the pressure of the road are real challenges. In 2026, the industry is finally starting to prioritize mental health. This guide explores how drivers can stay healthy, connected, and focused while out on the road.
@@ -73,7 +73,7 @@ export default function BlogPostMentalHealth() {
                                 Understanding the Toll of Isolation
                             </h2>
                             <p>
-                                Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"—it's a factor that affects safety and long-term career satisfaction.
+                                Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"â€”it's a factor that affects safety and long-term career satisfaction.
                             </p>
                             <p>
                                 **The Priority Dispatch Approach:** We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a massive difference in a driver's day.
@@ -87,7 +87,7 @@ export default function BlogPostMentalHealth() {
                                 What you eat affects how you feel. The "truck stop diet" of processed, high-sugar foods can lead to brain fog and fatigue. While it's hard to find healthy options on the road, small changes can improve your mental clarity.
                             </p>
                             <p>
-                                Many successful owner-operators now invest in cab refrigerators and meal-prep their own food. Staying hydrated and reducing sugar isn't just about physical health—it's about keeping your mind sharp and avoiding the "mid-day crash" that can lead to irritation or exhaustion.
+                                Many successful owner-operators now invest in cab refrigerators and meal-prep their own food. Staying hydrated and reducing sugar isn't just about physical healthâ€”it's about keeping your mind sharp and avoiding the "mid-day crash" that can lead to irritation or exhaustion.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -100,7 +100,7 @@ export default function BlogPostMentalHealth() {
                             <div className="bg-muted border-l-4 border-accent p-6 rounded-r-xl my-8">
                                 <h4 className="font-bold text-lg mb-2 text-foreground">The Standard of Care</h4>
                                 <p className="text-base text-muted-foreground m-0">
-                                    If you witness a serious incident, you need time to process it. Progressive fleets now offer "trauma resets"—paid time off to speak with a professional or simply decompress before getting back behind the wheel. Your safety, and the safety of everyone on the road, depends on your mental state.
+                                    If you witness a serious incident, you need time to process it. Progressive fleets now offer "trauma resets"â€”paid time off to speak with a professional or simply decompress before getting back behind the wheel. Your safety, and the safety of everyone on the road, depends on your mental state.
                                 </p>
                             </div>
 
@@ -135,7 +135,7 @@ export default function BlogPostMentalHealth() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>

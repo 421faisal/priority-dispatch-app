@@ -62,10 +62,10 @@ export default function BlogPostIntermodal() {
                         </div>
                     </Reveal>
 
-                    <div className="prose prose-lg prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
+                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Deciding between long-haul Over-the-Road (OTR) and localized Intermodal Drayage used to be a simple choice of lifestyle. In 2026, it’s a high-stakes financial calculation involving fuel surcharges, carbon credits, and port congestion algorithms. This guide breaks down the real economics of both modes and how to choose the right path for your fleet.
+                                Deciding between long-haul Over-the-Road (OTR) and localized Intermodal Drayage used to be a simple choice of lifestyle. In 2026, itâ€™s a high-stakes financial calculation involving fuel surcharges, carbon credits, and port congestion algorithms. This guide breaks down the real economics of both modes and how to choose the right path for your fleet.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -73,7 +73,7 @@ export default function BlogPostIntermodal() {
                                 OTR 2.0: The King of Time-Critical Freight
                             </h2>
                             <p>
-                                Despite the rise of rail efficiency, Over-the-Road trucking remains the backbone of the American supply chain. OTR is the only choice for high-value and time-critical loads. If a factory in Texas is about to shut down because it’s missing a $10 part from Michigan, they aren't putting that part on a train. They’re hiring a team-driven OTR truck.
+                                Despite the rise of rail efficiency, Over-the-Road trucking remains the backbone of the American supply chain. OTR is the only choice for high-value and time-critical loads. If a factory in Texas is about to shut down because itâ€™s missing a $10 part from Michigan, they aren't putting that part on a train. Theyâ€™re hiring a team-driven OTR truck.
                             </p>
                             <p>
                                 In 2026, successful OTR carriers are winning by specializing. They aren't just hauling "general freight"; they are moving sensitive electronics, medical supplies, and "just-in-time" manufacturing components that the rail network simply cannot handle.
@@ -174,7 +174,7 @@ export default function BlogPostIntermodal() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn →
+                                    Connect on LinkedIn â†’
                                 </a>
                             </div>
                         </Reveal>
