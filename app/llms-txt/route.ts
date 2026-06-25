@@ -24,6 +24,15 @@ Expert freight dispatching services for owner-operators and carrier fleets speci
 - Industry Blog: /blog
 - FAQ: /faq
 
+## Recent Blog Posts
+- What Is Inspection in Trucking? DOT Inspections Explained: /blog/what-is-inspection-in-trucking
+- How to Survive the First 90 Days as a New Trucking Company: /blog/how-to-survive-new-trucking-authority-mc-leasing
+- What Is a TWIC Card in Trucking?: /blog/what-is-twic-card-trucking
+- What Is a Bonded Carrier?: /blog/what-is-bonded-carrier-trucking
+- How to Start a Trucking Company: /blog/how-to-start-trucking-company-llc-mc-authority
+- Insider Trucking Dispatch Tips: /blog/insider-trucking-dispatch-tips-faisal
+- How to Choose the Best Dispatch Service: /blog/how-to-choose-dispatch-service
+
 ## Mission
 To become the most trusted dispatch partner in the U.S. freight industry by blending cutting-edge technology with personalized, 24/7 carrier support.`
 
