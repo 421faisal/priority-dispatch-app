@@ -18,12 +18,8 @@ const nextConfig = {
   },
   // Enable compression
   compress: true,
-  // Optimize production builds
-  swcMinify: true,
   // Enable React strict mode for better performance
   reactStrictMode: true,
-  // Optimize fonts
-  optimizeFonts: true,
   // Enable modern JavaScript features
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
@@ -35,7 +31,6 @@ const nextConfig = {
     serverActions: {
       bodySizeLimit: '30mb',
     },
-    optimizeCss: false,
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
   async rewrites() {
