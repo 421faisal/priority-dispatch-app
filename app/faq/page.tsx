@@ -58,6 +58,10 @@ const faqs = [
         q: "What makes Priority Dispatch different from other dispatch services?",
         a: "Three things set us apart: a dedicated dispatcher for every carrier (not a rotating team), data-driven lane optimization that minimizes deadhead miles, and complete transparency—no hidden fees, no long-term contracts. Our founder Muhammad Faisal Bilal built this company with a tech-forward approach, using analytics to deliver better rates and smarter routes.",
     },
+    {
+        q: "Is Priority Dispatch LLC currently hiring?",
+        a: "Yes — we are always hiring! We actively recruit talented Freight Dispatchers and Sales Agents from around the world — including Pakistan, India, the USA, and beyond. Both remote and on-site positions in Kissimmee, FL are available. If you're driven, detail-oriented, and passionate about logistics, we want to hear from you.",
+    },
 ]
 
 const faqSchema = {
@@ -146,6 +150,34 @@ export default function FAQPage() {
                                     </Button>
                                 </a>
                             </div>
+                        </div>
+                    </Reveal>
+
+                    {/* Always Hiring Banner */}
+                    <Reveal delayMs={150}>
+                        <div className="mt-8 rounded-xl border-2 border-accent/40 bg-accent/5 p-6 md:p-8 text-center">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 mb-4">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                                </span>
+                                <span className="text-xs font-bold uppercase tracking-widest text-accent">We Are Always Hiring</span>
+                            </div>
+                            <h3 className="text-2xl font-bold mb-3">Join the Priority Dispatch Team</h3>
+                            <p className="text-muted-foreground max-w-2xl mx-auto mb-2">
+                                We hire talented Freight Dispatchers and Sales Agents from all over the world — 
+                                <strong className="text-foreground"> Pakistan, India, USA</strong>, and beyond.
+                                Both <strong className="text-foreground">remote</strong> and <strong className="text-foreground">on-site</strong> positions are available.
+                            </p>
+                            <p className="text-sm text-muted-foreground mb-6">
+                                No matter where you're located, if you're driven and passionate about logistics, we want to hear from you.
+                            </p>
+                            <a href="/careers">
+                                <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90 shadow-md">
+                                    View Open Positions
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </a>
                         </div>
                     </Reveal>
                 </div>

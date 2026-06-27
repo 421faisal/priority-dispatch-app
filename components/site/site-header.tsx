@@ -15,6 +15,7 @@ const nav = [
   { href: "/blog", label: "Blog" },
   { href: "/toolbox", label: "Toolbox" },
   { href: "/faq", label: "FAQ" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact Us" },
 ]
 
@@ -38,9 +39,9 @@ export function SiteHeader() {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-opacity"
+                className={`text-sm font-medium hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-opacity ${item.href === "/careers" ? "text-accent font-bold" : ""}`}
               >
-                {item.label}
+                {item.label}{item.href === "/careers" && <span className="ml-1.5 inline-flex items-center rounded-full bg-accent/20 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide text-accent">Hiring</span>}
               </a>
             ))}
             <a href="/contact">

@@ -246,6 +246,34 @@ export default function AboutOwnerPage() {
                             </div>
                         </div>
                     </Reveal>
+
+                    {/* Join Our Team CTA */}
+                    <Reveal delayMs={200}>
+                        <div className="mt-12 rounded-2xl border-2 border-accent/40 bg-accent/5 p-8 md:p-10 text-center">
+                            <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 mb-5">
+                                <span className="relative flex h-2 w-2">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+                                </span>
+                                <span className="text-xs font-bold uppercase tracking-widest text-accent">Now Hiring Worldwide</span>
+                            </div>
+                            <h3 className="text-3xl font-extrabold mb-4">Want to Join Our Team?</h3>
+                            <p className="text-muted-foreground max-w-2xl mx-auto mb-2 text-lg">
+                                We're growing fast and always looking for talented <strong className="text-foreground">Freight Dispatchers</strong> and{" "}
+                                <strong className="text-foreground">Sales Agents</strong> to join us.
+                            </p>
+                            <p className="text-muted-foreground max-w-xl mx-auto mb-6">
+                                We hire from <strong className="text-foreground">Pakistan 🇵🇰 · India 🇮🇳 · USA 🇺🇸</strong> and all around the world. 
+                                Remote and on-site positions available in Kissimmee, FL.
+                            </p>
+                            <a href="/careers">
+                                <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90 shadow-md">
+                                    View Open Positions & Apply
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </a>
+                        </div>
+                    </Reveal>
                 </div>
             </section>
 

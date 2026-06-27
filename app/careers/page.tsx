@@ -155,6 +155,13 @@ export default function CareersPage() {
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                         Join Priority Dispatch LLC and help owner-operators across America succeed. We're growing fast and looking for talented dispatchers and sales professionals.
                     </p>
+                    {/* Global hiring flags */}
+                    <div className="flex flex-wrap gap-3 justify-center mt-4">
+                        {["🇵🇰 Pakistan", "🇮🇳 India", "🇺🇸 USA", "🌍 Worldwide"].map(flag => (
+                            <span key={flag} className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-semibold">{flag}</span>
+                        ))}
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-2">Remote &amp; On-Site positions available — We hire from all over the world</p>
                 </div>
             </section>
 
