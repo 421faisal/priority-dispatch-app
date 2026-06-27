@@ -76,6 +76,81 @@ const benefits = [
     { icon: Heart, title: "Supportive Team", description: "Join a collaborative, family-like culture" },
 ]
 
+const JobCard = ({ job, index, onApply }: { job: typeof jobOpenings[0], index: number, onApply: (jobId: string) => void }) => (
+    <Reveal delayMs={index * 100}>
+        <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-accent transition-all">
+            <div className="p-6 md:p-8">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                    <div>
+                        <h3 className="text-2xl font-bold mb-2">{job.title}</h3>
+                        <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
+                            <span className="flex items-center gap-1">
+                                <Briefcase className="h-4 w-4" />
+                                {job.department}
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <MapPin className="h-4 w-4" />
+                                {job.location}
+                            </span>
+                            <span className="flex items-center gap-1">
+                                <Clock className="h-4 w-4" />
+                                {job.type}
+                            </span>
+                        </div>
+                    </div>
+                    <button
+                        onClick={() => onApply(job.id)}
+                        className="px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all whitespace-nowrap"
+                    >
+                        Apply Now
+                    </button>
+                </div>
+
+                <p className="text-muted-foreground mb-6">{job.description}</p>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 className="font-bold mb-3">Responsibilities</h4>
+                        <ul className="space-y-2">
+                            {job.responsibilities.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                    <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-bold mb-3">Requirements</h4>
+                        <ul className="space-y-2">
+                            {job.requirements.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                    <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+
+                {job.preferred.length > 0 && (
+                    <div className="mt-6 pt-6 border-t border-border">
+                        <h4 className="font-bold mb-3">Preferred Qualifications</h4>
+                        <ul className="grid md:grid-cols-2 gap-2">
+                            {job.preferred.map((item, i) => (
+                                <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                                    <Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+            </div>
+        </div>
+    </Reveal>
+)
+
 export default function CareersPage() {
     const [selectedJob, setSelectedJob] = useState<string | null>(null)
     const [formData, setFormData] = useState({
@@ -208,84 +283,18 @@ export default function CareersPage() {
 
                     <div className="space-y-6">
                         {jobOpenings.map((job, index) => (
-                            <Reveal key={job.id} delayMs={index * 100}>
-                                <div className="bg-card border border-border rounded-xl overflow-hidden hover:border-accent transition-all">
-                                    <div className="p-6 md:p-8">
-                                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
-                                            <div>
-                                                <h3 className="text-2xl font-bold mb-2">{job.title}</h3>
-                                                <div className="flex flex-wrap gap-3 text-sm text-muted-foreground">
-                                                    <span className="flex items-center gap-1">
-                                                        <Briefcase className="h-4 w-4" />
-                                                        {job.department}
-                                                    </span>
-                                                    <span className="flex items-center gap-1">
-                                                        <MapPin className="h-4 w-4" />
-                                                        {job.location}
-                                                    </span>
-                                                    <span className="flex items-center gap-1">
-                                                        <Clock className="h-4 w-4" />
-                                                        {job.type}
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <button
-                                                onClick={() => {
-                                                    setSelectedJob(job.id)
-                                                    setFormData(prev => ({ ...prev, jobId: job.id }))
-                                                    setTimeout(() => {
-                                                        document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' })
-                                                    }, 100)
-                                                }}
-                                                className="px-6 py-3 bg-accent text-accent-foreground font-semibold rounded-lg hover:bg-accent/90 transition-all whitespace-nowrap"
-                                            >
-                                                Apply Now
-                                            </button>
-                                        </div>
-
-                                        <p className="text-muted-foreground mb-6">{job.description}</p>
-
-                                        <div className="grid md:grid-cols-2 gap-6">
-                                            <div>
-                                                <h4 className="font-bold mb-3">Responsibilities</h4>
-                                                <ul className="space-y-2">
-                                                    {job.responsibilities.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                                            <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                                                            <span>{item}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <h4 className="font-bold mb-3">Requirements</h4>
-                                                <ul className="space-y-2">
-                                                    {job.requirements.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                                            <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                                                            <span>{item}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        </div>
-
-                                        {job.preferred.length > 0 && (
-                                            <div className="mt-6 pt-6 border-t border-border">
-                                                <h4 className="font-bold mb-3">Preferred Qualifications</h4>
-                                                <ul className="grid md:grid-cols-2 gap-2">
-                                                    {job.preferred.map((item, i) => (
-                                                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
-                                                            <Check className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                                                            <span>{item}</span>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-                            </Reveal>
+                            <JobCard
+                                key={job.id}
+                                job={job}
+                                index={index}
+                                onApply={(jobId) => {
+                                    setSelectedJob(jobId)
+                                    setFormData(prev => ({ ...prev, jobId }))
+                                    setTimeout(() => {
+                                        document.getElementById('application-form')?.scrollIntoView({ behavior: 'smooth' })
+                                    }, 100)
+                                }}
+                            />
                         ))}
                     </div>
                 </div>
