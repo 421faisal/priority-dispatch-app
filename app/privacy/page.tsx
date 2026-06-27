@@ -33,8 +33,27 @@ export default function PrivacyPage() {
                         <h2>4. Security</h2>
                         <p>We take reasonable measures to help protect your personal information from loss, theft, misuse, unauthorized access, disclosure, alteration, and destruction.</p>
 
-                        <h2>5. Contact Us</h2>
-                        <p>If you have any questions about this Privacy Policy, please <a href="/contact" className="text-accent hover:underline font-medium">contact us here</a>.</p>
+                        <h2>5. Employment and Career Applications</h2>
+                        <p>When you apply for employment opportunities through our <a href="/careers" className="text-accent hover:underline font-medium">Careers page</a>, we collect personal information including your name, email address, phone number, resume, cover letter, and any other information you provide in your application.</p>
+                        
+                        <h3>5.1. How We Use Employment Information</h3>
+                        <p>We use the information you provide in your job application to:</p>
+                        <ul>
+                            <li>Evaluate your qualifications for the position you applied for</li>
+                            <li>Communicate with you regarding your application status</li>
+                            <li>Conduct background checks and verify references (with your consent)</li>
+                            <li>Comply with legal and regulatory requirements</li>
+                            <li>Maintain records for equal employment opportunity reporting</li>
+                        </ul>
+
+                        <h3>5.2. Retention of Application Data</h3>
+                        <p>We retain application materials for a period of up to 2 years from the date of submission. This allows us to consider you for future opportunities that may align with your qualifications. You may request deletion of your application data at any time by contacting us.</p>
+
+                        <h3>5.3. Equal Employment Opportunity</h3>
+                        <p>Priority Dispatch LLC is an equal opportunity employer. We do not discriminate based on race, color, religion, sex, national origin, age, disability, veteran status, or any other protected characteristic under applicable law.</p>
+
+                        <h2>6. Contact Us</h2>
+                        <p>If you have any questions about this Privacy Policy or our employment practices, please <a href="/contact" className="text-accent hover:underline font-medium">contact us here</a>.</p>
                     </div>
                 </section>
             </main>

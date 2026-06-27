@@ -22,6 +22,7 @@ Expert freight dispatching services for owner-operators and carrier fleets speci
 - About the Founder: /about-owner
 - Areas We Serve: /areas-we-serve
 - Industry Blog: /blog
+- Careers - Join Our Team: /careers
 - FAQ: /faq
 
 ## Recent Blog Posts

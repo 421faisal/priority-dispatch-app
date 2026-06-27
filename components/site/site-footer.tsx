@@ -117,6 +117,11 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
+              <a href="/careers" className="hover:opacity-80 font-medium text-accent">
+                Careers
+              </a>
+            </li>
+            <li>
               <a href="/contact" className="hover:opacity-80">
                 Contact Us
               </a>
