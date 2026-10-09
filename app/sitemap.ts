@@ -22,6 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         // ── Careers (high priority — always hiring) ──────────────────────
         { url: `${baseUrl}/careers`,                       lastModified: now, changeFrequency: 'weekly',  priority: 0.9 },
 
+        // ── Certificate Verification ──────────────────────────────────────
+        { url: `${baseUrl}/verify`,                        lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/verify/PD-INT-2026-FZUNBUCA`,   lastModified: now, changeFrequency: 'yearly',  priority: 0.7 },
+        { url: `${baseUrl}/verify/PD-INT-2026-HMZMZFR`,    lastModified: now, changeFrequency: 'yearly',  priority: 0.7 },
+
         // ── Blog Index ───────────────────────────────────────────────────
         { url: `${baseUrl}/blog`,                          lastModified: now, changeFrequency: 'weekly',  priority: 0.8 },
 
