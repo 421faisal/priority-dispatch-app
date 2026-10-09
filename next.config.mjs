@@ -43,6 +43,25 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // WWW to non-WWW redirect (must be first)
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.prioritydispatchllc.com',
+          },
+        ],
+        destination: 'https://prioritydispatchllc.com/:path*',
+        permanent: true,
+      },
+      // Trailing slash redirect
+      {
+        source: '/:path+/',
+        destination: '/:path+',
+        permanent: true,
+      },
+      // Existing redirects
       {
         source: '/get-started',
         destination: '/carrier-setup',
