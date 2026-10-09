@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
-import { CheckCircle2, XCircle, Calendar, User, Code, Globe, Award, MapPin } from "lucide-react"
+import { CheckCircle2, XCircle, Calendar, Code, Globe, Award, MapPin } from "lucide-react"
 import { notFound } from "next/navigation"
 
 // Certificate database
@@ -34,7 +34,8 @@ const certificates = {
 
 type CertificateId = keyof typeof certificates
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+export async function generateMetadata(props: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const params = await props.params
   const certificate = certificates[params.id as CertificateId]
   
   if (!certificate) {
@@ -59,7 +60,8 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   }
 }
 
-export default function VerifyCertificatePage({ params }: { params: { id: string } }) {
+export default async function VerifyCertificatePage(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params
   const certificate = certificates[params.id as CertificateId]
 
   if (!certificate) {
