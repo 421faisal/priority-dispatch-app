@@ -1,22 +1,10 @@
+"use client"
+
 import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
 import { Shield, QrCode, Search, CheckCircle2, Award, ArrowRight } from "lucide-react"
 import Reveal from "@/components/site/reveal"
-
-export const metadata: Metadata = {
-  title: "Verify Certificate | Priority Dispatch LLC",
-  description: "Verify the authenticity of Priority Dispatch LLC internship certificates. Enter a certificate ID or scan the QR code to validate credentials.",
-  alternates: {
-    canonical: "https://prioritydispatchllc.com/verify",
-  },
-  openGraph: {
-    title: "Certificate Verification | Priority Dispatch LLC",
-    description: "Verify the authenticity of Priority Dispatch LLC internship certificates.",
-    url: "https://prioritydispatchllc.com/verify",
-    type: "website",
-  },
-}
 
 export default function VerifyPage() {
   return (
