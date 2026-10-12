@@ -3,18 +3,17 @@
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
-import type { JSX } from "react"
 
 type RevealProps = {
   children: React.ReactNode
   className?: string
-  as?: keyof JSX.IntrinsicElements
+  as?: React.ElementType
   delayMs?: number
   once?: boolean
 }
 
 export default function Reveal({ children, className, as: Tag = "div", delayMs = 0, once = true }: RevealProps) {
-  const ref = useRef<HTMLElement | null>(null)
+  const ref = useRef<HTMLElement>(null)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
@@ -39,7 +38,7 @@ export default function Reveal({ children, className, as: Tag = "div", delayMs =
 
   return (
     <Tag
-      ref={ref as any}
+      ref={ref}
       className={cn(
         // motion-safe ensures users with reduced motion won't see large animations
         "motion-safe:transition-all motion-safe:duration-700 motion-safe:ease-out",
