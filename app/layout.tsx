@@ -44,11 +44,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://prioritydispatchllc.com',
   },
-  other: {
-    'link-preconnect-unsplash': '<link rel="preconnect" href="https://images.unsplash.com">',
-    'link-dns-prefetch-unsplash': '<link rel="dns-prefetch" href="https://images.unsplash.com">',
-    'link-preconnect-gtag': '<link rel="preconnect" href="https://www.googletagmanager.com">',
-  },
 }
 
 const jsonLd = {
@@ -87,18 +82,6 @@ const jsonLd = {
   ]
 }
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://prioritydispatchllc.com' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://prioritydispatchllc.com/services' },
-    { '@type': 'ListItem', position: 3, name: 'Carrier Setup', item: 'https://prioritydispatchllc.com/carrier-setup' },
-    { '@type': 'ListItem', position: 4, name: 'FAQ', item: 'https://prioritydispatchllc.com/faq' },
-    { '@type': 'ListItem', position: 5, name: 'About', item: 'https://prioritydispatchllc.com/about-owner' },
-  ],
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -125,40 +108,12 @@ export default function RootLayout({
             gtag('config', 'G-LP1X3P58HM');
           `}
         </Script>
-        {/* Facebook Pixel — lazyOnload for performance */}
-        <Script id="facebook-pixel" strategy="lazyOnload">
-          {`
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', 'REPLACE_WITH_FB_PIXEL_ID');
-            fbq('track', 'PageView');
-          `}
-        </Script>
-        <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=REPLACE_WITH_FB_PIXEL_ID&ev=PageView&noscript=1"
-            alt=""
-          />
-        </noscript>
         
 
 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
         />
         <SmoothScroll />
         {children}

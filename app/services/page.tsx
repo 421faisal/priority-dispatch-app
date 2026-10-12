@@ -140,9 +140,8 @@ const howItWorks = [
 ]
 
 const stats = [
-    { icon: TrendingUp, value: "18–25%", label: "Average Revenue Increase" },
-    { icon: Users, value: "150+", label: "Active Carrier Partners" },
-    { icon: Award, value: "4.9/5", label: "Average Carrier Rating" },
+    { icon: TrendingUp, value: "20%", label: "Average Revenue Increase" },
+    { icon: Users, value: "100+", label: "Active Carrier Partners" },
     { icon: Clock, value: "24/7", label: "Support Coverage" },
 ]
 
@@ -187,8 +186,7 @@ export default function ServicesPage() {
                                 Full-Service Dispatch
                             </span>
                             <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl leading-tight">
-                                Everything Your Trucking Business Needs to{" "}
-                                <span className="text-accent">Dominate</span>
+                                Truck Dispatch Services for <span className="text-accent">Owner-Operators</span>
                             </h1>
                             <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
                                 From load booking and rate negotiation to 24/7 support and back-office paperwork — we handle everything so you can focus entirely on driving profitably.
@@ -377,7 +375,7 @@ export default function ServicesPage() {
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </a>
-                            <a href="/#contact">
+                            <a href="/contact">
                                 <Button
                                     size="lg"
                                     variant="outline"
