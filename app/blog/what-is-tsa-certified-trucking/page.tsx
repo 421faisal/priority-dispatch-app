@@ -7,10 +7,22 @@ import { Calendar, User, Clock, ArrowLeft, Plane, Shield, DollarSign, TrendingUp
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-    title: "What Does TSA Certified Mean in Trucking? Complete Guide 2026 | Priority Dispatch LLC",
-    description: "TSA certification unlocks air cargo and high-security freight in trucking. Learn how to become TSA certified and how Priority Dispatch LLC helps certified owner-operators access premium expedited loads.",
+    title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
+    description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify, typical costs and the air cargo loads it unlocks.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
+    },
+    openGraph: {
+        title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
+        description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify, typical costs and the air cargo loads it unlocks.",
+        url: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
+        type: "article",
+        images: ["/images/blog/hero-autonomous-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
+        description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify.",
     },
 }
 
@@ -34,7 +46,7 @@ export default function TSACertifiedBlogPost() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                What Does TSA Certified Mean in Trucking?
+                                What Does TSA Certified Mean in Trucking? (2026 Guide)
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">

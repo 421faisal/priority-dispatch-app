@@ -5,10 +5,22 @@ import { Contact } from "@/components/site/contact"
 import Reveal from "@/components/site/reveal"
 
 export const metadata: Metadata = {
-    title: "Contact Us — Priority Dispatch LLC | Freight Dispatching Solutions",
-    description: "Ready to maximize your earnings? Contact Priority Dispatch LLC today for expert freight dispatching services across all 48 states.",
+    title: "Contact Priority Dispatch LLC | Talk to a Truck Dispatcher",
+    description: "Call (+1) 689-314-8347 or send a request. Priority Dispatch LLC in Kissimmee, FL dispatches reefers, dry vans, flatbeds and box trucks in all 48 states.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/contact",
+    },
+    openGraph: {
+        title: "Contact Priority Dispatch LLC | Talk to a Truck Dispatcher",
+        description: "Call (+1) 689-314-8347 or send a request. Priority Dispatch LLC in Kissimmee, FL dispatches reefers, dry vans, flatbeds and box trucks in all 48 states.",
+        url: "https://prioritydispatchllc.com/contact",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Priority Dispatch LLC | Talk to a Truck Dispatcher",
+        description: "Call (+1) 689-314-8347 or send a request for truck dispatching services.",
     },
 }
 

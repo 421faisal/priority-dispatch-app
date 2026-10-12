@@ -5,10 +5,22 @@ import Reveal from "@/components/site/reveal"
 import { MapPin, Truck, Globe, Navigation } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Areas We Serve — 48 State Freight Coverage | Priority Dispatch LLC",
-    description: "Priority Dispatch LLC provides expert freight dispatching across the continental United States. We serve all 48 states with dedicated support in Florida, Texas, California, and more.",
+    title: "Truck Dispatch Services in All 48 States | Priority Dispatch",
+    description: "Truck dispatching across all 48 states from Kissimmee, FL, with lane knowledge in the Southeast, Southwest, Midwest, Northeast and West.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/areas-we-serve",
+    },
+    openGraph: {
+        title: "Truck Dispatch Services in All 48 States | Priority Dispatch",
+        description: "Truck dispatching across all 48 states from Kissimmee, FL, with lane knowledge in the Southeast, Southwest, Midwest, Northeast and West.",
+        url: "https://prioritydispatchllc.com/areas-we-serve",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Truck Dispatch Services in All 48 States | Priority Dispatch",
+        description: "Truck dispatching across all 48 states from Kissimmee, FL.",
     },
 }
 

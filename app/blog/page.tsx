@@ -5,17 +5,23 @@ import Reveal from "@/components/site/reveal"
 import { Calendar, User, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Trucking Industry Blog — Insights & Tips | Priority Dispatch",
-    description: "Expert trucking industry insights, dispatching strategies, load board tips, and freight market trends. Stay ahead with Priority Dispatch LLC's blog.",
+    title: "Trucking & Dispatch Blog | Priority Dispatch LLC",
+    description: "Practical guides for owner-operators: dispatch fees, new MC authority, load boards and broker vetting.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog",
     },
     openGraph: {
-        title: "Trucking Industry Blog — Insights & Tips | Priority Dispatch",
-        description: "Expert trucking industry insights, dispatching strategies, load board tips, and freight market trends.",
+        title: "Trucking & Dispatch Blog | Priority Dispatch LLC",
+        description: "Practical guides for owner-operators: dispatch fees, new MC authority, load boards and broker vetting.",
         url: "https://prioritydispatchllc.com/blog",
         siteName: "Priority Dispatch LLC",
         type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Trucking & Dispatch Blog | Priority Dispatch LLC",
+        description: "Practical guides for owner-operators: dispatch fees, new MC authority, load boards and broker vetting.",
     },
 }
 

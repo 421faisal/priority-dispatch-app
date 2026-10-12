@@ -6,10 +6,22 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Zap, Scale, MessageSquare, ShieldCheck, TrendingUp, BarChart3, Target, Map } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "What Is Freight Dispatching? A Complete Guide for 2026 | Priority Dispatch LLC",
-    description: "Discover everything you need to know about freight dispatching. Learn how dispatchers find loads, negotiate rates, and help trucking companies grow in 2026.",
+    title: "What Is Freight Dispatching? 2026 Guide | Priority Dispatch",
+    description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, and what a dispatcher costs.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
+    },
+    openGraph: {
+        title: "What Is Freight Dispatching? 2026 Guide | Priority Dispatch",
+        description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, and what a dispatcher costs.",
+        url: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
+        type: "article",
+        images: ["/images/blog/hero-dispatcher.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is Freight Dispatching? 2026 Guide | Priority Dispatch",
+        description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes.",
     },
 }
 
@@ -33,7 +45,7 @@ export default function BlogPostWhatIsDispatching() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                What Is Freight Dispatching? The 2026 Masterclass
+                                What Is Freight Dispatching? The 2026 Guide for Owner-Operators
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">

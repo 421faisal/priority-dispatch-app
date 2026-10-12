@@ -6,14 +6,23 @@ import Reveal from "@/components/site/reveal"
 import { ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Frequently Asked Questions | Priority Dispatch LLC",
+    title: "Truck Dispatching FAQ: Fees, Contracts & How It Works",
     description:
-        "Find answers to common questions about freight dispatching, owner-operator services, pricing, equipment types, and how Priority Dispatch LLC can help maximize your revenue.",
+        "How much does a truck dispatcher cost? Answers on fees, contracts, equipment, load approval and 24/7 support from Priority Dispatch LLC.",
+    alternates: {
+        canonical: "https://prioritydispatchllc.com/faq",
+    },
     openGraph: {
-        title: "FAQ | Priority Dispatch LLC",
-        description:
-            "Everything you need to know about our freight dispatching services.",
+        title: "Truck Dispatching FAQ: Fees, Contracts & How It Works",
+        description: "How much does a truck dispatcher cost? Answers on fees, contracts, equipment, load approval and 24/7 support.",
         url: "https://prioritydispatchllc.com/faq",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Truck Dispatching FAQ: Fees, Contracts & How It Works",
+        description: "How much does a truck dispatcher cost? Answers on fees, contracts, equipment, load approval and 24/7 support.",
     },
 }
 

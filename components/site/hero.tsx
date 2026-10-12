@@ -22,7 +22,7 @@ export function Hero() {
                   Dispatchers online now
                 </div>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold leading-tight md:text-6xl">
-                  Keep your wheels turning - profitably.
+                  Truck Dispatcher for Owner-Operators: More Loads, Better Rates
                 </h1>
                 <p className="mt-2 text-xl font-semibold text-accent md:text-2xl">Priority Dispatch LLC</p>
                 <p className="mt-4 text-pretty text-base opacity-95 md:text-lg">

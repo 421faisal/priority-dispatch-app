@@ -23,14 +23,23 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Our Services — Freight Dispatching & Carrier Support | Priority Dispatch LLC",
+    title: "Truck Dispatch Services | Priority Dispatch LLC",
     description:
-        "Explore Priority Dispatch LLC's full range of freight dispatching services: load booking, carrier support, route optimization, broker vetting, invoicing, and 24/7 assistance for owner-operators.",
+        "Full-service truck dispatching: load booking, rate negotiation, broker vetting, invoicing and 24/7 support for reefer, dry van, flatbed and box trucks.",
+    alternates: {
+        canonical: "https://prioritydispatchllc.com/services",
+    },
     openGraph: {
-        title: "Services | Priority Dispatch LLC",
-        description:
-            "Full-service freight dispatching for Reefers, Dry Vans, Box Trucks, Flatbeds, and more.",
+        title: "Truck Dispatch Services | Priority Dispatch LLC",
+        description: "Full-service truck dispatching for owner-operators in all 48 states.",
         url: "https://prioritydispatchllc.com/services",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Truck Dispatch Services | Priority Dispatch LLC",
+        description: "Full-service truck dispatching for owner-operators in all 48 states.",
     },
 }
 

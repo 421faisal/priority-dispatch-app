@@ -53,10 +53,10 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'Organization'],
+  '@type': 'LocalBusiness',
   name: 'Priority Dispatch LLC',
   image: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
-  description: 'Professional truck dispatcher services for owner-operators. We find high-paying loads, negotiate rates, and handle all paperwork across all 48 US states.',
+  description: 'Truck dispatching for owner-operators and small fleets in all 48 states.',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '804 Brack St',
@@ -73,36 +73,17 @@ const jsonLd = {
   telephone: '+16893148347',
   email: 'prioritydispatch4u@gmail.com',
   url: 'https://prioritydispatchllc.com',
-  areaServed: {
-    '@type': 'Country',
-    name: 'United States'
-  },
-  contactPoint: {
-    '@type': 'ContactPoint',
-    telephone: '+16893148347',
-    contactType: 'customer service',
-    areaServed: 'US',
-    availableLanguage: 'English',
-    hoursAvailable: {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
-      opens: '00:00',
-      closes: '23:59'
-    }
-  },
+  areaServed: 'US',
   founder: {
     '@type': 'Person',
-    name: 'Muhammad Faisal Bilal',
-    jobTitle: 'Founder & CEO',
-    url: 'https://www.linkedin.com/in/muhammad-faisal-bilal'
-  },
-  numberOfEmployees: {
-    '@type': 'QuantitativeValue',
-    value: 10
+    name: 'Muhammad Faisal Bilal'
   },
   sameAs: [
-    'https://www.facebook.com/PriorityDispatchLLC',
-    'https://www.instagram.com/prioritydispatchllc'
+    'https://www.facebook.com/prioritydispatchllc',
+    'https://www.instagram.com/priority_dispatch',
+    'https://twitter.com/PDispatch4u',
+    'https://www.linkedin.com/company/priority-dispatch-llc/',
+    'https://www.youtube.com/@prioritydispatch4u'
   ]
 }
 

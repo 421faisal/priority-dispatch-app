@@ -4,15 +4,22 @@ import { SiteFooter } from "@/components/site/site-footer"
 import { CarrierSetupForm } from "@/components/site/carrier-setup-form"
 
 export const metadata: Metadata = {
-    title: "Carrier Setup & Registration | Priority Dispatch LLC",
-    description: "Join Priority Dispatch LLC today. Securely upload your MC authority, W-9, and COI to start receiving high-paying freight loads. Fast carrier onboarding.",
-    openGraph: {
-        title: "Carrier Setup & Registration | Priority Dispatch LLC",
-        description: "Start working with Priority Dispatch LLC. Upload your documents and get loaded fast.",
-        url: "https://prioritydispatchllc.com/carrier-setup",
-    },
+    title: "Get Started with a Truck Dispatcher | Priority Dispatch LLC",
+    description: "Start with Priority Dispatch LLC. Submit your MC number, W-9 and insurance (COI) and get matched with a dedicated truck dispatcher.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/carrier-setup",
+    },
+    openGraph: {
+        title: "Get Started with a Truck Dispatcher | Priority Dispatch LLC",
+        description: "Start with Priority Dispatch LLC. Submit your MC number, W-9 and insurance (COI) and get matched with a dedicated truck dispatcher.",
+        url: "https://prioritydispatchllc.com/carrier-setup",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Get Started with a Truck Dispatcher | Priority Dispatch LLC",
+        description: "Submit your MC number, W-9 and insurance (COI) and get matched with a dedicated truck dispatcher.",
     },
 }
 

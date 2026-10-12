@@ -48,6 +48,10 @@ export async function generateMetadata(props: { params: Promise<{ id: string }> 
   return {
     title: `Verify Certificate - ${certificate.name} | Priority Dispatch LLC`,
     description: `Official certificate verification for ${certificate.name}, ${certificate.role} at Priority Dispatch LLC.`,
+    robots: {
+      index: false,
+      follow: false,
+    },
     alternates: {
       canonical: `https://prioritydispatchllc.com/verify/${params.id}`,
     },

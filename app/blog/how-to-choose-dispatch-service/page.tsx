@@ -6,10 +6,22 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldAlert, Zap, Search, Scale, FileText, CheckCircle2, Globe, FileWarning, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "How to Choose the Best Truck Dispatch Service in 2026 | Priority Dispatch LLC",
-    description: "Don't fall for dispatching scams. Learn how to vet a truck dispatch service, what to look for in contracts, and how Priority Dispatch LLC sets the standard.",
+    title: "How to Choose a Truck Dispatch Service (2026 Checklist)",
+    description: "What to check before you hire a truck dispatcher: fees, contract terms, power of attorney scope, business verification and red flags.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/how-to-choose-dispatch-service",
+    },
+    openGraph: {
+        title: "How to Choose a Truck Dispatch Service (2026 Checklist)",
+        description: "What to check before you hire a truck dispatcher: fees, contract terms, power of attorney scope, business verification and red flags.",
+        url: "https://prioritydispatchllc.com/blog/how-to-choose-dispatch-service",
+        type: "article",
+        images: ["/images/blog/hero-dispatcher.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Choose a Truck Dispatch Service (2026 Checklist)",
+        description: "What to check before you hire a truck dispatcher: fees, contract terms, power of attorney scope.",
     },
 }
 
