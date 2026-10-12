@@ -143,7 +143,7 @@ export default function FAQPage() {
                                 Our team is ready to help. Reach out and we&apos;ll get back to you within hours.
                             </p>
                             <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                                <a href="/#contact">
+                                <a href="/contact">
                                     <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90 shadow-md">
                                         Contact Us
                                         <ArrowRight className="ml-2 h-4 w-4" />
