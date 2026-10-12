@@ -1,24 +1,30 @@
 "use client"
 
-import type React from "react"
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import { cn } from "@/lib/utils"
 
-type RevealProps = {
+interface RevealProps {
   children: React.ReactNode
   className?: string
-  as?: React.ElementType
+  as?: string
   delayMs?: number
   once?: boolean
 }
 
-export default function Reveal({ children, className, as: Tag = "div", delayMs = 0, once = true }: RevealProps) {
-  const ref = useRef<HTMLElement>(null)
+export default function Reveal({ 
+  children, 
+  className, 
+  as = "div", 
+  delayMs = 0, 
+  once = true 
+}: RevealProps) {
+  const ref = useRef<any>(null)
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
     const node = ref.current
     if (!node) return
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -32,22 +38,22 @@ export default function Reveal({ children, className, as: Tag = "div", delayMs =
       },
       { threshold: 0.15 },
     )
+    
     observer.observe(node)
     return () => observer.disconnect()
   }, [delayMs, once])
 
-  return (
-    <Tag
-      ref={ref}
-      className={cn(
-        // motion-safe ensures users with reduced motion won't see large animations
+  return React.createElement(
+    as,
+    {
+      ref,
+      className: cn(
         "motion-safe:transition-all motion-safe:duration-700 motion-safe:ease-out",
         "motion-safe:[transform:translateY(var(--y,0))] motion-safe:[opacity:var(--o,1)]",
         visible ? "motion-safe:[--y:0] motion-safe:[--o:1]" : "motion-safe:[--y:12px] motion-safe:[--o:0]",
         className,
-      )}
-    >
-      {children}
-    </Tag>
+      ),
+    },
+    children
   )
 }
