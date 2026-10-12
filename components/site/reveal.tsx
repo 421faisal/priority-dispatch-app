@@ -11,6 +11,7 @@ interface RevealProps {
   once?: boolean
 }
 
+// Reveal component with intersection observer for animations
 export default function Reveal({ 
   children, 
   className, 
@@ -43,6 +44,7 @@ export default function Reveal({
     return () => observer.disconnect()
   }, [delayMs, once])
 
+  // Using React.createElement to avoid TypeScript ref union type complexity
   return React.createElement(
     as,
     {
