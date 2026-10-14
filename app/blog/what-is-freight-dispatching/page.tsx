@@ -77,7 +77,7 @@ export default function BlogPostWhatIsDispatching() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                If the truck driver is the muscle of the economy, the dispatcher is the brain. In 2026, dispatching has evolved dramatically from simply "booking loads" to executing high-level "market arbitrage." This comprehensive, 2,500+ word masterclass explores every facet of modern freight dispatching, the psychology of rate negotiation, the Virtual-vs-In-House debate, advanced lane optimization, and why 24/7 dedicated support is the only way owner-operators can surviveÃ¢â‚¬â€and thriveÃ¢â‚¬â€in today's hyper-competitive logistics landscape.
+                                If the truck driver is the muscle of the economy, the dispatcher is the brain. In 2026, dispatching has evolved dramatically from simply "booking loads" to executing high-level "market arbitrage." This comprehensive, 2,500+ word masterclass explores every facet of modern freight dispatching, the psychology of rate negotiation, the Virtual-vs-In-House debate, advanced lane optimization, and why 24/7 dedicated support is the only way owner-operators can surviveÃ¢â‚¬"and thriveÃ¢â‚¬"in today's hyper-competitive logistics landscape.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -112,7 +112,7 @@ export default function BlogPostWhatIsDispatching() {
                             
                             <h3 className="text-2xl font-bold mt-8 mb-3">1. The "Silent Minute" Technique</h3>
                             <p>
-                                Human beings naturally abhor silence on a phone call. When a broker gives a low-ball counteroffer, our dispatchers are trained to remain perfectly silent for up to 60 seconds. In roughly 85% of cases, the broker will become uncomfortable and fill the silence by increasing the offer by $100Ã¢â‚¬â€œ$300 before we even utter a word. It requires discipline, but it yields massive financial results.
+                                Human beings naturally abhor silence on a phone call. When a broker gives a low-ball counteroffer, our dispatchers are trained to remain perfectly silent for up to 60 seconds. In roughly 85% of cases, the broker will become uncomfortable and fill the silence by increasing the offer by $100Ã¢â‚¬"$300 before we even utter a word. It requires discipline, but it yields massive financial results.
                             </p>
 
                             <h3 className="text-2xl font-bold mt-8 mb-3">2. Data as Leverage</h3>
@@ -161,7 +161,7 @@ export default function BlogPostWhatIsDispatching() {
                                 <tbody>
                                     <tr className="border-b border-border text-sm md:text-base">
                                         <td className="p-4 font-semibold">Base Cost</td>
-                                        <td className="p-4">$50,000 Ã¢â‚¬â€œ $75,000 Salary</td>
+                                        <td className="p-4">$50,000 Ã¢â‚¬" $75,000 Salary</td>
                                         <td className="p-4">Small % of gross revenue (Pay as you earn)</td>
                                     </tr>
                                     <tr className="border-b border-border text-sm md:text-base">
@@ -183,7 +183,7 @@ export default function BlogPostWhatIsDispatching() {
                             </table>
 
                             <p>
-                                The math is aggressively in favor of virtualization. For a small fleet owner, hiring an in-house dispatcher introduces catastrophic financial risk during slow seasons. A virtual truck dispatcher scales seamlessly with your business's ebbs and flows. Furthermore, a firm like <strong>Priority Dispatch LLC</strong> comes fully equipped with premium subscriptions to multiple load boards, AI valuation tools, and TMS softwareÃ¢â‚¬â€saving the fleet owner thousands of dollars in tech overhead.
+                                The math is aggressively in favor of virtualization. For a small fleet owner, hiring an in-house dispatcher introduces catastrophic financial risk during slow seasons. A virtual truck dispatcher scales seamlessly with your business's ebbs and flows. Furthermore, a firm like <strong>Priority Dispatch LLC</strong> comes fully equipped with premium subscriptions to multiple load boards, AI valuation tools, and TMS softwareÃ¢â‚¬"saving the fleet owner thousands of dollars in tech overhead.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -198,12 +198,12 @@ export default function BlogPostWhatIsDispatching() {
                             </p>
                             <ul className="list-disc pl-6 space-y-2 mt-4">
                                 <li><strong>Days to Pay (DTP):</strong> If a broker's DTP slips past 35 days, they are red-flagged. We ensure you are working with brokers who pay in 15-21 days or offer strong quick-pay options.</li>
-                                <li><strong>Bond History verification:</strong> We check for recent claims filed against their surety bondÃ¢â‚¬â€a massive leading indicator of impending bankruptcy.</li>
+                                <li><strong>Bond History verification:</strong> We check for recent claims filed against their surety bondÃ¢â‚¬"a massive leading indicator of impending bankruptcy.</li>
                                 <li><strong>Factorability:</strong> We cross-reference the broker with tier-1 factoring companies. If the factoring company refuses to buy their invoice, we refuse to book their load.</li>
                                 <li><strong>Double-Brokering Footprints:</strong> We utilize advanced software to detect if the broker's MC number is freshly minted but their load volume is suspiciously high, or if their IP addresses correspond with known offshore scam centers.</li>
                             </ul>
                             <p className="mt-4">
-                                Because ultimately, a dispatcher's job isn't just to find you a loadÃ¢â‚¬â€it is to guarantee you receive a paycheck. A $4,000 load is entirely worthless if the broker disappears on payday.
+                                Because ultimately, a dispatcher's job isn't just to find you a loadÃ¢â‚¬"it is to guarantee you receive a paycheck. A $4,000 load is entirely worthless if the broker disappears on payday.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -255,7 +255,7 @@ export default function BlogPostWhatIsDispatching() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Your Mobile Corporate Office</h2>
                             <p>
-                                Ultimately, a dispatcher is not an expenseÃ¢â‚¬â€they are the highest ROI investment you can make in your trucking business. They are a profound revenue multiplier that allows you to scale from a single truck into a generational logistics fleet.
+                                Ultimately, a dispatcher is not an expenseÃ¢â‚¬"they are the highest ROI investment you can make in your trucking business. They are a profound revenue multiplier that allows you to scale from a single truck into a generational logistics fleet.
                             </p>
                             <p>
                                 In the high-stakes, hyper-volatile world of 2026 logistics, you cannot afford to settle for amateur hour. You need a dedicated, hyper-professional, data-driven partner.
@@ -317,7 +317,7 @@ export default function BlogPostWhatIsDispatching() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn Ã¢â€ â€™
+                                    Connect on LinkedIn Ã¢" '
                                 </a>
                             </div>
                         </Reveal>
