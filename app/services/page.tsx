@@ -20,6 +20,13 @@ import {
     Users,
     Award,
     PhoneCall,
+    Package,
+    Snowflake,
+    Container,
+    Package2,
+    Boxes,
+    Zap,
+    Flame,
 } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -79,6 +86,58 @@ const coreServices = [
             "Collections follow-up",
         ],
         image: "/images/services-load.jpg",
+    },
+]
+
+const equipmentServices = [
+    {
+        icon: Package,
+        title: "Dry Van Dispatch",
+        rate: "$2.50–$3.50/mile",
+        desc: "High-paying loads for dry van owner-operators. Steady freight from retail, manufacturing, and consumer goods.",
+        href: "/services/dry-van-dispatch"
+    },
+    {
+        icon: Snowflake,
+        title: "Reefer Dispatch",
+        rate: "$2.80–$4.00/mile",
+        desc: "Premium temperature-controlled freight. Produce, pharma, and frozen foods across all major cold chain corridors.",
+        href: "/services/reefer-dispatch"
+    },
+    {
+        icon: Container,
+        title: "Flatbed Dispatch",
+        rate: "$3.00–$5.00/mile",
+        desc: "Top rates for steel, machinery, and construction materials. Securement and permit coordination included.",
+        href: "/services/flatbed-dispatch"
+    },
+    {
+        icon: Package2,
+        title: "Box Truck Dispatch",
+        rate: "$1.80–$3.50/mile",
+        desc: "Local and regional loads. Amazon, final mile, and expedited freight with fast turnarounds.",
+        href: "/services/box-truck-dispatch"
+    },
+    {
+        icon: Boxes,
+        title: "Step Deck Dispatch",
+        rate: "$3.50–$5.50/mile",
+        desc: "Highest flatbed rates for tall equipment and oversized loads. Full permit and securement support.",
+        href: "/services/step-deck-dispatch"
+    },
+    {
+        icon: Zap,
+        title: "Power Only Dispatch",
+        rate: "$2.00–$3.50/mile",
+        desc: "Drop-and-hook efficiency. No trailer maintenance. More loads per week with faster turnarounds.",
+        href: "/services/power-only-dispatch"
+    },
+    {
+        icon: Flame,
+        title: "Hotshot Dispatch",
+        rate: "$2.50–$5.00/mile",
+        desc: "Premium pay for urgent, time-sensitive freight. Oil field, construction, and expedited deliveries.",
+        href: "/services/hotshot-dispatch"
     },
 ]
 
@@ -272,6 +331,61 @@ export default function ServicesPage() {
                             </Reveal>
                         ))}
                     </div>
+                </div>
+            </section>
+
+            {/* Equipment-Specific Dispatch Services */}
+            <section className="bg-background py-20 md:py-28">
+                <div className="mx-auto max-w-6xl px-4">
+                    <Reveal>
+                        <div className="text-center mb-14">
+                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
+                                Dispatch Services by Equipment Type
+                            </h2>
+                            <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+                                Specialized dispatch for your specific trailer. Click your equipment type to see rates, lanes, and how we maximize your earnings.
+                            </p>
+                        </div>
+                    </Reveal>
+
+                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        {equipmentServices.map((svc, i) => (
+                            <Reveal key={svc.title} delayMs={80 * i}>
+                                <a href={svc.href} className="group block">
+                                    <div className="h-full rounded-2xl border-2 border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl hover:border-accent">
+                                        <div className="flex items-start gap-4 mb-4">
+                                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground shadow-sm group-hover:scale-110 transition-transform">
+                                                <svc.icon className="h-6 w-6" />
+                                            </div>
+                                            <div className="flex-1">
+                                                <h3 className="font-extrabold text-lg mb-1 group-hover:text-accent transition-colors">{svc.title}</h3>
+                                                <p className="text-sm font-bold text-accent">{svc.rate}</p>
+                                            </div>
+                                        </div>
+                                        <p className="text-sm text-muted-foreground leading-relaxed mb-4">{svc.desc}</p>
+                                        <div className="flex items-center text-sm font-bold text-accent group-hover:gap-2 transition-all">
+                                            Learn More 
+                                            <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                                        </div>
+                                    </div>
+                                </a>
+                            </Reveal>
+                        ))}
+                    </div>
+
+                    <Reveal delayMs={600}>
+                        <div className="mt-12 text-center">
+                            <p className="text-muted-foreground mb-6">
+                                Not sure which service fits your equipment? We can help you choose.
+                            </p>
+                            <a href="/contact">
+                                <Button size="lg" variant="outline" className="font-bold">
+                                    <PhoneCall className="mr-2 h-5 w-5" />
+                                    Talk to a Dispatcher
+                                </Button>
+                            </a>
+                        </div>
+                    </Reveal>
                 </div>
             </section>
 
