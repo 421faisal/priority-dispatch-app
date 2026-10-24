@@ -190,7 +190,7 @@ export default function BlogPostWhatIsDispatching() {
                                     <strong>Option A:</strong> A 1,000-mile load pays $3.00 per mile, which is $3,000. The destination is a weak freight market, so the driver deadheads 400 miles to the next pickup. Revenue is $3,000 over 1,400 total miles, which is about <span className="text-red-500 font-bold">$2.14 per mile</span>.
                                 </p>
                                 <p>
-                                    <strong>Option B:</strong> A 600-mile load at $2.60 per mile pays $1,560. It delivers into a stronger market, and a 800-mile load at $2.45 per mile follows, paying $1,960. Revenue is $3,520 over 1,400 total miles, which is about <span className="text-green-500 font-bold">$2.51 per mile</span>.
+                                    <strong>Option B:</strong> A 600-mile load at $2.60 per mile pays $1,560. It delivers into a stronger market, and an 800-mile load at $2.45 per mile follows, paying $1,960. Revenue is $3,520 over 1,400 total miles, which is about <span className="text-green-500 font-bold">$2.51 per mile</span>.
                                 </p>
                             </div>
                             
