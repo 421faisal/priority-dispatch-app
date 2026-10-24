@@ -21,6 +21,7 @@ export default function Reveal({
 }: RevealProps) {
   const ref = useRef<any>(null)
   const [visible, setVisible] = useState(false)
+  const [hasAnimated, setHasAnimated] = useState(false)
 
   useEffect(() => {
     const node = ref.current
@@ -29,10 +30,13 @@ export default function Reveal({
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => setVisible(true), delayMs)
+          if (entry.isIntersecting && !hasAnimated) {
+            setTimeout(() => {
+              setVisible(true)
+              setHasAnimated(true)
+            }, delayMs)
             if (once) observer.unobserve(entry.target)
-          } else if (!once) {
+          } else if (!once && !hasAnimated) {
             setVisible(false)
           }
         })
@@ -42,7 +46,7 @@ export default function Reveal({
     
     observer.observe(node)
     return () => observer.disconnect()
-  }, [delayMs, once])
+  }, [delayMs, once, hasAnimated])
 
   // Using React.createElement to avoid TypeScript ref union type complexity
   return React.createElement(
@@ -52,7 +56,7 @@ export default function Reveal({
       className: cn(
         "motion-safe:transition-all motion-safe:duration-700 motion-safe:ease-out",
         "motion-safe:[transform:translateY(var(--y,0))] motion-safe:[opacity:var(--o,1)]",
-        visible ? "motion-safe:[--y:0] motion-safe:[--o:1]" : "motion-safe:[--y:12px] motion-safe:[--o:0]",
+        visible || hasAnimated ? "motion-safe:[--y:0] motion-safe:[--o:1]" : "motion-safe:[--y:12px] motion-safe:[--o:0]",
         className,
       ),
     },
