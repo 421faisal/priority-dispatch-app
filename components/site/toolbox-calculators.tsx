@@ -145,7 +145,7 @@ function LoadProfitabilityCalculator() {
 
                 <div className="mt-8 flex flex-col md:flex-row items-center justify-between gap-6 p-6 bg-primary text-primary-foreground rounded-2xl">
                     <div>
-                        <h4 className="text-lg font-bold opacity-80 uppercase tracking-wider">Estimated Gross Profit</h4>
+                        <p className="text-lg font-bold opacity-80 uppercase tracking-wider">Estimated Gross Profit</p>
                         <p className="text-xs opacity-60">(After Fuel Costs)</p>
                     </div>
                     <div className="text-4xl md:text-6xl font-black text-accent">

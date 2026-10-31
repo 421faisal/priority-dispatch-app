@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, ArrowLeft, Linkedin, AlertOctagon, TrendingUp, HandCoins, HelpCircle, FileSignature, ExternalLink } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Insider Trucking Tips: What I Learned the Hard Way in Logistics | Priority Dispatch",
-    description: "Faisal Bilal shares deep, unfiltered industry secrets on negotiating detention, spotting bad brokers, surviving freight recessions, and managing cash flow on the road.",
+    title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+    description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/insider-trucking-dispatch-tips-faisal",
+    },
+    openGraph: {
+        title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+        description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
+        url: "https://prioritydispatchllc.com/blog/insider-trucking-dispatch-tips-faisal",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/professional-dispatch-office-team-at-work.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+        description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
+        images: ["/images/professional-dispatch-office-team-at-work.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPost() {
                 description=""
                 datePublished="2026-03-19"
                 slug="insider-trucking-dispatch-tips-faisal"
-                imageUrl="/images/blog/hero-dispatch-tips.jpg"
+                imageUrl="/images/professional-dispatch-office-team-at-work.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -83,7 +100,7 @@ export default function BlogPost() {
                             <div className="bg-card border border-border rounded-xl p-6 shadow-sm my-8 flex items-start gap-4">
                                 <HelpCircle className="w-8 h-8 text-blue-500 shrink-0 mt-1" />
                                 <div>
-                                    <h4 className="font-bold text-lg mb-1">What if the receiver refuses to sign the timestamp?</h4>
+                                    <h3 className="font-bold text-lg mb-1">What if the receiver refuses to sign the timestamp?</h3>
                                     <p className="text-sm m-0">In professional dispatching, if a receiver refuses to sign, we immediately instruct the driver to photograph the facility gate with the truck in frame, screenshot their ELD geofence timestamp, and send a macro message to the broker via the load tracking app while still sitting on the property. That creates an undeniable digital paper trail.</p>
                                 </div>
                             </div>
@@ -248,7 +265,7 @@ export default function BlogPost() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -264,6 +281,7 @@ export default function BlogPost() {
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="insider-trucking-dispatch-tips-faisal" />
             </article>
             <SiteFooter />
         </main>

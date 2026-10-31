@@ -36,8 +36,8 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 bg-primary/95 text-primary-foreground shadow-md backdrop-blur-sm border-b border-border/50">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
-        <Link href="/" className="flex items-center gap-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
+        <Link href="/" className="flex shrink-0 items-center gap-3">
           <img src="/images/logo-priority-dispatch.png" alt="Priority Dispatch LLC" className="h-[60px] md:h-[72px] lg:h-[80px] w-auto object-contain drop-shadow-sm transition-all" />
           <div className="hidden sm:flex flex-col ml-1">
             <span className="text-base md:text-lg lg:text-xl font-bold tracking-widest leading-none">PRIORITY DISPATCH</span>
@@ -45,8 +45,8 @@ export function SiteHeader() {
           </div>
         </Link>
 
-        <div className="flex items-center gap-3 md:gap-6">
-          <nav className="hidden items-center gap-6 md:flex">
+        <div className="flex items-center gap-3 xl:gap-6">
+          <nav className="hidden items-center gap-5 xl:flex">
             {/* Services Dropdown */}
             <div 
               className="relative group"
@@ -107,7 +107,7 @@ export function SiteHeader() {
             </a>
           </nav>
 
-          <button className="md:hidden" aria-label="Toggle navigation" onClick={() => setOpen((v) => !v)}>
+          <button className="xl:hidden" aria-label="Toggle navigation" onClick={() => setOpen((v) => !v)}>
             <Menu className="h-6 w-6" />
           </button>
         </div>
@@ -115,7 +115,7 @@ export function SiteHeader() {
 
       {/* mobile menu */}
       <div
-        className={cn("md:hidden transition-[max-height] overflow-hidden bg-primary", open ? "max-h-[600px]" : "max-h-0")}
+        className={cn("xl:hidden transition-[max-height] overflow-hidden bg-primary", open ? "max-h-[600px]" : "max-h-0")}
       >
         <nav className="mx-auto flex max-w-6xl flex-col gap-2 px-4 pb-4">
           {/* Services Accordion for Mobile */}

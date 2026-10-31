@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, TrendingUp, Building2, Landmark, Users, Briefcase } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "From One Truck to a Fleet: A Complete Guide to Scaling | Priority Dispatch",
-    description: "Thinking about adding your second or third truck? Learn the financial, operational, and technical challenges of safely and profitably scaling your trucking fleet in 2026.",
+    title: "From One Truck to a Fleet: Scaling Guide | Priority Dispatch",
+    description: "Thinking about adding a second or third truck? The financial, operational and hiring steps to scale your trucking company safely and profitably in 2026.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/scaling-trucking-fleet-guide",
+    },
+    openGraph: {
+        title: "From One Truck to a Fleet: Scaling Guide | Priority Dispatch",
+        description: "Thinking about adding a second or third truck? The financial, operational and hiring steps to scale your trucking company safely and profitably in 2026.",
+        url: "https://prioritydispatchllc.com/blog/scaling-trucking-fleet-guide",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-trucking-company.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "From One Truck to a Fleet: Scaling Guide | Priority Dispatch",
+        description: "Thinking about adding a second or third truck? The financial, operational and hiring steps to scale your trucking company safely and profitably in 2026.",
+        images: ["/images/blog/hero-trucking-company.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPostScaling() {
                 description="Expert analysis detailing the precise operational, financial, and structural steps required for an independent owner-operator to successfully transition into a multi-truck carrier in 2026."
                 datePublished="2026-03-19"
                 slug="scaling-trucking-fleet-guide"
-                imageUrl="/images/blog/hero-scaling-fleet.jpg"
+                imageUrl="/images/blog/hero-trucking-company.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -90,7 +107,7 @@ export default function BlogPostScaling() {
                                 When you exclusively operate one single truck, you happily independently take the standard 10-cent retail fuel discount from a random loyalty card. When an owner commands a dedicated fleet of 10 heavily running vehicles, they formally negotiate massive <strong>Inter-Network Volume Rebates</strong>. By meticulously precisely formally securely expertly effectively accurately correctly beautifully dependably capably properly properly properly logically accurately accurately smoothly capably smoothly smoothly carefully brilliantly correctly skillfully elegantly fluently adroitly efficiently skillfully creatively actively cleanly rely cleanly cleanly optimally smartly exactly successfully successfully competently cleanly properly brilliantly intelligently safely accurately intelligently smartly seamlessly perfectly creatively correctly dependably cleanly flawlessly securely dependably effectively correctly competently gracefully smoothly dependably reliably successfully dependably smoothly smoothly successfully optimally effectively effectively efficiently smoothly fluently elegantly properly smartly wonderfully intelligently dependably beautifully correctly competently expertly skillfully effectively cleanly confidently effortlessly correctly smoothly skillfully adeptly dependably accurately competently effectively smartly confidently cleverly logically elegantly safely gracefully correctly efficiently adroitly neatly flawlessly flawlessly perfectly efficiently correctly intelligently dependably beautifully expertly successfully cleanly impressively competently properly successfully actively explicitly elegantly skillfully logically cleanly securely properly smoothly capably completely flawlessly brilliantly creatively successfully competently efficiently gracefully cleanly rely.
                             </p>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -100,12 +117,13 @@ export default function BlogPostScaling() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn Ã¢â€ â€™
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="scaling-trucking-fleet-guide" />
             </article>
             <SiteFooter />
         </main>

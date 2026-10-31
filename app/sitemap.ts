@@ -48,6 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/blog/impact-of-autonomous-trucking-2026`,          lastModified: new Date('2026-03-19'), changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/blog/sustainability-ev-trucks-future`,             lastModified: new Date('2026-03-19'), changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/blog/epa-2027-pre-buy-strategy`,                   lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/blog/ai-dispatching-co-pilot-model`,               lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/combatting-freight-fraud-2026`,               lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/dot-cdl-crackdown-capacity-tightening`,       lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/micro-niche-reefer-flatbed`,                  lastModified: new Date('2026-03-12'), changeFrequency: 'monthly', priority: 0.8 },

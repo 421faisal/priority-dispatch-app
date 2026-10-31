@@ -1,20 +1,8 @@
 import Reveal from "./reveal"
 import { Calendar, User, ArrowRight } from "lucide-react"
+import { blogPosts } from "@/lib/blog-posts"
 
-const recentPosts = [
-    {
-        title: "What Is Freight Dispatching? A Complete Guide for 2026",
-        slug: "what-is-freight-dispatching",
-        excerpt: "Learn how professional dispatching services can transform your trucking business by handling rate negotiations...",
-        date: "Mar 3, 2026",
-    },
-    {
-        title: "Owner-Operator Success: How to Maximize Your Revenue",
-        slug: "owner-operator-guide",
-        excerpt: "Discover the top strategies for owner-operators to increase their rate-per-mile and reduce deadhead...",
-        date: "Mar 1, 2026",
-    }
-]
+const recentPosts = blogPosts.slice(0, 3)
 
 export function BlogPreview() {
     return (
@@ -35,7 +23,7 @@ export function BlogPreview() {
                     </div>
                 </Reveal>
 
-                <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+                <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
                     {recentPosts.map((post, i) => (
                         <Reveal key={post.slug} delayMs={100 * i}>
                             <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-all hover:shadow-md">

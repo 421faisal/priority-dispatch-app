@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Shield, Truck, FileCheck, ClipboardCheck, AlertTriangle, CheckCircle2, Scale, BadgeCheck } from "lucide-react"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "What Is Inspection in Trucking? DOT Inspections Explained for Owner-Operators | Priority Dispatch LLC",
-    description: "Complete guide to DOT inspections, CVSA levels, and why clean inspection history opens doors with brokers. Learn how to pass inspections and protect your CSA score.",
+    title: "DOT Inspections in Trucking Explained | Priority Dispatch",
+    description: "DOT inspections explained for owner-operators: the CVSA levels, how to pass, and why a clean inspection history protects your CSA score and wins broker trust.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-inspection-in-trucking",
+    },
+    openGraph: {
+        title: "DOT Inspections in Trucking Explained | Priority Dispatch",
+        description: "DOT inspections explained for owner-operators: the CVSA levels, how to pass, and why a clean inspection history protects your CSA score and wins broker trust.",
+        url: "https://prioritydispatchllc.com/blog/what-is-inspection-in-trucking",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-06-23",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-dispatcher.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "DOT Inspections in Trucking Explained | Priority Dispatch",
+        description: "DOT inspections explained for owner-operators: the CVSA levels, how to pass, and why a clean inspection history protects your CSA score and wins broker trust.",
+        images: ["/images/blog/hero-dispatcher.jpg"],
     },
 }
 
@@ -294,60 +311,60 @@ export default function BlogPostTruckingInspection() {
 
                             <div className="space-y-8 my-10">
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: What happens if I fail a DOT inspection?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: Depending on the severity of the violations, you may be placed out of service immediately, or given a citation and allowed to continue after signing a compliance agreement. Major brake, tire, or safety violations typically result in an OOS order. You must fix the violation before the truck can legally operate.
                                     </p>
                                 </div>
 
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: How often do I need a DOT inspection?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: Annually at minimum — your truck must pass a full DOT inspection every 12 months. However, roadside inspections can happen any time you're operating. Pre-trip inspections are required before every single trip.
                                     </p>
                                 </div>
 
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: Does a DOT inspection affect my CSA score?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: Yes. Violations found during any Level I–VI inspection are recorded in the FMCSA SMS system and affect your CSA BASIC scores. Clean inspections with zero violations also get recorded and can actually help balance your score over time.
                                     </p>
                                 </div>
 
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: Can my dispatcher help me with inspection compliance?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: A good dispatcher stays aware of your compliance status and flags issues before they become problems. At Priority Dispatch LLC, we include compliance awareness as part of our <a href="/services" className="text-accent hover:underline">carrier support</a> — because a truck that gets pulled OOS is a truck that isn't earning.
                                     </p>
                                 </div>
 
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: Do brokers actually check my inspection history?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: Yes — most professional brokers run your MC number through the FMCSA SAFER database before booking. They can see your inspection history, OOS rate, crash history, and safety rating. A clean record is one of the strongest things you can show a broker.
                                     </p>
                                 </div>
 
                                 <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-                                    <h4 className="font-bold text-lg mb-3 flex items-start gap-2">
+                                    <h3 className="font-bold text-lg mb-3 flex items-start gap-2">
                                         <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
                                         Q: What is a CVSA decal and how do I get one?
-                                    </h4>
+                                    </h3>
                                     <p className="text-sm m-0 text-muted-foreground">
                                         A: A CVSA decal is issued when your truck passes a Level I North American Standard Inspection with zero critical vehicle violations. It's valid for 90 days and signals to enforcement officers that your vehicle has recently passed a full inspection. It's issued by the inspecting officer — you don't apply for it separately.
                                     </p>
@@ -427,6 +444,7 @@ export default function BlogPostTruckingInspection() {
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="what-is-inspection-in-trucking" />
             </article>
             <SiteFooter />
         </main>

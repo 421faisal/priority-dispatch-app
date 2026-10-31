@@ -8,7 +8,10 @@ import Reveal from "@/components/site/reveal"
 export const metadata: Metadata = {
     title: "Meet the Founder — Muhammad Faisal Bilal | Priority Dispatch LLC",
     description:
-        "Learn about Muhammad Faisal Bilal, founder and CEO of Priority Dispatch LLC. A Computer Science graduate from the University of Gujrat driving innovation in freight dispatching.",
+        "Meet Muhammad Faisal Bilal, founder and CEO of Priority Dispatch LLC, a Computer Science graduate driving innovation in truck dispatching for owner-operators.",
+    alternates: {
+        canonical: "https://prioritydispatchllc.com/about-owner",
+    },
     openGraph: {
         title: "Meet the Founder — Muhammad Faisal Bilal | Priority Dispatch LLC",
         description:
@@ -154,7 +157,7 @@ export default function AboutOwnerPage() {
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                                     <GraduationCap className="h-6 w-6" />
                                 </div>
-                                <h3 className="mt-4 text-lg font-bold">Education</h3>
+                                <h2 className="mt-4 text-lg font-bold">Education</h2>
                                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                                     Currently pursuing a <span className="font-semibold text-foreground">Bachelor&apos;s degree in Computer Science</span> from the
                                     University of Gujrat, Pakistan. Combining technical expertise with
@@ -169,7 +172,7 @@ export default function AboutOwnerPage() {
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent text-accent-foreground">
                                     <Briefcase className="h-6 w-6" />
                                 </div>
-                                <h3 className="mt-4 text-lg font-bold">Entrepreneurship</h3>
+                                <h2 className="mt-4 text-lg font-bold">Entrepreneurship</h2>
                                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                                     Founded <span className="font-semibold text-foreground">Priority Dispatch LLC</span> to bridge the gap between freight
                                     carriers and profitable loads. Bringing a fresh, data‑driven
@@ -184,7 +187,7 @@ export default function AboutOwnerPage() {
                                 <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary text-primary-foreground">
                                     <Target className="h-6 w-6" />
                                 </div>
-                                <h3 className="mt-4 text-lg font-bold">Vision</h3>
+                                <h2 className="mt-4 text-lg font-bold">Vision</h2>
                                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                                     To become the most trusted dispatch partner in the U.S. freight
                                     industry by blending <span className="font-semibold text-foreground">cutting-edge technology</span> with

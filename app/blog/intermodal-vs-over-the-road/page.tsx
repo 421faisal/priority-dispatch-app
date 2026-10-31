@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Train, Truck, Leaf, TrendingUp, BarChart2, Zap, CloudFog, Scale } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Intermodal vs. Over-the-Road (OTR): Choosing the Right Path in 2026 | Priority Dispatch",
-    description: "Should your fleet focus heavily on long-haul OTR or intermodal drayage? Discover the pros, cons, and immense profit potential of each logistical mode in the brutal 2026 freight market.",
+    title: "Intermodal vs. Over-the-Road (OTR) Trucking in 2026",
+    description: "Should your fleet run long-haul OTR or intermodal drayage? Compare the pros, cons and profit potential of each mode in the 2026 freight market.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/intermodal-vs-over-the-road",
+    },
+    openGraph: {
+        title: "Intermodal vs. Over-the-Road (OTR) Trucking in 2026",
+        description: "Should your fleet run long-haul OTR or intermodal drayage? Compare the pros, cons and profit potential of each mode in the 2026 freight market.",
+        url: "https://prioritydispatchllc.com/blog/intermodal-vs-over-the-road",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-03",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-warehouse.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Intermodal vs. Over-the-Road (OTR) Trucking in 2026",
+        description: "Should your fleet run long-haul OTR or intermodal drayage? Compare the pros, cons and profit potential of each mode in the 2026 freight market.",
+        images: ["/images/blog/hero-warehouse.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPostIntermodal() {
                 description="Massive 2,600-word logistical analysis breaking down the deep economic, environmental, and operational realities separating 2026 Intermodal Drayage from traditional Over-the-Road (OTR) transit."
                 datePublished="2026-03-03"
                 slug="intermodal-vs-over-the-road"
-                imageUrl="/images/blog/hero-intermodal.jpg"
+                imageUrl="/images/blog/hero-warehouse.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -65,7 +82,7 @@ export default function BlogPostIntermodal() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Deciding between long-haul Over-the-Road (OTR) and localized Intermodal Drayage used to be a simple choice of lifestyle. In 2026, itâ€™s a high-stakes financial calculation involving fuel surcharges, carbon credits, and port congestion algorithms. This guide breaks down the real economics of both modes and how to choose the right path for your fleet.
+                                Deciding between long-haul Over-the-Road (OTR) and localized Intermodal Drayage used to be a simple choice of lifestyle. In 2026, it’s a high-stakes financial calculation involving fuel surcharges, carbon credits, and port congestion algorithms. This guide breaks down the real economics of both modes and how to choose the right path for your fleet.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -73,7 +90,7 @@ export default function BlogPostIntermodal() {
                                 OTR 2.0: The King of Time-Critical Freight
                             </h2>
                             <p>
-                                Despite the rise of rail efficiency, Over-the-Road trucking remains the backbone of the American supply chain. OTR is the only choice for high-value and time-critical loads. If a factory in Texas is about to shut down because itâ€™s missing a $10 part from Michigan, they aren't putting that part on a train. Theyâ€™re hiring a team-driven OTR truck.
+                                Despite the rise of rail efficiency, Over-the-Road trucking remains the backbone of the American supply chain. OTR is the only choice for high-value and time-critical loads. If a factory in Texas is about to shut down because it’s missing a $10 part from Michigan, they aren't putting that part on a train. They’re hiring a team-driven OTR truck.
                             </p>
                             <p>
                                 In 2026, successful OTR carriers are winning by specializing. They aren't just hauling "general freight"; they are moving sensitive electronics, medical supplies, and "just-in-time" manufacturing components that the rail network simply cannot handle.
@@ -114,10 +131,10 @@ export default function BlogPostIntermodal() {
                                 Navigating the Drayage Pitfalls
                             </h2>
                             <p>
-                                Intermodal isn't without its headaches. The biggest one? **Detention.** Spending 6 hours in line at a rail yard is a quick way to go broke. This is where professional dispatching is critical. 
+                                Intermodal isn't without its headaches. The biggest one? <strong>Detention.</strong> Spending 6 hours in line at a rail yard is a quick way to go broke. This is where professional dispatching is critical. 
                             </p>
                             <p>
-                                At **Priority Dispatch LLC**, we use real-time data to track port congestion. We don't send our drivers into a terminal when the lines are 3 miles long. We schedule pickups during off-peak hours and use "pre-pull" strategies to keep our drivers moving and profitable.
+                                At <strong>Priority Dispatch LLC</strong>, we use real-time data to track port congestion. We don't send our drivers into a terminal when the lines are 3 miles long. We schedule pickups during off-peak hours and use "pre-pull" strategies to keep our drivers moving and profitable.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: A Balanced Approach</h2>
@@ -125,7 +142,7 @@ export default function BlogPostIntermodal() {
                                 There is no "perfect" mode. The most successful fleets in 2026 use a hybrid approach. They use OTR to capture high-paying spot market loads and Intermodal to provide a steady, predictable baseline of work. 
                             </p>
                             <p>
-                                Whether you're running 48 states or 100 miles around a port, the goal is the same: maximum profit with minimum headache. Let **Priority Dispatch LLC** help you navigate the 2026 market and find the lane that works for you.
+                                Whether you're running 48 states or 100 miles around a port, the goal is the same: maximum profit with minimum headache. Let <strong>Priority Dispatch LLC</strong> help you navigate the 2026 market and find the lane that works for you.
                             </p>
                         </Reveal>
 
@@ -164,7 +181,7 @@ export default function BlogPostIntermodal() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -174,12 +191,13 @@ export default function BlogPostIntermodal() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="intermodal-vs-over-the-road" />
             </article>
             <SiteFooter />
         </main>

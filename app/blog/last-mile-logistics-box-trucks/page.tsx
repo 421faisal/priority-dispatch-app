@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, ShoppingCart, MapPin, Zap, PackageCheck, ShieldAlert } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Last-Mile Logistics: The Boom in Box Truck Wealth | Priority Dispatch LLC",
-    description: "The E-commerce hyper-explosion has created a massive, highly lucrative niche strictly for last-mile delivery. Learn how intelligent box truck carriers are aggressively maximizing pure profits in 2026.",
+    title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+    description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/last-mile-logistics-box-trucks",
+    },
+    openGraph: {
+        title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+        description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
+        url: "https://prioritydispatchllc.com/blog/last-mile-logistics-box-trucks",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-warehouse.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+        description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
+        images: ["/images/blog/hero-warehouse.jpg"],
     },
 }
 
@@ -132,7 +149,7 @@ export default function BlogPostLastMile() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -142,12 +159,13 @@ export default function BlogPostLastMile() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn Ã¢â€ â€™
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="last-mile-logistics-box-trucks" />
             </article>
             <SiteFooter />
         </main>

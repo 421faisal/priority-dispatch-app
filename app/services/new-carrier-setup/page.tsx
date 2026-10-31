@@ -11,6 +11,14 @@ export const metadata: Metadata = {
     alternates: {
         canonical: "https://prioritydispatchllc.com/services/new-carrier-setup",
     },
+    openGraph: {
+        title: "New Carrier Setup & MC Lease Services | Priority Dispatch LLC",
+        description: "Expert A-Z setup for new trucking companies. We handle your LLC, MC Authority, BOC-3, Insurance compliance, IFTA, IRP plates, and build your website.",
+        url: "https://prioritydispatchllc.com/services/new-carrier-setup",
+        siteName: "Priority Dispatch LLC",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
 }
 
 const inclusions = [

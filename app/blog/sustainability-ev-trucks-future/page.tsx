@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Leaf, Battery, Wind, Globe, CheckCircle, TrendingUp, Zap, ShieldAlert, Cpu } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Sustainability & EV Trucks: The Absolute Reality of 2026 Freight | Priority Dispatch",
-    description: "Electric Class-8 semi-trucks, hydrogen powertrains, and corporate green ESG logistics are no longer theoretical. Discover exactly how the 2026 EV trucking revolution violently affects independent owner-operators.",
+    title: "Electric Semi Trucks & Green Logistics in 2026",
+    description: "Are electric Class 8 trucks ready for real freight? Charging, weight limits, costs and what the 2026 EV shift means for owner-operators and regional haulers.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/sustainability-ev-trucks-future",
+    },
+    openGraph: {
+        title: "Electric Semi Trucks & Green Logistics in 2026",
+        description: "Are electric Class 8 trucks ready for real freight? Charging, weight limits, costs and what the 2026 EV shift means for owner-operators and regional haulers.",
+        url: "https://prioritydispatchllc.com/blog/sustainability-ev-trucks-future",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-03",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-autonomous-truck.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Electric Semi Trucks & Green Logistics in 2026",
+        description: "Are electric Class 8 trucks ready for real freight? Charging, weight limits, costs and what the 2026 EV shift means for owner-operators and regional haulers.",
+        images: ["/images/blog/hero-autonomous-truck.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPost() {
                 description="Massive 2,600-word critical assessment of the 2026 Electric Vehicle (EV) commercial trucking landscape, detailing Megawatt Charging Systems (MCS), BaaS financial models, and the severe limitations of long-haul battery transport."
                 datePublished="2026-03-03"
                 slug="sustainability-ev-trucks-future"
-                imageUrl="/images/blog/hero-ev-trucks.jpg"
+                imageUrl="/images/blog/hero-autonomous-truck.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -60,7 +77,7 @@ export default function BlogPost() {
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
-                                <p className="text-accent text-sm tracking-widest uppercase font-extrabold mb-2">Sustainability Â· Electric Logistics Â· Future of Freight</p>
+                                <p className="text-accent text-sm tracking-widest uppercase font-extrabold mb-2">Sustainability · Electric Logistics · Future of Freight</p>
                                 <h2 className="text-white text-3xl md:text-4xl font-bold">The 2026 EV Paradigm Shift</h2>
                             </div>
                         </div>
@@ -102,7 +119,7 @@ export default function BlogPost() {
                                 Why Shippers are Paying a "Green Premium"
                             </h2>
                             <p>
-                                Shippersâ€”especially Fortune 500 companiesâ€”are under massive pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
+                                Shippers—especially Fortune 500 companies—are under massive pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
                             </p>
                             <p>
                                 At <strong>Priority Dispatch LLC</strong>, we help our carriers secure these high-paying contracts. If you've invested in an EV truck, you shouldn't be hunting for cheap loads on a standard load board. You should be in high-value, dedicated lanes where shippers are willing to pay for your sustainability.
@@ -129,7 +146,7 @@ export default function BlogPost() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -139,12 +156,13 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="sustainability-ev-trucks-future" />
             </article>
             <SiteFooter />
         </main>

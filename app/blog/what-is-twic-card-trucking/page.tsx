@@ -5,12 +5,29 @@ import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, CreditCard, MapPin, DollarSign, TrendingUp, AlertCircle, CheckCircle2, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "What Is a TWIC Card in Trucking? Complete Guide 2026 | Priority Dispatch LLC",
-    description: "A TWIC card opens the door to high-paying port loads. Learn what it is, how to get one, and how Priority Dispatch LLC helps TWIC-certified owner-operators find premium maritime freight.",
+    title: "What Is a TWIC Card in Trucking? | Priority Dispatch",
+    description: "A TWIC card opens the door to high-paying port loads. What it is, how to get one, and how Priority Dispatch LLC helps TWIC holders find maritime freight.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-twic-card-trucking",
+    },
+    openGraph: {
+        title: "What Is a TWIC Card in Trucking? | Priority Dispatch",
+        description: "A TWIC card opens the door to high-paying port loads. What it is, how to get one, and how Priority Dispatch LLC helps TWIC holders find maritime freight.",
+        url: "https://prioritydispatchllc.com/blog/what-is-twic-card-trucking",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-05-22",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-freight-highway.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "What Is a TWIC Card in Trucking? | Priority Dispatch",
+        description: "A TWIC card opens the door to high-paying port loads. What it is, how to get one, and how Priority Dispatch LLC helps TWIC holders find maritime freight.",
+        images: ["/images/blog/hero-freight-highway.jpg"],
     },
 }
 
@@ -66,11 +83,11 @@ export default function TWICCardBlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                A TWIC card is one of the most important credentials for truck drivers working around ports and secure maritime facilities. Without it, drivers may be denied entry to many ports across the United States â€” which means missing out on consistently profitable freight.
+                                A TWIC card is one of the most important credentials for truck drivers working around ports and secure maritime facilities. Without it, drivers may be denied entry to many ports across the United States — which means missing out on consistently profitable freight.
                             </p>
 
                             <p>
-                                Whether you are a new CDL holder or a seasoned owner-operator, understanding the TWIC card process â€” and knowing how to leverage it commercially â€” gives you a competitive edge. Partnering with a dispatch company like <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> ensures your TWIC certification translates directly into booked loads.
+                                Whether you are a new CDL holder or a seasoned owner-operator, understanding the TWIC card process — and knowing how to leverage it commercially — gives you a competitive edge. Partnering with a dispatch company like <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> ensures your TWIC certification translates directly into booked loads.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -108,7 +125,7 @@ export default function TWICCardBlogPost() {
                             </ul>
 
                             <p>
-                                Many brokers specifically search for TWIC-certified drivers because port freight is highly active and profitable. At <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, we maintain relationships with brokers who regularly need TWIC-ready owner-operators â€” and we prioritize matching our drivers with these premium lanes.
+                                Many brokers specifically search for TWIC-certified drivers because port freight is highly active and profitable. At <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, we maintain relationships with brokers who regularly need TWIC-ready owner-operators — and we prioritize matching our drivers with these premium lanes.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -274,7 +291,7 @@ export default function TWICCardBlogPost() {
                             </div>
 
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -284,12 +301,13 @@ export default function TWICCardBlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="what-is-twic-card-trucking" />
             </article>
             <SiteFooter />
         </main>

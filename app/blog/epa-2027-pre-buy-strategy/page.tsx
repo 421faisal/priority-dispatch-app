@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, AlertTriangle, Truck, Wrench, ShieldCheck, DollarSign, CloudRain, ShieldAlert, Activity, TrendingUp } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "EPA 2027 Pre-Buy Strategy: Why Elite Carriers are Hoarding 2026 Equipment | Priority Dispatch",
-    description: "The 2027 EPA NOx mandate is the most expensive diesel regulation in trucking history. Discover why motor carriers are executing mass 'Pre-Buys' to avoid $35k price hikes and catastrophic downtime.",
+    title: "EPA 2027 Pre-Buy Strategy: Why Carriers Buy Trucks Now",
+    description: "The EPA 2027 NOx rule is set to raise Class 8 truck prices sharply. Learn why carriers are pre-buying 2026 equipment and how to plan your own fleet purchases.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/epa-2027-pre-buy-strategy",
+    },
+    openGraph: {
+        title: "EPA 2027 Pre-Buy Strategy: Why Carriers Buy Trucks Now",
+        description: "The EPA 2027 NOx rule is set to raise Class 8 truck prices sharply. Learn why carriers are pre-buying 2026 equipment and how to plan your own fleet purchases.",
+        url: "https://prioritydispatchllc.com/blog/epa-2027-pre-buy-strategy",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-12",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/hero-semi-truck-highway.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "EPA 2027 Pre-Buy Strategy: Why Carriers Buy Trucks Now",
+        description: "The EPA 2027 NOx rule is set to raise Class 8 truck prices sharply. Learn why carriers are pre-buying 2026 equipment and how to plan your own fleet purchases.",
+        images: ["/images/hero-semi-truck-highway.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPost() {
                 description="Massive 2600-word engineering and financial breakdown of the looming EPA 2027 diesel emissions standard, dual-dosing SCR technology, and how the massive 'Pre-Buy' surge protects carrier profitability."
                 datePublished="2026-03-12"
                 slug="epa-2027-pre-buy-strategy"
-                imageUrl="/images/blog/hero-epa.jpg"
+                imageUrl="/images/hero-semi-truck-highway.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -65,7 +82,7 @@ export default function BlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The federal "Clean Trucks Plan" is officially, irrevocably here. As we brutally navigate through mid-2026, the entire American trucking industry is actively staring down the rapidly approaching barrel of the <strong>2027 EPA Heavy-Duty Engine and Vehicle Standards</strong>. Industry analysts are accurately comparing this impending regulatory tsunami directly to the notorious 2007-2010 emissions eraâ€”a highly destructive period of technological forced-adoption that violently bankrupted thousands of financially unprepared small carriers due to horrific mechanical unreliability and catastrophic downtime. This is not simply a minor algorithmic update or a "larger DPF filter"; this is a total, ground-up reimagining of diesel engine architecture. This extremely comprehensive, 2,600-word engineering and financial manifesto deeply examines why exactly executing an aggressive "Pre-Buy" of 2026 OEM equipment is absolutely no longer optional for independent carriers who explicitly intend to remain operational and profitable in 2027 and the decade beyond.
+                                The federal "Clean Trucks Plan" is officially, irrevocably here. As we brutally navigate through mid-2026, the entire American trucking industry is actively staring down the rapidly approaching barrel of the <strong>2027 EPA Heavy-Duty Engine and Vehicle Standards</strong>. Industry analysts are accurately comparing this impending regulatory tsunami directly to the notorious 2007-2010 emissions era—a highly destructive period of technological forced-adoption that violently bankrupted thousands of financially unprepared small carriers due to horrific mechanical unreliability and catastrophic downtime. This is not simply a minor algorithmic update or a "larger DPF filter"; this is a total, ground-up reimagining of diesel engine architecture. This extremely comprehensive, 2,600-word engineering and financial manifesto deeply examines why exactly executing an aggressive "Pre-Buy" of 2026 OEM equipment is absolutely no longer optional for independent carriers who explicitly intend to remain operational and profitable in 2027 and the decade beyond.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -95,7 +112,7 @@ export default function BlogPost() {
                                     <li className="flex items-start gap-4">
                                         <div className="mt-1 bg-accent/20 rounded-full p-2 shrink-0"><Activity className="h-5 w-5 text-accent" /></div>
                                         <div>
-                                            <h4 className="font-bold text-lg mb-1 text-foreground">1. Active Cylinder Deactivation (CDA)</h4>
+                                            <h3 className="font-bold text-lg mb-1 text-foreground">1. Active Cylinder Deactivation (CDA)</h3>
                                             <p className="text-muted-foreground text-base">
                                                 To forcefully keep the exhaust system heavily heated during slow, cold city driving or idling, 2027 engines will physically shut down the fuel and air valves to several cylinders. The engine violently changes its mechanical breathing in real-time. This introduces incredibly massive mechanical complexity directly into the valvetrain, severely increasing the probability of catastrophic failure at high mileage.
                                             </p>
@@ -104,7 +121,7 @@ export default function BlogPost() {
                                     <li className="flex items-start gap-4">
                                         <div className="mt-1 bg-accent/20 rounded-full p-2 shrink-0"><ShieldAlert className="h-5 w-5 text-accent" /></div>
                                         <div>
-                                            <h4 className="font-bold text-lg mb-1 text-foreground">2. Dual-Dosing SCR Systems</h4>
+                                            <h3 className="font-bold text-lg mb-1 text-foreground">2. Dual-Dosing SCR Systems</h3>
                                             <p className="text-muted-foreground text-base">
                                                 Current 2026 trucks utilize a single Selective Catalytic Reduction (SCR) injection point for DEF. 2027 models legally require a second, highly advanced dosing valve placed directly behind the turbocharger. More extremely fragile electronics, more intense heat sensors, and significantly more highly-pressurized, corrosive fluid lines weaving directly through the intensely vibrating engine bay.
                                             </p>
@@ -129,13 +146,13 @@ export default function BlogPost() {
 
                             <div className="grid md:grid-cols-2 gap-6 my-10">
                                 <div className="border border-border rounded-xl p-8 bg-card shadow-sm">
-                                    <h4 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><DollarSign className="h-5 w-5" /> Massive Capital Preservation</h4>
+                                    <h3 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><DollarSign className="h-5 w-5" /> Massive Capital Preservation</h3>
                                     <p className="text-base leading-relaxed">
                                         By physically ordering a 2026 Class-8 sleeper unit for $175,000 and intentionally bypassing the heavily mandated 2027 equivalent costing $210,000, you are instantly capturing $35,000 in immediate, liquid capital preservation per unit. Across an operational fleet of just 4 trucks, you have mathematically salvaged $140,000 strictly utilizing federal bureaucratic awareness.
                                     </p>
                                 </div>
                                 <div className="border border-border rounded-xl p-8 bg-card shadow-sm">
-                                    <h4 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><ShieldCheck className="h-5 w-5" /> Absolute Technological Dominance</h4>
+                                    <h3 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><ShieldCheck className="h-5 w-5" /> Absolute Technological Dominance</h3>
                                     <p className="text-base leading-relaxed">
                                         The current 2026 Cummins X15 and PACCAR MX-13 engines represent the absolute, highly refined pinnacle of the current emissions platform. The industry's massive diesel mechanic network possesses deep, intimate knowledge of their failure points, and aftermarket parts are heavily abundant. The 2027 engines are purely experimental science operations. You are actively choosing battle-tested armor over fragile prototypes.
                                     </p>
@@ -150,7 +167,7 @@ export default function BlogPost() {
                                 Many financially illiterate operators assume that purchasing a 2026 truck right before a major 2027 technological shift will render the 2026 equipment obsolete or heavily depreciated. In the complex economics of heavy-duty trucking, the absolute reverse is mathematically true.
                             </p>
                             <p>
-                                <strong>The "Refuge" Asset:</strong> Historically, whenever a massively unpopular, highly complex mechanical mandate is violently forced onto the marketâ€”as identically witnessed during the catastrophic 2007 DPF mandate and the 2010 SCR mandateâ€”the exact previous model year's equipment violently <em>appreciates</em> in secondary market value once the new fleet begins failing on the shoulders of the highway.
+                                <strong>The "Refuge" Asset:</strong> Historically, whenever a massively unpopular, highly complex mechanical mandate is violently forced onto the market—as identically witnessed during the catastrophic 2007 DPF mandate and the 2010 SCR mandate—the exact previous model year's equipment violently <em>appreciates</em> in secondary market value once the new fleet begins failing on the shoulders of the highway.
                             </p>
                             <p>
                                 An impeccably maintained 2026 Peterbilt 579 boasting roughly 350,000 miles in the year 2029 will highly likely command a significantly greater financial premium in the used-truck market than a 2027 model exhibiting the exact same mileage. In 2029, small carriers will be absolutely frantic to purchase the "simpler," pre-2027 technology to escape the brutal downtime associated with faulty 2027 dual-dosing SCR electronics. Your 2026 Pre-Buy truck is not merely an operational tool; it represents a massively appreciating, heavily insulated financial hedge fund.
@@ -226,7 +243,7 @@ export default function BlogPost() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -236,12 +253,13 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="epa-2027-pre-buy-strategy" />
             </article>
             <SiteFooter />
         </main>

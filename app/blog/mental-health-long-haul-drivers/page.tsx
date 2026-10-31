@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Heart, Brain, Zap, ShieldPlus, Users, Activity } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Mental Health and the Long-Haul Truck Driver: Surviving the Isolation | Priority Dispatch LLC",
-    description: "Long-haul trucking takes a devastating mental toll. Explore the deep science of driver isolation, proven clinical strategies for combating terminal burnout, and how modern fleets prioritize driver well-being.",
+    title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+    description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/mental-health-long-haul-drivers",
+    },
+    openGraph: {
+        title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+        description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
+        url: "https://prioritydispatchllc.com/blog/mental-health-long-haul-drivers",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-owner-operator.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+        description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
+        images: ["/images/blog/hero-owner-operator.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPostMentalHealth() {
                 description="A comprehensive analysis of the psychological realities of OTR truck driving, addressing the science of isolation, diet-induced neuro-inflammation, and modern mental health protocols for professional fleets."
                 datePublished="2026-03-19"
                 slug="mental-health-long-haul-drivers"
-                imageUrl="/images/blog/hero-mental-health.jpg"
+                imageUrl="/images/blog/hero-owner-operator.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -73,10 +90,10 @@ export default function BlogPostMentalHealth() {
                                 Understanding the Toll of Isolation
                             </h2>
                             <p>
-                                Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"â€”it's a factor that affects safety and long-term career satisfaction.
+                                Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"—it's a factor that affects safety and long-term career satisfaction.
                             </p>
                             <p>
-                                **The Priority Dispatch Approach:** We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a massive difference in a driver's day.
+                                <strong>The Priority Dispatch Approach:</strong> We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a massive difference in a driver's day.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -87,7 +104,7 @@ export default function BlogPostMentalHealth() {
                                 What you eat affects how you feel. The "truck stop diet" of processed, high-sugar foods can lead to brain fog and fatigue. While it's hard to find healthy options on the road, small changes can improve your mental clarity.
                             </p>
                             <p>
-                                Many successful owner-operators now invest in cab refrigerators and meal-prep their own food. Staying hydrated and reducing sugar isn't just about physical healthâ€”it's about keeping your mind sharp and avoiding the "mid-day crash" that can lead to irritation or exhaustion.
+                                Many successful owner-operators now invest in cab refrigerators and meal-prep their own food. Staying hydrated and reducing sugar isn't just about physical health—it's about keeping your mind sharp and avoiding the "mid-day crash" that can lead to irritation or exhaustion.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -98,9 +115,9 @@ export default function BlogPostMentalHealth() {
                                 Truck drivers are often the first on the scene of highway accidents. Witnessing trauma is a part of the job that many are told to "just push through," but that's not a sustainable strategy. 
                             </p>
                             <div className="bg-muted border-l-4 border-accent p-6 rounded-r-xl my-8">
-                                <h4 className="font-bold text-lg mb-2 text-foreground">The Standard of Care</h4>
+                                <h3 className="font-bold text-lg mb-2 text-foreground">The Standard of Care</h3>
                                 <p className="text-base text-muted-foreground m-0">
-                                    If you witness a serious incident, you need time to process it. Progressive fleets now offer "trauma resets"â€”paid time off to speak with a professional or simply decompress before getting back behind the wheel. Your safety, and the safety of everyone on the road, depends on your mental state.
+                                    If you witness a serious incident, you need time to process it. Progressive fleets now offer "trauma resets"—paid time off to speak with a professional or simply decompress before getting back behind the wheel. Your safety, and the safety of everyone on the road, depends on your mental state.
                                 </p>
                             </div>
 
@@ -117,7 +134,7 @@ export default function BlogPostMentalHealth() {
                                 Trucking is the backbone of the country, but it shouldn't come at the cost of your mental health. If you're feeling overwhelmed, reach out. Whether it's to a fellow driver, a friend, or your dispatcher, talking about the challenges of the road is the first step in managing them.
                             </p>
                             <p>
-                                At **Priority Dispatch LLC**, we treat our carriers like partners, not just unit numbers. We value the person behind the wheel and are committed to supporting your success, both on and off the road. <a href="/contact" className="text-accent font-bold hover:underline">Join a team that actually listens.</a>
+                                At <strong>Priority Dispatch LLC</strong>, we treat our carriers like partners, not just unit numbers. We value the person behind the wheel and are committed to supporting your success, both on and off the road. <a href="/contact" className="text-accent font-bold hover:underline">Join a team that actually listens.</a>
                             </p>
                         </Reveal>
 
@@ -125,7 +142,7 @@ export default function BlogPostMentalHealth() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -135,12 +152,13 @@ export default function BlogPostMentalHealth() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="mental-health-long-haul-drivers" />
             </article>
             <SiteFooter />
         </main>

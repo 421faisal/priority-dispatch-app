@@ -6,6 +6,14 @@ export const metadata: Metadata = {
     title: "Terms of Service | Priority Dispatch LLC",
     description: "Review the terms of service for Priority Dispatch LLC freight dispatching services. Understand your rights and responsibilities as a carrier partner.",
     alternates: { canonical: "https://prioritydispatchllc.com/terms" },
+    openGraph: {
+        title: "Terms of Service | Priority Dispatch LLC",
+        description: "Review the terms of service for Priority Dispatch LLC freight dispatching services. Understand your rights and responsibilities as a carrier partner.",
+        url: "https://prioritydispatchllc.com/terms",
+        siteName: "Priority Dispatch LLC",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
 }
 
 export default function TermsPage() {

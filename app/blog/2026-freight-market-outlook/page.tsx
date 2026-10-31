@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, BarChart2, Globe, Shield, TrendingUp, ShieldAlert, Ship, Fuel, Target, Briefcase, Truck } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "2026 Freight Market Outlook: Navigating the Recovery | Priority Dispatch LLC",
-    description: "What should carriers expect in the 2026 freight market? Get deep analysis on rate stabilization, regional supply chain shifts, and strategies to capture the best loads.",
+    title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+    description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
+    },
+    openGraph: {
+        title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+        description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
+        url: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-03",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-freight-highway.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+        description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
+        images: ["/images/blog/hero-freight-highway.jpg"],
     },
 }
 
@@ -87,7 +104,7 @@ export default function BlogPostOutlook() {
                                 Mexico is now the #1 trading partner of the United States. Massive corporations have moved their factories out of Asia and directly across the Southern border to avoid supply chain disruptions. 
                             </p>
                             <p>
-                                For American truck drivers, this is the biggest opportunity in the last twenty years. The "Silicon Border" â€” stretching from Laredo down to McAllen and across to Otay Mesa, CA â€” is pumping out electronics, auto parts, and goods that need to reach the Midwest fast.
+                                For American truck drivers, this is the biggest opportunity in the last twenty years. The "Silicon Border" — stretching from Laredo down to McAllen and across to Otay Mesa, CA — is pumping out electronics, auto parts, and goods that need to reach the Midwest fast.
                             </p>
 
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
@@ -190,7 +207,7 @@ export default function BlogPostOutlook() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -200,12 +217,13 @@ export default function BlogPostOutlook() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="2026-freight-market-outlook" />
             </article>
             <SiteFooter />
         </main>

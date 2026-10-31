@@ -70,7 +70,7 @@ export default function BlogPostEvolution() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <History className="h-8 w-8 text-accent shrink-0" />
-                                Epoch 1: The Iron Monopoly and the Steam "Motor Wagon" (1890Ã¢â‚¬â€œ1920)
+                                Epoch 1: The Iron Monopoly and the Steam "Motor Wagon" (1890–1920)
                             </h2>
                             <p>
                                 Prior to the widespread commercialization of the internal combustion engine, the American supply chain was entirely iron-bound. The massive railroad syndicates completely monopolized the "Long Haul," possessing absolute dictatorial control over nationwide freight tariffs. However, the railroad fundamentally structurally failed at exactly one critical logistic juncture: the "Last Mile." From the bustling railheads located in downtown Chicago or New York, incredibly heavy horse-drawn drays explicitly dragged raw materials to localized factories. 
@@ -127,7 +127,7 @@ export default function BlogPostEvolution() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
                                 <MonitorSmartphone className="h-8 w-8 text-accent shrink-0" />
-                                Epoch 4: The Great Digital Compression (2000Ã¢â‚¬â€œ2020)
+                                Epoch 4: The Great Digital Compression (2000–2020)
                             </h2>
                             <p>
                                 The widespread proliferation of the internet systematically fundamentally transformed logistics exactly twice within a twenty-year window. First, throughout the early 2000s, massive digital servers permanently annihilated the concept of physical "Truck Stop Load Boards," transferring millions of available loads completely onto digital matching screens (e.g., DAT, Truckstop). The speed of the transaction accelerated from hours to milliseconds.
@@ -200,7 +200,7 @@ export default function BlogPostEvolution() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -210,7 +210,7 @@ export default function BlogPostEvolution() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn Ã¢â€ â€™
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>

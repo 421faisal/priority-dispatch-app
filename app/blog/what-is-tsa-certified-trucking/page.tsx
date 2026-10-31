@@ -5,6 +5,7 @@ import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Plane, Shield, DollarSign, TrendingUp, AlertCircle, CheckCircle2, Award } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
     title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
@@ -78,7 +79,7 @@ export default function TSACertifiedBlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                In trucking and freight logistics, being TSA certified usually refers to drivers or carriers authorized to handle secure air cargo shipments. This certification is increasingly important for carriers who want to work in airport freight and expedited logistics â€” two of the fastest-growing and highest-paying segments in trucking.
+                                In trucking and freight logistics, being TSA certified usually refers to drivers or carriers authorized to handle secure air cargo shipments. This certification is increasingly important for carriers who want to work in airport freight and expedited logistics — two of the fastest-growing and highest-paying segments in trucking.
                             </p>
 
                             <p>
@@ -94,7 +95,7 @@ export default function TSACertifiedBlogPost() {
                             </p>
 
                             <p>
-                                The certification verifies that a driver or company has passed thorough background checks, fingerprinting, identity verification, and security training â€” giving shippers and airlines confidence that their freight is protected at every step.
+                                The certification verifies that a driver or company has passed thorough background checks, fingerprinting, identity verification, and security training — giving shippers and airlines confidence that their freight is protected at every step.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -166,7 +167,7 @@ export default function TSACertifiedBlogPost() {
                             </div>
 
                             <p>
-                                Some trucking companies or freight forwarders sponsor drivers through the process â€” particularly when they need a steady pool of certified drivers for airport pickups. As an independent owner-operator, you may need to initiate the process independently or through an IAC-registered company.
+                                Some trucking companies or freight forwarders sponsor drivers through the process — particularly when they need a steady pool of certified drivers for airport pickups. As an independent owner-operator, you may need to initiate the process independently or through an IAC-registered company.
                             </p>
 
                             <p>
@@ -182,7 +183,7 @@ export default function TSACertifiedBlogPost() {
                                 <div className="p-6 bg-card border border-border rounded-xl">
                                     <h3 className="text-xl font-bold mb-3">Access to Airport Loads</h3>
                                     <p className="text-muted-foreground">
-                                        TSA certified drivers can haul air freight from major U.S. airports â€” a category of freight that is almost entirely inaccessible to non-certified carriers. This includes both inbound and outbound airport freight.
+                                        TSA certified drivers can haul air freight from major U.S. airports — a category of freight that is almost entirely inaccessible to non-certified carriers. This includes both inbound and outbound airport freight.
                                     </p>
                                 </div>
 
@@ -203,7 +204,7 @@ export default function TSACertifiedBlogPost() {
                                 <div className="p-6 bg-card border border-border rounded-xl">
                                     <h3 className="text-xl font-bold mb-3">Stronger Industry Reputation</h3>
                                     <p className="text-muted-foreground">
-                                        Security-cleared carriers are trusted more by brokers, shippers, and logistics partners. TSA certification signals professionalism and reliability â€” qualities that help you build long-term broker relationships and command better rates.
+                                        Security-cleared carriers are trusted more by brokers, shippers, and logistics partners. TSA certification signals professionalism and reliability — qualities that help you build long-term broker relationships and command better rates.
                                     </p>
                                 </div>
                             </div>
@@ -224,7 +225,7 @@ export default function TSACertifiedBlogPost() {
                                     <tbody>
                                         <tr>
                                             <td className="border border-border px-6 py-3">Fingerprinting</td>
-                                            <td className="border border-border px-6 py-3">$50 â€“ $100</td>
+                                            <td className="border border-border px-6 py-3">$50 – $100</td>
                                         </tr>
                                         <tr className="bg-muted/30">
                                             <td className="border border-border px-6 py-3">Background Checks</td>
@@ -305,7 +306,7 @@ export default function TSACertifiedBlogPost() {
                             </div>
 
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -315,12 +316,13 @@ export default function TSACertifiedBlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="what-is-tsa-certified-trucking" />
             </article>
             <SiteFooter />
         </main>

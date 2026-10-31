@@ -11,12 +11,14 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 export const metadata: Metadata = {
   metadataBase: new URL('https://prioritydispatchllc.com'),
   title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
-  description: 'Need a truck dispatcher? Priority Dispatch LLC finds high-paying loads for owner operators across all 48 states. Reefers, Dry Vans, Box Trucks & Flatbeds. 24/7 support. No contracts.',
+  description: 'Truck dispatcher for owner operators: high-paying loads in all 48 states for reefers, dry vans, box trucks and flatbeds. 24/7 support, no contracts.',
   keywords: 'truck dispatcher, dispatch services, owner operator dispatch, find loads, load booking, freight dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, priority dispatch llc',
+  // No canonical or og:url here: pages that set neither would inherit the
+  // homepage's and tell search engines they are copies of it. The homepage
+  // sets its own in app/page.tsx.
   openGraph: {
     title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
     description: 'Professional truck dispatcher services for owner operators. We find high-paying loads across all 48 states. 24/7 support. No contracts.',
-    url: 'https://prioritydispatchllc.com',
     siteName: 'Priority Dispatch LLC',
     images: [
       {
@@ -40,9 +42,6 @@ export const metadata: Metadata = {
     icon: "/images/logo-priority-dispatch.png",
     shortcut: "/images/logo-priority-dispatch.png",
     apple: "/images/logo-priority-dispatch.png",
-  },
-  alternates: {
-    canonical: 'https://prioritydispatchllc.com',
   },
 }
 

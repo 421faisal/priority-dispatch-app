@@ -4,14 +4,31 @@ import { SiteFooter } from "@/components/site/site-footer";
 import Reveal from "@/components/site/reveal";
 import { Calendar, User, ArrowLeft, CheckSquare, TrendingUp, BarChart3, Users } from "lucide-react";
 import { BlogArticleSchema } from "@/components/site/blog-article-schema";
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-  title: "How to Use Load Boards Effectively as an Owner-Operator | Priority Dispatch LLC",
-  description: "Load boards can flood your truck with freight or waste hours of dead time. Here's how owner-operators and small fleets can use them strategically to find better rates, avoid bad brokers, and keep wheels turning.",
-  alternates: {
-    canonical: "https://prioritydispatchllc.com/blog/how-to-use-load-boards",
-  },
-};
+    title: "How to Use Load Boards as an Owner-Operator | Priority Dispatch",
+    description: "How owner-operators and small fleets can use load boards strategically to find better rates, avoid bad brokers and cut the hours lost to dead time.",
+    alternates: {
+        canonical: "https://prioritydispatchllc.com/blog/how-to-use-load-boards",
+    },
+    openGraph: {
+        title: "How to Use Load Boards as an Owner-Operator | Priority Dispatch",
+        description: "How owner-operators and small fleets can use load boards strategically to find better rates, avoid bad brokers and cut the hours lost to dead time.",
+        url: "https://prioritydispatchllc.com/blog/how-to-use-load-boards",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-04-08",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/load-boards-hero.png"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "How to Use Load Boards as an Owner-Operator | Priority Dispatch",
+        description: "How owner-operators and small fleets can use load boards strategically to find better rates, avoid bad brokers and cut the hours lost to dead time.",
+        images: ["/images/blog/load-boards-hero.png"],
+    },
+}
 
 export default function BlogPost() {
   return (
@@ -132,7 +149,7 @@ export default function BlogPost() {
             {/* Author Bio */}
             <Reveal delayMs={250}>
               <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                   <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                 </p>
@@ -148,6 +165,7 @@ export default function BlogPost() {
             </Reveal>
           </div>
         </div>
+          <RelatedPosts slug="how-to-use-load-boards" />
       </article>
       <SiteFooter />
     </main>

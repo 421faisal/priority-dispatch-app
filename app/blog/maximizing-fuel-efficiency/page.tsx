@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Fuel, Gauge, Route, Wrench, Zap, DollarSign, Activity } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Maximizing Fuel Efficiency: High-Tech Strategies for 2026 Fleets | Priority Dispatch",
-    description: "Diesel fuel remains the #1 structural expense for heavy carriers. Learn absolutely proven 2026 technical strategies to violently slash fuel costs through massive engine analytics.",
+    title: "Maximizing Fuel Efficiency for Trucking Fleets in 2026",
+    description: "Diesel is still the biggest cost for most carriers. Proven 2026 strategies to cut fuel spend with engine data, aerodynamics, idle control and smarter routing.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/maximizing-fuel-efficiency",
+    },
+    openGraph: {
+        title: "Maximizing Fuel Efficiency for Trucking Fleets in 2026",
+        description: "Diesel is still the biggest cost for most carriers. Proven 2026 strategies to cut fuel spend with engine data, aerodynamics, idle control and smarter routing.",
+        url: "https://prioritydispatchllc.com/blog/maximizing-fuel-efficiency",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-03",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Maximizing Fuel Efficiency for Trucking Fleets in 2026",
+        description: "Diesel is still the biggest cost for most carriers. Proven 2026 strategies to cut fuel spend with engine data, aerodynamics, idle control and smarter routing.",
+        images: ["/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPostFuel() {
                 description="Massive 2,600-word engineering deep dive into incredibly advanced 2026 fuel mitigation strategies, including highly predictive topographic routing, synthetic HVO diesel metrics, and aggressive aerodynamic platooning."
                 datePublished="2026-03-03"
                 slug="maximizing-fuel-efficiency"
-                imageUrl="/images/blog/hero-fuel-efficiency.jpg"
+                imageUrl="/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -65,7 +82,7 @@ export default function BlogPostFuel() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Diesel fuel is the single largest expense for any carrier. In a market where every cent counts, maximizing fuel efficiency isn't just about maintenanceâ€”it's a financial strategy. This guide breaks down the latest in fuel-saving technology, from predictive cruise control to the reality of hydrogen hybrids.
+                                Diesel fuel is the single largest expense for any carrier. In a market where every cent counts, maximizing fuel efficiency isn't just about maintenance—it's a financial strategy. This guide breaks down the latest in fuel-saving technology, from predictive cruise control to the reality of hydrogen hybrids.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -106,10 +123,10 @@ export default function BlogPostFuel() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Data Over Intuition</h2>
                             <p>
-                                Fuel efficiency in 2026 is an engineering challenge, not a guessing game. By combining the right technology with smart dispatching, independent fleets can compete withâ€”and out-earnâ€”the mega-carriers. 
+                                Fuel efficiency in 2026 is an engineering challenge, not a guessing game. By combining the right technology with smart dispatching, independent fleets can compete with—and out-earn—the mega-carriers. 
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, we help you analyze your fleet's "burn rate" and find the lanes that make the most sense for your equipment. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us today</a> and letâ€™s start optimizing your bottom line.
+                                At <strong>Priority Dispatch LLC</strong>, we help you analyze your fleet's "burn rate" and find the lanes that make the most sense for your equipment. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us today</a> and let’s start optimizing your bottom line.
                             </p>
                         </Reveal>
 
@@ -117,7 +134,7 @@ export default function BlogPostFuel() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -127,12 +144,13 @@ export default function BlogPostFuel() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="maximizing-fuel-efficiency" />
             </article>
             <SiteFooter />
         </main>

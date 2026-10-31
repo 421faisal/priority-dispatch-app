@@ -6,6 +6,14 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Priority Dispatch LLC",
     description: "Read Priority Dispatch LLC's privacy policy. Learn how we collect, use, and protect your personal information when using our freight dispatching services.",
     alternates: { canonical: "https://prioritydispatchllc.com/privacy" },
+    openGraph: {
+        title: "Privacy Policy | Priority Dispatch LLC",
+        description: "Read Priority Dispatch LLC's privacy policy. Learn how we collect, use, and protect your personal information when using our freight dispatching services.",
+        url: "https://prioritydispatchllc.com/privacy",
+        siteName: "Priority Dispatch LLC",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
+    },
 }
 
 export default function PrivacyPage() {

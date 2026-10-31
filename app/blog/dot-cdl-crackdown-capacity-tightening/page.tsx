@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, AlertTriangle, TrendingUp, BarChart, ArrowLeft, Linkedin, ShieldCheck, Scale, Globe, Terminal, FileWarning, DollarSign } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "The 2026 Non-Domiciled CDL Crackdown: The Ultimate Capacity Tightening Event | Priority Dispatch",
-    description: "The Federal DOT crackdown on fraudulent non-domiciled CDLs will aggressively remove 200,000 drivers in 2026. Discover how compliant fleets can heavily profit from the resulting massive rate spikes.",
+    title: "Non-Domiciled CDL Crackdown & Capacity Tightening (2026)",
+    description: "The DOT crackdown on non-domiciled CDLs could remove up to 200,000 drivers in 2026. See how compliant carriers can benefit from the coming spot rate recovery.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/dot-cdl-crackdown-capacity-tightening",
+    },
+    openGraph: {
+        title: "Non-Domiciled CDL Crackdown & Capacity Tightening (2026)",
+        description: "The DOT crackdown on non-domiciled CDLs could remove up to 200,000 drivers in 2026. See how compliant carriers can benefit from the coming spot rate recovery.",
+        url: "https://prioritydispatchllc.com/blog/dot-cdl-crackdown-capacity-tightening",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-12",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-trucking-company.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Non-Domiciled CDL Crackdown & Capacity Tightening (2026)",
+        description: "The DOT crackdown on non-domiciled CDLs could remove up to 200,000 drivers in 2026. See how compliant carriers can benefit from the coming spot rate recovery.",
+        images: ["/images/blog/hero-trucking-company.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPost() {
                 description="Comprehensive 2026 economic analysis detailing the catastrophic federal DMV audit of non-domiciled CDLs, and exactly how the resulting 200,000-driver shortage will trigger extreme spot market rate surges."
                 datePublished="2026-03-12"
                 slug="dot-cdl-crackdown-capacity-tightening"
-                imageUrl="/images/blog/hero-dot-cdl.jpg"
+                imageUrl="/images/blog/hero-trucking-company.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -94,7 +111,7 @@ export default function BlogPost() {
                                     Regional Impact: The "Hot Zones"
                                 </h3>
                                 <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                                    The impact isn't the same everywhere. Areas that relied heavily on these labor poolsâ€”like Texas, Florida, and major port citiesâ€”are seeing the biggest capacity drops. 
+                                    The impact isn't the same everywhere. Areas that relied heavily on these labor pools—like Texas, Florida, and major port cities—are seeing the biggest capacity drops. 
                                 </p>
                                 <p className="text-base text-foreground font-semibold leading-relaxed">
                                     In many cases, spot rates in these regions have already started to climb as brokers struggle to find qualified, legal drivers to move their freight.
@@ -111,13 +128,13 @@ export default function BlogPost() {
 
                             <div className="grid md:grid-cols-2 gap-6 my-10">
                                 <div className="border border-border rounded-xl p-8 bg-card shadow-sm">
-                                    <h4 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><Clock className="h-5 w-5" /> The Market Reaction</h4>
+                                    <h3 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><Clock className="h-5 w-5" /> The Market Reaction</h3>
                                     <p className="text-base leading-relaxed">
                                         As more drivers are disqualified, shippers will have to pay higher rates to secure reliable capacity. Compliant fleets should look to renegotiate their contracts now to reflect this new reality.
                                     </p>
                                 </div>
                                 <div className="border border-border rounded-xl p-8 bg-card shadow-sm">
-                                    <h4 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><DollarSign className="h-5 w-5" /> The "Rescue" Premium</h4>
+                                    <h3 className="font-bold text-2xl text-accent mb-4 flex items-center gap-2"><DollarSign className="h-5 w-5" /> The "Rescue" Premium</h3>
                                     <p className="text-base leading-relaxed">
                                         During peak seasons, the shortage will be even more apparent. We anticipate "rescue rates" becoming common in port cities where the driver shortage is most acute.
                                     </p>
@@ -136,16 +153,16 @@ export default function BlogPost() {
                                 <li className="flex items-start gap-4">
                                     <div className="mt-1 bg-accent/20 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center shrink-0">1</div>
                                     <div>
-                                        <h4 className="font-bold text-lg text-foreground mb-1">Execute the Immediate "Pre-Audit" Defensive Scrub</h4>
+                                        <h3 className="font-bold text-lg text-foreground mb-1">Execute the Immediate "Pre-Audit" Defensive Scrub</h3>
                                         <p className="text-muted-foreground text-base">
-                                            Do not assume your drivers are perfectly compliant. You must aggressively pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your heavily guarded MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipmentâ€”even if the driver lied to youâ€”your company faces an immediate, highly devastating "Out-of-Service" (OOS) federal mandate.
+                                            Do not assume your drivers are perfectly compliant. You must aggressively pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your heavily guarded MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipment—even if the driver lied to you—your company faces an immediate, highly devastating "Out-of-Service" (OOS) federal mandate.
                                         </p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <div className="mt-1 bg-accent/20 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center shrink-0">2</div>
                                     <div>
-                                        <h4 className="font-bold text-lg text-foreground mb-1">Weaponize Your Elite Compliance</h4>
+                                        <h3 className="font-bold text-lg text-foreground mb-1">Weaponize Your Elite Compliance</h3>
                                         <p className="text-muted-foreground text-base">
                                             Compliance is no longer heavily viewed as a burdensome cost; in 2026, it is the absolute ultimate marketing weapon. Instruct your dispatchers to incredibly aggressively highlight your "100% US-Domiciled, Federally Verified" status when aggressively negotiating with massive brokers. Shippers are terrified of handing a high-value load to a driver only to have a Level 8 DOT scale violently confiscate the equipment at the state border due to a revoked license. They will gladly pay your truck a massive $500 premium simply for the mathematical guarantee of actual delivery.
                                         </p>
@@ -154,7 +171,7 @@ export default function BlogPost() {
                                 <li className="flex items-start gap-4">
                                     <div className="mt-1 bg-accent/20 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center shrink-0">3</div>
                                     <div>
-                                        <h4 className="font-bold text-lg text-foreground mb-1">Abandon Deflationary Contract Freight</h4>
+                                        <h3 className="font-bold text-lg text-foreground mb-1">Abandon Deflationary Contract Freight</h3>
                                         <p className="text-muted-foreground text-base">
                                             If you are currently locked into a rigid $2.10/mile dedicated contract lane that you signed back in late 2025 during the market trough, you are actively hemorrhaging severe capital. Utilize your operational mobility. Shift your active assets violently toward the volatile, high-paying spot market or aggressively renegotiate your dedicated lanes utilizing the "Supply Shock" data as non-negotiable leverage.
                                         </p>
@@ -202,7 +219,7 @@ export default function BlogPost() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -212,12 +229,13 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="dot-cdl-crackdown-capacity-tightening" />
             </article>
             <SiteFooter />
         </main>

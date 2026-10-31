@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Briefcase, TrendingUp, ShieldCheck, DollarSign, Calculator, Map, Wrench } from "lucide-react"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Owner-Operator Success: How to Maximize Your Revenue in 2026 | Priority Dispatch LLC",
-    description: "Discover strategic tips for owner-operators to increase earnings. Learn about lane planning, equipment optimization, and why professional dispatching is the key to profit.",
+    title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+    description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/owner-operator-guide",
+    },
+    openGraph: {
+        title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+        description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
+        url: "https://prioritydispatchllc.com/blog/owner-operator-guide",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-owner-operator.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+        description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
+        images: ["/images/blog/hero-owner-operator.jpg"],
     },
 }
 
@@ -108,7 +125,7 @@ export default function BlogPostOwnerOperator() {
                                 Over 60% of new owner-operators fail in their first 18 months because they chase the absolutely highest inbound spot rate without calculating the outbound exit. If you book an incredible $4.50/mile load plunging deep into southern Florida (Miami/Homestead), you will feel like a genius"”until you realize there is absolutely zero outbound freight to extract you. You will be forced to deadhead 350 miles back up to Jacksonville or Atlanta, mathematically destroying the profit you made on the inbound trip.
                             </p>
                             <p>
-                                A master owner-operator, supported by a professional dispatch team, creates regional <em>Circuits</em>. Running the Midwest Triangle (Chicago â†’ Columbus â†’ Indianapolis â†’ Chicago) might only yield consecutive $2.75/mile loads, but hitting that average consistently, with zero deadhead across a 3,000-mile week, will radically out-earn the driver chasing single boom-or-bust cross-country loads.
+                                A master owner-operator, supported by a professional dispatch team, creates regional <em>Circuits</em>. Running the Midwest Triangle (Chicago → Columbus → Indianapolis → Chicago) might only yield consecutive $2.75/mile loads, but hitting that average consistently, with zero deadhead across a 3,000-mile week, will radically out-earn the driver chasing single boom-or-bust cross-country loads.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -215,7 +232,7 @@ export default function BlogPostOwnerOperator() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -225,12 +242,13 @@ export default function BlogPostOwnerOperator() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="owner-operator-guide" />
             </article>
             <SiteFooter />
         </main>

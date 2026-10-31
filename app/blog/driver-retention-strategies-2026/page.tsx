@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Heart, ShieldCheck, Zap, Users } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Driver Retention Strategies: Beating the 2026 Shortage | Priority Dispatch LLC",
-    description: "Hiring a commercial CDL driver is immensely expensive; keeping one is a strategic investment. Discover the precise high-tech models small fleets deploy to crush driver turnover.",
+    title: "Driver Retention Strategies for 2026 | Priority Dispatch",
+    description: "Hiring a CDL driver is expensive; keeping one is an investment. The pay models, home-time planning and culture small fleets use to cut driver turnover in 2026.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/driver-retention-strategies-2026",
+    },
+    openGraph: {
+        title: "Driver Retention Strategies for 2026 | Priority Dispatch",
+        description: "Hiring a CDL driver is expensive; keeping one is an investment. The pay models, home-time planning and culture small fleets use to cut driver turnover in 2026.",
+        url: "https://prioritydispatchllc.com/blog/driver-retention-strategies-2026",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-03",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/blog/hero-owner-operator.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Driver Retention Strategies for 2026 | Priority Dispatch",
+        description: "Hiring a CDL driver is expensive; keeping one is an investment. The pay models, home-time planning and culture small fleets use to cut driver turnover in 2026.",
+        images: ["/images/blog/hero-owner-operator.jpg"],
     },
 }
 
@@ -87,7 +104,7 @@ export default function BlogPostRetention() {
                                 Traditional Cents-Per-Mile (CPM) pay is becoming a relic of the past. If a driver is stuck at a shipper for 6 hours, they aren't making money. If their truck breaks down, they aren't making money. 
                             </p>
                             <p>
-                                The most successful fleets in 2026 are moving toward <strong>Percentage Pay</strong> or a **Salary + Bonus** model. When a driver gets a percentage of the load, they are incentivized to help you find the best freight. They aren't just driving miles; they are growing a business with you.
+                                The most successful fleets in 2026 are moving toward <strong>Percentage Pay</strong> or a <strong>Salary + Bonus</strong> model. When a driver gets a percentage of the load, they are incentivized to help you find the best freight. They aren't just driving miles; they are growing a business with you.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -95,7 +112,7 @@ export default function BlogPostRetention() {
                                 Technology that Helps, Not micromanages
                             </h2>
                             <p>
-                                Most drivers hate ELDs and cameras because they feel like theyâ€™re being watched by Big Brother. Use technology to solve the driver's problems, not just your own.
+                                Most drivers hate ELDs and cameras because they feel like they’re being watched by Big Brother. Use technology to solve the driver's problems, not just your own.
                             </p>
                             <p>
                                 <strong>Home-Time Predictability:</strong> Use your dispatch software to track "Home-Time Deficit." If a driver hasn't been home in 14 days, your system should automatically prioritize a load that gets them back to their zip code. At Priority Dispatch, we prioritize driver well-being because a happy driver is a safe driver.
@@ -114,7 +131,7 @@ export default function BlogPostRetention() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -124,12 +141,13 @@ export default function BlogPostRetention() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="driver-retention-strategies-2026" />
             </article>
             <SiteFooter />
         </main>

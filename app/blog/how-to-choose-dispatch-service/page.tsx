@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldAlert, Zap, Search, Scale, FileText, CheckCircle2, Globe, FileWarning, DollarSign } from "lucide-react"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
     title: "How to Choose a Truck Dispatch Service (2026 Checklist)",
@@ -88,7 +89,7 @@ export default function BlogPostChooseDispatch() {
                                 In 2026, the barrier to entry for claiming you run a "freight dispatching service" is terrifically low. It technically only requires a laptop and a monthly subscription to DAT or Truckstop. Consequently, thousands of offshore offices and untrained individuals are heavily marketing themselves as "U.S. Based Dispatch Services." 
                             </p>
                             <p>
-                                These operators frequently tempt carriers with incredibly low feesâ€”often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
+                                These operators frequently tempt carriers with incredibly low fees—often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
                             </p>
 
                             <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
@@ -114,7 +115,7 @@ export default function BlogPostChooseDispatch() {
                                 <div className="bg-card border border-border shadow-md rounded-2xl p-8 relative overflow-hidden group hover:border-accent transition-colors">
                                     <div className="absolute top-0 right-0 w-16 h-16 bg-accent/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
                                     <DollarSign className="h-8 w-8 text-accent mb-4" />
-                                    <h4 className="text-xl font-bold text-foreground mb-3">Percentage Model (Recommended)</h4>
+                                    <h3 className="text-xl font-bold text-foreground mb-3">Percentage Model (Recommended)</h3>
                                     <p className="text-sm leading-relaxed mb-4">Usually ranges from 5% to 10% of gross load revenue. This is the industry gold standard for a very specific reason: <strong>Alignment of Incentives</strong>.</p>
                                     <ul className="text-sm space-y-2 mt-4 text-muted-foreground">
                                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" /> Inhibits lazy dispatching.</li>
@@ -125,8 +126,8 @@ export default function BlogPostChooseDispatch() {
                                 <div className="bg-card border border-border shadow-md rounded-2xl p-8 relative overflow-hidden group hover:border-red-500/50 transition-colors">
                                     <div className="absolute top-0 right-0 w-16 h-16 bg-red-500/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
                                     <FileWarning className="h-8 w-8 text-red-500 mb-4" />
-                                    <h4 className="text-xl font-bold text-foreground mb-3">Flat Fee Model (Proceed with Caution)</h4>
-                                    <p className="text-sm leading-relaxed mb-4">Usually $200â€“$400 per week, per truck. While mathematically cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
+                                    <h3 className="text-xl font-bold text-foreground mb-3">Flat Fee Model (Proceed with Caution)</h3>
+                                    <p className="text-sm leading-relaxed mb-4">Usually $200–$400 per week, per truck. While mathematically cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
                                     <ul className="text-sm space-y-2 mt-4 text-muted-foreground">
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> High risk of "Lazy Dispatching."</li>
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> The dispatcher gets paid $300 whether they book you a $4.00/mile load or a $1.50/mile load.</li>
@@ -211,14 +212,14 @@ export default function BlogPostChooseDispatch() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">FAQ â€” How Much Does a Truck Dispatcher Cost?</a> 
+                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">FAQ — How Much Does a Truck Dispatcher Cost?</a> 
                                             <br/><span className="text-sm text-muted-foreground">A totally transparent breakdown of our fee structures and exactly what you receive for your investment.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup â€” Start Getting Loads in 24 Hours</a> 
+                                            <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup — Start Getting Loads in 24 Hours</a> 
                                             <br/><span className="text-sm text-muted-foreground">Our streamlined onboarding process designed to get you out of the driveway and onto profitable lanes immediately.</span>
                                         </span>
                                     </li>
@@ -237,7 +238,7 @@ export default function BlogPostChooseDispatch() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -247,12 +248,13 @@ export default function BlogPostChooseDispatch() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="how-to-choose-dispatch-service" />
             </article>
             <SiteFooter />
         </main>

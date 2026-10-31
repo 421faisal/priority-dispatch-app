@@ -7,11 +7,19 @@ import { Calculator, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-    title: "Trucking Toolbox — Profit & Fuel Calculators | Priority Dispatch LLC",
+    title: "Trucking Toolbox: Profit & Fuel Calculators | Priority Dispatch",
     description: "Free tools for truck drivers and carriers. Calculate your profit per mile, fuel costs, and load profitability with the Priority Dispatch LLC Trucking Toolbox.",
     keywords: "trucking calculator, profit per mile calculator, fuel cost calculator, load profitability, dispatch tools, priority dispatch llc",
     alternates: {
         canonical: "https://prioritydispatchllc.com/toolbox",
+    },
+    openGraph: {
+        title: "Trucking Toolbox: Profit & Fuel Calculators | Priority Dispatch",
+        description: "Free tools for truck drivers and carriers. Calculate your profit per mile, fuel costs, and load profitability with the Priority Dispatch LLC Trucking Toolbox.",
+        url: "https://prioritydispatchllc.com/toolbox",
+        siteName: "Priority Dispatch LLC",
+        type: "website",
+        images: ["/images/hero-truck.jpg"],
     },
 }
 

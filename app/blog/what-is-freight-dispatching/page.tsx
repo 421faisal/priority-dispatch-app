@@ -4,24 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, Zap, Scale, MessageSquare, ShieldCheck, TrendingUp, BarChart3, Target, Map } from "lucide-react"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "What Is Freight Dispatching? A Practical Guide for Owner-Operators (2026) | Priority Dispatch",
+    title: "What Is Freight Dispatching? Guide for Owner-Operators",
     description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
     },
     openGraph: {
-        title: "What Is Freight Dispatching? A Practical Guide for Owner-Operators (2026)",
+        title: "What Is Freight Dispatching? Guide for Owner-Operators",
         description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
         url: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
+        siteName: "Priority Dispatch LLC",
         type: "article",
+        publishedTime: "2026-03-19",
+        authors: ["Muhammad Faisal Bilal"],
         images: ["/images/blog/hero-dispatcher.jpg"],
     },
     twitter: {
         card: "summary_large_image",
-        title: "What Is Freight Dispatching? A Practical Guide (2026)",
-        description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes.",
+        title: "What Is Freight Dispatching? Guide for Owner-Operators",
+        description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
+        images: ["/images/blog/hero-dispatcher.jpg"],
     },
 }
 
@@ -390,7 +395,7 @@ export default function BlogPostWhatIsDispatching() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -407,6 +412,7 @@ export default function BlogPostWhatIsDispatching() {
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="what-is-freight-dispatching" />
             </article>
             <SiteFooter />
         </main>

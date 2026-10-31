@@ -4,12 +4,29 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldAlert, CheckSquare, Search, AlertTriangle, Fingerprint, Gavel, ShieldCheck, Lock, Activity, ServerCrash } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
+import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Combatting Freight Fraud and Double Brokering in 2026 | Priority Dispatch LLC",
-    description: "Freight fraud and double brokering have reached record highs in 2026. Learn the chameleon carrier red flags, the complete carrier vetting checklist, and FMCSA's new safeguards.",
+    title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
+    description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/combatting-freight-fraud-2026",
+    },
+    openGraph: {
+        title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
+        description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
+        url: "https://prioritydispatchllc.com/blog/combatting-freight-fraud-2026",
+        siteName: "Priority Dispatch LLC",
+        type: "article",
+        publishedTime: "2026-03-12",
+        authors: ["Muhammad Faisal Bilal"],
+        images: ["/images/services/carrier-support.jpg"],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
+        description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
+        images: ["/images/services/carrier-support.jpg"],
     },
 }
 
@@ -22,7 +39,7 @@ export default function BlogPost() {
                 description="A comprehensive manifesto detailing the exact vetting protocols and defensive technologies needed to survive freight identity theft and double brokering."
                 datePublished="2026-03-12"
                 slug="combatting-freight-fraud-2026"
-                imageUrl="/images/blog/hero-freight-fraud.jpg"
+                imageUrl="/images/services/carrier-support.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -99,7 +116,7 @@ export default function BlogPost() {
                                 Fraudsters are actively scraping audio clips from corporate LinkedIn videos, YouTube interviews, and podcast appearances made by prominent logistics executives and broker agents. They feed this audio into AI tools to create perfect <strong>Voice Deepfakes</strong>. 
                             </p>
                             <p>
-                                When an owner-operator calls the phone number provided on a fake rate confirmation, the AIâ€”sounding exactly like the broker the carrier has known for five yearsâ€”answers the phone, complete with local colloquialisms, and successfully "verifies" the fraudulent load.
+                                When an owner-operator calls the phone number provided on a fake rate confirmation, the AI—sounding exactly like the broker the carrier has known for five years—answers the phone, complete with local colloquialisms, and successfully "verifies" the fraudulent load.
                             </p>
                             
                             <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
@@ -125,7 +142,7 @@ export default function BlogPost() {
                                             <ShieldCheck className="h-5 w-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg text-foreground mb-1">1. Absolute Domain Authenticity Scrutiny</h4>
+                                            <h3 className="font-bold text-lg text-foreground mb-1">1. Absolute Domain Authenticity Scrutiny</h3>
                                             <p className="text-sm text-muted-foreground leading-relaxed">
                                                 We outright reject any communication, email, or packet arriving from a generic domain provider (@gmail.com, @yahoo.com, @aol.com). A verified, legitimate brokerage will ALWAYS utilize a registered corporate domain. Furthermore, we check the domain age via ICANN lookup. If a broker claims to have been in business for 8 years, but their website domain was registered 14 days ago in a foreign country, the load is immediately canceled.
                                             </p>
@@ -136,7 +153,7 @@ export default function BlogPost() {
                                             <Lock className="h-5 w-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg text-foreground mb-1">2. Factorability as the Ultimate Litmus Test</h4>
+                                            <h3 className="font-bold text-lg text-foreground mb-1">2. Factorability as the Ultimate Litmus Test</h3>
                                             <p className="text-sm text-muted-foreground leading-relaxed">
                                                 Before we permit an owner-operator to sign a rate confirmation, we run the broker's MC number through Tier-1 Non-Recourse factoring databases. If the factoring company refuses to approve the credit, or if their days-to-pay (DTP) average has recently slipped past 35 days, we kill the deal. If a multibillion-dollar bank won't trust the broker to pay, our carriers certainly will not either.
                                             </p>
@@ -147,7 +164,7 @@ export default function BlogPost() {
                                             <Activity className="h-5 w-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-lg text-foreground mb-1">3. Direct Surety Bond Verification</h4>
+                                            <h3 className="font-bold text-lg text-foreground mb-1">3. Direct Surety Bond Verification</h3>
                                             <p className="text-sm text-muted-foreground leading-relaxed">
                                                 Counterfeit Certificate of Insurance (COI) PDFs are alarmingly common. Fraudsters easily Photoshop legitimate policies. Our dispatchers never dial the phone number printed on the COI. We independently locate the underwriter's contact information via the FMCSA SAFER database, call the principal underwriter directly, and verbally verify that the $75,000 BMC-84 bond is currently active, fully funded, and devoid of pending claims.
                                             </p>
@@ -161,10 +178,10 @@ export default function BlogPost() {
                                 The SAFE Freight Act & Legislative Relief
                             </h2>
                             <p>
-                                Recognizing the catastrophic bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing Americaâ€™s Freight Economy). 
+                                Recognizing the catastrophic bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing America’s Freight Economy). 
                             </p>
                             <p>
-                                This legislation aggressively seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and Youâ€™re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
+                                This legislation aggressively seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and You’re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
                             </p>
                             <p>
                                 However, federal laws iterate slowly, and carrier bankruptcies happen quickly. Until the FMCSA establishes a biometrically secured national dispatch portal, your only defense is aggressive offense.
@@ -186,7 +203,7 @@ export default function BlogPost() {
                                 As an independent owner-operator gripping a steering wheel for 11 hours a day, attempting to perform enterprise-grade cyber investigations on your smartphone between weigh stations is an impossible expectation. You require a dedicated human firewall.
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our absolute DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your uncompromising defensive line. We do not just secure premium freightâ€”we guarantee that the invoice mathematically clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
+                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our absolute DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your uncompromising defensive line. We do not just secure premium freight—we guarantee that the invoice mathematically clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
                             </p>
 
                             {/* Internal Links */}
@@ -206,7 +223,7 @@ export default function BlogPost() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch FAQ â€” Security & Billing</a> 
+                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch FAQ — Security & Billing</a> 
                                             <br/><span className="text-sm text-muted-foreground">Find out exactly how we process your invoices to non-recourse factoring companies to eliminate payment risk.</span>
                                         </span>
                                     </li>
@@ -218,7 +235,7 @@ export default function BlogPost() {
                         {/* Author Bio */}
                         <Reveal delayMs={250}>
                             <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h4 className="text-2xl font-bold mb-2">About the Author</h4>
+                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
                                 <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
                                     <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
                                 </p>
@@ -228,12 +245,13 @@ export default function BlogPost() {
                                     rel="noopener noreferrer"
                                     className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
                                 >
-                                    Connect on LinkedIn â†’
+                                    Connect on LinkedIn →
                                 </a>
                             </div>
                         </Reveal>
                     </div>
                 </div>
+                <RelatedPosts slug="combatting-freight-fraud-2026" />
             </article>
             <SiteFooter />
         </main>

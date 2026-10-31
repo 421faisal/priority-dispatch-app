@@ -61,6 +61,23 @@ const nextConfig = {
         destination: '/:path+',
         permanent: true,
       },
+      // Merged duplicate blog posts (moved here from next.config.js, which
+      // used to shadow this file: Next.js loads next.config.js first)
+      {
+        source: '/blog/ai-machine-learning-dispatching',
+        destination: '/blog/ai-dispatching-co-pilot-model',
+        permanent: true,
+      },
+      {
+        source: '/blog/autonomous-trucks-2026',
+        destination: '/blog/impact-of-autonomous-trucking-2026',
+        permanent: true,
+      },
+      {
+        source: '/blog/evolution-of-logistics',
+        destination: '/blog',
+        permanent: true,
+      },
       // Existing redirects
       {
         source: '/get-started',

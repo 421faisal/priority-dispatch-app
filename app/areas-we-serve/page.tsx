@@ -84,7 +84,7 @@ export default function AreasWeServePage() {
                                             <Globe className="h-5 w-5" />
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold">All 48 States</h4>
+                                            <h3 className="font-semibold">All 48 States</h3>
                                             <p className="text-sm text-muted-foreground">Consistent loads nationwide.</p>
                                         </div>
                                     </div>
@@ -93,7 +93,7 @@ export default function AreasWeServePage() {
                                             <Navigation className="h-5 w-5" />
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold">Lane Optimization</h4>
+                                            <h3 className="font-semibold">Lane Optimization</h3>
                                             <p className="text-sm text-muted-foreground">Backhauls always planned.</p>
                                         </div>
                                     </div>
