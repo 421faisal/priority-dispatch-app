@@ -137,6 +137,11 @@ export function SiteFooter() {
                 Contact Us
               </a>
             </li>
+            <li>
+              <a href="/es/despacho-de-camiones" hrefLang="es" lang="es" className="hover:opacity-80">
+                Español: despacho de camiones
+              </a>
+            </li>
           </ul>
           <h3 className="mt-6 text-sm font-semibold">Truck Dispatch by Region</h3>
           <ul className="mt-3 space-y-2 text-sm opacity-90">

@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         // ── Core Pages ──────────────────────────────────────────────────
         { url: baseUrl,                                    lastModified: new Date('2026-11-01'), changeFrequency: 'weekly',  priority: 1.0 },
+        { url: `${baseUrl}/es/despacho-de-camiones`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/services`,                      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/services/new-carrier-setup`,    lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/pricing`,                       lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },

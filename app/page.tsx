@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   description,
   alternates: {
     canonical: "https://prioritydispatchllc.com",
+    languages: {
+      en: "https://prioritydispatchllc.com",
+      es: "https://prioritydispatchllc.com/es/despacho-de-camiones",
+      "x-default": "https://prioritydispatchllc.com",
+    },
   },
   openGraph: {
     title,
