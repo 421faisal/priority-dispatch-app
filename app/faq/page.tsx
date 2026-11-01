@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         description: "How much does a truck dispatcher cost? Answers on fees, contracts, equipment, load approval and 24/7 support.",
         url: "https://prioritydispatchllc.com/faq",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     twitter: {
         card: "summary_large_image",

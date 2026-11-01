@@ -42,13 +42,13 @@ export async function generateMetadata(props: { params: Promise<{ state: string 
             url,
             siteName: "Priority Dispatch LLC",
             type: "website",
-            images: ["/images/hero-truck.jpg"],
+            images: ["/images/og-trucks-highway.jpg"],
         },
         twitter: {
             card: "summary_large_image",
             title: loc.title,
             description: loc.description,
-            images: ["/images/hero-truck.jpg"],
+            images: ["/images/og-trucks-highway.jpg"],
         },
     }
 }

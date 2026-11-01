@@ -21,13 +21,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-22",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/what-is-twic-card-trucking-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "What Is a TWIC Card in Trucking? | Priority Dispatch",
         description: "A TWIC card opens the door to high-paying port loads. What it is, how to get one, and how Priority Dispatch LLC helps TWIC holders find maritime freight.",
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/what-is-twic-card-trucking-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function TWICCardBlogPost() {
                 description="A TWIC card opens the door to high-paying port loads. Learn what it is, how to get one, and how Priority Dispatch LLC helps TWIC-certified owner-operators find premium maritime freight."
                 datePublished="2026-05-22"
                 slug="what-is-twic-card-trucking"
-                imageUrl="/images/blog/hero-freight-highway.jpg"
+                imageUrl="/images/blog/photos/what-is-twic-card-trucking-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function TWICCardBlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="TWIC card for port access in trucking"
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/what-is-twic-card-trucking.webp"
+                                alt="Container truck under cranes at a busy port"
                                 className="object-cover w-full h-full"
                             />
                         </div>

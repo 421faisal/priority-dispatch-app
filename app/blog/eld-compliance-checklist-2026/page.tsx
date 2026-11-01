@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/eld-compliance-checklist-2026-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "ELD Compliance Checklist 2026 | Priority Dispatch",
         description: "A 2026 ELD compliance checklist for carriers: prepare for wireless roadside inspections, avoid log falsification flags and protect your CSA score.",
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/eld-compliance-checklist-2026-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostELD() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="eld-compliance-checklist-2026"
-                imageUrl="/images/blog/hero-warehouse.jpg"
+                imageUrl="/images/blog/photos/eld-compliance-checklist-2026-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostELD() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A secure logistical server facility representing the rigid, data-driven reality of commercial trucking compliance in 2026."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/eld-compliance-checklist-2026.webp"
+                                alt="Dry van trailer on the highway at dusk"
                                 className="object-cover w-full h-full"
                             />
                         </div>

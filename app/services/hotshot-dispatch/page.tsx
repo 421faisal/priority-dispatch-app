@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert hotshot dispatching for owner-operators. High-paying time-sensitive and expedited loads.",
         url: "https://prioritydispatchllc.com/services/hotshot-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

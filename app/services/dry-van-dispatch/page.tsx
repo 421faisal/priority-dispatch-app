@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert dry van dispatching for owner-operators. High-paying loads across all 48 states.",
         url: "https://prioritydispatchllc.com/services/dry-van-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

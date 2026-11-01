@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         description: "Full-service truck dispatching for owner-operators in all 48 states.",
         url: "https://prioritydispatchllc.com/services",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     twitter: {
         card: "summary_large_image",
@@ -61,7 +61,7 @@ const coreServices = [
             "Multi-board & broker network access",
             "Equipment-specific matchmaking",
         ],
-        image: "/images/services-dispatch.jpg",
+        image: "/images/blog/photos/owner-operator-guide.webp",
     },
     {
         icon: Headset,
@@ -73,7 +73,7 @@ const coreServices = [
             "Shipper/receiver communication",
             "Detention & layover negotiation",
         ],
-        image: "/images/services-carrier.jpg",
+        image: "/images/blog/photos/insider-trucking-dispatch-tips-faisal.webp",
     },
     {
         icon: FileText,
@@ -85,7 +85,7 @@ const coreServices = [
             "Detention & TONU claims",
             "Collections follow-up",
         ],
-        image: "/images/services-load.jpg",
+        image: "/images/blog/photos/what-is-freight-dispatching.webp",
     },
 ]
 

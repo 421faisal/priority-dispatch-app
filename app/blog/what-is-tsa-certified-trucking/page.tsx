@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         description: "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how to qualify, cost and the loads it unlocks.",
         url: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
         type: "article",
-        images: ["/images/blog/hero-autonomous-truck.jpg"],
+        images: ["/images/blog/photos/what-is-tsa-certified-trucking-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
@@ -37,7 +37,7 @@ export default function TSACertifiedBlogPost() {
                 datePublished="2026-05-22"
                 dateModified="2026-11-01"
                 slug="what-is-tsa-certified-trucking"
-                imageUrl="/images/blog/hero-autonomous-truck.jpg"
+                imageUrl="/images/blog/photos/what-is-tsa-certified-trucking-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -69,9 +69,9 @@ export default function TSACertifiedBlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-autonomous-truck.webp"
-                                alt="TSA certified trucking for air cargo"
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/what-is-tsa-certified-trucking.webp"
+                                alt="Cargo being loaded onto a jet at an airport"
                                 className="object-cover w-full h-full"
                             />
                         </div>

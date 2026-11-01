@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/micro-niche-reefer-flatbed-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Reefer & Flatbed Niches: Specializing in 2026 | Priority Dispatch",
         description: "Dry van rates are leveling off while reefer and flatbed demand grows. A practical guide to moving into higher-paying specialized trucking niches in 2026.",
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/micro-niche-reefer-flatbed-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostMicroNiche() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="micro-niche-reefer-flatbed"
-                imageUrl="/images/blog/hero-freight-highway.jpg"
+                imageUrl="/images/blog/photos/micro-niche-reefer-flatbed-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostMicroNiche() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="High-value specialized cargo being carefully loaded onto a sophisticated step-deck trailer in a professional logistics environment."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/micro-niche-reefer-flatbed.webp"
+                                alt="Gooseneck flatbed trailer loaded with logs"
                                 className="object-cover w-full h-full"
                             />
                         </div>

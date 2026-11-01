@@ -23,9 +23,9 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-11-01",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/rate-intelligence.jpg"],
+        images: ["/images/blog/photos/truck-dispatcher-cost-og.jpg"],
     },
-    twitter: { card: "summary_large_image", title, description, images: ["/images/blog/rate-intelligence.jpg"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/images/blog/photos/truck-dispatcher-cost-og.jpg"] },
 }
 
 const faqs = [
@@ -62,7 +62,7 @@ export default function TruckDispatcherCostPost() {
                 description={description}
                 datePublished="2026-11-01"
                 slug="truck-dispatcher-cost"
-                imageUrl="/images/blog/rate-intelligence.jpg"
+                imageUrl="/images/blog/photos/truck-dispatcher-cost-og.jpg"
             />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <article className="py-24">
@@ -90,6 +90,16 @@ export default function TruckDispatcherCostPost() {
                             </span>
                         </div>
                     </header>
+
+                    <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl border border-border shadow-xl">
+                        <img
+                            src="/images/blog/photos/truck-dispatcher-cost.webp"
+                            alt="Red Kenworth semi-truck pulling a dry van trailer"
+                            width={1200}
+                            height={800}
+                            className="h-full w-full object-cover"
+                        />
+                    </div>
 
                     <div className="prose prose-lg mx-auto max-w-none leading-relaxed text-foreground/90">
                         <p className="border-l-4 border-accent pl-6 text-xl text-muted-foreground">

@@ -37,10 +37,10 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 bg-primary/95 text-primary-foreground shadow-md backdrop-blur-sm border-b border-border/50">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-3 md:py-4">
         <Link href="/" className="flex shrink-0 items-center gap-3">
           <img src="/images/logo-priority-dispatch.webp" alt="Priority Dispatch LLC" width={80} height={80} fetchPriority="high" className="h-[60px] md:h-[72px] lg:h-[80px] w-auto object-contain drop-shadow-sm transition-all" />
-          <div className="hidden sm:flex flex-col ml-1">
+          <div className="hidden sm:flex xl:hidden 2xl:flex flex-col ml-1">
             <span className="text-base md:text-lg lg:text-xl font-bold tracking-widest leading-none">PRIORITY DISPATCH</span>
             <span className="text-[10px] md:text-xs tracking-[0.25em] font-medium opacity-80 mt-1">LLC</span>
           </div>

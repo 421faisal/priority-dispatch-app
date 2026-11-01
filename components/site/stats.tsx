@@ -49,9 +49,9 @@ export function Stats() {
   const [showCount, setShowCount] = useState(false)
 
   const stats = [
-    { target: 98, suffix: "%", label: "On-Time Pickup & Delivery", icon: Truck },
-    { target: 24, suffix: "/7", label: "Dispatcher Support Coverage", icon: Clock },
-    { target: 500, suffix: "+", label: "Owner-Operators & Fleets Supported", icon: TrendingUp },
+    { target: 4, suffix: "%", label: "Dispatch fee for dry van, reefer, flatbed (from)", icon: TrendingUp },
+    { target: 24, suffix: "/7", label: "Dispatcher support, every day", icon: Clock },
+    { target: 48, suffix: "", label: "States we dispatch in", icon: Truck },
   ]
 
   useEffect(() => {
@@ -82,7 +82,7 @@ export function Stats() {
     {
       icon: MapPinned,
       title: "Smart Lane Planning",
-      desc: "AI lane intelligence to minimize deadhead and maximize rate-per-mile.",
+      desc: "Lanes and reloads planned ahead to cut deadhead and raise rate per mile.",
     },
     {
       icon: ShieldCheck,

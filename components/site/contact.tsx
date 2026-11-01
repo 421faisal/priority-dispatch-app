@@ -41,7 +41,7 @@ export function Contact() {
       if (res.ok) {
         setStatus("success");
         toast({
-          title: "✅ Message Sent!",
+          title: "Message sent",
           description: "We will contact you shortly.",
         });
         form.reset();
@@ -49,7 +49,7 @@ export function Contact() {
         const body = await res.json().catch(() => ({}));
         setStatus("error");
         toast({
-          title: "❌ Failed to Send",
+          title: "Failed to send",
           description: body?.error || "Please try again or call us directly.",
           variant: "destructive",
         });
@@ -58,7 +58,7 @@ export function Contact() {
       console.error("Contact form error:", err);
       setStatus("error");
       toast({
-        title: "❌ Network Error",
+        title: "Network error",
         description: "Could not reach the server. Please try again.",
         variant: "destructive",
       });

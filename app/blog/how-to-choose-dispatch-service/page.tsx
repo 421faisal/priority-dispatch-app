@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         description: "What to check before you hire a truck dispatcher: fees, contract terms, power of attorney scope, business verification and red flags.",
         url: "https://prioritydispatchllc.com/blog/how-to-choose-dispatch-service",
         type: "article",
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/how-to-choose-dispatch-service-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
@@ -36,7 +36,7 @@ export default function BlogPostChooseDispatch() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="how-to-choose-dispatch-service"
-                imageUrl="/images/blog/hero-dispatcher.jpg"
+                imageUrl="/images/blog/photos/how-to-choose-dispatch-service-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -68,9 +68,9 @@ export default function BlogPostChooseDispatch() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-dispatcher.webp"
-                                alt="A professional logistics consultant reviewing load reports and carrier lane optimization."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/how-to-choose-dispatch-service.webp"
+                                alt="Black semi-truck on a rural highway"
                                 className="object-cover w-full h-full"
                             />
                         </div>

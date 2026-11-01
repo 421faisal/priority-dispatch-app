@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         url: "https://prioritydispatchllc.com/blog",
         siteName: "Priority Dispatch LLC",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     twitter: {
         card: "summary_large_image",

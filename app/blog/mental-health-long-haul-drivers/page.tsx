@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/mental-health-long-haul-drivers-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
         description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/mental-health-long-haul-drivers-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostMentalHealth() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="mental-health-long-haul-drivers"
-                imageUrl="/images/blog/hero-owner-operator.jpg"
+                imageUrl="/images/blog/photos/mental-health-long-haul-drivers-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostMentalHealth() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-owner-operator.webp"
-                                alt="A professional commercial truck driver taking a solitary moment of quiet peace inside their modern cab to maintain mental clarity during a grueling long-haul route."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/mental-health-long-haul-drivers.webp"
+                                alt="Semi-truck driving alone on a dark mountain road"
                                 className="object-cover w-full h-full"
                             />
                         </div>

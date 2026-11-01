@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Priority Dispatch LLC",
     images: [
       {
-        url: "/images/hero-truck.jpg",
+        url: "/images/og-trucks-highway.jpg",
         width: 1200,
         height: 630,
         alt: "Priority Dispatch LLC - Truck Dispatcher for Owner Operators",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/hero-truck.jpg"],
+    images: ["/images/og-trucks-highway.jpg"],
   },
 }
 

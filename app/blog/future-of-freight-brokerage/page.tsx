@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/rate-intelligence.jpg"],
+        images: ["/images/blog/photos/future-of-freight-brokerage-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "The Future of Freight Brokerage: Digital Freight Matching",
         description: "Are traditional freight brokers becoming obsolete? How digital freight matching platforms and new tech are changing shipper, broker and carrier relationships.",
-        images: ["/images/blog/rate-intelligence.jpg"],
+        images: ["/images/blog/photos/future-of-freight-brokerage-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostBrokerage() {
                 datePublished="2026-03-12"
                 dateModified="2026-11-01"
                 slug="future-of-freight-brokerage"
-                imageUrl="/images/blog/rate-intelligence.jpg"
+                imageUrl="/images/blog/photos/future-of-freight-brokerage-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostBrokerage() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A advanced digital brokerage interface matching physical freight explicitly using highly aggressive Deep AI algorithms and Web3 blockchain tools."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/future-of-freight-brokerage.webp"
+                                alt="Trailers backed into warehouse loading docks"
                                 className="object-cover w-full h-full"
                             />
                         </div>

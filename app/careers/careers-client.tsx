@@ -157,7 +157,7 @@ export function CareersClient() {
                     </p>
                     {/* Global hiring flags */}
                     <div className="flex flex-wrap gap-3 justify-center mt-4">
-                        {["🇵🇰 Pakistan", "🇮🇳 India", "🇺🇸 USA", "🌍 Worldwide"].map(flag => (
+                        {["Pakistan", "India", "USA", "Worldwide"].map(flag => (
                             <span key={flag} className="px-4 py-1.5 rounded-full bg-accent/10 border border-accent/20 text-accent text-sm font-semibold">{flag}</span>
                         ))}
                     </div>

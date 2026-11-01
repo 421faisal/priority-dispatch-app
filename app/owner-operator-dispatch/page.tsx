@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "website", images: ["/images/hero-truck.jpg"] },
-    twitter: { card: "summary_large_image", title, description, images: ["/images/hero-truck.jpg"] },
+    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "website", images: ["/images/og-trucks-highway.jpg"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/images/og-trucks-highway.jpg"] },
 }
 
 const faqs = [

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Priority Dispatch LLC',
     images: [
       {
-        url: '/images/hero-truck.jpg',
+        url: '/images/og-trucks-highway.jpg',
         width: 1200,
         height: 630,
         alt: 'Priority Dispatch LLC - Truck Dispatcher for Owner Operators',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     site: '@PriorityDispatch',
     title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
     description: 'Professional truck dispatcher finding high-paying loads for owner operators. 24/7 support. No contracts.',
-    images: ['/images/hero-truck.jpg'],
+    images: ['/images/og-trucks-highway.jpg'],
   },
   icons: {
     icon: "/images/logo-priority-dispatch.png",

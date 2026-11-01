@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/owner-operator-guide-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
         description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/owner-operator-guide-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostOwnerOperator() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="owner-operator-guide"
-                imageUrl="/images/blog/hero-owner-operator.jpg"
+                imageUrl="/images/blog/photos/owner-operator-guide-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostOwnerOperator() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-owner-operator.webp"
-                                alt="A successful owner-operator independent truck driver managing his business with digital tools in 2026."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/owner-operator-guide.webp"
+                                alt="View from a truck cab of a semi-truck on the highway at sunset"
                                 className="object-cover w-full h-full"
                             />
                         </div>

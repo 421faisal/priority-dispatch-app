@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/how-to-start-trucking-company-llc-mc-authority-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "How to Start a Trucking Company: LLC to MC Authority (2026)",
         description: "How to start a trucking company in 2026: form your LLC, get USDOT and MC authority, file BOC-3 and UCR, get IRP plates and pass the safety audit.",
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/how-to-start-trucking-company-llc-mc-authority-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostStartCompany() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="how-to-start-trucking-company-llc-mc-authority"
-                imageUrl="/images/blog/hero-trucking-company.jpg"
+                imageUrl="/images/blog/photos/how-to-start-trucking-company-llc-mc-authority-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostStartCompany() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-trucking-company.webp"
-                                alt="Modern fleet of electric and diesel semi-trucks parked neatly at a logistics terminal, representing a highly successful mid-sized trucking startup."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/how-to-start-trucking-company-llc-mc-authority.webp"
+                                alt="Red semi-truck parked in an empty lot"
                                 className="object-cover w-full h-full"
                             />
                         </div>

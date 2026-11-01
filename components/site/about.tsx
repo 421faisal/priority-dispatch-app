@@ -1,18 +1,31 @@
 import Reveal from "@/components/site/reveal"
 
+const day = [
+  ["06:40", "Search DAT, Truckstop and broker contacts for loads on your lane"],
+  ["07:15", "Check the broker: authority, credit score, days to pay"],
+  ["07:30", "Negotiate the rate and detention terms, get them in writing"],
+  ["08:05", "Sign the rate confirmation and send your carrier packet"],
+  ["14:20", "Check call with the receiver; detention clock started on time"],
+  ["18:00", "Tomorrow's reload already booked before you deliver"],
+]
+
 export function About() {
   return (
     <section id="about" className="bg-background">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 py-12 md:grid-cols-2 md:py-20">
         <Reveal delayMs={50}>
-          <div>
-            <img
-              src="/images/services/carrier-support.webp"
-              alt="Dedicated support team assisting carriers"
-              loading="lazy"
-              decoding="async"
-              className="h-64 w-full rounded-lg object-cover transition-transform duration-500 md:h-80 motion-safe:hover:scale-[1.01]"
-            />
+          <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+            <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Example day with your dispatcher</p>
+            <ol className="mt-4 space-y-4">
+              {day.map(([time, what], i) => (
+                <li key={time} className="grid grid-cols-[4.5rem_1fr] gap-3">
+                  <span className="font-mono text-sm font-semibold text-primary">{time}</span>
+                  <span className={i === day.length - 1 ? "border-l-2 border-accent pl-3 text-sm font-semibold" : "border-l-2 border-border pl-3 text-sm text-foreground/80"}>
+                    {what}
+                  </span>
+                </li>
+              ))}
+            </ol>
           </div>
         </Reveal>
         <Reveal delayMs={120}>

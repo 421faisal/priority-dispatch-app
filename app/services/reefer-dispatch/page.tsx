@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert reefer dispatching for owner-operators. High-paying temperature-controlled loads nationwide.",
         url: "https://prioritydispatchllc.com/services/reefer-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

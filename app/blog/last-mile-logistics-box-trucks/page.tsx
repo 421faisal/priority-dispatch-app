@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/last-mile-logistics-box-trucks-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
         description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/last-mile-logistics-box-trucks-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostLastMile() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="last-mile-logistics-box-trucks"
-                imageUrl="/images/blog/hero-warehouse.jpg"
+                imageUrl="/images/blog/photos/last-mile-logistics-box-trucks-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostLastMile() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A modern urban distribution dark-store hub where electric box trucks are systematically loaded for intense last-mile residential delivery in 2026."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/last-mile-logistics-box-trucks.webp"
+                                alt="Box truck making a delivery on a city street"
                                 className="object-cover w-full h-full"
                             />
                         </div>

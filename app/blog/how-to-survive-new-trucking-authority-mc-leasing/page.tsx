@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
-import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldCheck, CheckCircle2, XCircle, AlertCircle, ArrowRight, HelpCircle, Table, CheckSquare, Award } from "lucide-react"
+import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldCheck, CheckCircle2, XCircle, AlertCircle, ArrowRight, HelpCircle, Table, CheckSquare, Award, Check, X } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-25",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-new-carrier.jpg"],
+        images: ["/images/blog/photos/how-to-survive-new-trucking-authority-mc-leasing-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "New Trucking Authority: Surviving the First 90 Days",
         description: "New trucking companies face a tough first 90 days. Learn how MC leasing works, when it helps, and how Priority Dispatch LLC supports new owner-operators.",
-        images: ["/images/blog/hero-new-carrier.jpg"],
+        images: ["/images/blog/photos/how-to-survive-new-trucking-authority-mc-leasing-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-05-25"
                 dateModified="2026-11-01"
                 slug="how-to-survive-new-trucking-authority-mc-leasing"
-                imageUrl="/images/blog/hero-new-carrier.jpg"
+                imageUrl="/images/blog/photos/how-to-survive-new-trucking-authority-mc-leasing-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -81,9 +81,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border bg-muted">
-                            <img
-                                src="/images/modern-semi-truck-driving-on-highway-at-dawn.webp"
-                                alt="A modern semi-truck driving on a scenic highway at dawn, representing the proud beginning of a new owner-operator carrier business."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/how-to-survive-new-trucking-authority-mc-leasing.webp"
+                                alt="Semi-truck with a dry van trailer on an open road"
                                 className="object-cover w-full h-full"
                             />
                             <div className="inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -199,23 +199,23 @@ export default function BlogPost() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-foreground/90 pl-0 list-none">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" aria-label="Yes" />
                                             Your carrier authority is brand new (under 90 days).
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" aria-label="Yes" />
                                             Brokers keep rejecting your carrier packets due to MC age.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" aria-label="Yes" />
                                             You need immediate, consistent cash flow to survive.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" aria-label="Yes" />
                                             Your truck is sitting idle, burning cash in parking lots.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-green-500 font-bold">✓</span>
+                                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-green-600" aria-label="Yes" />
                                             You want professional help navigating complex broker negotiations.
                                         </li>
                                     </ul>
@@ -227,23 +227,23 @@ export default function BlogPost() {
                                     </h3>
                                     <ul className="space-y-3 text-sm text-foreground/90 pl-0 list-none">
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <X className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-label="No" />
                                             Your MC already has strong, established broker relationships.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <X className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-label="No" />
                                             You already have dedicated, direct shipper contracts in place.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <X className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-label="No" />
                                             The leasing company&rsquo;s commission percentages drain your net margins.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <X className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-label="No" />
                                             The lease contract terms are unclear, long-term, or restrictive.
                                         </li>
                                         <li className="flex items-start gap-2">
-                                            <span className="text-red-500 font-bold">✗</span>
+                                            <X className="mt-0.5 h-4 w-4 shrink-0 text-red-600" aria-label="No" />
                                             You demand complete operational control and billing setup immediately.
                                         </li>
                                     </ul>

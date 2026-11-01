@@ -21,13 +21,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-05-22",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/what-is-bonded-carrier-trucking-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "What Is a Bonded Carrier in Trucking? | Priority Dispatch",
         description: "What a bonded carrier is in trucking, how to become one, and how owner-operators work with Priority Dispatch LLC to find bonded freight in all 48 states.",
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/what-is-bonded-carrier-trucking-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BondedCarrierBlogPost() {
                 description="Learn what a bonded carrier is in trucking, how to become one, and why owner-operators work with Priority Dispatch LLC to find bonded freight opportunities across all 48 states."
                 datePublished="2026-05-22"
                 slug="what-is-bonded-carrier-trucking"
-                imageUrl="/images/blog/hero-warehouse.jpg"
+                imageUrl="/images/blog/photos/what-is-bonded-carrier-trucking-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BondedCarrierBlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="Bonded carrier truck at customs facility"
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/what-is-bonded-carrier-trucking.webp"
+                                alt="Container trucks parked along stacked shipping containers"
                                 className="object-cover w-full h-full"
                             />
                         </div>

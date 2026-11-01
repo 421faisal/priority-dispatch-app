@@ -15,7 +15,7 @@ export const metadata: Metadata = {
         description: "Call (+1) 689-314-8347 or send a request. Priority Dispatch LLC in Kissimmee, FL dispatches reefers, dry vans, flatbeds and box trucks in all 48 states.",
         url: "https://prioritydispatchllc.com/contact",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     twitter: {
         card: "summary_large_image",

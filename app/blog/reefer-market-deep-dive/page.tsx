@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/blog/photos/reefer-market-deep-dive-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Reefer Market Deep Dive 2026 | Priority Dispatch",
         description: "Refrigerated freight needs a specialized approach. The 2026 trends in reefer dispatching, cold-chain compliance, pharma loads and peak-season rate strategy.",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/blog/photos/reefer-market-deep-dive-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostReefer() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="reefer-market-deep-dive"
-                imageUrl="/images/hero-truck.jpg"
+                imageUrl="/images/blog/photos/reefer-market-deep-dive-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostReefer() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A modern 53' refrigerated trailer utilizing advanced IoT temperature sensors undergoing a strict calibration check at a distribution center."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/reefer-market-deep-dive.webp"
+                                alt="Red Freightliner with a refrigerated reefer trailer"
                                 className="object-cover w-full h-full"
                             />
                         </div>

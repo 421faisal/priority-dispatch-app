@@ -152,6 +152,11 @@
     content-visibility: auto;
   }
 
+  /* Icons next to long text in flex rows must never be squeezed */
+  svg.lucide {
+    flex-shrink: 0;
+  }
+
   /* Prevent layout shift */
   img, video, iframe {
     max-width: 100%;

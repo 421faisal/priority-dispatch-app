@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/ai-dispatching-co-pilot-model-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "AI Dispatching vs. Human Dispatchers: The Co-Pilot Model",
         description: "Why fully automated AI dispatching falls short in real trucking, and how the human-in-the-loop co-pilot model pairs algorithm speed with human negotiation.",
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/ai-dispatching-co-pilot-model-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostCoPilot() {
                 datePublished="2026-03-12"
                 dateModified="2026-11-01"
                 slug="ai-dispatching-co-pilot-model"
-                imageUrl="/images/blog/hero-dispatcher.jpg"
+                imageUrl="/images/blog/photos/ai-dispatching-co-pilot-model-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostCoPilot() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-dispatcher.webp"
-                                alt="A modern dispatch center blending AI data visualization with expert human negotiation."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/ai-dispatching-co-pilot-model.webp"
+                                alt="Laptop with a logistics dashboard"
                                 className="object-cover w-full h-full"
                             />
                         </div>

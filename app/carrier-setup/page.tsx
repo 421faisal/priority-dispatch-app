@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         description: "Start with Priority Dispatch LLC. Submit your MC number, W-9 and insurance (COI) and get matched with a dedicated truck dispatcher.",
         url: "https://prioritydispatchllc.com/carrier-setup",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     twitter: {
         card: "summary_large_image",

@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-06-23",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/what-is-inspection-in-trucking-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "DOT Inspections in Trucking Explained | Priority Dispatch",
         description: "DOT inspections explained for owner-operators: the CVSA levels, how to pass, and why a clean inspection history protects your CSA score and wins broker trust.",
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/what-is-inspection-in-trucking-og.jpg"],
     },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPostTruckingInspection() {
                 description="Complete guide to DOT inspections, CVSA levels, and why clean inspection history opens doors with brokers. Learn how to pass inspections and protect your CSA score."
                 datePublished="2026-06-23"
                 slug="what-is-inspection-in-trucking"
-                imageUrl="/images/blog/hero-dispatcher.jpg"
+                imageUrl="/images/blog/photos/what-is-inspection-in-trucking-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -71,9 +71,9 @@ export default function BlogPostTruckingInspection() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-dispatcher.webp"
-                                alt="DOT inspection officer examining commercial truck for safety compliance"
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/what-is-inspection-in-trucking.webp"
+                                alt="Close-up of trailer axles and tires"
                                 className="object-cover w-full h-full"
                             />
                         </div>

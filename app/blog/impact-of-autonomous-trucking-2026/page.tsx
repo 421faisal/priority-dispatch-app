@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-autonomous-truck.jpg"],
+        images: ["/images/blog/photos/impact-of-autonomous-trucking-2026-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "The Economic Impact of Autonomous Trucking in 2026",
         description: "Are self-driving trucks taking driver jobs? A 2026 look at how autonomous trucking is really affecting freight, and the new remote and drayage roles it creates.",
-        images: ["/images/blog/hero-autonomous-truck.jpg"],
+        images: ["/images/blog/photos/impact-of-autonomous-trucking-2026-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostAutonomousImpact() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="impact-of-autonomous-trucking-2026"
-                imageUrl="/images/blog/hero-autonomous-truck.jpg"
+                imageUrl="/images/blog/photos/impact-of-autonomous-trucking-2026-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostAutonomousImpact() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-autonomous-truck.webp"
-                                alt="Driver monitoring a convoy of autonomous trucks from a secure remote command center."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/impact-of-autonomous-trucking-2026.webp"
+                                alt="Semi-truck in motion on a rural highway"
                                 className="object-cover w-full h-full"
                             />
                         </div>

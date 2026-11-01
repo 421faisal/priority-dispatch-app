@@ -11,7 +11,7 @@ export const metadata: Metadata = {
         siteName: "Priority Dispatch LLC",
         images: [
             {
-                url: "/images/hero-truck.jpg",
+                url: "/images/og-trucks-highway.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Careers at Priority Dispatch LLC",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         site: "@PriorityDispatch",
         title: "Careers at Priority Dispatch LLC | Dispatcher & Sales Jobs",
         description: "Join Priority Dispatch LLC. Hiring Freight Dispatchers and Sales Agents worldwide.",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
     alternates: {
         canonical: "https://prioritydispatchllc.com/careers",

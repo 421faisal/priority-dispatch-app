@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert box truck dispatching for owner-operators. High-paying local and regional loads.",
         url: "https://prioritydispatchllc.com/services/box-truck-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

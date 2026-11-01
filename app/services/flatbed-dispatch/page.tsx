@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert flatbed dispatching for owner-operators. High-paying construction and heavy equipment loads.",
         url: "https://prioritydispatchllc.com/services/flatbed-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/dot-cdl-crackdown-capacity-tightening-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Non-Domiciled CDL Crackdown & Capacity Tightening (2026)",
         description: "The DOT crackdown on non-domiciled CDLs could remove up to 200,000 drivers in 2026. See how compliant carriers can benefit from the coming spot rate recovery.",
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/dot-cdl-crackdown-capacity-tightening-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-12"
                 dateModified="2026-11-01"
                 slug="dot-cdl-crackdown-capacity-tightening"
-                imageUrl="/images/blog/hero-trucking-company.jpg"
+                imageUrl="/images/blog/photos/dot-cdl-crackdown-capacity-tightening-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="Highway traffic heavily compressed at a weigh station, representing the serious crunch in 2026 trucking capacity due to tough regulatory shifts."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/dot-cdl-crackdown-capacity-tightening.webp"
+                                alt="Kenworth W900 semi-truck on a wet highway"
                                 className="object-cover w-full h-full"
                             />
                         </div>

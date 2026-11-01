@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/intermodal-vs-over-the-road-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Intermodal vs. Over-the-Road (OTR) Trucking in 2026",
         description: "Should your fleet run long-haul OTR or intermodal drayage? Compare the pros, cons and profit potential of each mode in the 2026 freight market.",
-        images: ["/images/blog/hero-warehouse.jpg"],
+        images: ["/images/blog/photos/intermodal-vs-over-the-road-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostIntermodal() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="intermodal-vs-over-the-road"
-                imageUrl="/images/blog/hero-warehouse.jpg"
+                imageUrl="/images/blog/photos/intermodal-vs-over-the-road-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostIntermodal() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="A direct physical comparison between the heavily structured steel rail-hub logistics ecosystem and the agile highway transport network operating in 2026."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/intermodal-vs-over-the-road.webp"
+                                alt="Double-stack intermodal freight train in the mountains"
                                 className="object-cover w-full h-full"
                             />
                         </div>

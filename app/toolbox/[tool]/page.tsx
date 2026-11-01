@@ -42,8 +42,8 @@ export async function generateMetadata(props: { params: Promise<{ tool: string }
         title: t.title,
         description: t.description,
         alternates: { canonical: url },
-        openGraph: { title: t.title, description: t.description, url, siteName: "Priority Dispatch LLC", type: "website", images: ["/images/hero-truck.jpg"] },
-        twitter: { card: "summary_large_image", title: t.title, description: t.description, images: ["/images/hero-truck.jpg"] },
+        openGraph: { title: t.title, description: t.description, url, siteName: "Priority Dispatch LLC", type: "website", images: ["/images/og-trucks-highway.jpg"] },
+        twitter: { card: "summary_large_image", title: t.title, description: t.description, images: ["/images/og-trucks-highway.jpg"] },
     }
 }
 

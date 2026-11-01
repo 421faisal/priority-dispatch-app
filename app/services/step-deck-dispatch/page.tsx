@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert step deck dispatching for owner-operators. High-paying oversized and heavy equipment loads.",
         url: "https://prioritydispatchllc.com/services/step-deck-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

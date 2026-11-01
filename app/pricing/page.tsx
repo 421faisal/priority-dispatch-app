@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Clear pricing for professional truck dispatch services. No contracts, no setup fees.",
         url: "https://prioritydispatchllc.com/pricing",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

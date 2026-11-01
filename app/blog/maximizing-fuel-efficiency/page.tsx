@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"],
+        images: ["/images/blog/photos/maximizing-fuel-efficiency-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Maximizing Fuel Efficiency for Trucking Fleets in 2026",
         description: "Diesel is still the biggest cost for most carriers. Proven 2026 strategies to cut fuel spend with engine data, aerodynamics, idle control and smarter routing.",
-        images: ["/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"],
+        images: ["/images/blog/photos/maximizing-fuel-efficiency-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostFuel() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="maximizing-fuel-efficiency"
-                imageUrl="/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"
+                imageUrl="/images/blog/photos/maximizing-fuel-efficiency-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostFuel() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="An aerodynamic modern semi-truck intensely optimizing complete fuel efficiency on a large interstate long-haul route."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/maximizing-fuel-efficiency.webp"
+                                alt="Diesel fuel pump"
                                 className="object-cover w-full h-full"
                             />
                         </div>

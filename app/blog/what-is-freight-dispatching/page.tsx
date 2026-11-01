@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/what-is-freight-dispatching-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "What Is Freight Dispatching? Guide for Owner-Operators",
         description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
-        images: ["/images/blog/hero-dispatcher.jpg"],
+        images: ["/images/blog/photos/what-is-freight-dispatching-og.jpg"],
     },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPostWhatIsDispatching() {
                 description="Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one."
                 datePublished="2026-03-19"
                 slug="what-is-freight-dispatching"
-                imageUrl="/images/blog/hero-dispatcher.jpg"
+                imageUrl="/images/blog/photos/what-is-freight-dispatching-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -71,9 +71,9 @@ export default function BlogPostWhatIsDispatching() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-dispatcher.webp"
-                                alt="Professional freight dispatcher coordinating loads for owner-operators"
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/what-is-freight-dispatching.webp"
+                                alt="Person working on a laptop with load and rate spreadsheets"
                                 className="object-cover w-full h-full"
                             />
                         </div>

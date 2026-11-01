@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
-import { Calendar, User, Clock, ArrowLeft, Linkedin, TrendingUp, Zap, BarChart2, Globe, CheckCircle, Calculator, BatteryCharging, FileText } from "lucide-react"
+import { Calendar, User, Clock, ArrowLeft, Linkedin, TrendingUp, Zap, BarChart2, Globe, CheckCircle, Calculator, BatteryCharging, FileText, HardHat, Package, Snowflake, Truck } from "lucide-react"
 import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/rate-intelligence.jpg"],
+        images: ["/images/blog/photos/navigating-freight-rate-rebound-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Navigating the 2026 Freight Rate Rebound | Priority Dispatch",
         description: "Freight rates are rebounding in 2026. How owner-operators can use rising spot rates, tighter capacity and new broker dynamics to raise their revenue per mile.",
-        images: ["/images/blog/rate-intelligence.jpg"],
+        images: ["/images/blog/photos/navigating-freight-rate-rebound-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="navigating-freight-rate-rebound"
-                imageUrl="/images/blog/rate-intelligence.jpg"
+                imageUrl="/images/blog/photos/navigating-freight-rate-rebound-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="Freight trucks navigating the rebounding 2026 market on a major interstate highway under a bright sky."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/navigating-freight-rate-rebound.webp"
+                                alt="Semi-trucks on a multi-lane highway"
                                 className="object-cover w-full h-full"
                             />
                         </div>
@@ -121,28 +121,28 @@ export default function BlogPost() {
                             <div className="grid md:grid-cols-2 gap-6 my-8">
                                 <div className="border border-border rounded-xl p-6 bg-card shadow-sm hover:border-accent transition-colors relative overflow-hidden">
                                     <div className="top-0 right-0 p-3 bg-muted rounded-bl-xl text-xs font-bold text-accent">Stable Growth</div>
-                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2">🚚 Dry Van (+14% to +18%)</h3>
+                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2"><Truck className="h-5 w-5 shrink-0 text-accent" aria-hidden />Dry Van (+14% to +18%)</h3>
                                     <p className="text-sm text-foreground/80 leading-relaxed">
                                         Dry van is experiencing a steady, sustainable rate recovery driven heavily by the retail inventory restocking cycle. The "Just-in-Time" inventory model has returned. Key breakout lanes are originating from the deep Midwest (Ohio/Indiana) plunging down into the high-population centers of the Southeast (Florida/Georgia). National floor averages are holding rigidly at $2.25/mile.
                                     </p>
                                 </div>
                                 <div className="border border-border rounded-xl p-6 bg-card shadow-sm hover:border-blue-400 transition-colors relative overflow-hidden">
                                     <div className="top-0 right-0 p-3 bg-blue-500/10 rounded-bl-xl text-xs font-bold text-blue-500">Explosive Returns</div>
-                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2">❄️ Specialized Reefer (+22% to +28%)</h3>
+                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2"><Snowflake className="h-5 w-5 shrink-0 text-accent" aria-hidden />Specialized Reefer (+22% to +28%)</h3>
                                     <p className="text-sm text-foreground/80 leading-relaxed">
                                         Agricultural produce seasons are driving outright panic in the broker market due to severe reefer capacity shortages. The Imperial Valley of California, southern Texas, and central Florida are seeing expedited spot rates on prime temperature-controlled freight hitting astonishing highs of $3.50 to $4.20/mile, especially for team drivers capable of non-stop transcontinental sprints.
                                     </p>
                                 </div>
                                 <div className="border border-border rounded-xl p-6 bg-card shadow-sm hover:border-orange-500 transition-colors relative overflow-hidden">
                                     <div className="top-0 right-0 p-3 bg-orange-500/10 rounded-bl-xl text-xs font-bold text-orange-500">Project Surges</div>
-                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2">🏗️ Open Deck / Flatbed (+20% to +30%)</h3>
+                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2"><HardHat className="h-5 w-5 shrink-0 text-accent" aria-hidden />Open Deck / Flatbed (+20% to +30%)</h3>
                                     <p className="text-sm text-foreground/80 leading-relaxed">
                                         The domestic manufacturing reshoring initiatives (backed by the CHIPS Act) and active infrastructure development projects have created a perfect storm for flatbed demand. Heavy steel coils, oversized machinery, and construction materials are moving at 4-year highs. Spot pricing for step-decks out of the industrial rust-belt is lucrative.
                                     </p>
                                 </div>
                                 <div className="border border-border rounded-xl p-6 bg-card shadow-sm hover:border-green-500 transition-colors relative overflow-hidden">
                                     <div className="top-0 right-0 p-3 bg-green-500/10 rounded-bl-xl text-xs font-bold text-green-500">Urban Dominance</div>
-                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2">📦 26' Box Truck (+12% to +16%)</h3>
+                                    <h3 className="font-bold text-lg mb-3 flex items-center gap-2"><Package className="h-5 w-5 shrink-0 text-accent" aria-hidden />26' Box Truck (+12% to +16%)</h3>
                                     <p className="text-sm text-foreground/80 leading-relaxed">
                                         Macro-economic e-commerce fulfillment and explosive last-mile logistics growth continue to benefit the 26-foot box truck sector. Particularly in dense urban mega-markets (the Northeast Corridor, Dallas Metroplex, Los Angeles basin), dedicated local routes are commanding premiums that occasionally rival regional Class 8 dry van runs.
                                     </p>

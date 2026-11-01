@@ -14,7 +14,7 @@ export function BlogArticleSchema({
   datePublished,
   dateModified,
   slug,
-  imageUrl = "/images/hero-truck.jpg",
+  imageUrl = "/images/og-trucks-highway.jpg",
 }: BlogArticleSchemaProps) {
   const schema = {
     "@context": "https://schema.org",

@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/driver-retention-strategies-2026-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Driver Retention Strategies for 2026 | Priority Dispatch",
         description: "Hiring a CDL driver is expensive; keeping one is an investment. The pay models, home-time planning and culture small fleets use to cut driver turnover in 2026.",
-        images: ["/images/blog/hero-owner-operator.jpg"],
+        images: ["/images/blog/photos/driver-retention-strategies-2026-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostRetention() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="driver-retention-strategies-2026"
-                imageUrl="/images/blog/hero-owner-operator.jpg"
+                imageUrl="/images/blog/photos/driver-retention-strategies-2026-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostRetention() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-owner-operator.webp"
-                                alt="A highly respected professional truck driver sitting confidently in the cab of an advanced 2026 commercial vehicle."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/driver-retention-strategies-2026.webp"
+                                alt="Truck driver standing next to his semi-truck"
                                 className="object-cover w-full h-full"
                             />
                         </div>

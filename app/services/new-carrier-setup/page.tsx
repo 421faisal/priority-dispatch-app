@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "https://prioritydispatchllc.com/services/new-carrier-setup",
         siteName: "Priority Dispatch LLC",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 
@@ -42,8 +42,8 @@ export default function NewCarrierSetupPage() {
             <section className="relative overflow-hidden bg-primary py-20 text-primary-foreground sm:py-32">
                 <div className="absolute inset-0 opacity-20">
                     <img 
-                        src="/images/dispatch-office-team.webp" 
-                        alt="A team of dispatchers and logistics experts reviewing compliance documents in a corporate office."
+                        src="/images/blog/photos/how-to-start-trucking-company-llc-mc-authority.webp" 
+                        alt=""
                         className="h-full w-full object-cover"
                     />
                 </div>
@@ -73,8 +73,8 @@ export default function NewCarrierSetupPage() {
                         <Reveal>
                             <div className="relative aspect-square overflow-hidden rounded-2xl shadow-xl border border-border">
                                 <img 
-                                    src="/images/blog/hero-trucking-company.webp" 
-                                    alt="Commercial trucks on the interstate, representing a legally compliant new trucking company."
+                                    src="/images/blog/photos/how-to-survive-new-trucking-authority-mc-leasing.webp" 
+                                    alt="Semi-truck with a dry van trailer on an open road"
                                     className="object-cover w-full h-full"
                                 />
                             </div>

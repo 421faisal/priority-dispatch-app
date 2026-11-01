@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         url: "https://prioritydispatchllc.com/terms",
         siteName: "Priority Dispatch LLC",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

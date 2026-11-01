@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-autonomous-truck.jpg"],
+        images: ["/images/blog/photos/sustainability-ev-trucks-future-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Electric Semi Trucks & Green Logistics in 2026",
         description: "Are electric Class 8 trucks ready for real freight? Charging, weight limits, costs and what the 2026 EV shift means for owner-operators and regional haulers.",
-        images: ["/images/blog/hero-autonomous-truck.jpg"],
+        images: ["/images/blog/photos/sustainability-ev-trucks-future-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="sustainability-ev-trucks-future"
-                imageUrl="/images/blog/hero-autonomous-truck.jpg"
+                imageUrl="/images/blog/photos/sustainability-ev-trucks-future-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border group">
-                            <img
-                                src="/modern-semi-truck-driving-on-highway-at-dawn.webp"
-                                alt="A highly advanced, fully electric Class-8 semi-truck silently executing a heavy payload transport down a dedicated zero-emission corridor at dawn."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/sustainability-ev-trucks-future.webp"
+                                alt="Electric trucks charging at a station"
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
                             />
                             <div className="inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">

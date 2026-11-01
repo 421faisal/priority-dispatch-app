@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-04-08",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/load-boards-hero.jpg"],
+        images: ["/images/blog/photos/how-to-use-load-boards-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Load Boards for Truckers & Dispatchers: How to Use Them",
         description: "A load board is an online marketplace where brokers post freight and carriers book it. How owner-operators and dispatchers use DAT, Truckstop and 123Loadboard.",
-        images: ["/images/blog/load-boards-hero.jpg"],
+        images: ["/images/blog/photos/how-to-use-load-boards-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
         datePublished="2026-04-08"
         dateModified="2026-11-01"
         slug="how-to-use-load-boards"
-        imageUrl="/images/blog/load-boards-hero.jpg"
+        imageUrl="/images/blog/photos/how-to-use-load-boards-og.jpg"
       />
       <article className="py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -73,9 +73,9 @@ export default function BlogPost() {
           {/* Hero Image */}
           <Reveal delayMs={100}>
             <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-              <img
-                src="/images/blog/load-boards-hero.webp"
-                alt="Owner-operator reviewing a digital load board on a tablet in a truck cab"
+              <img width={1200} height={800}
+                src="/images/blog/photos/how-to-use-load-boards.webp"
+                alt="Laptop showing freight rate charts"
                 className="object-cover w-full h-full"
               />
             </div>
@@ -159,13 +159,6 @@ export default function BlogPost() {
               <BarChart3 className="h-8 w-8 text-accent" />
               Layer Rate Intelligence Into Every Search
             </h2>
-            <div className="relative my-8 aspect-[21/9] overflow-hidden rounded-xl border border-border shadow-md">
-              <img
-                src="/images/blog/rate-intelligence.webp"
-                alt="Digital visualization of freight rate analytics and trends"
-                className="object-cover w-full h-full opacity-90 transition-opacity hover:opacity-100"
-              />
-            </div>
             <p>
               Most tier-one load boards now include lane-level rate analytics that show you the average spot rate on any given corridor over the past 7, 30, and 90 days. Use this data before calling on a load. If a broker posts $2.10/mile on a lane averaging $2.60, you have negotiating leverage and you know it. If the lane average is $2.05, that post may actually be fair. Rate intelligence turns guesswork into data-driven negotiation.
             </p>

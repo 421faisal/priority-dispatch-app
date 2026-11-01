@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/professional-dispatch-office-team-at-work.jpg"],
+        images: ["/images/blog/photos/insider-trucking-dispatch-tips-faisal-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
         description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
-        images: ["/images/professional-dispatch-office-team-at-work.jpg"],
+        images: ["/images/blog/photos/insider-trucking-dispatch-tips-faisal-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="insider-trucking-dispatch-tips-faisal"
-                imageUrl="/images/professional-dispatch-office-team-at-work.jpg"
+                imageUrl="/images/blog/photos/insider-trucking-dispatch-tips-faisal-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-dispatcher.webp"
-                                alt="A freight dispatcher reviewing load boards and negotiating with brokers for maximum carrier revenue."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/insider-trucking-dispatch-tips-faisal.webp"
+                                alt="Truck driver crouching beside his red semi-truck"
                                 className="object-cover w-full h-full"
                             />
                         </div>
@@ -133,7 +133,7 @@ export default function BlogPost() {
                             <div className="my-8 rounded-2xl overflow-hidden border border-border shadow-md"
                                 style={{ background: "linear-gradient(120deg, #1e293b 0%, #0f172a 100%)", padding: "2rem", display: "flex", alignItems: "center", gap: "1.5rem" }}
                             >
-                                <img src="/images/blog/hero-freight-highway.webp" alt="Trucks on a highway representing freight market dynamics" className="w-32 h-20 object-cover rounded-xl shrink-0" />
+                                <img src="/images/blog/photos/navigating-freight-rate-rebound.webp" alt="Semi-trucks on a multi-lane highway" className="w-32 h-20 object-cover rounded-xl shrink-0" />
                                 <div className="text-white">
                                     <p className="font-bold text-lg text-blue-200">Spot Rate Intelligence</p>
                                     <p className="text-blue-300/80 text-sm">Real-time DAT and Truckstop data is your most powerful negotiation weapon. Never guess a lane rate.</p>
@@ -176,7 +176,7 @@ export default function BlogPost() {
                             <div className="my-8 rounded-2xl overflow-hidden border border-border shadow-md"
                                 style={{ background: "linear-gradient(120deg, #1a1a2e 0%, #16213e 100%)", padding: "2rem", display: "flex", alignItems: "center", gap: "1.5rem" }}
                             >
-                                <img src="/images/blog/hero-owner-operator.webp" alt="Owner-operator truck driver" className="w-32 h-20 object-cover rounded-xl shrink-0" />
+                                <img src="/images/blog/photos/driver-retention-strategies-2026.webp" alt="Owner-operator standing next to his truck" className="w-32 h-20 object-cover rounded-xl shrink-0" />
                                 <div className="text-white">
                                     <p className="font-bold text-lg text-orange-200">Digital Footprint Matters</p>
                                     <p className="text-orange-300/80 text-sm">In 2026, your online presence is a filter tier-A brokers use to evaluate your legitimacy before awarding premium loads.</p>

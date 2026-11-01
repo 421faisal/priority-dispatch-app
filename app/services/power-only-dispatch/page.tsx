@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         description: "Expert power only dispatching for owner-operators. High-efficiency drop and hook freight.",
         url: "https://prioritydispatchllc.com/services/power-only-dispatch",
         type: "website",
-        images: ["/images/hero-truck.jpg"],
+        images: ["/images/og-trucks-highway.jpg"],
     },
 }
 

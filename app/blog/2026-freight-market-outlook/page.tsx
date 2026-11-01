@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-03",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/2026-freight-market-outlook-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
         description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
-        images: ["/images/blog/hero-freight-highway.jpg"],
+        images: ["/images/blog/photos/2026-freight-market-outlook-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostOutlook() {
                 datePublished="2026-03-03"
                 dateModified="2026-11-01"
                 slug="2026-freight-market-outlook"
-                imageUrl="/images/blog/hero-freight-highway.jpg"
+                imageUrl="/images/blog/photos/2026-freight-market-outlook-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostOutlook() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-freight-highway.webp"
-                                alt="Freight traffic on a major corridor representing the 2026 market recovery."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/2026-freight-market-outlook.webp"
+                                alt="Two semi-trucks with dry vans on an interstate"
                                 className="object-cover w-full h-full"
                             />
                         </div>

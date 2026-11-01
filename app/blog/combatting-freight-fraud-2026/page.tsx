@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/services/carrier-support.jpg"],
+        images: ["/images/blog/photos/combatting-freight-fraud-2026-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
         description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
-        images: ["/images/services/carrier-support.jpg"],
+        images: ["/images/blog/photos/combatting-freight-fraud-2026-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-12"
                 dateModified="2026-11-01"
                 slug="combatting-freight-fraud-2026"
-                imageUrl="/images/services/carrier-support.jpg"
+                imageUrl="/images/blog/photos/combatting-freight-fraud-2026-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A secure logistics facility representing the defense against freight fraud, equipped with cyber-monitors and vetting stations."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/combatting-freight-fraud-2026.webp"
+                                alt="Padlock and chain securing metal doors"
                                 className="object-cover w-full h-full"
                             />
                         </div>

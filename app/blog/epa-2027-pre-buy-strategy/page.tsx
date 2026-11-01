@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/hero-semi-truck-highway.jpg"],
+        images: ["/images/blog/photos/epa-2027-pre-buy-strategy-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "EPA 2027 Pre-Buy Strategy: Why Carriers Buy Trucks Now",
         description: "The EPA 2027 NOx rule is set to raise Class 8 truck prices sharply. Learn why carriers are pre-buying 2026 equipment and how to plan your own fleet purchases.",
-        images: ["/images/hero-semi-truck-highway.jpg"],
+        images: ["/images/blog/photos/epa-2027-pre-buy-strategy-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPost() {
                 datePublished="2026-03-12"
                 dateModified="2026-11-01"
                 slug="epa-2027-pre-buy-strategy"
-                imageUrl="/images/hero-semi-truck-highway.jpg"
+                imageUrl="/images/blog/photos/epa-2027-pre-buy-strategy-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPost() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-trucking-company.webp"
-                                alt="A disciplined logistics fleet executing a large pre-buy of 2026 Class 8 trucks to heavily shield operations from incoming 2027 EPA emissions mandates."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/epa-2027-pre-buy-strategy.webp"
+                                alt="Close-up of a Peterbilt diesel engine"
                                 className="object-cover w-full h-full"
                             />
                         </div>

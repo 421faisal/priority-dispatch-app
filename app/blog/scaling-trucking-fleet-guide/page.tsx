@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/scaling-trucking-fleet-guide-og.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "From One Truck to a Fleet: Scaling Guide | Priority Dispatch",
         description: "Thinking about adding a second or third truck? The financial, operational and hiring steps to scale your trucking company safely and profitably in 2026.",
-        images: ["/images/blog/hero-trucking-company.jpg"],
+        images: ["/images/blog/photos/scaling-trucking-fleet-guide-og.jpg"],
     },
 }
 
@@ -40,7 +40,7 @@ export default function BlogPostScaling() {
                 datePublished="2026-03-19"
                 dateModified="2026-11-01"
                 slug="scaling-trucking-fleet-guide"
-                imageUrl="/images/blog/hero-trucking-company.jpg"
+                imageUrl="/images/blog/photos/scaling-trucking-fleet-guide-og.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -72,9 +72,9 @@ export default function BlogPostScaling() {
 
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img
-                                src="/images/blog/hero-warehouse.webp"
-                                alt="A meticulously organized fleet of multiple heavy-duty logistics trucks securely parked at a growing terminal headquarters."
+                            <img width={1200} height={800}
+                                src="/images/blog/photos/scaling-trucking-fleet-guide.webp"
+                                alt="Row of Peterbilt trucks parked in a yard"
                                 className="object-cover w-full h-full"
                             />
                         </div>
