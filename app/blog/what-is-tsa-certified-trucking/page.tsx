@@ -8,21 +8,21 @@ import { Button } from "@/components/ui/button"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
-    description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify, typical costs and the air cargo loads it unlocks.",
+    title: "TSA Certified Trucking: What It Means & How to Get It",
+    description: "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how to qualify, cost and the loads it unlocks.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
     },
     openGraph: {
-        title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
-        description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify, typical costs and the air cargo loads it unlocks.",
+        title: "TSA Certified Trucking: What It Means & How to Get It",
+        description: "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how to qualify, cost and the loads it unlocks.",
         url: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
         type: "article",
         images: ["/images/blog/hero-autonomous-truck.jpg"],
     },
     twitter: {
         card: "summary_large_image",
-        title: "What Does TSA Certified Mean in Trucking? (2026 Guide)",
+        title: "TSA Certified Trucking: What It Means & How to Get It",
         description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify.",
     },
 }
@@ -35,6 +35,7 @@ export default function TSACertifiedBlogPost() {
                 title="What Does TSA Certified Mean in Trucking? Complete Guide 2026"
                 description="TSA certification unlocks air cargo and high-security freight in trucking. Learn how to become TSA certified and how Priority Dispatch LLC helps certified owner-operators access premium expedited loads."
                 datePublished="2026-05-22"
+                dateModified="2026-11-01"
                 slug="what-is-tsa-certified-trucking"
                 imageUrl="/images/blog/hero-autonomous-truck.jpg"
             />
@@ -79,7 +80,7 @@ export default function TSACertifiedBlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                In trucking and freight logistics, being TSA certified usually refers to drivers or carriers authorized to handle secure air cargo shipments. This certification is increasingly important for carriers who want to work in airport freight and expedited logistics — two of the fastest-growing and highest-paying segments in trucking.
+                                In trucking, TSA certified usually means the driver has passed a TSA Security Threat Assessment (STA), which is required for unescorted access to air cargo handled by airlines and freight forwarders. In short, it lets you haul secure air cargo to and from airports. This certification is increasingly important for carriers who want to work in airport freight and expedited logistics — two of the fastest-growing and highest-paying segments in trucking.
                             </p>
 
                             <p>

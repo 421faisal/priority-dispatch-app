@@ -91,7 +91,7 @@ const serviceSchema = {
     "@type": "Service",
     serviceType: "Step Deck Truck Dispatch",
     provider: {
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         name: "Priority Dispatch LLC",
         url: "https://prioritydispatchllc.com",
     },

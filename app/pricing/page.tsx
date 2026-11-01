@@ -137,7 +137,7 @@ const pricingSchema = {
     "@type": "Service",
     serviceType: "Freight Dispatching",
     provider: {
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         name: "Priority Dispatch LLC",
         url: "https://prioritydispatchllc.com",
     },

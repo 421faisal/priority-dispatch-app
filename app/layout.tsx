@@ -46,20 +46,20 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': 'Organization',
   name: 'Priority Dispatch LLC',
+  logo: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
   image: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
   description: 'USA truck dispatching company for owner-operators and small fleets in all 48 states. Dispatch fees from 4% of the gross load, paid after the broker pays, no contracts.',
-  priceRange: '4%–10% of gross load',
   legalName: 'Priority Dispatch LLC',
+  // Florida Division of Corporations (Sunbiz) registration
+  identifier: {
+    '@type': 'PropertyValue',
+    propertyID: 'Florida Division of Corporations document number',
+    value: 'L25000443970',
+  },
   alternateName: 'Priority Dispatch LLC (Kissimmee, Florida)',
   disambiguatingDescription: 'Truck dispatching service for owner-operators, based in Kissimmee, Florida. Not affiliated with Priority Dispatch Corp (emergency dispatch software) or other companies with similar names.',
-  openingHoursSpecification: {
-    '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '00:00',
-    closes: '23:59',
-  },
   knowsAbout: ['Truck dispatching', 'Freight dispatch', 'Owner-operator dispatch', 'Load booking', 'Freight rate negotiation', 'Broker vetting', 'MC authority setup'],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
@@ -86,12 +86,20 @@ const jsonLd = {
     postalCode: '34744',
     addressCountry: 'US'
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 28.2999,
-    longitude: -81.4076
-  },
   telephone: '+16893148347',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+16893148347',
+    contactType: 'customer service',
+    areaServed: 'US',
+    availableLanguage: 'English',
+    hoursAvailable: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  },
   email: 'prioritydispatch4u@gmail.com',
   url: 'https://prioritydispatchllc.com',
   areaServed: 'US',

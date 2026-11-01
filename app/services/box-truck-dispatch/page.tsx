@@ -18,14 +18,14 @@ import {
 import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
-    title: "Box Truck Dispatch Services | Priority Dispatch LLC",
+    title: "Box Truck Dispatcher & Dispatch Services | Priority Dispatch",
     description:
         "Professional box truck dispatch for owner-operators. Local and regional loads, Amazon freight, and expedited delivery. 24/7 support. No contracts.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/services/box-truck-dispatch",
     },
     openGraph: {
-        title: "Box Truck Dispatch Services | Priority Dispatch LLC",
+        title: "Box Truck Dispatcher & Dispatch Services | Priority Dispatch",
         description: "Expert box truck dispatching for owner-operators. High-paying local and regional loads.",
         url: "https://prioritydispatchllc.com/services/box-truck-dispatch",
         type: "website",
@@ -91,7 +91,7 @@ const serviceSchema = {
     "@type": "Service",
     serviceType: "Box Truck Dispatch",
     provider: {
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         name: "Priority Dispatch LLC",
         url: "https://prioritydispatchllc.com",
     },

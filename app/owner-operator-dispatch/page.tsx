@@ -51,7 +51,7 @@ const schema = [
         serviceType: "Truck dispatching for owner-operators",
         url,
         description,
-        provider: { "@type": "LocalBusiness", name: "Priority Dispatch LLC", url: "https://prioritydispatchllc.com", telephone: "+16893148347" },
+        provider: { "@type": "Organization", name: "Priority Dispatch LLC", url: "https://prioritydispatchllc.com", telephone: "+16893148347" },
         areaServed: { "@type": "Country", name: "United States" },
         audience: { "@type": "BusinessAudience", audienceType: "Owner-operators and one-truck carriers" },
     },

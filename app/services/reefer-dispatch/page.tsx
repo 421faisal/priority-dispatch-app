@@ -18,14 +18,14 @@ import {
 import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
-    title: "Reefer Dispatch Services | Priority Dispatch LLC",
+    title: "Reefer Dispatcher & Dispatch Services | Priority Dispatch",
     description:
         "Professional refrigerated truck dispatch for owner-operators. Temperature-controlled freight, premium rates, and 24/7 support. No contracts.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/services/reefer-dispatch",
     },
     openGraph: {
-        title: "Reefer Dispatch Services | Priority Dispatch LLC",
+        title: "Reefer Dispatcher & Dispatch Services | Priority Dispatch",
         description: "Expert reefer dispatching for owner-operators. High-paying temperature-controlled loads nationwide.",
         url: "https://prioritydispatchllc.com/services/reefer-dispatch",
         type: "website",
@@ -91,7 +91,7 @@ const serviceSchema = {
     "@type": "Service",
     serviceType: "Refrigerated Truck Dispatch",
     provider: {
-        "@type": "LocalBusiness",
+        "@type": "Organization",
         name: "Priority Dispatch LLC",
         url: "https://prioritydispatchllc.com",
     },

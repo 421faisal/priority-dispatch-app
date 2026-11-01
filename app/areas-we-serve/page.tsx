@@ -31,7 +31,7 @@ const regions = [
     {
         name: "Southeast",
         states: ["Florida", "Georgia", "Alabama", "South Carolina", "North Carolina", "Tennessee", "Mississippi"],
-        highlight: "Home region: our office is in Kissimmee, FL. Strong reefer and retail freight, with Atlanta as the main reload market.",
+        highlight: "Home region: we are based in Kissimmee, FL. Strong reefer and retail freight, with Atlanta as the main reload market.",
     },
     {
         name: "Southwest",
@@ -120,7 +120,7 @@ export default function AreasWeServePage() {
                             <div className="space-y-6">
                                 <h2 className="text-3xl font-bold">Local dispatcher or nationwide dispatcher?</h2>
                                 <p className="text-lg text-muted-foreground">
-                                    Both. Our office is in Kissimmee, Florida, so we know Southeast freight first-hand. But
+                                    Both. We are based in Kissimmee, Florida, and the Southeast is our home region. But
                                     dispatching happens by phone, email and load boards, so we book loads for trucks
                                     anywhere in the lower 48. What matters is lane knowledge: knowing which markets pay,
                                     where the reloads are and when the seasons change.

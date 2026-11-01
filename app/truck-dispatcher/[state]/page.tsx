@@ -79,7 +79,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             serviceType: "Truck dispatching",
             url,
             description: loc.summary,
-            provider: { "@type": "LocalBusiness", name: "Priority Dispatch LLC", url: BASE, telephone: "+16893148347" },
+            provider: { "@type": "Organization", name: "Priority Dispatch LLC", url: BASE, telephone: "+16893148347" },
             areaServed: loc.regionStates
                 ? loc.regionStates.map((name) => ({ "@type": "State", name }))
                 : { "@type": "State", name: loc.state, containedInPlace: { "@type": "Country", name: "United States" } },
