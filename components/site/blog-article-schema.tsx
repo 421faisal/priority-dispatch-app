@@ -23,8 +23,11 @@ export function BlogArticleSchema({
     author: {
       "@type": "Person",
       name: "Muhammad Faisal Bilal",
-      url: "https://www.linkedin.com/in/muhammad-faisal-bilal",
+      url: "https://prioritydispatchllc.com/about-owner",
       jobTitle: "Founder & CEO",
+      sameAs: [
+        "https://www.linkedin.com/in/muhammad-faisal-bilal"
+      ],
       worksFor: {
         "@type": "Organization",
         name: "Priority Dispatch LLC",

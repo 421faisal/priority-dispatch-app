@@ -12,7 +12,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://prioritydispatchllc.com'),
   title: 'Truck Dispatcher for Owner Operators | Priority Dispatch LLC',
   description: 'Truck dispatcher for owner operators: high-paying loads in all 48 states for reefers, dry vans, box trucks and flatbeds. 24/7 support, no contracts.',
-  keywords: 'truck dispatcher, dispatch services, owner operator dispatch, find loads, load booking, freight dispatch services, reefer dispatch, dry van dispatch, box truck dispatch, flatbed dispatching, priority dispatch llc',
   // No canonical or og:url here: pages that set neither would inherit the
   // homepage's and tell search engines they are copies of it. The homepage
   // sets its own in app/page.tsx.
@@ -114,6 +113,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta charSet="utf-8" />
         {/* Preconnect to external image/script origins for faster mobile LCP */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://connect.facebook.net" />
