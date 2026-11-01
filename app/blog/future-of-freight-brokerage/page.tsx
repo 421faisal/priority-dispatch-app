@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-12",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/rate-intelligence.png"],
+        images: ["/images/blog/rate-intelligence.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "The Future of Freight Brokerage: Digital Freight Matching",
         description: "Are traditional freight brokers becoming obsolete? How digital freight matching platforms and new tech are changing shipper, broker and carrier relationships.",
-        images: ["/images/blog/rate-intelligence.png"],
+        images: ["/images/blog/rate-intelligence.jpg"],
     },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPostBrokerage() {
                 description="Intense 2600-word analysis of the extinction of the traditional 'smiling and dialing' commodity freight broker, exploring the absolute dominance of Digital Freight Matching (DFM) platforms and Web3 smart contracts."
                 datePublished="2026-03-12"
                 slug="future-of-freight-brokerage"
-                imageUrl="/images/blog/rate-intelligence.png"
+                imageUrl="/images/blog/rate-intelligence.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

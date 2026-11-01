@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-03-19",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/rate-intelligence.png"],
+        images: ["/images/blog/rate-intelligence.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "Navigating the 2026 Freight Rate Rebound | Priority Dispatch",
         description: "Freight rates are rebounding in 2026. How owner-operators can use rising spot rates, tighter capacity and new broker dynamics to raise their revenue per mile.",
-        images: ["/images/blog/rate-intelligence.png"],
+        images: ["/images/blog/rate-intelligence.jpg"],
     },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPost() {
                 description="An operational playbook for carriers looking to capitalize on the 2026 rate rebound. Learn aggressive spot market negotiation and predictive lane scaling."
                 datePublished="2026-03-19"
                 slug="navigating-freight-rate-rebound"
-                imageUrl="/images/blog/rate-intelligence.png"
+                imageUrl="/images/blog/rate-intelligence.jpg"
             />
             <article className="py-24">
                 <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

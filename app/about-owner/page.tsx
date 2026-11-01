@@ -19,7 +19,7 @@ export const metadata: Metadata = {
         url: "https://prioritydispatchllc.com/about-owner",
         images: [
             {
-                url: "/images/muhammad-faisal-bilal-founder-priority-dispatch.png",
+                url: "/images/muhammad-faisal-bilal-founder-priority-dispatch.jpg",
                 width: 600,
                 height: 600,
                 alt: "Muhammad Faisal Bilal — Founder of Priority Dispatch LLC",
@@ -61,7 +61,7 @@ const personSchema = {
         "https://www.instagram.com/m_faisal_balal",
         "https://www.linkedin.com/in/muhammad-faisal-bilal",
     ],
-    image: "https://prioritydispatchllc.com/images/muhammad-faisal-bilal-founder-priority-dispatch.png",
+    image: "https://prioritydispatchllc.com/images/muhammad-faisal-bilal-founder-priority-dispatch.jpg",
     url: "https://prioritydispatchllc.com/about-owner",
 }
 
@@ -87,7 +87,7 @@ export default function AboutOwnerPage() {
                             <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-transparent blur-2xl opacity-50 group-hover:opacity-100 transition-opacity" />
                             <div className="relative aspect-[4/5] w-full max-w-[400px] mx-auto overflow-hidden rounded-2xl border-2 border-accent/20 bg-muted shadow-[0_32px_64px_-16px_rgba(0,0,0,0.5)]">
                                 <img
-                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
+                                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.jpg"
                                     alt="Muhammad Faisal Bilal — Founder of Priority Dispatch LLC"
                                     className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                                 />

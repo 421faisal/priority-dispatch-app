@@ -248,6 +248,10 @@ export default async function VerifyCertificatePage(props: { params: Promise<{ i
 }
 
 // Generate static paths for the two certificates
+// Unknown IDs get a real 404 status. Without this the root loading.tsx starts
+// a 200 response before notFound() runs, which Google reports as a soft 404.
+export const dynamicParams = false
+
 export function generateStaticParams() {
   return [
     { id: "PD-INT-2026-FZUNBUCA" },

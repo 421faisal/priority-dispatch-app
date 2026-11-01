@@ -14,7 +14,7 @@ export function EEATAuthor() {
               <div className="relative flex flex-col items-center justify-center bg-primary px-8 py-10 text-primary-foreground">
                 <div className="relative w-40 h-40 rounded-2xl overflow-hidden border-4 border-accent shadow-xl bg-muted">
                   <img
-                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.png"
+                    src="/images/muhammad-faisal-bilal-founder-priority-dispatch.jpg"
                     alt="Muhammad Faisal Bilal — Founder of Priority Dispatch LLC"
                     className="h-full w-full object-cover object-top"
                   />

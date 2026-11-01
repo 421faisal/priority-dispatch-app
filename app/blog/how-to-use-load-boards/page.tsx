@@ -20,13 +20,13 @@ export const metadata: Metadata = {
         type: "article",
         publishedTime: "2026-04-08",
         authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/load-boards-hero.png"],
+        images: ["/images/blog/load-boards-hero.jpg"],
     },
     twitter: {
         card: "summary_large_image",
         title: "How to Use Load Boards as an Owner-Operator | Priority Dispatch",
         description: "How owner-operators and small fleets can use load boards strategically to find better rates, avoid bad brokers and cut the hours lost to dead time.",
-        images: ["/images/blog/load-boards-hero.png"],
+        images: ["/images/blog/load-boards-hero.jpg"],
     },
 }
 
@@ -39,7 +39,7 @@ export default function BlogPost() {
         description="Load boards can flood your truck with freight or waste hours of dead time. Here's how owner-operators and small fleets can use them strategically to find better rates, avoid bad brokers, and keep wheels turning."
         datePublished="2026-04-08"
         slug="how-to-use-load-boards"
-        imageUrl="/images/blog/load-boards-hero.png"
+        imageUrl="/images/blog/load-boards-hero.jpg"
       />
       <article className="py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
@@ -73,7 +73,7 @@ export default function BlogPost() {
           <Reveal delayMs={100}>
             <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
               <img
-                src="/images/blog/load-boards-hero.png"
+                src="/images/blog/load-boards-hero.jpg"
                 alt="Owner-operator reviewing a digital load board on a tablet in a truck cab"
                 className="object-cover w-full h-full"
               />
@@ -117,7 +117,7 @@ export default function BlogPost() {
             </h2>
             <div className="relative my-8 aspect-[21/9] overflow-hidden rounded-xl border border-border shadow-md">
               <img
-                src="/images/blog/rate-intelligence.png"
+                src="/images/blog/rate-intelligence.jpg"
                 alt="Digital visualization of freight rate analytics and trends"
                 className="object-cover w-full h-full opacity-90 transition-opacity hover:opacity-100"
               />
