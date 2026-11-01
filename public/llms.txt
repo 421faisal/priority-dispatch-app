@@ -77,6 +77,15 @@ Focus regions: the Midwest, the East Coast and California. All other states are 
 - [Truck dispatcher in New Jersey](https://prioritydispatchllc.com/truck-dispatcher/new-jersey)
 - [Truck dispatcher in North Carolina](https://prioritydispatchllc.com/truck-dispatcher/north-carolina)
 
+## Free trucking tools
+
+- [Cost per mile calculator: operating cost per mile vs the ATRI 2026 average ($2.336)](https://prioritydispatchllc.com/toolbox/cost-per-mile-calculator)
+- [Load profit and deadhead calculator: profit, all-miles rate per mile, break-even rate](https://prioritydispatchllc.com/toolbox/load-profit-calculator)
+- [Hours of service (HOS) calculator: 11-hour, 14-hour, 30-minute break and 60/70-hour rules](https://prioritydispatchllc.com/toolbox/hos-calculator)
+- [IFTA fuel tax calculator: miles and gallons by state, tax owed or credited](https://prioritydispatchllc.com/toolbox/ifta-calculator)
+- [Truck driver per diem calculator: IRS $80/day, partial days at 75%, 80% deductible](https://prioritydispatchllc.com/toolbox/per-diem-calculator)
+- [Detention pay calculator: billable time after free time, by billing increment](https://prioritydispatchllc.com/toolbox/detention-pay-calculator)
+
 ## Guides
 
 - [How Much Does a Truck Dispatcher Charge? (2026 Rates)](https://prioritydispatchllc.com/blog/truck-dispatcher-cost): Truck dispatchers usually charge 3% to 10% of each load or a flat weekly fee. Typical rates by equipment, what the fee should include and the red flags to avoid.

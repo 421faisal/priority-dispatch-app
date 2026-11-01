@@ -57,6 +57,22 @@ just swap the state name get treated as doorway pages and can hurt the whole sit
 
 Answers start with a direct one- or two-sentence reply, then detail. Keep that pattern in new posts.
 
+## Free tools (link magnets and long-tail traffic)
+
+| Keyword | Page |
+|---|---|
+| trucking calculators, owner operator tools | `/toolbox` |
+| trucking cost per mile calculator | `/toolbox/cost-per-mile-calculator` |
+| load profit calculator, deadhead calculator, rate per mile calculator | `/toolbox/load-profit-calculator` |
+| hos calculator, hours of service calculator, 14 hour rule calculator | `/toolbox/hos-calculator` |
+| ifta calculator, ifta fuel tax calculator | `/toolbox/ifta-calculator` |
+| truck driver per diem calculator | `/toolbox/per-diem-calculator` |
+| detention pay calculator | `/toolbox/detention-pay-calculator` |
+
+The tool math lives in `lib/trucking-calc.ts` and is checked by
+`node --experimental-strip-types scripts/test-trucking-calc.mjs`. Update the ATRI cost and the IRS per diem
+rate there each year (ATRI publishes in summer, the IRS per diem notice comes out in late September).
+
 ## GEO (being cited by ChatGPT, Perplexity, Gemini, Google AI Overviews)
 
 - `public/llms.txt`: business facts, rates and every page. Edit it by hand when rates or pages change.

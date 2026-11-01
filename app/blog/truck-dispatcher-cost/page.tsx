@@ -155,6 +155,11 @@ export default function TruckDispatcherCostPost() {
                             A good dispatcher should pay for themselves. If they negotiate even $0.10 more per mile on a 2,500-mile
                             week, that is $250 extra, which covers most dispatch fees on its own.
                         </p>
+                        <p>
+                            To check a specific load, including the dispatch fee and deadhead, use our free{" "}
+                            <a href="/toolbox/load-profit-calculator">load profit calculator</a>. To find the minimum you need
+                            per mile, start with the <a href="/toolbox/cost-per-mile-calculator">cost per mile calculator</a>.
+                        </p>
 
                         <h2>Why the rate changes by equipment</h2>
                         <p>
