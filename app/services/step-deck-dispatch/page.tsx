@@ -242,7 +242,7 @@ export default function StepDeckDispatchPage() {
                             Simple, Transparent Pricing
                         </h2>
                         <p className="text-muted-foreground leading-relaxed mb-5 max-w-xl mx-auto">
-                            We charge 5% of the gross load revenue. No setup fees, no cancellation penalties, no long-term contracts. You only pay when you get paid.
+                            We charge 4% of the gross load revenue. No setup fees, no cancellation penalties, no long-term contracts. You only pay when you get paid. Running 2 or more trucks? Fleet rates are negotiable.
                         </p>
                         <a href="/pricing">
                             <Button variant="outline" className="font-bold">

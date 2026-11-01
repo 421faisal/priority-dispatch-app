@@ -1,6 +1,7 @@
 "use client"
 
 import { Facebook, Linkedin, Instagram, Twitter, Youtube } from "lucide-react"
+import { locationLinks } from "@/lib/location-links"
 async function onFooterSubmit(e: any) {
   e.preventDefault();
 
@@ -126,6 +127,16 @@ export function SiteFooter() {
                 Contact Us
               </a>
             </li>
+          </ul>
+          <h3 className="mt-6 text-sm font-semibold">Truck Dispatch by State</h3>
+          <ul className="mt-3 space-y-2 text-sm opacity-90">
+            {locationLinks.map((l) => (
+              <li key={l.slug}>
+                <a href={`/truck-dispatcher/${l.slug}`} className="hover:opacity-80">
+                  {l.state} truck dispatcher
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <div>

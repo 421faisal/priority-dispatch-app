@@ -27,7 +27,7 @@ const servicesDropdown = [
   { href: "/services/step-deck-dispatch", label: "Step Deck Dispatch", rate: "$3.50-$5.50/mi" },
   { href: "/services/power-only-dispatch", label: "Power Only Dispatch", rate: "$2.00-$3.50/mi" },
   { href: "/services/hotshot-dispatch", label: "Hotshot Dispatch", rate: "$2.50-$5.00/mi" },
-  { href: "/pricing", label: "Pricing", rate: "5% Fee" },
+  { href: "/pricing", label: "Pricing", rate: "From 4%" },
 ]
 
 export function SiteHeader() {

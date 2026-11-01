@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
 import { Button } from "@/components/ui/button"
 import Reveal from "@/components/site/reveal"
+import { rates, pricingSentence } from "@/lib/pricing"
 import {
     Check,
     X,
@@ -17,14 +18,14 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Dispatch Service Pricing | Priority Dispatch LLC",
+    title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch LLC",
     description:
-        "Simple, transparent dispatch pricing. 5% of gross load revenue with no setup fees, no contracts, and no hidden charges. You only pay when you get paid.",
+        "Truck dispatch rates: 4% for dry van, reefer, flatbed and power only, 6% box truck and hotshot, 10% sprinter van. Paid after you get paid. No contracts.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/pricing",
     },
     openGraph: {
-        title: "Dispatch Service Pricing | Priority Dispatch LLC",
+        title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch LLC",
         description: "Clear pricing for professional truck dispatch services. No contracts, no setup fees.",
         url: "https://prioritydispatchllc.com/pricing",
         type: "website",
@@ -56,7 +57,7 @@ const notIncluded = [
 const comparison = [
     {
         feature: "Dispatch Fee",
-        ours: "5% of gross load",
+        ours: "4–10% of gross, by equipment",
         typical: "5-10% of gross load",
     },
     {
@@ -88,6 +89,14 @@ const comparison = [
 
 const faqs = [
     {
+        q: "How much does a truck dispatcher charge?",
+        a: "Most truck dispatchers charge a percentage of each load, usually 3% to 10% of the gross, or a flat weekly fee. Priority Dispatch charges 4% for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans. You pay only after the broker pays you.",
+    },
+    {
+        q: "Why do box trucks, hotshots and sprinter vans have a higher rate?",
+        a: "Their loads pay less per load and take just as much work to find, negotiate and book, so the percentage is higher. On a typical box truck load the fee in dollars is still lower than on a full semi load.",
+    },
+    {
         q: "When do I pay the dispatch fee?",
         a: "You only pay after you receive payment from the broker. If a load doesn't pay, neither do we.",
     },
@@ -101,7 +110,7 @@ const faqs = [
     },
     {
         q: "Do you charge extra for detention claims?",
-        a: "No. Detention and TONU claims are included in our standard 5% fee. We handle all the paperwork and follow-up.",
+        a: "No. Detention and TONU claims are included in your dispatch fee. We handle all the paperwork and follow-up.",
     },
     {
         q: "What if I find my own loads?",
@@ -109,9 +118,19 @@ const faqs = [
     },
     {
         q: "Do you offer discounts for multiple trucks?",
-        a: "Yes. Contact us to discuss fleet pricing if you have 2+ trucks. We offer volume discounts.",
+        a: "Yes. Fleet rates are negotiable. If you run 2 or more trucks, call us and we will quote a rate for your whole fleet.",
     },
 ]
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+}
 
 const pricingSchema = {
     "@context": "https://schema.org",
@@ -122,18 +141,16 @@ const pricingSchema = {
         name: "Priority Dispatch LLC",
         url: "https://prioritydispatchllc.com",
     },
-    offers: {
+    offers: rates.map((r) => ({
         "@type": "Offer",
-        price: "5",
-        priceCurrency: "USD",
+        name: `${r.equipment} dispatch`,
+        description: `${r.percent}% of the gross load, paid after the broker pays. No setup fee, no contract.`,
         priceSpecification: {
             "@type": "UnitPriceSpecification",
-            price: "5",
-            priceCurrency: "USD",
+            price: String(r.percent),
             unitText: "PERCENT",
         },
-        description: "5% of gross load revenue. No setup fees, no contracts, no hidden charges.",
-    },
+    })),
 }
 
 export default function PricingPage() {
@@ -142,7 +159,7 @@ export default function PricingPage() {
             <SiteHeader />
             <script
                 type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
+                dangerouslySetInnerHTML={{ __html: JSON.stringify([pricingSchema, faqSchema]) }}
             />
 
             {/* Hero */}
@@ -161,7 +178,7 @@ export default function PricingPage() {
                                 Simple Dispatch Pricing. <span className="text-accent">No Hidden Fees.</span>
                             </h1>
                             <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
-                                Pay 5% of gross load revenue. No setup fees, no contracts, no cancellation penalties. You only pay when you get paid.
+                                {pricingSentence}
                             </p>
                         </div>
                     </Reveal>
@@ -180,12 +197,34 @@ export default function PricingPage() {
                                 </div>
                                 <div className="p-8 md:p-12">
                                     <div className="text-center mb-8 pb-8 border-b border-border">
-                                        <div className="flex items-baseline justify-center gap-2 mb-3">
-                                            <span className="text-6xl font-extrabold">5%</span>
+                                        <div className="flex items-baseline justify-center gap-2 mb-6">
+                                            <span className="text-2xl text-muted-foreground">from</span>
+                                            <span className="text-6xl font-extrabold">4%</span>
                                             <span className="text-2xl text-muted-foreground">of gross load</span>
                                         </div>
-                                        <p className="text-sm text-muted-foreground">
-                                            Example: $3,000 load = $150 dispatch fee
+                                        <table className="w-full text-left text-sm">
+                                            <caption className="sr-only">Dispatch fee by equipment type</caption>
+                                            <thead>
+                                                <tr className="border-b border-border">
+                                                    <th className="py-2 font-bold">Equipment</th>
+                                                    <th className="py-2 text-right font-bold">Dispatch fee</th>
+                                                    <th className="py-2 text-right font-bold">On a $3,000 load</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {rates.map((r) => (
+                                                    <tr key={r.equipment} className="border-b border-border/60">
+                                                        <td className="py-2">
+                                                            {r.href ? <a href={r.href} className="hover:text-accent hover:underline">{r.equipment}</a> : r.equipment}
+                                                        </td>
+                                                        <td className="py-2 text-right font-bold">{r.percent}%</td>
+                                                        <td className="py-2 text-right text-muted-foreground">${(3000 * r.percent / 100).toLocaleString("en-US")}</td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                        <p className="mt-4 text-sm text-muted-foreground">
+                                            Running 2 or more trucks? Fleet rates are negotiable.
                                         </p>
                                     </div>
 

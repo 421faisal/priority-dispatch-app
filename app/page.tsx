@@ -14,13 +14,18 @@ import { Contact } from "@/components/site/contact"
 import { SiteFooter } from "@/components/site/site-footer"
 import type { Metadata } from "next"
 
+const title = "Truck Dispatcher & Dispatch Services USA | Priority Dispatch"
+const description = "USA truck dispatching services for owner-operators and small fleets in all 48 states. High-paying loads, 24/7 support, from 4% of gross, no contracts."
+
 export const metadata: Metadata = {
+  title,
+  description,
   alternates: {
     canonical: "https://prioritydispatchllc.com",
   },
   openGraph: {
-    title: "Truck Dispatcher for Owner Operators | Priority Dispatch LLC",
-    description: "Professional truck dispatcher services for owner operators. We find high-paying loads across all 48 states. 24/7 support. No contracts.",
+    title,
+    description,
     url: "https://prioritydispatchllc.com",
     siteName: "Priority Dispatch LLC",
     images: [
@@ -33,6 +38,12 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/images/hero-truck.jpg"],
   },
 }
 

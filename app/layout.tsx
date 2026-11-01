@@ -50,7 +50,32 @@ const jsonLd = {
   '@type': 'LocalBusiness',
   name: 'Priority Dispatch LLC',
   image: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
-  description: 'Truck dispatching for owner-operators and small fleets in all 48 states.',
+  description: 'USA truck dispatching company for owner-operators and small fleets in all 48 states. Dispatch fees from 4% of the gross load, paid after the broker pays, no contracts.',
+  priceRange: '4%–10% of gross load',
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+    opens: '00:00',
+    closes: '23:59',
+  },
+  knowsAbout: ['Truck dispatching', 'Freight dispatch', 'Owner-operator dispatch', 'Load booking', 'Freight rate negotiation', 'Broker vetting', 'MC authority setup'],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Truck dispatch services',
+    itemListElement: [
+      ['Dry van dispatch', '/services/dry-van-dispatch'],
+      ['Reefer dispatch', '/services/reefer-dispatch'],
+      ['Flatbed dispatch', '/services/flatbed-dispatch'],
+      ['Step deck dispatch', '/services/step-deck-dispatch'],
+      ['Power only dispatch', '/services/power-only-dispatch'],
+      ['Box truck dispatch', '/services/box-truck-dispatch'],
+      ['Hotshot dispatch', '/services/hotshot-dispatch'],
+      ['New carrier setup', '/services/new-carrier-setup'],
+    ].map(([name, path]) => ({
+      '@type': 'Offer',
+      itemOffered: { '@type': 'Service', name, url: `https://prioritydispatchllc.com${path}` },
+    })),
+  },
   address: {
     '@type': 'PostalAddress',
     streetAddress: '804 Brack St',

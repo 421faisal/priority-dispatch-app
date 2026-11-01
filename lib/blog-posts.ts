@@ -10,6 +10,13 @@ export interface BlogPost {
 // and the "Keep reading" links at the end of each post.
 export const blogPosts: BlogPost[] = [
     {
+        title: "How Much Does a Truck Dispatcher Charge? (2026 Rates)",
+        slug: "truck-dispatcher-cost",
+        excerpt: "Truck dispatchers usually charge 3% to 10% of each load or a flat weekly fee. Typical rates by equipment, what the fee should include and the red flags to avoid.",
+        date: "November 1, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
         title: "What Is Inspection in Trucking? DOT Inspections Explained for Owner-Operators",
         slug: "what-is-inspection-in-trucking",
         excerpt: "Complete guide to DOT inspections, CVSA levels, and why clean inspection history opens doors with brokers. Learn how to pass inspections and protect your CSA score.",
@@ -226,6 +233,7 @@ const topicOf: Record<string, Topic> = {
     "what-is-twic-card-trucking": "getting-started",
     "dot-cdl-crackdown-capacity-tightening": "getting-started",
     "what-is-freight-dispatching": "dispatch",
+    "truck-dispatcher-cost": "dispatch",
     "how-to-choose-dispatch-service": "dispatch",
     "how-to-use-load-boards": "dispatch",
     "insider-trucking-dispatch-tips-faisal": "dispatch",
@@ -268,6 +276,7 @@ const postService: Record<string, ServiceLink> = {
     "intermodal-vs-over-the-road": { href: "/services/dry-van-dispatch", label: "Dry van dispatch service" },
     "how-to-use-load-boards": { href: "/services/dry-van-dispatch", label: "Dry van dispatch service" },
     "what-is-inspection-in-trucking": { href: "/carrier-setup", label: "Set up your carrier profile" },
+    "truck-dispatcher-cost": { href: "/pricing", label: "See our dispatch rates" },
 }
 
 /** Up to `count` posts on the same topic, taken in turn after this one so every post gets inbound links. */

@@ -5,28 +5,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     return [
         // ── Core Pages ──────────────────────────────────────────────────
-        { url: baseUrl,                                    lastModified: new Date('2026-10-31'), changeFrequency: 'weekly',  priority: 1.0 },
+        { url: baseUrl,                                    lastModified: new Date('2026-11-01'), changeFrequency: 'weekly',  priority: 1.0 },
         { url: `${baseUrl}/services`,                      lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/services/new-carrier-setup`,    lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
-        { url: `${baseUrl}/pricing`,                       lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/pricing`,                       lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/owner-operator-dispatch`,       lastModified: new Date('2026-10-12'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/about-owner`,                   lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/carrier-setup`,                 lastModified: new Date('2026-10-05'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/areas-we-serve`,                lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/truck-dispatcher/florida`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/truck-dispatcher/texas`,        lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/truck-dispatcher/georgia`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/truck-dispatcher/california`,   lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/areas-we-serve`,                lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/toolbox`,                       lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/contact`,                       lastModified: new Date('2026-10-01'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/faq`,                           lastModified: new Date('2026-10-05'), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/faq`,                           lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/privacy`,                       lastModified: new Date('2026-10-31'), changeFrequency: 'yearly',  priority: 0.4 },
         { url: `${baseUrl}/terms`,                         lastModified: new Date('2026-10-31'), changeFrequency: 'yearly',  priority: 0.4 },
 
         // ── Equipment-Specific Dispatch Services ────────────────────────
-        { url: `${baseUrl}/services/dry-van-dispatch`,     lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/reefer-dispatch`,      lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/flatbed-dispatch`,     lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/box-truck-dispatch`,   lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/step-deck-dispatch`,   lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/power-only-dispatch`,  lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
-        { url: `${baseUrl}/services/hotshot-dispatch`,     lastModified: new Date('2026-10-14'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/dry-van-dispatch`,     lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/reefer-dispatch`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/flatbed-dispatch`,     lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/box-truck-dispatch`,   lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/step-deck-dispatch`,   lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/power-only-dispatch`,  lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/services/hotshot-dispatch`,     lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
 
         // ── Careers (high priority — always hiring) ──────────────────────
         { url: `${baseUrl}/careers`,                       lastModified: new Date('2026-10-01'), changeFrequency: 'weekly',  priority: 0.9 },
@@ -35,6 +39,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/blog`,                          lastModified: new Date('2026-10-31'), changeFrequency: 'weekly',  priority: 0.8 },
 
         // ── Blog Posts ───────────────────────────────────────────────────
+        { url: `${baseUrl}/blog/truck-dispatcher-cost`,                       lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/blog/what-is-inspection-in-trucking`,              lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/how-to-survive-new-trucking-authority-mc-leasing`, lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/what-is-tsa-certified-trucking`,              lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.7 },
@@ -52,7 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/blog/combatting-freight-fraud-2026`,               lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/dot-cdl-crackdown-capacity-tightening`,       lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/micro-niche-reefer-flatbed`,                  lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
-        { url: `${baseUrl}/blog/what-is-freight-dispatching`,                 lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.7 },
+        { url: `${baseUrl}/blog/what-is-freight-dispatching`,                 lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/blog/2026-freight-market-outlook`,                 lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/blog/eld-compliance-checklist-2026`,               lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.7 },
         { url: `${baseUrl}/blog/maximizing-fuel-efficiency`,                  lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.7 },

@@ -37,11 +37,27 @@ const faqs = [
     },
     {
         q: "What equipment types do you support?",
-        a: "We dispatch for a wide range of equipment including Reefers (refrigerated trailers), Dry Vans, Box Trucks, Flatbeds, Step Decks, and more. Whether you run a single truck or manage a fleet, our experienced dispatchers can optimize loads for your specific equipment.",
+        a: "We dispatch dry vans, reefers (refrigerated trailers), flatbeds, step decks, power only, box trucks, hotshots and sprinter vans. Whether you run a single truck or manage a fleet, our experienced dispatchers can optimize loads for your specific equipment.",
     },
     {
         q: "How much do your dispatching services cost?",
-        a: "We operate on a transparent, percentage-based model with no hidden fees and no lock-in contracts. Our fee is a competitive percentage of the gross load revenue, and you keep the rest. Contact us for a personalized quote based on your operation size and needs.",
+        a: "Our fee is 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans. You pay only after the broker pays you. There is no setup fee and no lock-in contract, and fleets of 2 or more trucks get negotiable rates. Most dispatch services in the US charge between 3% and 10%.",
+    },
+    {
+        q: "What does a truck dispatcher do?",
+        a: "A truck dispatcher finds and books loads for a trucking company or owner-operator. The dispatcher searches load boards and broker contacts, negotiates the rate, checks the broker's credit and authority, handles the rate confirmation and paperwork, and stays in touch with the driver until the load is delivered and paid.",
+    },
+    {
+        q: "Is a truck dispatcher the same as a freight broker?",
+        a: "No. A freight broker works for the shipper and needs its own FMCSA broker authority and bond. A truck dispatcher works for the carrier, under the carrier's own MC authority, and is paid a fee by the carrier. A dispatcher's job is to get the carrier the best load and rate.",
+    },
+    {
+        q: "Do I need a local truck dispatcher?",
+        a: "Not necessarily. Dispatching is done by phone, email and load boards, so a dispatcher can book loads anywhere. What matters is lane knowledge. Priority Dispatch is based in Kissimmee, Florida, and dispatches trucks in all 48 states, with state guides for Florida, Texas, Georgia and California.",
+    },
+    {
+        q: "Do you dispatch sprinter vans and cargo vans?",
+        a: "Yes. We dispatch sprinter and cargo vans for expedited freight. The fee is 10% of the gross load, paid after you are paid.",
     },
     {
         q: "How do I get started with Priority Dispatch?",

@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils"
 const faqs = [
   {
     q: "How much does a truck dispatcher cost?",
-    a: "We charge a simple percentage of the gross load revenue — no flat monthly fees, no hidden charges. So you only pay when you earn. Contact us for an exact quote based on your equipment and operation size.",
+    a: "Priority Dispatch charges 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans. You pay only after the broker pays you, with no setup fee, no contract and no monthly fee. Fleets of 2 or more trucks get negotiable rates.",
   },
   {
     q: "Do I need to sign a long-term contract?",

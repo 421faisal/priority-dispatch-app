@@ -26,8 +26,8 @@ export function Hero() {
                 </h1>
                 <p className="mt-2 text-xl font-semibold text-accent md:text-2xl">Priority Dispatch LLC</p>
                 <p className="mt-4 text-pretty text-base opacity-95 md:text-lg">
-                  Expert truck dispatching for owner-operators and small fleets. We source high-paying loads, plan smarter routes,
-                  negotiate stronger rates, and handle back-office paperwork 24/7.
+                  USA truck dispatching services for owner-operators and small fleets in all 48 states. We find high-paying loads,
+                  negotiate rates, vet brokers and handle the paperwork 24/7, from 4% of the gross load with no contract.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a href="/carrier-setup">

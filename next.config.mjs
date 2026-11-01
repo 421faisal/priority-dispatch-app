@@ -33,14 +33,6 @@ const nextConfig = {
     },
     optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
-  async rewrites() {
-    return [
-      {
-        source: '/llms.txt',
-        destination: '/llms-txt',
-      },
-    ]
-  },
   async redirects() {
     return [
       // WWW to non-WWW redirect (must be first)
