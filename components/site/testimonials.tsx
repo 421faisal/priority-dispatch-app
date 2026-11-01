@@ -73,7 +73,11 @@ export function Testimonials() {
                     <a href="https://www.bobtail.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline underline-offset-2 hover:text-accent">
                         Bobtail
                     </a>{" "}
-                    (freight factoring) and <span className="font-semibold text-foreground">Simplex</span> (ELD).
+                    (freight factoring) and{" "}
+                    <a href="https://simplexgroup.net/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline underline-offset-2 hover:text-accent">
+                        Simplex Group
+                    </a>{" "}
+                    (ELD).
                 </p>
             </div>
         </section>
