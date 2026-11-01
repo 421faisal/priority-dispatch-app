@@ -13,6 +13,7 @@
 - Email: prioritydispatch4u@gmail.com
 - Hours: 24/7 dispatch support
 - Founder and CEO: Muhammad Faisal Bilal
+- Partners: Bobtail (freight factoring), Simplex (ELD)
 - Equipment dispatched: dry van, reefer, flatbed, step deck, power only, box truck, hotshot, sprinter van
 
 ## Dispatch fees (percentage of the gross load)
@@ -94,6 +95,8 @@ Focus regions: the Midwest, the East Coast and California. All other states are 
 
 ## Guides
 
+- [The ELD Went Down and the Driver Wasn't Where He Said: What We Learned](https://prioritydispatchllc.com/blog/eld-down-driver-location-case-study): Real dispatch case study. A Texas to Nevada dry van load with a failed ELD and a driver misreporting his location; honest updates to the broker avoided a FreightGuard report.
+- [Never Hand Over Your MC: How One Load You Didn't Book Can Damage Your Reputation](https://prioritydispatchllc.com/blog/never-share-your-mc-case-study): Real case study. A carrier let another dispatcher use its MC and received a broker report for a mishandled load; how to protect your authority.
 - [How Much Does a Truck Dispatcher Charge? (2026 Rates)](https://prioritydispatchllc.com/blog/truck-dispatcher-cost): Truck dispatchers usually charge 3% to 10% of each load or a flat weekly fee. Typical rates by equipment, what the fee should include and the red flags to avoid.
 - [What Is Inspection in Trucking? DOT Inspections Explained for Owner-Operators](https://prioritydispatchllc.com/blog/what-is-inspection-in-trucking): Complete guide to DOT inspections, CVSA levels, and why clean inspection history opens doors with brokers. Learn how to pass inspections and protect your CSA score.
 - [How New Trucking Companies Can Survive the First 90 Days — And How MC Leasing Helps](https://prioritydispatchllc.com/blog/how-to-survive-new-trucking-authority-mc-leasing): New trucking companies face brutal first-90-day challenges. Learn how MC leasing works, when it helps, and how Priority Dispatch LLC supports new owner-operators from day one.

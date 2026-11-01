@@ -10,6 +10,20 @@ export interface BlogPost {
 // and the "Keep reading" links at the end of each post.
 export const blogPosts: BlogPost[] = [
     {
+        title: "The ELD Went Down and the Driver Wasn't Where He Said: What We Learned",
+        slug: "eld-down-driver-location-case-study",
+        excerpt: "A real Texas to Nevada dry van load: the ELD failed and the driver misreported his location. How honest updates to the broker kept the carrier's reputation intact.",
+        date: "November 1, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
+        title: "Never Hand Over Your MC: How One Load You Didn't Book Can Damage Your Reputation",
+        slug: "never-share-your-mc-case-study",
+        excerpt: "A carrier let another dispatcher use its MC. One mishandled, uncancelled load later, a broker filed a report. How to protect your authority.",
+        date: "November 1, 2026",
+        author: "Muhammad Faisal Bilal",
+    },
+    {
         title: "How Much Does a Truck Dispatcher Charge? (2026 Rates)",
         slug: "truck-dispatcher-cost",
         excerpt: "Truck dispatchers usually charge 3% to 10% of each load or a flat weekly fee. Typical rates by equipment, what the fee should include and the red flags to avoid.",
@@ -234,6 +248,8 @@ const topicOf: Record<string, Topic> = {
     "dot-cdl-crackdown-capacity-tightening": "getting-started",
     "what-is-freight-dispatching": "dispatch",
     "truck-dispatcher-cost": "dispatch",
+    "eld-down-driver-location-case-study": "getting-started",
+    "never-share-your-mc-case-study": "getting-started",
     "how-to-choose-dispatch-service": "dispatch",
     "how-to-use-load-boards": "dispatch",
     "insider-trucking-dispatch-tips-faisal": "dispatch",

@@ -56,6 +56,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/blog`,                          lastModified: new Date('2026-10-31'), changeFrequency: 'weekly',  priority: 0.8 },
 
         // ── Blog Posts ───────────────────────────────────────────────────
+        { url: `${baseUrl}/blog/eld-down-driver-location-case-study`,        lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },
+        { url: `${baseUrl}/blog/never-share-your-mc-case-study`,             lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/truck-dispatcher-cost`,                       lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/blog/what-is-inspection-in-trucking`,              lastModified: new Date('2026-10-31'), changeFrequency: 'monthly', priority: 0.8 },
         { url: `${baseUrl}/blog/how-to-survive-new-trucking-authority-mc-leasing`, lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.8 },

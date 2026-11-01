@@ -68,6 +68,13 @@ export function Testimonials() {
                         </li>
                     ))}
                 </ul>
+                <p className="mt-10 text-center text-sm text-muted-foreground">
+                    Partners we work with:{" "}
+                    <a href="https://www.bobtail.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-foreground underline underline-offset-2 hover:text-accent">
+                        Bobtail
+                    </a>{" "}
+                    (freight factoring) and <span className="font-semibold text-foreground">Simplex</span> (ELD).
+                </p>
             </div>
         </section>
     )
