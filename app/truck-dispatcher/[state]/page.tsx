@@ -59,10 +59,17 @@ export default async function LocationPage(props: { params: Promise<{ state: str
     if (!loc) notFound()
 
     const url = `${BASE}/truck-dispatcher/${loc.slug}`
+    // "Midwest" rather than "the Midwest" where the name starts a phrase
+    const name = loc.regionStates ? loc.abbr : loc.state
     const posts = loc.posts
         .map((slug) => blogPosts.find((p) => p.slug === slug))
         .filter((p): p is (typeof blogPosts)[number] => Boolean(p))
-    const others = locations.filter((l) => l.slug !== loc.slug)
+    // Region pages list their states; state pages list their region first, then the rest
+    const members = (loc.members ?? []).map((s) => locationBySlug(s)).filter((l): l is NonNullable<typeof l> => Boolean(l))
+    const parents = locations.filter((l) => l.members?.includes(loc.slug))
+    const others = loc.members
+        ? locations.filter((l) => l.slug !== loc.slug && !loc.members?.includes(l.slug))
+        : [...parents, ...locations.filter((l) => l.slug !== loc.slug && !parents.includes(l))]
 
     const schema = [
         {
@@ -73,7 +80,9 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             url,
             description: loc.summary,
             provider: { "@type": "LocalBusiness", name: "Priority Dispatch LLC", url: BASE, telephone: "+16893148347" },
-            areaServed: { "@type": "State", name: loc.state, containedInPlace: { "@type": "Country", name: "United States" } },
+            areaServed: loc.regionStates
+                ? loc.regionStates.map((name) => ({ "@type": "State", name }))
+                : { "@type": "State", name: loc.state, containedInPlace: { "@type": "Country", name: "United States" } },
             offers: rates.map((r) => ({
                 "@type": "Offer",
                 name: `${r.equipment} dispatch`,
@@ -95,7 +104,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: BASE },
                 { "@type": "ListItem", position: 2, name: "Areas We Serve", item: `${BASE}/areas-we-serve` },
-                { "@type": "ListItem", position: 3, name: `Truck Dispatcher in ${loc.state}`, item: url },
+                { "@type": "ListItem", position: 3, name: loc.h1, item: url },
             ],
         },
     ]
@@ -112,12 +121,12 @@ export default async function LocationPage(props: { params: Promise<{ state: str
                         <span className="mx-2">/</span>
                         <Link href="/areas-we-serve" className="hover:underline">Areas We Serve</Link>
                         <span className="mx-2">/</span>
-                        <span>{loc.state}</span>
+                        <span>{loc.regionStates ? loc.abbr : loc.state}</span>
                     </nav>
                     <div className="max-w-3xl">
                         <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-accent">
                             <MapPin className="h-3.5 w-3.5" />
-                            {loc.state} ({loc.abbr}) truck dispatching
+                            {loc.regionStates ? `${loc.abbr} truck dispatching` : `${loc.state} (${loc.abbr}) truck dispatching`}
                         </div>
                         <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">{loc.h1}</h1>
                         <p className="mt-6 text-lg leading-relaxed opacity-90">{loc.summary}</p>
@@ -175,7 +184,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             <section className="bg-muted py-16 md:py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="flex items-center gap-3 text-3xl font-extrabold tracking-tight">
-                        <CalendarDays className="h-7 w-7 text-accent" /> {loc.state} freight seasons
+                        <CalendarDays className="h-7 w-7 text-accent" /> {name} freight seasons
                     </h2>
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
                         {loc.seasons.map((s) => (
@@ -191,7 +200,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             <section className="bg-background py-16 md:py-20">
                 <div className="mx-auto max-w-6xl px-4">
                     <h2 className="flex items-center gap-3 text-3xl font-extrabold tracking-tight">
-                        <Lightbulb className="h-7 w-7 text-accent" /> How we keep {loc.state} trucks profitable
+                        <Lightbulb className="h-7 w-7 text-accent" /> How we keep {name} trucks profitable
                     </h2>
                     <div className="mt-8 grid gap-6 md:grid-cols-3">
                         {loc.tips.map((t) => (
@@ -226,7 +235,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
 
             <section className="bg-muted py-16 md:py-20">
                 <div className="mx-auto max-w-4xl px-4">
-                    <h2 className="text-3xl font-extrabold tracking-tight">{loc.state} truck dispatch FAQ</h2>
+                    <h2 className="text-3xl font-extrabold tracking-tight">{name} truck dispatch FAQ</h2>
                     <div className="mt-8 space-y-6">
                         {loc.faqs.map((f) => (
                             <div key={f.q} className="rounded-2xl border border-border bg-card p-6">
@@ -241,7 +250,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             <section className="bg-background py-16">
                 <div className="mx-auto grid max-w-6xl gap-10 px-4 md:grid-cols-2">
                     <div>
-                        <h2 className="text-2xl font-extrabold">Guides for {loc.state} owner-operators</h2>
+                        <h2 className="text-2xl font-extrabold">Guides for {name} owner-operators</h2>
                         <ul className="mt-4 space-y-3">
                             {posts.map((p) => (
                                 <li key={p.slug}>
@@ -253,12 +262,26 @@ export default async function LocationPage(props: { params: Promise<{ state: str
                         </ul>
                     </div>
                     <div>
-                        <h2 className="text-2xl font-extrabold">Other states we cover</h2>
-                        <ul className="mt-4 space-y-3">
+                        {members.length > 0 && (
+                            <>
+                                <h2 className="text-2xl font-extrabold">State guides in {loc.state}</h2>
+                                <ul className="mt-4 mb-8 space-y-3">
+                                    {members.map((m) => (
+                                        <li key={m.slug}>
+                                            <Link href={`/truck-dispatcher/${m.slug}`} className="font-semibold text-accent hover:underline">
+                                                {m.h1}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </>
+                        )}
+                        <h2 className="text-2xl font-extrabold">{members.length > 0 ? "Other areas we cover" : "More areas we cover"}</h2>
+                        <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
                             {others.map((o) => (
                                 <li key={o.slug}>
                                     <Link href={`/truck-dispatcher/${o.slug}`} className="font-semibold text-accent hover:underline">
-                                        Truck dispatcher in {o.state}
+                                        {o.h1}
                                     </Link>
                                 </li>
                             ))}
@@ -274,7 +297,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
 
             <section className="bg-primary py-16 text-primary-foreground md:py-20">
                 <div className="mx-auto max-w-3xl px-4 text-center">
-                    <h2 className="text-3xl font-extrabold md:text-4xl">Ready for a dispatcher who knows {loc.state} freight?</h2>
+                    <h2 className="text-3xl font-extrabold md:text-4xl">Ready for a dispatcher who knows {name} freight?</h2>
                     <p className="mt-4 text-lg opacity-90">Send your MC, W-9 and insurance and we can start booking loads the same day.</p>
                     <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
                         <a href="/carrier-setup">

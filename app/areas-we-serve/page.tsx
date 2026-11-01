@@ -8,13 +8,13 @@ import { locations } from "@/lib/locations"
 
 export const metadata: Metadata = {
     title: "USA Truck Dispatch Services in All 48 States | Priority Dispatch",
-    description: "USA truck dispatching in all 48 states from our office in Kissimmee, FL. Local lane knowledge in Florida, Texas, Georgia, California and every region.",
+    description: "USA truck dispatching in all 48 states from Kissimmee, FL, with lane knowledge in the Midwest, the East Coast, California, Texas and the Southeast.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/areas-we-serve",
     },
     openGraph: {
         title: "USA Truck Dispatch Services in All 48 States | Priority Dispatch",
-        description: "USA truck dispatching in all 48 states from our office in Kissimmee, FL. Local lane knowledge in Florida, Texas, Georgia, California and every region.",
+        description: "USA truck dispatching in all 48 states from Kissimmee, FL, with lane knowledge in the Midwest, the East Coast, California, Texas and the Southeast.",
         url: "https://prioritydispatchllc.com/areas-we-serve",
         siteName: "Priority Dispatch LLC",
         type: "website",
@@ -86,10 +86,10 @@ export default function AreasWeServePage() {
 
             <section className="bg-background py-16 md:py-24">
                 <div className="mx-auto max-w-6xl px-4">
-                    <h2 className="text-3xl font-bold">State dispatch guides</h2>
+                    <h2 className="text-3xl font-bold">Regional and state dispatch guides</h2>
                     <p className="mt-3 max-w-3xl text-lg text-muted-foreground">
-                        Freight works differently in every state. These guides cover the hubs, highways, seasons and
-                        rates we plan around when we dispatch there.
+                        We focus on the Midwest, the East Coast and California, and dispatch in every other state too. These
+                        guides cover the hubs, highways, seasons and rates we plan around when we dispatch there.
                     </p>
                     <ul className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                         {locations.map((l) => (
@@ -101,7 +101,7 @@ export default function AreasWeServePage() {
                                     <span className="flex items-center gap-2 text-sm font-semibold text-accent">
                                         <MapPin className="h-4 w-4" /> {l.abbr}
                                     </span>
-                                    <span className="mt-2 text-lg font-bold group-hover:text-accent">Truck dispatcher in {l.state}</span>
+                                    <span className="mt-2 text-lg font-bold group-hover:text-accent">{l.h1}</span>
                                     <span className="mt-2 text-sm text-muted-foreground">{l.hubs.slice(0, 3).join(", ")}</span>
                                     <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-accent">
                                         Read the guide <ArrowRight className="h-4 w-4" />

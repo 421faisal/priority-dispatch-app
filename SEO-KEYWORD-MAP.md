@@ -25,6 +25,16 @@ and Google Keyword Planner before choosing new terms.
 
 | Keyword | Page |
 |---|---|
+| Midwest truck dispatcher, Midwest dispatch service | `/truck-dispatcher/midwest` |
+| Chicago / Illinois truck dispatcher | `/truck-dispatcher/illinois` |
+| Ohio, Columbus, Cincinnati truck dispatcher | `/truck-dispatcher/ohio` |
+| Indiana, Indianapolis truck dispatcher | `/truck-dispatcher/indiana` |
+| Michigan, Detroit truck dispatcher | `/truck-dispatcher/michigan` |
+| Missouri, Kansas City, St. Louis truck dispatcher | `/truck-dispatcher/missouri` |
+| East Coast truck dispatcher | `/truck-dispatcher/east-coast` |
+| Pennsylvania, Lehigh Valley, Harrisburg truck dispatcher | `/truck-dispatcher/pennsylvania` |
+| New Jersey, NJ port truck dispatcher | `/truck-dispatcher/new-jersey` |
+| North Carolina, Charlotte truck dispatcher | `/truck-dispatcher/north-carolina` |
 | truck dispatcher Florida, truck dispatcher Orlando, truck dispatch Kissimmee, local truck dispatcher | `/truck-dispatcher/florida` (+ Google Business Profile) |
 | truck dispatcher Texas, Houston / Dallas truck dispatcher | `/truck-dispatcher/texas` |
 | truck dispatcher Georgia, Atlanta truck dispatcher | `/truck-dispatcher/georgia` |
@@ -59,7 +69,7 @@ Answers start with a direct one- or two-sentence reply, then detail. Keep that p
 
 1. `sprinter van dispatch` service page (rate 10%; currently only on pricing and FAQ).
 2. `truck dispatcher vs freight broker` blog post.
-3. More state pages with real content: Illinois (Chicago), Ohio, Pennsylvania, Tennessee, North Carolina.
+3. More state pages with real content: Wisconsin, Minnesota, New York, Virginia, Tennessee.
 4. `best truck dispatch services` comparison post (honest, with criteria, includes Priority Dispatch).
 
 ## After every deploy
