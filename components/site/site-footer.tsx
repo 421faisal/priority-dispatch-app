@@ -35,7 +35,7 @@ export function SiteFooter() {
         <div className="flex flex-col items-start justify-between gap-4 rounded-md bg-primary-foreground/5 p-4 md:flex-row md:items-center md:p-5">
           <div>
             <div className="flex items-center gap-2">
-              <img src="/images/logo-priority-dispatch.png" alt="Priority Dispatch LLC" className="h-16 w-auto" />
+              <img src="/images/logo-priority-dispatch.webp" alt="Priority Dispatch LLC" width={64} height={64} className="h-16 w-auto" />
               <span className="text-sm font-semibold uppercase tracking-widest hidden sm:inline-block">Ready to Maximize Your Earnings?</span>
             </div>
             <p className="mt-1 text-xs opacity-80">Your road ahead.</p>
@@ -79,7 +79,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 py-10 md:grid-cols-4">
         <div className="space-y-3">
           <div className="flex items-center gap-2">
-            <img src="/images/logo-priority-dispatch.png" alt="Priority Dispatch LLC" className="h-14 w-auto" />
+            <img src="/images/logo-priority-dispatch.webp" alt="Priority Dispatch LLC" width={56} height={56} loading="lazy" className="h-14 w-auto" />
             <span className="text-sm font-semibold uppercase tracking-widest hidden sm:inline-block">Priority Dispatch LLC</span>
           </div>
           <p className="text-sm opacity-80">Your partner for speed, reliability, and results.</p>
@@ -90,6 +90,16 @@ export function SiteFooter() {
             <li>
               <a href="/services" className="hover:opacity-80">
                 Services
+              </a>
+            </li>
+            <li>
+              <a href="/owner-operator-dispatch" className="hover:opacity-80">
+                Owner-Operator Dispatch
+              </a>
+            </li>
+            <li>
+              <a href="/pricing" className="hover:opacity-80">
+                Pricing
               </a>
             </li>
             <li>

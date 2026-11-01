@@ -15,6 +15,7 @@ import {
     TrendingUp,
     Container,
 } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "Step Deck Dispatch Services | Priority Dispatch LLC",
@@ -252,6 +253,8 @@ export default function StepDeckDispatchPage() {
                     </Reveal>
                 </div>
             </section>
+
+            <ServiceExtras slug="step-deck-dispatch" />
 
             {/* CTA */}
             <section className="bg-primary text-primary-foreground py-20 md:py-28">

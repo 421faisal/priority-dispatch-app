@@ -2,6 +2,8 @@ interface BlogArticleSchemaProps {
   title: string
   description: string
   datePublished: string
+  /** Last real content update; defaults to datePublished */
+  dateModified?: string
   slug: string
   imageUrl?: string
 }
@@ -10,6 +12,7 @@ export function BlogArticleSchema({
   title,
   description,
   datePublished,
+  dateModified,
   slug,
   imageUrl = "/images/hero-truck.jpg",
 }: BlogArticleSchemaProps) {
@@ -19,7 +22,7 @@ export function BlogArticleSchema({
     headline: title,
     description: description,
     datePublished: datePublished,
-    dateModified: datePublished,
+    dateModified: dateModified ?? datePublished,
     author: {
       "@type": "Person",
       name: "Muhammad Faisal Bilal",

@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site/site-footer"
 import Reveal from "@/components/site/reveal"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, CheckCircle2, ShieldCheck, Building, FileText, Anchor } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "New Carrier Setup & MC Lease Services | Priority Dispatch LLC",
@@ -41,7 +42,7 @@ export default function NewCarrierSetupPage() {
             <section className="relative overflow-hidden bg-primary py-20 text-primary-foreground sm:py-32">
                 <div className="absolute inset-0 opacity-20">
                     <img 
-                        src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                        src="/images/dispatch-office-team.webp" 
                         alt="A team of dispatchers and logistics experts reviewing compliance documents in a corporate office."
                         className="h-full w-full object-cover"
                     />
@@ -72,8 +73,8 @@ export default function NewCarrierSetupPage() {
                         <Reveal>
                             <div className="relative aspect-square overflow-hidden rounded-2xl shadow-xl border border-border">
                                 <img 
-                                    src="https://images.pexels.com/photos/2862070/pexels-photo-2862070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                                    alt="A pristine commercial fleet driving confidently on the interstate, representing a legally compliant trucking company."
+                                    src="/images/blog/hero-trucking-company.webp" 
+                                    alt="Commercial trucks on the interstate, representing a legally compliant new trucking company."
                                     className="object-cover w-full h-full"
                                 />
                             </div>
@@ -133,6 +134,8 @@ export default function NewCarrierSetupPage() {
                     </div>
                 </div>
             </section>
+
+            <ServiceExtras slug="new-carrier-setup" />
 
             {/* CTA */}
             <section className="py-20 bg-accent text-accent-foreground text-center">

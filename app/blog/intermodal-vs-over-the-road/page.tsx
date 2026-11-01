@@ -36,8 +36,9 @@ export default function BlogPostIntermodal() {
             <SiteHeader />
             <BlogArticleSchema
                 title="Intermodal vs Over-the-Road Shipping in 2026"
-                description="Massive 2,600-word logistical analysis breaking down the deep economic, environmental, and operational realities separating 2026 Intermodal Drayage from traditional Over-the-Road (OTR) transit."
+                description="A logistical analysis breaking down the deep economic, environmental, and operational realities separating 2026 Intermodal Drayage from traditional Over-the-Road (OTR) transit."
                 datePublished="2026-03-03"
+                dateModified="2026-11-01"
                 slug="intermodal-vs-over-the-road"
                 imageUrl="/images/blog/hero-warehouse.jpg"
             />
@@ -72,8 +73,8 @@ export default function BlogPostIntermodal() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-freight-highway.jpg"
-                                alt="A direct physical comparison between the heavily structured steel rail-hub logistics ecosystem and the hyper-agile highway transport network operating in 2026."
+                                src="/images/blog/hero-freight-highway.webp"
+                                alt="A direct physical comparison between the heavily structured steel rail-hub logistics ecosystem and the agile highway transport network operating in 2026."
                                 className="object-cover w-full h-full"
                             />
                         </div>
@@ -97,7 +98,7 @@ export default function BlogPostIntermodal() {
                             </p>
                             
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
+                                <div className="top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
                                 <h3 className="font-bold text-2xl flex items-center gap-2 mb-4 text-foreground">
                                     <TrendingUp className="h-6 w-6 text-accent" />
                                     The OTR Advantage: Speed and Flexibility
@@ -157,20 +158,20 @@ export default function BlogPostIntermodal() {
                                     <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                     <span>
                                         <a href="/blog/sustainability-ev-trucks-future" className="text-foreground font-bold hover:text-accent transition-colors">The Total Reality of 2026 EV Freight</a> 
-                                        <br/><span className="text-sm text-muted-foreground">Why localized port drayage is absolutely technically the only highly viable sector for electric semi-trucks today.</span>
+                                        <br/><span className="text-sm text-muted-foreground">Why localized port drayage is technically the only highly viable sector for electric semi-trucks today.</span>
                                     </span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                     <span>
-                                        <a href="/blog/dot-cdl-crackdown-capacity-tightening" className="text-foreground font-bold hover:text-accent transition-colors">Profit From the Massive Port Driver Purge</a> 
-                                        <br/><span className="text-sm text-muted-foreground">How massive 2026 federal CDL audits destroyed cheap drayage labor, spiking port spot rates by 35%.</span>
+                                        <a href="/blog/dot-cdl-crackdown-capacity-tightening" className="text-foreground font-bold hover:text-accent transition-colors">Profit From the Large Port Driver Purge</a> 
+                                        <br/><span className="text-sm text-muted-foreground">How large 2026 federal CDL audits destroyed cheap drayage labor, spiking port spot rates by 35%.</span>
                                     </span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                     <span>
-                                        <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Elite "Mode-Agnostic" Priority Dispatch Strategies</a> 
+                                        <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Top "Mode-Agnostic" Priority Dispatch Strategies</a> 
                                         <br/><span className="text-sm text-muted-foreground">Partner fully with Priority Dispatch and explicitly force our AI systems to navigate complex port congestions.</span>
                                     </span>
                                 </li>

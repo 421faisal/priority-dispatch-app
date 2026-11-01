@@ -101,7 +101,7 @@ export default async function VerifyCertificatePage(props: { params: Promise<{ i
             <div className="relative bg-gradient-to-r from-primary to-primary/80 p-8 text-center text-white">
               <div className="mx-auto mb-4 h-20 w-20 overflow-hidden rounded-full bg-white p-3">
                 <img 
-                  src="/images/logo-priority-dispatch.png" 
+                  src="/images/logo-priority-dispatch.webp" 
                   alt="Priority Dispatch LLC" 
                   className="h-full w-full object-contain"
                 />

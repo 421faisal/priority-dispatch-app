@@ -47,6 +47,19 @@ const nextConfig = {
         destination: 'https://prioritydispatchllc.com/:path*',
         permanent: true,
       },
+      // Vercel's project address: search engines were indexing this copy instead
+      // of the real domain. Preview deployments use other hosts and are unaffected.
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'priority-dispatch-app.vercel.app',
+          },
+        ],
+        destination: 'https://prioritydispatchllc.com/:path*',
+        permanent: true,
+      },
       // Trailing slash redirect
       {
         source: '/:path+/',

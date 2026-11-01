@@ -51,7 +51,7 @@ export function HowWeFindLoads() {
           <Reveal delayMs={100}>
             <div className="rounded-xl overflow-hidden shadow-lg">
               <img
-                src="https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/images/blog/hero-dispatcher.webp"
                 alt="Truck dispatcher finding high-paying loads for owner operators"
                 loading="lazy"
                 decoding="async"

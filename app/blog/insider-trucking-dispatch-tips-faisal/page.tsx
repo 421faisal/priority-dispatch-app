@@ -38,6 +38,7 @@ export default function BlogPost() {
                 title="Insider Trucking Dispatch Tips from Faisal"
                 description=""
                 datePublished="2026-03-19"
+                dateModified="2026-11-01"
                 slug="insider-trucking-dispatch-tips-faisal"
                 imageUrl="/images/professional-dispatch-office-team-at-work.jpg"
             />
@@ -72,7 +73,7 @@ export default function BlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-dispatcher.jpg"
+                                src="/images/blog/hero-dispatcher.webp"
                                 alt="A freight dispatcher reviewing load boards and negotiating with brokers for maximum carrier revenue."
                                 className="object-cover w-full h-full"
                             />
@@ -82,7 +83,7 @@ export default function BlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Over the years of running Priority Dispatch LLC and dealing intimately with owner-operators, fleet managers, and mega-brokers, I have seen fortunes made and entirely lost. The trucking industry does not forgive ignorance. Here are the deepest, most unfiltered lessons I’ve learned from the front lines—tactics you won’t find in a basic CDL manual.
+                                Over the years of running Priority Dispatch LLC and dealing intimately with owner-operators, fleet managers, and mega-brokers, I have seen fortunes made and entirely lost. The trucking industry does not forgive ignorance. Here are the deepest, most lessons I’ve learned from the front lines—tactics you won’t find in a basic CDL manual.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
@@ -113,7 +114,7 @@ export default function BlogPost() {
                                 When the spot market collapses, fear takes over. I see owner-operators take loads paying $1.10 a mile just "to keep the wheels moving." <strong>This is mathematical suicide.</strong>
                             </p>
                             <p>
-                                Your truck has an absolute fixed Cost Per Mile (CPM) just to turn the ignition on—factoring in diesel, insurance, wear and tear, and IRS taxes. If your CPM is $1.35 and you take a load for $1.15, you are literally paying the broker $0.20 for the privilege of destroying your tires. You are better off sitting at the truck stop with the engine off than moving backwards into debt. Know your exact CPM down to the penny.
+                                Your truck has a fixed Cost Per Mile (CPM) just to turn the ignition on—factoring in diesel, insurance, wear and tear, and IRS taxes. If your CPM is $1.35 and you take a load for $1.15, you are literally paying the broker $0.20 for the privilege of destroying your tires. You are better off sitting at the truck stop with the engine off than moving backwards into debt. Know your exact CPM down to the penny.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3">
@@ -132,7 +133,7 @@ export default function BlogPost() {
                             <div className="my-8 rounded-2xl overflow-hidden border border-border shadow-md"
                                 style={{ background: "linear-gradient(120deg, #1e293b 0%, #0f172a 100%)", padding: "2rem", display: "flex", alignItems: "center", gap: "1.5rem" }}
                             >
-                                <img src="/images/blog/hero-freight-highway.jpg" alt="Trucks on a highway representing freight market dynamics" className="w-32 h-20 object-cover rounded-xl shrink-0" />
+                                <img src="/images/blog/hero-freight-highway.webp" alt="Trucks on a highway representing freight market dynamics" className="w-32 h-20 object-cover rounded-xl shrink-0" />
                                 <div className="text-white">
                                     <p className="font-bold text-lg text-blue-200">Spot Rate Intelligence</p>
                                     <p className="text-blue-300/80 text-sm">Real-time DAT and Truckstop data is your most powerful negotiation weapon. Never guess a lane rate.</p>
@@ -144,7 +145,7 @@ export default function BlogPost() {
                                 4. Factor Carefully: Recourse vs. Non-Recourse
                             </h2>
                             <p>
-                                Net 30 or Net 60 day payment terms from brokers will suffocate a new carrier's cash flow. You need diesel money today. This is why factoring companies exist—they buy your invoice for a ~2-3% fee and pay you within 24 hours. But there is a massive trap here.
+                                Net 30 or Net 60 day payment terms from brokers will suffocate a new carrier's cash flow. You need diesel money today. This is why factoring companies exist—they buy your invoice for a ~2-3% fee and pay you within 24 hours. But there is a large trap here.
                             </p>
                             <p>
                                 <strong>Recourse Factoring:</strong> If you sell an invoice to a factoring company, and the broker goes bankrupt 40 days later and doesn't pay the factoring company, the factoring company will come directly back to your bank account and withdraw the money. You carry all the risk. 
@@ -168,14 +169,14 @@ export default function BlogPost() {
                                 <ul className="list-disc pl-5 mt-0 space-y-2 text-sm">
                                     <li><strong>Direct Shipper Trust:</strong> Shippers want to see your trucks. A LinkedIn page showing your clean equipment and celebrating your safety record instantly builds trust.</li>
                                     <li><strong>Driver Recruitment:</strong> The best drivers don't look on Craigslist. They look on Instagram and TikTok to see how a company treats its drivers. Videos of your equipment and operations are your strongest recruitment tools.</li>
-                                    <li><strong>Broker Vetting Verification:</strong> Elite brokers will bypass your bid if your MC looks like a ghost entity. Having an official website (even a one-pager) validates that you are a legitimate business holding heavy investments in the industry.</li>
+                                    <li><strong>Broker Vetting Verification:</strong> Top brokers will bypass your bid if your MC looks like a ghost entity. Having an official website (even a one-pager) validates that you are a legitimate business holding heavy investments in the industry.</li>
                                 </ul>
                             </div>
 
                             <div className="my-8 rounded-2xl overflow-hidden border border-border shadow-md"
                                 style={{ background: "linear-gradient(120deg, #1a1a2e 0%, #16213e 100%)", padding: "2rem", display: "flex", alignItems: "center", gap: "1.5rem" }}
                             >
-                                <img src="/images/blog/hero-owner-operator.jpg" alt="Owner-operator truck driver" className="w-32 h-20 object-cover rounded-xl shrink-0" />
+                                <img src="/images/blog/hero-owner-operator.webp" alt="Owner-operator truck driver" className="w-32 h-20 object-cover rounded-xl shrink-0" />
                                 <div className="text-white">
                                     <p className="font-bold text-lg text-orange-200">Digital Footprint Matters</p>
                                     <p className="text-orange-300/80 text-sm">In 2026, your online presence is a filter tier-A brokers use to evaluate your legitimacy before awarding premium loads.</p>
@@ -256,7 +257,7 @@ export default function BlogPost() {
                                 This industry will chew you up if you operate purely on emotion and handshake agreements. You must run your truck like a Wall Street hedge fund. Protect your DOT score violently, negotiate relentlessly, and surround yourself with a back-office team that watches your blind spots.
                             </p>
                             <p>
-                                If you are tired of fighting these battles alone, let my team at <strong>Priority Dispatch LLC</strong> handle it. We vet the brokers, fight for your detention pay, and negotiate the highest absolute margins daily. We don't just find freight; we protect your business.
+                                If you are tired of fighting these battles alone, let my team at <strong>Priority Dispatch LLC</strong> handle it. We vet the brokers, fight for your detention pay, and negotiate the highest margins daily. We don't just find freight; we protect your business.
                             </p>
 
                         </Reveal>

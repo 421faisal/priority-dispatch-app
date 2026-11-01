@@ -15,6 +15,7 @@ import {
     TrendingUp,
     Zap,
 } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "Hotshot Dispatch Services | Priority Dispatch LLC",
@@ -252,6 +253,8 @@ export default function HotshotDispatchPage() {
                     </Reveal>
                 </div>
             </section>
+
+            <ServiceExtras slug="hotshot-dispatch" />
 
             {/* CTA */}
             <section className="bg-primary text-primary-foreground py-20 md:py-28">

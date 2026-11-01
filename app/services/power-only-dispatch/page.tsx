@@ -15,6 +15,7 @@ import {
     TrendingUp,
     Truck,
 } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "Power Only Dispatch Services | Priority Dispatch LLC",
@@ -252,6 +253,8 @@ export default function PowerOnlyDispatchPage() {
                     </Reveal>
                 </div>
             </section>
+
+            <ServiceExtras slug="power-only-dispatch" />
 
             {/* CTA */}
             <section className="bg-primary text-primary-foreground py-20 md:py-28">

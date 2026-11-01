@@ -7,7 +7,7 @@ export function About() {
         <Reveal delayMs={50}>
           <div>
             <img
-              src="/images/services/carrier-support.jpg"
+              src="/images/services/carrier-support.webp"
               alt="Dedicated support team assisting carriers"
               loading="lazy"
               decoding="async"

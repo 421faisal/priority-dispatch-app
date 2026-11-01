@@ -36,8 +36,9 @@ export default function BlogPostFuel() {
             <SiteHeader />
             <BlogArticleSchema
                 title="Maximizing Extreme Fuel Efficiency in 2026"
-                description="Massive 2,600-word engineering deep dive into incredibly advanced 2026 fuel mitigation strategies, including highly predictive topographic routing, synthetic HVO diesel metrics, and aggressive aerodynamic platooning."
+                description="An engineering deep dive into advanced 2026 fuel mitigation strategies, including highly predictive topographic routing, synthetic HVO diesel metrics, and aggressive aerodynamic platooning."
                 datePublished="2026-03-03"
+                dateModified="2026-11-01"
                 slug="maximizing-fuel-efficiency"
                 imageUrl="/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"
             />
@@ -72,8 +73,8 @@ export default function BlogPostFuel() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-freight-highway.jpg"
-                                alt="An incredibly aerodynamic modern semi-truck intensely optimizing ultimate fuel efficiency on a massive interstate long-haul route."
+                                src="/images/blog/hero-freight-highway.webp"
+                                alt="An aerodynamic modern semi-truck intensely optimizing complete fuel efficiency on a large interstate long-haul route."
                                 className="object-cover w-full h-full"
                             />
                         </div>
@@ -97,13 +98,13 @@ export default function BlogPostFuel() {
                             </p>
 
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
+                                <div className="top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
                                 <h3 className="font-bold text-2xl flex items-center gap-2 mb-4 text-foreground">
                                     <Fuel className="h-6 w-6 text-accent" />
                                     Synthetic HVO Diesels
                                 </h3>
                                 <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                                    Not all diesel is the same. Many elite carriers are switching to Hydrotreated Vegetable Oil (HVO) Renewable Diesel. Unlike early biodiesels, HVO is chemically identical to petroleum diesel but burns much cleaner.
+                                    Not all diesel is the same. Many top carriers are switching to Hydrotreated Vegetable Oil (HVO) Renewable Diesel. Unlike early biodiesels, HVO is chemically identical to petroleum diesel but burns much cleaner.
                                 </p>
                                 <p className="text-base text-muted-foreground leading-relaxed">
                                     HVO has a higher cetane rating (75+ compared to standard diesel's 40-50), which leads to more efficient combustion and less wear on your DPF filters. Carriers using HVO often see a 3% increase in baseline efficiency and lower maintenance costs over time.
@@ -115,7 +116,7 @@ export default function BlogPostFuel() {
                                 Eliminating Empty Miles
                             </h2>
                             <p>
-                                The most efficient mile is the one that's paid. "Deadhead" is the ultimate profit-killer in trucking. Driving empty to pick up a cheap backhaul can often cost more than the load is worth.
+                                The most efficient mile is the one that's paid. "Deadhead" is the complete profit-killer in trucking. Driving empty to pick up a cheap backhaul can often cost more than the load is worth.
                             </p>
                             <p>
                                 At <strong>Priority Dispatch LLC</strong>, we use data-driven routing to keep your trucks moving with high-value freight. We focus on "triangular routing," planning your tertiary loads before you even leave for your first drop. Keeping your deadhead ratio below 5% is the fastest way to raise your gross revenue.

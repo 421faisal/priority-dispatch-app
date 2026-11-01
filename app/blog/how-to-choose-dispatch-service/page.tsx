@@ -34,6 +34,7 @@ export default function BlogPostChooseDispatch() {
                 title="How to Choose the Best Truck Dispatch Service in 2026"
                 description="Don't fall for dispatching scams. Learn how to vet a truck dispatch service, what to look for in contracts, and how Priority Dispatch LLC sets the standard."
                 datePublished="2026-03-19"
+                dateModified="2026-11-01"
                 slug="how-to-choose-dispatch-service"
                 imageUrl="/images/blog/hero-dispatcher.jpg"
             />
@@ -68,7 +69,7 @@ export default function BlogPostChooseDispatch() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-dispatcher.jpg"
+                                src="/images/blog/hero-dispatcher.webp"
                                 alt="A professional logistics consultant reviewing load reports and carrier lane optimization."
                                 className="object-cover w-full h-full"
                             />
@@ -78,7 +79,7 @@ export default function BlogPostChooseDispatch() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The dispatching industry in 2026 has increasingly become a "Wild West." Between fly-by-night scam offices and offshore basement operators who disappear after booking your first sub-par load, choosing the wrong partner can bankrupt a small carrier in weeks. This comprehensive 2,500-word deep dive provides the elite vetting checklist you need to separate the genuine logistics professionals from the dangerous pretenders.
+                                The dispatching industry in 2026 has increasingly become a "Wild West." Between fly-by-night scam offices and offshore basement operators who disappear after booking your first sub-par load, choosing the wrong partner can bankrupt a small carrier in weeks. This deep dive provides the top vetting checklist you need to separate the genuine logistics professionals from the dangerous pretenders.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -89,7 +90,7 @@ export default function BlogPostChooseDispatch() {
                                 In 2026, the barrier to entry for claiming you run a "freight dispatching service" is terrifically low. It technically only requires a laptop and a monthly subscription to DAT or Truckstop. Consequently, thousands of offshore offices and untrained individuals are heavily marketing themselves as "U.S. Based Dispatch Services." 
                             </p>
                             <p>
-                                These operators frequently tempt carriers with incredibly low fees—often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
+                                These operators frequently tempt carriers with low fees—often 3% to 4% of gross payload. However, what they save you in upfront percentages, they completely obliterate in backend liability and lost revenue. They lack the institutional broker relationships, the advanced transportation management systems (TMS), and crucially, the legal standing to defend your carrier MC authority when a load inevitably goes wrong.
                             </p>
 
                             <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
@@ -97,10 +98,10 @@ export default function BlogPostChooseDispatch() {
                                 The U.S. Business Verification Rule
                             </h3>
                             <p>
-                                <strong>The Ultimate Vetting Rule:</strong> Before you sign a single document, always ask for their <strong>Employer Identification Number (EIN)</strong> and their physical, verifiable U.S. office address. 
+                                <strong>The Complete Vetting Rule:</strong> Before you sign a single document, always ask for their <strong>Employer Identification Number (EIN)</strong> and their physical, verifiable U.S. office address. 
                             </p>
                             <p>
-                                If the dispatcher cannot provide a verifiable U.S. business license, they cannot legally sign your carrier-broker packets on your behalf in a legally binding manner. This means if there is a massive freight claim, or if the broker refuses to pay for detention, the offshore dispatcher will simply stop answering their VoIP phone numbers, leaving you entirely exposed to the financial liability.
+                                If the dispatcher cannot provide a verifiable U.S. business license, they cannot legally sign your carrier-broker packets on your behalf in a legally binding manner. This means if there is a large freight claim, or if the broker refuses to pay for detention, the offshore dispatcher will simply stop answering their VoIP phone numbers, leaving you entirely exposed to the financial liability.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -113,21 +114,21 @@ export default function BlogPostChooseDispatch() {
 
                             <div className="grid md:grid-cols-2 gap-8 my-10">
                                 <div className="bg-card border border-border shadow-md rounded-2xl p-8 relative overflow-hidden group hover:border-accent transition-colors">
-                                    <div className="absolute top-0 right-0 w-16 h-16 bg-accent/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
+                                    <div className="top-0 right-0 w-16 h-16 bg-accent/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
                                     <DollarSign className="h-8 w-8 text-accent mb-4" />
                                     <h3 className="text-xl font-bold text-foreground mb-3">Percentage Model (Recommended)</h3>
                                     <p className="text-sm leading-relaxed mb-4">Usually ranges from 5% to 10% of gross load revenue. This is the industry gold standard for a very specific reason: <strong>Alignment of Incentives</strong>.</p>
                                     <ul className="text-sm space-y-2 mt-4 text-muted-foreground">
                                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" /> Inhibits lazy dispatching.</li>
-                                        <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" /> They fight for the absolute highest rate per mile, because a $3,000 load pays them more than a $2,000 load.</li>
+                                        <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" /> They fight for the highest rate per mile, because a $3,000 load pays them more than a $2,000 load.</li>
                                         <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" /> No revenue for you = no payment for them.</li>
                                     </ul>
                                 </div>
                                 <div className="bg-card border border-border shadow-md rounded-2xl p-8 relative overflow-hidden group hover:border-red-500/50 transition-colors">
-                                    <div className="absolute top-0 right-0 w-16 h-16 bg-red-500/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
+                                    <div className="top-0 right-0 w-16 h-16 bg-red-500/10 rounded-bl-[100px] -mr-2 -mt-2 transition-transform group-hover:scale-150 duration-500"></div>
                                     <FileWarning className="h-8 w-8 text-red-500 mb-4" />
                                     <h3 className="text-xl font-bold text-foreground mb-3">Flat Fee Model (Proceed with Caution)</h3>
-                                    <p className="text-sm leading-relaxed mb-4">Usually $200–$400 per week, per truck. While mathematically cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
+                                    <p className="text-sm leading-relaxed mb-4">Usually $200–$400 per week, per truck. While cheaper for high-frequency regional fleets moving 5+ short loads a week, it is psychologically flawed.</p>
                                     <ul className="text-sm space-y-2 mt-4 text-muted-foreground">
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> High risk of "Lazy Dispatching."</li>
                                         <li className="flex items-start gap-2"><ShieldAlert className="h-4 w-4 text-red-500 shrink-0 mt-0.5" /> The dispatcher gets paid $300 whether they book you a $4.00/mile load or a $1.50/mile load.</li>
@@ -137,7 +138,7 @@ export default function BlogPostChooseDispatch() {
                             </div>
                             
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, we strictly operate on a percentage model. We view ourselves as your true business partner. If we aren't generating massive gross revenue for your truck, we don't believe we deserve to be paid.
+                                At <strong>Priority Dispatch LLC</strong>, we strictly operate on a percentage model. We view ourselves as your true business partner. If we aren't generating large gross revenue for your truck, we don't believe we deserve to be paid.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -227,7 +228,7 @@ export default function BlogPostChooseDispatch() {
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
                                             <a href="/blog/what-is-freight-dispatching" className="text-foreground font-bold hover:text-accent transition-colors">What Is Freight Dispatching? The 2026 Masterclass</a> 
-                                            <br/><span className="text-sm text-muted-foreground">The ultimate guide explaining the psychology of negotiation and advanced Lane Circuit planning.</span>
+                                            <br/><span className="text-sm text-muted-foreground">The complete guide explaining the psychology of negotiation and advanced Lane Circuit planning.</span>
                                         </span>
                                     </li>
                                 </ul>

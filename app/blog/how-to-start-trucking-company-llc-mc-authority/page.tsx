@@ -35,9 +35,10 @@ export default function BlogPostStartCompany() {
         <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
             <SiteHeader />
             <BlogArticleSchema
-                title="The Ultimate A-to-Z Guide to Starting a Trucking Company (2026 Edition)"
-                description="A comprehensive, heavily detailed 3,000-word masterclass taking a completely new owner-operator from blank LLC paperwork to successfully routing their first fully permitted 80,000-lb Interstate freight load in 2026."
+                title="The Complete A-to-Z Guide to Starting a Trucking Company (2026 Edition)"
+                description="A step-by-step guide taking a completely new owner-operator from blank LLC paperwork to successfully routing their first fully permitted 80,000-lb Interstate freight load in 2026."
                 datePublished="2026-03-19"
+                dateModified="2026-11-01"
                 slug="how-to-start-trucking-company-llc-mc-authority"
                 imageUrl="/images/blog/hero-trucking-company.jpg"
             />
@@ -72,7 +73,7 @@ export default function BlogPostStartCompany() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-trucking-company.jpg"
+                                src="/images/blog/hero-trucking-company.webp"
                                 alt="Modern fleet of electric and diesel semi-trucks parked neatly at a logistics terminal, representing a highly successful mid-sized trucking startup."
                                 className="object-cover w-full h-full"
                             />

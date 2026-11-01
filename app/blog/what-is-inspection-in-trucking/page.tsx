@@ -72,7 +72,7 @@ export default function BlogPostTruckingInspection() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-dispatcher.jpg"
+                                src="/images/blog/hero-dispatcher.webp"
                                 alt="DOT inspection officer examining commercial truck for safety compliance"
                                 className="object-cover w-full h-full"
                             />

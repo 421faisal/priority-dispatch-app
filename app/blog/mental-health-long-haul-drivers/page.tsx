@@ -38,6 +38,7 @@ export default function BlogPostMentalHealth() {
                 title="Mental Health for Long-Haul Drivers: Surviving the Isolation"
                 description="A comprehensive analysis of the psychological realities of OTR truck driving, addressing the science of isolation, diet-induced neuro-inflammation, and modern mental health protocols for professional fleets."
                 datePublished="2026-03-19"
+                dateModified="2026-11-01"
                 slug="mental-health-long-haul-drivers"
                 imageUrl="/images/blog/hero-owner-operator.jpg"
             />
@@ -50,7 +51,7 @@ export default function BlogPostMentalHealth() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                Mental Health and the Long-Haul Driver: Surviving the Ultimate Isolation
+                                Mental Health and the Long-Haul Driver: Surviving the Complete Isolation
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">
@@ -72,7 +73,7 @@ export default function BlogPostMentalHealth() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-owner-operator.jpg"
+                                src="/images/blog/hero-owner-operator.webp"
                                 alt="A professional commercial truck driver taking a solitary moment of quiet peace inside their modern cab to maintain mental clarity during a grueling long-haul route."
                                 className="object-cover w-full h-full"
                             />
@@ -93,7 +94,7 @@ export default function BlogPostMentalHealth() {
                                 Chronic isolation is one of the hardest parts of being an OTR driver. Being away from family and friends for weeks at a time can lead to burnout and depression. It's not just "part of the job"—it's a factor that affects safety and long-term career satisfaction.
                             </p>
                             <p>
-                                <strong>The Priority Dispatch Approach:</strong> We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a massive difference in a driver's day.
+                                <strong>The Priority Dispatch Approach:</strong> We believe in the power of human connection. Our fleet managers are encouraged to check in with their drivers regularly, not just to talk about loads or deadlines, but to see how they are actually doing. Small gestures like a five-minute non-work call can make a large difference in a driver's day.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">

@@ -20,6 +20,7 @@ const nav = [
 
 const servicesDropdown = [
   { href: "/services", label: "All Services", rate: "" },
+  { href: "/owner-operator-dispatch", label: "Owner-Operator Dispatch", rate: "" },
   { href: "/services/dry-van-dispatch", label: "Dry Van Dispatch", rate: "$2.50-$3.50/mi" },
   { href: "/services/reefer-dispatch", label: "Reefer Dispatch", rate: "$2.80-$4.00/mi" },
   { href: "/services/flatbed-dispatch", label: "Flatbed Dispatch", rate: "$3.00-$5.00/mi" },
@@ -38,7 +39,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-primary/95 text-primary-foreground shadow-md backdrop-blur-sm border-b border-border/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:py-4">
         <Link href="/" className="flex shrink-0 items-center gap-3">
-          <img src="/images/logo-priority-dispatch.png" alt="Priority Dispatch LLC" className="h-[60px] md:h-[72px] lg:h-[80px] w-auto object-contain drop-shadow-sm transition-all" />
+          <img src="/images/logo-priority-dispatch.webp" alt="Priority Dispatch LLC" width={80} height={80} fetchPriority="high" className="h-[60px] md:h-[72px] lg:h-[80px] w-auto object-contain drop-shadow-sm transition-all" />
           <div className="hidden sm:flex flex-col ml-1">
             <span className="text-base md:text-lg lg:text-xl font-bold tracking-widest leading-none">PRIORITY DISPATCH</span>
             <span className="text-[10px] md:text-xs tracking-[0.25em] font-medium opacity-80 mt-1">LLC</span>

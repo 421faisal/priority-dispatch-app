@@ -73,7 +73,7 @@ export default function BondedCarrierBlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse.jpg"
+                                src="/images/blog/hero-warehouse.webp"
                                 alt="Bonded carrier truck at customs facility"
                                 className="object-cover w-full h-full"
                             />

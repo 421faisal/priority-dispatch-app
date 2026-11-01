@@ -73,7 +73,7 @@ export default function BlogPost() {
           <Reveal delayMs={100}>
             <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
               <img
-                src="/images/blog/load-boards-hero.jpg"
+                src="/images/blog/load-boards-hero.webp"
                 alt="Owner-operator reviewing a digital load board on a tablet in a truck cab"
                 className="object-cover w-full h-full"
               />
@@ -117,7 +117,7 @@ export default function BlogPost() {
             </h2>
             <div className="relative my-8 aspect-[21/9] overflow-hidden rounded-xl border border-border shadow-md">
               <img
-                src="/images/blog/rate-intelligence.jpg"
+                src="/images/blog/rate-intelligence.webp"
                 alt="Digital visualization of freight rate analytics and trends"
                 className="object-cover w-full h-full opacity-90 transition-opacity hover:opacity-100"
               />

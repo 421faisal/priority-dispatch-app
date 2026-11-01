@@ -31,9 +31,9 @@ export default function ContactPage() {
             <div className="bg-primary py-12 text-primary-foreground md:py-20 lg:py-24">
                 <div className="mx-auto max-w-4xl px-4 text-center">
                     <Reveal>
-                        <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl">Get in Touch</h1>
+                        <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl">Contact a Truck Dispatcher</h1>
                         <p className="mt-6 text-xl opacity-90">
-                            We are ready to handle your dispatching needs 24/7. Reach out today and start moving higher-paying loads.
+                            Talk to a dispatcher 24/7 at (689) 314-8347, or send a message below. Priority Dispatch LLC is based at 804 Brack St, Kissimmee, FL 34744, and dispatches owner-operators in all 48 states.
                         </p>
                     </Reveal>
                 </div>

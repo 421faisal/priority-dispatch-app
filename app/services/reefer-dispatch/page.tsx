@@ -15,6 +15,7 @@ import {
     TrendingUp,
     Thermometer,
 } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "Reefer Dispatch Services | Priority Dispatch LLC",
@@ -252,6 +253,8 @@ export default function ReeferDispatchPage() {
                     </Reveal>
                 </div>
             </section>
+
+            <ServiceExtras slug="reefer-dispatch" />
 
             {/* CTA */}
             <section className="bg-primary text-primary-foreground py-20 md:py-28">

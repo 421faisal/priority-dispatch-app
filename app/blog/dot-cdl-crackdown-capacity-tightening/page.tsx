@@ -36,8 +36,9 @@ export default function BlogPost() {
             <SiteHeader />
             <BlogArticleSchema
                 title="The 2026 Non-Domiciled CDL Crackdown and Capacity Tightening"
-                description="Comprehensive 2026 economic analysis detailing the catastrophic federal DMV audit of non-domiciled CDLs, and exactly how the resulting 200,000-driver shortage will trigger extreme spot market rate surges."
+                description="Comprehensive 2026 economic analysis detailing the serious federal DMV audit of non-domiciled CDLs, and exactly how the resulting 200,000-driver shortage will trigger extreme spot market rate surges."
                 datePublished="2026-03-12"
+                dateModified="2026-11-01"
                 slug="dot-cdl-crackdown-capacity-tightening"
                 imageUrl="/images/blog/hero-trucking-company.jpg"
             />
@@ -50,7 +51,7 @@ export default function BlogPost() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                The 2026 CDL Crackdown: The Ultimate Capacity Tightening Event
+                                The 2026 CDL Crackdown: The Complete Capacity Tightening Event
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">
@@ -72,8 +73,8 @@ export default function BlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-freight-highway.jpg"
-                                alt="Highway traffic heavily compressed at a weigh station, representing the catastrophic crunch in 2026 trucking capacity due to brutal regulatory shifts."
+                                src="/images/blog/hero-freight-highway.webp"
+                                alt="Highway traffic heavily compressed at a weigh station, representing the serious crunch in 2026 trucking capacity due to tough regulatory shifts."
                                 className="object-cover w-full h-full"
                             />
                         </div>
@@ -105,7 +106,7 @@ export default function BlogPost() {
                             </p>
 
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-red-500/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
+                                <div className="top-0 right-0 w-32 h-32 bg-red-500/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
                                 <h3 className="font-bold text-2xl flex items-center gap-2 mb-4 text-red-500">
                                     <FileWarning className="h-6 w-6" />
                                     Regional Impact: The "Hot Zones"
@@ -146,7 +147,7 @@ export default function BlogPost() {
                                 The Compliant Carrier Survival & Attack Protocol
                             </h2>
                             <p>
-                                Standing directly in front of this massive financial tsunami requires extreme operational discipline. If your firm possesses pristine, 100% legally domiciled operators, you possess an incredibly rare, highly weaponized asset. You must execute the following protocol:
+                                Standing directly in front of this large financial tsunami requires extreme operational discipline. If your firm possesses pristine, 100% legally domiciled operators, you possess a rare, highly weaponized asset. You must execute the following protocol:
                             </p>
                             
                             <ul className="space-y-6 my-8">
@@ -155,16 +156,16 @@ export default function BlogPost() {
                                     <div>
                                         <h3 className="font-bold text-lg text-foreground mb-1">Execute the Immediate "Pre-Audit" Defensive Scrub</h3>
                                         <p className="text-muted-foreground text-base">
-                                            Do not assume your drivers are perfectly compliant. You must aggressively pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your heavily guarded MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipment—even if the driver lied to you—your company faces an immediate, highly devastating "Out-of-Service" (OOS) federal mandate.
+                                            Do not assume your drivers are perfectly compliant. You must pull the Motor Vehicle Records (MVRs) via the federal specific CDLIS (Commercial Driver's License Information System) for every single operator under your MC Authority today. If the FMCSA Sentinel system detects a suspended driver operating your equipment—even if the driver lied to you—your company faces an immediate, highly serious "Out-of-Service" (OOS) federal mandate.
                                         </p>
                                     </div>
                                 </li>
                                 <li className="flex items-start gap-4">
                                     <div className="mt-1 bg-accent/20 text-accent font-bold rounded-full w-8 h-8 flex items-center justify-center shrink-0">2</div>
                                     <div>
-                                        <h3 className="font-bold text-lg text-foreground mb-1">Weaponize Your Elite Compliance</h3>
+                                        <h3 className="font-bold text-lg text-foreground mb-1">Use Your Clean Compliance Record</h3>
                                         <p className="text-muted-foreground text-base">
-                                            Compliance is no longer heavily viewed as a burdensome cost; in 2026, it is the absolute ultimate marketing weapon. Instruct your dispatchers to incredibly aggressively highlight your "100% US-Domiciled, Federally Verified" status when aggressively negotiating with massive brokers. Shippers are terrified of handing a high-value load to a driver only to have a Level 8 DOT scale violently confiscate the equipment at the state border due to a revoked license. They will gladly pay your truck a massive $500 premium simply for the mathematical guarantee of actual delivery.
+                                            Compliance is no longer heavily viewed as a burdensome cost; in 2026, it is the ultimate marketing weapon. Instruct your dispatchers to aggressively highlight your "100% US-Domiciled, Federally Verified" status when negotiating with large brokers. Shippers are terrified of handing a high-value load to a driver only to have a Level 8 DOT scale confiscate the equipment at the state border due to a revoked license. They will gladly pay your truck a large $500 premium simply for the mathematical guarantee of actual delivery.
                                         </p>
                                     </div>
                                 </li>
@@ -173,7 +174,7 @@ export default function BlogPost() {
                                     <div>
                                         <h3 className="font-bold text-lg text-foreground mb-1">Abandon Deflationary Contract Freight</h3>
                                         <p className="text-muted-foreground text-base">
-                                            If you are currently locked into a rigid $2.10/mile dedicated contract lane that you signed back in late 2025 during the market trough, you are actively hemorrhaging severe capital. Utilize your operational mobility. Shift your active assets violently toward the volatile, high-paying spot market or aggressively renegotiate your dedicated lanes utilizing the "Supply Shock" data as non-negotiable leverage.
+                                            If you are currently locked into a rigid $2.10/mile dedicated contract lane that you signed back in late 2025 during the market trough, you are actively hemorrhaging severe capital. Utilize your operational mobility. Shift your active assets toward the volatile, high-paying spot market or renegotiate your dedicated lanes utilizing the "Supply Shock" data as non-negotiable leverage.
                                         </p>
                                     </div>
                                 </li>
@@ -181,13 +182,13 @@ export default function BlogPost() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Fortune Fundamentally Favors the Compliant</h2>
                             <p>
-                                Regulatory shifts represent the ultimate, brutal "Great Filters" of the American trucking industry. Fleets that explicitly cut corners, exploited undocumented labor loopholes, and operated deeply in the bureaucratic shadows are being systematically and mathematically slaughtered by federal AI auditing engines in 2026. 
+                                Regulatory shifts represent the complete, tough "Great Filters" of the American trucking industry. Fleets that explicitly cut corners, exploited undocumented labor loopholes, and operated deeply in the bureaucratic shadows are being systematically and slaughtered by federal AI auditing engines in 2026. 
                             </p>
                             <p>
-                                However, for the fiercely clean, highly transparent independent owner-operator, this federally mandated purge represents the absolute single greatest wealth-generation event of the decade. The physical freight demand has not disappeared; only your cheap competition has vanished. The resulting profit margins will be absolutely historic.
+                                However, for the fiercely clean, highly transparent independent owner-operator, this federally mandated purge represents the single greatest wealth-generation event of the decade. The physical freight demand has not disappeared; only your cheap competition has vanished. The resulting profit margins will be historic.
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, we do not merely passively monitor the news; we actively utilize advanced geopolitical and regulatory analytics to proactively maneuver our carriers' physical assets directly into the path of massive rate spikes before the general market even comprehends what is happening. We actively exploit structural capacity vacuums to ensure our clients capture the absolute peak of the market curve. <a href="/contact" className="text-accent font-bold hover:underline">Connect with our executive dispatch division immediately</a>, ensure your authority is perfectly compliant, and allow us to position your fleet to violently capitalize on the Great 2026 Capacity Squeeze.
+                                At <strong>Priority Dispatch LLC</strong>, we do not merely passively monitor the news; we actively utilize advanced geopolitical and regulatory analytics to proactively maneuver our carriers' physical assets directly into the path of large rate spikes before the general market even comprehends what is happening. We actively exploit structural capacity vacuums to ensure our clients capture the peak of the market curve. <a href="/contact" className="text-accent font-bold hover:underline">Connect with our executive dispatch division immediately</a>, ensure your authority is perfectly compliant, and allow us to position your fleet to capitalize on the Great 2026 Capacity Squeeze.
                             </p>
 
                             {/* Internal Links */}

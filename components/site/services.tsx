@@ -1,22 +1,24 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Reveal from "@/components/site/reveal"
+import Link from "next/link"
+import { rates } from "@/lib/pricing"
 
 const items = [
   {
-    image: "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/services/dispatch.webp",
     title: "Truck Dispatching",
     desc: "Your truck dispatcher finds high-paying loads every day — for Reefers, Dry Vans, Box Trucks, and more. So you spend more time driving and less time searching.",
     bullets: ["Daily load opportunities", "Broker vetting", "Rate confirmations"],
   },
   {
-    image: "https://images.pexels.com/photos/6869648/pexels-photo-6869648.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/services/carrier-support.webp",
     title: "Carrier Support",
     desc: "You get real 24/7 support — not a voicemail. We handle calls, paperwork, and compliance. That means you can focus on what you do best: driving.",
     bullets: ["24/7 phone + email", "Carrier setup & paperwork", "Detention negotiation"],
   },
   {
-    image: "https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "/images/services/load-management.webp",
     title: "Load Management",
     desc: "We take care of the back-office so you don't have to. Invoicing, detention claims, POD audits — all handled by your freight dispatch team.",
     bullets: ["Clean invoicing", "POD & BOL audits", "Claims + collections"],
@@ -44,6 +46,8 @@ export function Services() {
                   <img
                     src={image}
                     alt={`${title} thumbnail`}
+                    width={800}
+                    height={800}
                     loading="lazy"
                     decoding="async"
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -68,9 +72,33 @@ export function Services() {
           ))}
         </div>
 
+        <div className="mt-10 text-center">
+          <h3 className="text-lg font-bold">Dispatch by equipment</h3>
+          <ul className="mt-4 flex flex-wrap justify-center gap-3">
+            {rates.filter((r) => r.href).map((r) => (
+              <li key={r.equipment}>
+                <Link
+                  href={r.href!}
+                  className="inline-flex rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold hover:border-accent hover:text-accent"
+                >
+                  {r.equipment} dispatch
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/owner-operator-dispatch"
+                className="inline-flex rounded-full border border-border bg-card px-4 py-2 text-sm font-semibold hover:border-accent hover:text-accent"
+              >
+                Owner-operator dispatch
+              </Link>
+            </li>
+          </ul>
+        </div>
+
         <Reveal className="mt-8 flex justify-center" delayMs={150}>
-          <a href="/contact">
-            <Button className="bg-accent text-accent-foreground hover:opacity-90">Contact Us for Custom Solutions</Button>
+          <a href="/services">
+            <Button className="bg-accent text-accent-foreground hover:opacity-90">See All Truck Dispatch Services</Button>
           </a>
         </Reveal>
       </div>

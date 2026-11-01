@@ -116,7 +116,7 @@ export default function FAQPage() {
                 <div className="mx-auto max-w-4xl px-4 py-14 text-center md:py-20">
                     <Reveal>
                         <h1 className="text-4xl font-extrabold tracking-tight md:text-5xl">
-                            Frequently Asked Questions
+                            Truck Dispatching FAQ
                         </h1>
                     </Reveal>
                     <Reveal delayMs={80}>

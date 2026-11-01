@@ -2,10 +2,10 @@ import type { Metadata } from "next"
 import { CareersClient } from "./careers-client"
 
 export const metadata: Metadata = {
-    title: "Careers at Priority Dispatch LLC | Freight Dispatcher & Sales Jobs",
+    title: "Careers at Priority Dispatch LLC | Dispatcher & Sales Jobs",
     description: "Join Priority Dispatch LLC. We're hiring Freight Dispatchers and Sales Agents worldwide. Remote and on-site positions available in Kissimmee, FL. Apply today.",
     openGraph: {
-        title: "Careers at Priority Dispatch LLC | Freight Dispatcher & Sales Jobs",
+        title: "Careers at Priority Dispatch LLC | Dispatcher & Sales Jobs",
         description: "Join Priority Dispatch LLC. We're hiring Freight Dispatchers and Sales Agents worldwide. Remote and on-site positions available.",
         url: "https://prioritydispatchllc.com/careers",
         siteName: "Priority Dispatch LLC",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         site: "@PriorityDispatch",
-        title: "Careers at Priority Dispatch LLC | Freight Dispatcher & Sales Jobs",
+        title: "Careers at Priority Dispatch LLC | Dispatcher & Sales Jobs",
         description: "Join Priority Dispatch LLC. Hiring Freight Dispatchers and Sales Agents worldwide.",
         images: ["/images/hero-truck.jpg"],
     },

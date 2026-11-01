@@ -73,7 +73,7 @@ export default function TWICCardBlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-freight-highway.jpg"
+                                src="/images/blog/hero-freight-highway.webp"
                                 alt="TWIC card for port access in trucking"
                                 className="object-cover w-full h-full"
                             />

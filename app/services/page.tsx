@@ -30,14 +30,14 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Truck Dispatch Services | Priority Dispatch LLC",
+    title: "Truck Dispatch Services: Dry Van, Reefer, Flatbed & More",
     description:
         "Full-service truck dispatching: load booking, rate negotiation, broker vetting, invoicing and 24/7 support for reefer, dry van, flatbed and box trucks.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/services",
     },
     openGraph: {
-        title: "Truck Dispatch Services | Priority Dispatch LLC",
+        title: "Truck Dispatch Services: Dry Van, Reefer, Flatbed & More",
         description: "Full-service truck dispatching for owner-operators in all 48 states.",
         url: "https://prioritydispatchllc.com/services",
         type: "website",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Truck Dispatch Services | Priority Dispatch LLC",
+        title: "Truck Dispatch Services: Dry Van, Reefer, Flatbed & More",
         description: "Full-service truck dispatching for owner-operators in all 48 states.",
     },
 }
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                                 Full-Service Dispatch
                             </span>
                             <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl leading-tight">
-                                Truck Dispatch Services for <span className="text-accent">Owner-Operators</span>
+                                Truck Dispatch Services for <span className="text-accent">Every Trailer Type</span>
                             </h1>
                             <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
                                 From load booking and rate negotiation to 24/7 support and back-office paperwork — we handle everything so you can focus entirely on driving profitably.

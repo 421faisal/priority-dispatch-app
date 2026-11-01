@@ -51,6 +51,9 @@ const jsonLd = {
   image: 'https://prioritydispatchllc.com/images/logo-priority-dispatch.png',
   description: 'USA truck dispatching company for owner-operators and small fleets in all 48 states. Dispatch fees from 4% of the gross load, paid after the broker pays, no contracts.',
   priceRange: '4%–10% of gross load',
+  legalName: 'Priority Dispatch LLC',
+  alternateName: 'Priority Dispatch LLC (Kissimmee, Florida)',
+  disambiguatingDescription: 'Truck dispatching service for owner-operators, based in Kissimmee, Florida. Not affiliated with Priority Dispatch Corp (emergency dispatch software) or other companies with similar names.',
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],

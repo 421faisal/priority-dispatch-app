@@ -175,7 +175,7 @@ export default function PricingPage() {
                                 Transparent Pricing
                             </span>
                             <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl leading-tight">
-                                Simple Dispatch Pricing. <span className="text-accent">No Hidden Fees.</span>
+                                Truck Dispatch Rates: <span className="text-accent">From 4%, No Hidden Fees</span>
                             </h1>
                             <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
                                 {pricingSentence}

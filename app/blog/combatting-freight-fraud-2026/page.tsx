@@ -38,6 +38,7 @@ export default function BlogPost() {
                 title="Combatting Freight Fraud and Double Brokering in 2026"
                 description="A comprehensive manifesto detailing the exact vetting protocols and defensive technologies needed to survive freight identity theft and double brokering."
                 datePublished="2026-03-12"
+                dateModified="2026-11-01"
                 slug="combatting-freight-fraud-2026"
                 imageUrl="/images/services/carrier-support.jpg"
             />
@@ -72,7 +73,7 @@ export default function BlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-warehouse.jpg"
+                                src="/images/blog/hero-warehouse.webp"
                                 alt="A secure logistics facility representing the defense against freight fraud, equipped with cyber-monitors and vetting stations."
                                 className="object-cover w-full h-full"
                             />
@@ -82,7 +83,7 @@ export default function BlogPost() {
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Freight fraud, identity theft, and the proliferation of "Chameleon Carriers" have exploded to horrifying record highs this year, draining an estimated <strong>$1.2 Billion annually</strong> from the global and domestic supply chain. In 2026, these criminals are no longer solitary actors in basements; they are highly sophisticated, multi-national cyber-syndicates utilizing AI voice clones, digital IP spoofing, and forged FMCSA data. This 2,500+ word manifesto dissects the anatomy of modern freight scams and provides the absolute zero-tolerance vetting protocols you must implement to protect your motor carrier authority and your livelihood.
+                                Freight fraud, identity theft, and the proliferation of "Chameleon Carriers" have exploded to horrifying record highs this year, draining an estimated <strong>$1.2 Billion annually</strong> from the global and domestic supply chain. In 2026, these criminals are no longer solitary actors in basements; they are highly sophisticated, multi-national cyber-syndicates utilizing AI voice clones, digital IP spoofing, and forged FMCSA data. This 2,500+ word manifesto dissects the anatomy of modern freight scams and provides the zero-tolerance vetting protocols you must implement to protect your motor carrier authority and your livelihood.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -96,7 +97,7 @@ export default function BlogPost() {
                                 <strong>Phase 1: Procurement.</strong> The fraudsters set up a legitimate-looking "Chameleon Carrier" MC authority (often buying aged, dormant MC numbers to bypass the 90-day probationary period enforced by brokers). They book a high-value load directly from a reputable Mega-Broker (like CH Robinson or TQL). By accepting a very low rate, they win the bid instantly.
                             </p>
                             <p>
-                                <strong>Phase 2: The Bait.</strong> The fraudster immediately turns around and re-posts that exact same freight on the DAT or Truckstop load boards, but this time posing as a "Broker." Crucially, they post the load at an incredibly high, highly attractive rate (e.g., $4.50/mile for a standard van load) to guarantee a desperate, legitimate owner-operator snatches it up quickly.
+                                <strong>Phase 2: The Bait.</strong> The fraudster immediately turns around and re-posts that exact same freight on the DAT or Truckstop load boards, but this time posing as a "Broker." Crucially, they post the load at a high, highly attractive rate (e.g., $4.50/mile for a standard van load) to guarantee a desperate, legitimate owner-operator snatches it up quickly.
                             </p>
                             <p>
                                 <strong>Phase 3: The Ghosting.</strong> The legitimate owner-operator arrives at the shipper, loads the freight, and delivers it safely using their own fuel, time, and wear-and-tear. The shipper pays the mega-broker, who legally pays the fraudster's "Chameleon Carrier." The fraudster immediately liquidates the bank account, deletes their VOIP phone numbers, and disappears into the ether.
@@ -110,7 +111,7 @@ export default function BlogPost() {
                                 AI Voice Deepfakes and Geo-Spoofing
                             </h2>
                             <p>
-                                The most terrifying technological leap in 2026 is the deployment of generative Artificial Intelligence in freight fraud. 
+                                The most serious technological leap in 2026 is the deployment of generative Artificial Intelligence in freight fraud. 
                             </p>
                             <p>
                                 Fraudsters are actively scraping audio clips from corporate LinkedIn videos, YouTube interviews, and podcast appearances made by prominent logistics executives and broker agents. They feed this audio into AI tools to create perfect <strong>Voice Deepfakes</strong>. 
@@ -142,7 +143,7 @@ export default function BlogPost() {
                                             <ShieldCheck className="h-5 w-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg text-foreground mb-1">1. Absolute Domain Authenticity Scrutiny</h3>
+                                            <h3 className="font-bold text-lg text-foreground mb-1">1. Domain Authenticity Scrutiny</h3>
                                             <p className="text-sm text-muted-foreground leading-relaxed">
                                                 We outright reject any communication, email, or packet arriving from a generic domain provider (@gmail.com, @yahoo.com, @aol.com). A verified, legitimate brokerage will ALWAYS utilize a registered corporate domain. Furthermore, we check the domain age via ICANN lookup. If a broker claims to have been in business for 8 years, but their website domain was registered 14 days ago in a foreign country, the load is immediately canceled.
                                             </p>
@@ -153,7 +154,7 @@ export default function BlogPost() {
                                             <Lock className="h-5 w-5 text-green-500" />
                                         </div>
                                         <div>
-                                            <h3 className="font-bold text-lg text-foreground mb-1">2. Factorability as the Ultimate Litmus Test</h3>
+                                            <h3 className="font-bold text-lg text-foreground mb-1">2. Factorability as the Complete Litmus Test</h3>
                                             <p className="text-sm text-muted-foreground leading-relaxed">
                                                 Before we permit an owner-operator to sign a rate confirmation, we run the broker's MC number through Tier-1 Non-Recourse factoring databases. If the factoring company refuses to approve the credit, or if their days-to-pay (DTP) average has recently slipped past 35 days, we kill the deal. If a multibillion-dollar bank won't trust the broker to pay, our carriers certainly will not either.
                                             </p>
@@ -178,10 +179,10 @@ export default function BlogPost() {
                                 The SAFE Freight Act & Legislative Relief
                             </h2>
                             <p>
-                                Recognizing the catastrophic bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing America’s Freight Economy). 
+                                Recognizing the serious bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing America’s Freight Economy). 
                             </p>
                             <p>
-                                This legislation aggressively seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and You’re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
+                                This legislation seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and You’re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
                             </p>
                             <p>
                                 However, federal laws iterate slowly, and carrier bankruptcies happen quickly. Until the FMCSA establishes a biometrically secured national dispatch portal, your only defense is aggressive offense.
@@ -189,7 +190,7 @@ export default function BlogPost() {
 
                             <h3 className="text-2xl font-bold mt-8 mb-4">Weaponizing the Bond Interpleader</h3>
                             <p>
-                                If you discover mid-transit that you have been double-brokered, the most potent weapon in 2026 is filing an immediate <strong>Bond Interpleader</strong>. By legally notifying the underlying, original shipper and the actual mega-broker holding the freight that a fraud occurred, <em>before</em> the delivery invoice is paid, you can place a catastrophic legal freeze on the funds.
+                                If you discover mid-transit that you have been double-brokered, the most potent weapon in 2026 is filing an immediate <strong>Bond Interpleader</strong>. By legally notifying the underlying, original shipper and the actual mega-broker holding the freight that a fraud occurred, <em>before</em> the delivery invoice is paid, you can place a serious legal freeze on the funds.
                             </p>
                             <p>
                                 The surety company is then forced to bypass the fraudulent "Chameleon Carrier" entity entirely, legally directing the compensation directly to the actual motor carrier whose wheels touched the pavement. It requires intense administrative work, but it is the strongest method for recovering stolen revenue.
@@ -197,13 +198,13 @@ export default function BlogPost() {
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Your Data is Your Armor</h2>
                             <p>
-                                In 2026, you cannot simply trust a friendly voice on the phone or a visually appealing PDF document. You must operate on the fundamental premise of <strong>"Zero Trust Logistics."</strong> Every entity is a threat until mathematically and legally proven otherwise.
+                                In 2026, you cannot simply trust a friendly voice on the phone or a visually appealing PDF document. You must operate on the fundamental premise of <strong>"Zero Trust Logistics."</strong> Every entity is a threat until and legally proven otherwise.
                             </p>
                             <p>
                                 As an independent owner-operator gripping a steering wheel for 11 hours a day, attempting to perform enterprise-grade cyber investigations on your smartphone between weigh stations is an impossible expectation. You require a dedicated human firewall.
                             </p>
                             <p>
-                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our absolute DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your uncompromising defensive line. We do not just secure premium freight—we guarantee that the invoice mathematically clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
+                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your defensive line. We do not just secure premium freight—we guarantee that the invoice clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
                             </p>
 
                             {/* Internal Links */}

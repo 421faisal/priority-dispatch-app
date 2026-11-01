@@ -38,6 +38,7 @@ export default function BlogPostOwnerOperator() {
                 title="Owner-Operator Success: How to Maximize Your Revenue in 2026"
                 description="Discover strategic tips for owner-operators to increase earnings. Learn about lane planning, equipment optimization, and why professional dispatching is the key to profit."
                 datePublished="2026-03-19"
+                dateModified="2026-11-01"
                 slug="owner-operator-guide"
                 imageUrl="/images/blog/hero-owner-operator.jpg"
             />
@@ -72,7 +73,7 @@ export default function BlogPostOwnerOperator() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-owner-operator.jpg"
+                                src="/images/blog/hero-owner-operator.webp"
                                 alt="A successful owner-operator independent truck driver managing his business with digital tools in 2026."
                                 className="object-cover w-full h-full"
                             />
@@ -102,7 +103,7 @@ export default function BlogPostOwnerOperator() {
                                     Tracking Your True Break-Even Point
                                 </h3>
                                 <p className="text-base text-muted-foreground mb-4">
-                                    You cannot profit if you do not know exactly what it costs your truck to move one mile empty. Your break-even point is the absolute minimum rate per mile you can accept to keep the business alive without taking a loss.
+                                    You cannot profit if you do not know exactly what it costs your truck to move one mile empty. Your break-even point is the minimum rate per mile you can accept to keep the business alive without taking a loss.
                                 </p>
                                 <ul className="text-base space-y-2">
                                     <li><strong>Fixed Costs:</strong> Truck payments, Trailer payments, Insurance premiums, Heavy Vehicle Use Tax (HVUT/2290), Parking fees, ELD subscriptions.</li>
@@ -122,7 +123,7 @@ export default function BlogPostOwnerOperator() {
                                 How do you consistently book loads above your break-even point in a volatile market? By ignoring the "A to B" mindset and embracing the <strong>Triangulation Strategy</strong>.
                             </p>
                             <p>
-                                Over 60% of new owner-operators fail in their first 18 months because they chase the absolutely highest inbound spot rate without calculating the outbound exit. If you book an incredible $4.50/mile load plunging deep into southern Florida (Miami/Homestead), you will feel like a genius"”until you realize there is absolutely zero outbound freight to extract you. You will be forced to deadhead 350 miles back up to Jacksonville or Atlanta, mathematically destroying the profit you made on the inbound trip.
+                                Over 60% of new owner-operators fail in their first 18 months because they chase the highest inbound spot rate without calculating the outbound exit. If you book an incredible $4.50/mile load plunging deep into southern Florida (Miami/Homestead), you will feel like a genius"”until you realize there is zero outbound freight to extract you. You will be forced to deadhead 350 miles back up to Jacksonville or Atlanta, destroying the profit you made on the inbound trip.
                             </p>
                             <p>
                                 A master owner-operator, supported by a professional dispatch team, creates regional <em>Circuits</em>. Running the Midwest Triangle (Chicago → Columbus → Indianapolis → Chicago) might only yield consecutive $2.75/mile loads, but hitting that average consistently, with zero deadhead across a 3,000-mile week, will radically out-earn the driver chasing single boom-or-bust cross-country loads.
@@ -147,7 +148,7 @@ export default function BlogPostOwnerOperator() {
                                 Resale Value & The Digital Maintenance Passport
                             </h2>
                             <p>
-                                With the looming EPA "Clean Trucks Plan" regulations going fully active in 2027, the value of robust, well-maintained 2020"“2026 internal combustion trucks is experiencing a massive spike on the secondary market. Top owner-operators are no longer relying on crumpled paper receipts in the glovebox for maintenance records.
+                                With the looming EPA "Clean Trucks Plan" regulations going fully active in 2027, the value of robust, well-maintained 2020"“2026 internal combustion trucks is experiencing a large spike on the secondary market. Top owner-operators are no longer relying on crumpled paper receipts in the glovebox for maintenance records.
                             </p>
                             <p>
                                 They are maintaining strict <strong>Digital Maintenance Passports</strong>. By utilizing cloud-app software synced directly with the truck's ECM port, every preventative PM service, every oil viscosity test, and every DPF cleaning is actively logged via sensors. When it is time to upgrade or expand to a second unit, having a verifiable, blockchain-secured history of your maintenance adds an immediate 15% to 20% to the truck's resale value compared to a truck with zero verifiable history.
@@ -172,10 +173,10 @@ export default function BlogPostOwnerOperator() {
                                 Tax Havens & Corporate Structure for the Mobile Business
                             </h2>
                             <p>
-                                An independent trucker operates a uniquely geographically un-tethered business. Where your LLC is legally formed matters significantly more than the physical address where you sleep. In 2026, incredibly savvy owner-operators are actively bypassing high-tax states (like California or New York) by leveraging structurally isolated <strong>S-Corp entities registered in tax-friendly havens</strong> like Wyoming, Nevada, or South Dakota. 
+                                An independent trucker operates a uniquely geographically un-tethered business. Where your LLC is legally formed matters significantly more than the physical address where you sleep. In 2026, savvy owner-operators are actively bypassing high-tax states (like California or New York) by leveraging structurally isolated <strong>S-Corp entities registered in tax-friendly havens</strong> like Wyoming, Nevada, or South Dakota. 
                             </p>
                             <p>
-                                The massive advantage of an S-Corp election is the ability to fiercely split your income. By paying yourself a W-2 "Reasonable Salary" for the physical labor of driving, and taking the remaining net business profit as pure "Shareholder Distributions," you completely legally bypass the crippling 15.3% Self-Employment (Social Security and Medicare) tax on the distributed portion. For an owner-operator netting $120,000 a year, this single structural maneuver routinely saves upwards of $12,000 to $15,000 annually in surrendered tax.
+                                The large advantage of an S-Corp election is the ability to fiercely split your income. By paying yourself a W-2 "Reasonable Salary" for the physical labor of driving, and taking the remaining net business profit as pure "Shareholder Distributions," you completely legally bypass the crippling 15.3% Self-Employment (Social Security and Medicare) tax on the distributed portion. For an owner-operator netting $120,000 a year, this single structural maneuver routinely saves upwards of $12,000 to $15,000 annually in surrendered tax.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Scale Your Empire</h2>
@@ -183,7 +184,7 @@ export default function BlogPostOwnerOperator() {
                                 You cannot grow from 1 truck to a 3-truck micro-fleet if you are completely exhausted from driving 11 hours and then spending 3 hours fighting brokers for $0.20 extra a mile while trying to fill out carrier packets on your steering wheel.
                             </p>
                             <p>
-                                Making the crucial jump from a single unit to a multi-truck operation requires an iron-clad back-office infrastructure. A professional truck dispatch agency provides exactly that"”the massive negotiation leverage, the factoring integration, the lane analytics, and the 24/7 crisis support of a 50-truck corporate fleet, available at the low fractional cost of a single-digit percentage per load.
+                                Making the crucial jump from a single unit to a multi-truck operation requires an iron-clad back-office infrastructure. A professional truck dispatch agency provides exactly that"”the large negotiation leverage, the factoring integration, the lane analytics, and the 24/7 crisis support of a 50-truck corporate fleet, available at the low fractional cost of a single-digit percentage per load.
                             </p>
                             <p>
                                 <strong>Priority Dispatch LLC</strong> is your committed partner in radical growth. We don't want you to just survive the volatile spot market; we want you to conquer it and build an empire. <a href="/contact" className="text-accent font-bold hover:underline">Connect with us immediately today</a>, hand off the chaotic backend administrative war, and let's strictly focus on driving unparalleled profitability straight into your bank account.
@@ -200,14 +201,14 @@ export default function BlogPostOwnerOperator() {
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
                                             <a href="/carrier-setup" className="text-foreground font-bold hover:text-accent transition-colors">Carrier Setup "” Join Priority Dispatch LLC in 24 Hours</a> 
-                                            <br/><span className="text-sm text-muted-foreground">The absolutely fastest path to onboard your MC authority and start hauling premium spot-market freight.</span>
+                                            <br/><span className="text-sm text-muted-foreground">The fastest path to onboard your MC authority and start hauling premium spot-market freight.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
                                             <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Our Dispatch Services "” What We Do for You</a> 
-                                            <br/><span className="text-sm text-muted-foreground">From aggressively negotiating Dry Van rates to managing complex Reefer temp-control contracts, see exactly how we operate.</span>
+                                            <br/><span className="text-sm text-muted-foreground">From negotiating Dry Van rates to managing complex Reefer temp-control contracts, see exactly how we operate.</span>
                                         </span>
                                     </li>
                                     <li className="flex items-start gap-2">

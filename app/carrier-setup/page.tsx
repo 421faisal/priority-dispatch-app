@@ -30,9 +30,9 @@ export default function CarrierSetupPage() {
             <main className="flex-1">
                 <section className="bg-primary py-12 text-primary-foreground md:py-20">
                     <div className="mx-auto max-w-4xl px-4 text-center">
-                        <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">Carrier Setup</h1>
+                        <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">Start Dispatching: Carrier Setup</h1>
                         <p className="mt-4 text-lg text-primary-foreground/80">
-                            Join Priority Dispatch LLC. Upload your documents securely and let&apos;s get you loaded.
+                            Send your MC authority, W-9 and certificate of insurance securely. We set up your carrier packets and can book your first load within 24 to 48 hours.
                         </p>
                     </div>
                 </section>

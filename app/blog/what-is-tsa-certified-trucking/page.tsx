@@ -69,7 +69,7 @@ export default function TSACertifiedBlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-autonomous-truck.jpg"
+                                src="/images/blog/hero-autonomous-truck.webp"
                                 alt="TSA certified trucking for air cargo"
                                 className="object-cover w-full h-full"
                             />

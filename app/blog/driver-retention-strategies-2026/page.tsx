@@ -38,6 +38,7 @@ export default function BlogPostRetention() {
                 title="Driver Retention Strategies for 2026 Fleets"
                 description="A comprehensive analysis detailing algorithmic retention models, Profit-Share compensation, and psychological fleet infrastructure in 2026 trucking."
                 datePublished="2026-03-03"
+                dateModified="2026-11-01"
                 slug="driver-retention-strategies-2026"
                 imageUrl="/images/blog/hero-owner-operator.jpg"
             />
@@ -50,7 +51,7 @@ export default function BlogPostRetention() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                The Driver Shortage is a Myth: Massive Retention Strategies for 2026
+                                The Driver Shortage is a Myth: Large Retention Strategies for 2026
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">
@@ -72,7 +73,7 @@ export default function BlogPostRetention() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
                             <img
-                                src="/images/blog/hero-owner-operator.jpg"
+                                src="/images/blog/hero-owner-operator.webp"
                                 alt="A highly respected professional truck driver sitting confidently in the cab of an advanced 2026 commercial vehicle."
                                 className="object-cover w-full h-full"
                             />

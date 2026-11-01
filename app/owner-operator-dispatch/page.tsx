@@ -1,98 +1,112 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { SiteHeader } from "@/components/site/site-header"
 import { SiteFooter } from "@/components/site/site-footer"
 import { Button } from "@/components/ui/button"
 import Reveal from "@/components/site/reveal"
-import { Truck, CheckCircle2, PhoneCall, ArrowRight, Clock, DollarSign, Shield, Headset } from "lucide-react"
+import { CheckCircle2, PhoneCall, ArrowRight, X } from "lucide-react"
+import { rates, pricingSentence } from "@/lib/pricing"
+
+const title = "Dispatch Service for Owner-Operators & One-Truck Carriers"
+const description =
+    "Independent truck dispatcher for owner-operators with one truck or a new MC authority. Loads, rates, broker checks and paperwork from 4% of gross, no contract."
+const url = "https://prioritydispatchllc.com/owner-operator-dispatch"
 
 export const metadata: Metadata = {
-    title: "Owner-Operator Dispatch Services | Priority Dispatch LLC",
-    description: "Dispatch for owner-operators: loads booked, rates negotiated, brokers vetted and paperwork handled. Fee: 5-10% of the load. Based in Kissimmee, FL.",
-    alternates: {
-        canonical: "https://prioritydispatchllc.com/owner-operator-dispatch",
-    },
-    openGraph: {
-        title: "Owner-Operator Dispatch Services | Priority Dispatch LLC",
-        description: "Dispatch for owner-operators: loads booked, rates negotiated, brokers vetted and paperwork handled.",
-        url: "https://prioritydispatchllc.com/owner-operator-dispatch",
-        type: "website",
-        images: ["/images/hero-truck.jpg"],
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Owner-Operator Dispatch Services | Priority Dispatch LLC",
-        description: "Dispatch for owner-operators: loads booked, rates negotiated, brokers vetted and paperwork handled.",
-    },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "website", images: ["/images/hero-truck.jpg"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/images/hero-truck.jpg"] },
 }
 
-const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Truck Dispatching for Owner-Operators",
-    provider: {
-        "@type": "LocalBusiness",
-        name: "Priority Dispatch LLC",
-        address: {
-            "@type": "PostalAddress",
-            streetAddress: "804 Brack St",
-            addressLocality: "Kissimmee",
-            addressRegion: "FL",
-            postalCode: "34744",
-            addressCountry: "US"
-        },
-        telephone: "+16893148347"
+const faqs = [
+    {
+        q: "Do I need a dispatcher if I only have one truck?",
+        a: "You do not need one, but most single-truck owner-operators find it hard to drive 11 hours and also search load boards, call brokers, check credit and chase invoices. A dispatcher does that work for a percentage of the load, so you only pay when you earn.",
     },
-    areaServed: "United States",
-    description: "Full-service truck dispatching for owner-operators: load booking, rate negotiation, broker vetting, and back-office paperwork."
-}
-
-const dailyTasks = [
-    "Find loads that match your lanes and equipment",
-    "Vet each broker's credit and payment history before booking",
-    "Negotiate the rate to maximize your revenue per mile",
-    "Manage paperwork from rate confirmation to proof of delivery"
+    {
+        q: "Can you dispatch a new MC authority?",
+        a: "Yes. Many brokers will not book a carrier whose authority is younger than 30 to 90 days, so we focus on brokers and load types that accept new authorities, build your carrier packets and help you grow a payment history.",
+    },
+    {
+        q: "What is an independent truck dispatcher?",
+        a: "An independent truck dispatcher is a dispatcher or dispatch company that works for the carrier, not for a broker or shipper. Priority Dispatch is independent: we work under your MC authority, for your interests, and you approve every load.",
+    },
+    {
+        q: "Will you force me to take loads?",
+        a: "No. We never force dispatch. We send you the load details and rate, and you decide. You can also book your own loads, and you only pay our fee on loads we book.",
+    },
+    {
+        q: "How much does dispatching cost for an owner-operator?",
+        a: pricingSentence,
+    },
 ]
 
-const equipmentTypes = [
-    "Reefers (refrigerated trailers)",
-    "Dry Vans",
-    "Flatbeds & Step Decks",
-    "Box Trucks",
-    "Hotshots"
+const schema = [
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        name: "Dispatch service for owner-operators",
+        serviceType: "Truck dispatching for owner-operators",
+        url,
+        description,
+        provider: { "@type": "LocalBusiness", name: "Priority Dispatch LLC", url: "https://prioritydispatchllc.com", telephone: "+16893148347" },
+        areaServed: { "@type": "Country", name: "United States" },
+        audience: { "@type": "BusinessAudience", audienceType: "Owner-operators and one-truck carriers" },
+    },
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+    },
+]
+
+const dailyTasks = [
+    "Search DAT, Truckstop and our broker contacts for loads on your lanes",
+    "Check each broker's authority, credit and payment history before booking",
+    "Negotiate the rate, detention and layover terms in writing",
+    "Send carrier packets and rate confirmations, and handle check calls",
+    "Plan your next load before you deliver, so you do not sit empty",
+    "Send invoices and follow up until you are paid",
+]
+
+const compare = [
+    ["Time on the phone with brokers", "Hours every day", "Done for you"],
+    ["Broker credit checks", "Only if you remember", "Every load"],
+    ["Rate negotiation", "When you have time", "On every load"],
+    ["Next load planned before delivery", "Often not", "Yes"],
+    ["Invoicing and follow-up", "Evenings and weekends", "Done for you"],
+    ["Cost", "Your time", "From 4% of the gross load"],
 ]
 
 export default function OwnerOperatorDispatchPage() {
     return (
         <main>
             <SiteHeader />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
-            />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-            {/* Hero Section */}
             <section className="relative overflow-hidden bg-primary text-primary-foreground">
-                <div className="absolute inset-0 opacity-10"
-                    style={{ backgroundImage: "radial-gradient(circle at 25% 50%, #ff6700 0%, transparent 60%), radial-gradient(circle at 75% 50%, #0055a5 0%, transparent 60%)" }}
-                />
                 <div className="relative mx-auto max-w-6xl px-4 py-20 md:py-28">
                     <Reveal>
                         <div className="mx-auto max-w-3xl text-center">
-                            <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl leading-tight">
-                                Dispatch Services for <span className="text-accent">Owner-Operators</span>
+                            <h1 className="text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
+                                Dispatch Service for <span className="text-accent">Owner-Operators</span> and One-Truck Carriers
                             </h1>
-                            <p className="mx-auto mt-6 max-w-2xl text-lg opacity-90 leading-relaxed">
-                                Priority Dispatch LLC is a truck dispatching company for owner-operators and small fleets. Your dedicated dispatcher searches load boards and broker networks, negotiates rates, sends rate confirmations and handles invoicing, so you spend your time driving instead of calling brokers.
+                            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed opacity-90">
+                                Priority Dispatch is an independent truck dispatcher for owner-operators who run their own truck,
+                                including new MC authorities. Your dedicated dispatcher finds and negotiates loads, checks every
+                                broker and handles the paperwork, from 4% of the gross load, with no contract and no setup fee.
                             </p>
                             <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                                 <a href="/carrier-setup">
-                                    <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg shadow-accent/25 text-base font-bold px-8">
-                                        Request a Free Dispatch Quote
+                                    <Button size="lg" className="bg-accent px-8 text-base font-bold text-accent-foreground shadow-lg hover:bg-accent/90">
+                                        Get a Dedicated Dispatcher
                                         <ArrowRight className="ml-2 h-5 w-5" />
                                     </Button>
                                 </a>
                                 <a href="tel:+16893148347">
-                                    <Button size="lg" variant="outline" className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors text-base px-8">
+                                    <Button size="lg" variant="outline" className="border-2 border-primary-foreground bg-transparent px-8 text-base text-primary-foreground hover:bg-primary-foreground hover:text-primary">
                                         <PhoneCall className="mr-2 h-5 w-5" />
                                         (+1) 689-314-8347
                                     </Button>
@@ -103,196 +117,187 @@ export default function OwnerOperatorDispatchPage() {
                 </div>
             </section>
 
-            {/* What We Do Section */}
-            <section className="bg-background py-20 md:py-28">
-                <div className="mx-auto max-w-4xl px-4">
-                    <Reveal>
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
-                                What does your dispatcher do every day?
-                            </h2>
-                        </div>
-                    </Reveal>
-                    <Reveal delayMs={100}>
-                        <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
-                            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                                Your dispatcher finds loads that match your lanes and equipment, vets each broker's credit and payment history before booking, negotiates the rate, and manages paperwork from rate confirmation to proof of delivery. You always make the final decision on every load. We never force dispatch.
-                            </p>
-                            <ul className="space-y-3">
-                                {dailyTasks.map((task) => (
-                                    <li key={task} className="flex items-start gap-3">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-0.5" />
-                                        <span className="text-base">{task}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </Reveal>
-                </div>
-            </section>
-
-            {/* Pricing Section */}
-            <section className="bg-muted py-20 md:py-28">
-                <div className="mx-auto max-w-4xl px-4">
-                    <Reveal>
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
-                                How much does a truck dispatcher cost?
-                            </h2>
-                        </div>
-                    </Reveal>
-                    <Reveal delayMs={100}>
-                        <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
-                            <div className="flex items-start gap-4 mb-6">
-                                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                                    <DollarSign className="h-6 w-6" />
-                                </div>
-                                <div>
-                                    <p className="text-lg leading-relaxed mb-4">
-                                        Most truck dispatchers charge a percentage of gross load revenue, commonly 5–10%. Priority Dispatch LLC charges a competitive percentage of each delivered load. There are no monthly fees.
-                                    </p>
-                                    <p className="text-base text-muted-foreground">
-                                        <strong>Contract terms:</strong> 30-day written notice for cancellation. No lock-in contracts. You can cancel anytime with proper notice.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </Reveal>
-                </div>
-            </section>
-
-            {/* Who Is This For Section */}
-            <section className="bg-background py-20 md:py-28">
-                <div className="mx-auto max-w-4xl px-4">
-                    <Reveal>
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
-                                Who is this for?
-                            </h2>
-                        </div>
-                    </Reveal>
-                    <Reveal delayMs={100}>
-                        <div className="rounded-2xl border border-border bg-card p-8 shadow-sm">
-                            <p className="text-lg leading-relaxed mb-6">
-                                Owner-operators running the following equipment, and new carriers who just received their MC authority and need help building broker relationships:
-                            </p>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {equipmentTypes.map((equipment) => (
-                                    <div key={equipment} className="flex items-center gap-3 p-4 rounded-lg bg-muted">
-                                        <Truck className="h-5 w-5 text-accent shrink-0" />
-                                        <span className="font-medium">{equipment}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    </Reveal>
-                </div>
-            </section>
-
-            {/* Benefits Grid */}
-            <section className="bg-muted py-20 md:py-28">
-                <div className="mx-auto max-w-6xl px-4">
-                    <Reveal>
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
-                                Why Choose Priority Dispatch LLC?
-                            </h2>
-                        </div>
-                    </Reveal>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <Reveal delayMs={0}>
-                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm text-center">
-                                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                                    <Clock className="h-7 w-7" />
-                                </div>
-                                <h3 className="text-xl font-bold mb-3">24/7 Support</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Round-the-clock assistance for breakdowns, detention disputes, and emergencies.
-                                </p>
-                            </div>
-                        </Reveal>
-                        <Reveal delayMs={100}>
-                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm text-center">
-                                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                                    <Shield className="h-7 w-7" />
-                                </div>
-                                <h3 className="text-xl font-bold mb-3">Broker Vetting</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    Every broker is credit-checked and verified before we book any load.
-                                </p>
-                            </div>
-                        </Reveal>
-                        <Reveal delayMs={200}>
-                            <div className="rounded-2xl border border-border bg-card p-6 shadow-sm text-center">
-                                <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                                    <Headset className="h-7 w-7" />
-                                </div>
-                                <h3 className="text-xl font-bold mb-3">Dedicated Dispatcher</h3>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
-                                    One point of contact who learns your lanes, preferences, and revenue goals.
-                                </p>
-                            </div>
-                        </Reveal>
+            <section className="bg-background py-16 md:py-24">
+                <div className="mx-auto grid max-w-5xl gap-10 px-4 md:grid-cols-2">
+                    <div>
+                        <h2 className="text-3xl font-extrabold tracking-tight">Who this is for</h2>
+                        <ul className="mt-6 space-y-4">
+                            {[
+                                ["Owner-operators with one truck", "You drive, we run the office: loads, brokers, paperwork and invoices."],
+                                ["New MC authorities", "We target brokers that accept new authorities and help you build a payment history in your first 90 days."],
+                                ["Drivers leaving a lease", "Going independent with your own authority? We help you replace the freight your carrier used to give you."],
+                                ["Small fleets of 2 to 5 trucks", "One dispatcher plans all your trucks together, with negotiable fleet rates."],
+                            ].map(([h, p]) => (
+                                <li key={h} className="flex items-start gap-3">
+                                    <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-accent" />
+                                    <span>
+                                        <strong className="block">{h}</strong>
+                                        <span className="text-muted-foreground">{p}</span>
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-extrabold tracking-tight">What your dispatcher does every day</h2>
+                        <ul className="mt-6 space-y-3">
+                            {dailyTasks.map((task) => (
+                                <li key={task} className="flex items-start gap-3">
+                                    <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                                    <span>{task}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <p className="mt-6 text-sm text-muted-foreground">You approve every load. We never force dispatch.</p>
                     </div>
                 </div>
             </section>
 
-            {/* How to Get Started */}
-            <section className="bg-background py-20 md:py-28">
+            <section className="bg-muted py-16 md:py-24">
                 <div className="mx-auto max-w-4xl px-4">
-                    <Reveal>
-                        <div className="text-center mb-12">
-                            <h2 className="text-3xl font-extrabold tracking-tight md:text-4xl">
-                                How do I get started?
-                            </h2>
-                        </div>
-                    </Reveal>
-                    <Reveal delayMs={100}>
-                        <div className="rounded-2xl border border-border bg-card p-8 shadow-sm text-center">
-                            <p className="text-lg leading-relaxed mb-8">
-                                Call <a href="tel:+16893148347" className="font-bold text-accent hover:underline">(+1) 689-314-8347</a> or request a callback. We confirm your lanes and equipment, then complete a short carrier packet. Most carriers start receiving load options within 24–48 hours of onboarding.
-                            </p>
-                            <a href="/carrier-setup">
-                                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-md text-base font-bold px-8">
-                                    Request a Free Dispatch Quote
-                                    <ArrowRight className="ml-2 h-5 w-5" />
-                                </Button>
-                            </a>
-                        </div>
-                    </Reveal>
+                    <h2 className="text-3xl font-extrabold tracking-tight">Self-dispatch vs. a dedicated dispatcher</h2>
+                    <div className="mt-8 overflow-x-auto rounded-2xl border border-border bg-card">
+                        <table className="w-full min-w-[520px] text-left text-sm">
+                            <thead>
+                                <tr className="border-b border-border">
+                                    <th className="p-4"><span className="sr-only">Task</span></th>
+                                    <th className="p-4 font-bold">Dispatching yourself</th>
+                                    <th className="p-4 font-bold text-accent">With Priority Dispatch</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {compare.map(([task, self, us]) => (
+                                    <tr key={task} className="border-b border-border/60 last:border-0">
+                                        <td className="p-4 font-medium">{task}</td>
+                                        <td className="p-4 text-muted-foreground">
+                                            <X className="mr-1 inline h-4 w-4" aria-hidden /> {self}
+                                        </td>
+                                        <td className="p-4">
+                                            <CheckCircle2 className="mr-1 inline h-4 w-4 text-accent" aria-hidden /> {us}
+                                        </td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
-            {/* CTA Section */}
-            <section className="bg-primary text-primary-foreground py-16 md:py-20">
-                <div className="mx-auto max-w-4xl px-4 text-center">
-                    <Reveal>
-                        <h2 className="text-3xl font-extrabold md:text-4xl">
-                            Ready to Work with a Dedicated Dispatcher?
-                        </h2>
-                        <p className="mx-auto mt-4 max-w-xl text-lg opacity-90 leading-relaxed">
-                            Join the owner-operators who trust Priority Dispatch LLC for reliable loads, expert support, and higher revenue per mile.
+            <section className="bg-background py-16 md:py-24">
+                <div className="mx-auto grid max-w-5xl gap-10 px-4 md:grid-cols-2">
+                    <div>
+                        <h2 className="text-3xl font-extrabold tracking-tight">Owner-operator dispatch rates</h2>
+                        <p className="mt-4 text-muted-foreground">
+                            Paid only after the broker pays you. No setup fee, no contract, no minimum loads.
                         </p>
-                    </Reveal>
-                    <Reveal delayMs={100}>
-                        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                            <a href="tel:+16893148347">
-                                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-md text-base font-bold px-8">
-                                    <PhoneCall className="mr-2 h-5 w-5" />
-                                    Call Now: (+1) 689-314-8347
-                                </Button>
-                            </a>
-                            <a href="/carrier-setup">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-colors text-base px-8"
-                                >
-                                    Get Started Online
-                                </Button>
-                            </a>
-                        </div>
-                    </Reveal>
+                        <ul className="mt-6 divide-y divide-border rounded-2xl border border-border bg-card">
+                            {rates.map((r) => (
+                                <li key={r.equipment} className="flex justify-between p-4">
+                                    {r.href ? (
+                                        <Link href={r.href} className="font-medium hover:text-accent hover:underline">{r.equipment} dispatch</Link>
+                                    ) : (
+                                        <span className="font-medium">{r.equipment} dispatch</span>
+                                    )}
+                                    <span className="font-bold">{r.percent}%</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <p className="mt-4 text-sm">
+                            <Link href="/pricing" className="font-semibold text-accent hover:underline">Full pricing details</Link>
+                            {" · "}
+                            <Link href="/blog/truck-dispatcher-cost" className="font-semibold text-accent hover:underline">How much dispatchers charge</Link>
+                        </p>
+                    </div>
+                    <div>
+                        <h2 className="text-3xl font-extrabold tracking-tight">How to get started</h2>
+                        <ol className="mt-6 space-y-5">
+                            {[
+                                ["Send your documents", "MC authority, W-9 and certificate of insurance through our carrier setup form."],
+                                ["Talk to your dispatcher", "Tell us your lanes, home time, equipment and the rate per mile you need."],
+                                ["We book your first load", "Usually within 24 to 48 hours. You approve it before anything is confirmed."],
+                                ["Get paid, then pay us", "Our fee comes only after the broker pays you."],
+                            ].map(([h, p], i) => (
+                                <li key={h} className="flex gap-4">
+                                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent font-bold text-accent-foreground">{i + 1}</span>
+                                    <span>
+                                        <strong className="block">{h}</strong>
+                                        <span className="text-muted-foreground">{p}</span>
+                                    </span>
+                                </li>
+                            ))}
+                        </ol>
+                        <p className="mt-6 text-sm text-muted-foreground">
+                            Before you start, work out your minimum rate with the free{" "}
+                            <Link href="/toolbox/cost-per-mile-calculator" className="font-semibold text-accent hover:underline">cost per mile calculator</Link>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-muted py-16 md:py-24">
+                <div className="mx-auto max-w-4xl px-4">
+                    <h2 className="text-3xl font-extrabold tracking-tight">Owner-operator dispatch questions</h2>
+                    <div className="mt-8 space-y-5">
+                        {faqs.map((f) => (
+                            <div key={f.q} className="rounded-2xl border border-border bg-card p-6">
+                                <h3 className="text-lg font-bold">{f.q}</h3>
+                                <p className="mt-2 leading-relaxed text-muted-foreground">{f.a}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-background py-16">
+                <div className="mx-auto grid max-w-5xl gap-10 px-4 md:grid-cols-3">
+                    <div>
+                        <h2 className="text-xl font-extrabold">Guides for owner-operators</h2>
+                        <ul className="mt-4 space-y-2 text-sm">
+                            <li><Link href="/blog/what-is-freight-dispatching" className="text-accent hover:underline">What is freight dispatching?</Link></li>
+                            <li><Link href="/blog/how-to-choose-dispatch-service" className="text-accent hover:underline">How to choose a dispatch service</Link></li>
+                            <li><Link href="/blog/how-to-survive-new-trucking-authority-mc-leasing" className="text-accent hover:underline">Surviving your first 90 days with new authority</Link></li>
+                            <li><Link href="/blog/owner-operator-guide" className="text-accent hover:underline">How owner-operators earn more</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-extrabold">Where we dispatch</h2>
+                        <ul className="mt-4 space-y-2 text-sm">
+                            <li><Link href="/truck-dispatcher/midwest" className="text-accent hover:underline">Midwest</Link></li>
+                            <li><Link href="/truck-dispatcher/east-coast" className="text-accent hover:underline">East Coast</Link></li>
+                            <li><Link href="/truck-dispatcher/california" className="text-accent hover:underline">California</Link></li>
+                            <li><Link href="/areas-we-serve" className="text-accent hover:underline">All 48 states</Link></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-extrabold">Free tools</h2>
+                        <ul className="mt-4 space-y-2 text-sm">
+                            <li><Link href="/toolbox/load-profit-calculator" className="text-accent hover:underline">Load profit calculator</Link></li>
+                            <li><Link href="/toolbox/hos-calculator" className="text-accent hover:underline">HOS calculator</Link></li>
+                            <li><Link href="/toolbox/per-diem-calculator" className="text-accent hover:underline">Per diem calculator</Link></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-primary py-16 text-primary-foreground md:py-20">
+                <div className="mx-auto max-w-4xl px-4 text-center">
+                    <h2 className="text-3xl font-extrabold md:text-4xl">Ready to work with a dedicated dispatcher?</h2>
+                    <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed opacity-90">
+                        Send your documents today and we can book your first load within 24 to 48 hours.
+                    </p>
+                    <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+                        <a href="/carrier-setup">
+                            <Button size="lg" className="bg-accent px-8 text-base font-bold text-accent-foreground shadow-md hover:bg-accent/90">
+                                Get Started Online
+                            </Button>
+                        </a>
+                        <a href="tel:+16893148347">
+                            <Button size="lg" variant="outline" className="border-2 border-primary-foreground bg-transparent px-8 text-base text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                                <PhoneCall className="mr-2 h-5 w-5" />
+                                Call (+1) 689-314-8347
+                            </Button>
+                        </a>
+                    </div>
                 </div>
             </section>
 

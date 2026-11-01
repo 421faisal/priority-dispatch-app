@@ -15,6 +15,7 @@ import {
     TrendingUp,
     TruckIcon,
 } from "lucide-react"
+import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
     title: "Box Truck Dispatch Services | Priority Dispatch LLC",
@@ -252,6 +253,8 @@ export default function BoxTruckDispatchPage() {
                     </Reveal>
                 </div>
             </section>
+
+            <ServiceExtras slug="box-truck-dispatch" />
 
             {/* CTA */}
             <section className="bg-primary text-primary-foreground py-20 md:py-28">

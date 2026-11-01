@@ -38,6 +38,7 @@ export default function BlogPost() {
                 title="How New Trucking Companies Can Survive the First 90 Days — And How MC Leasing Helps"
                 description="A comprehensive tactical guide detailing the 'No New MC' barrier, the strategic mechanics of MC leasing, and the survival blueprints every new owner-operator needs to cross the 90-day milestone profitably."
                 datePublished="2026-05-25"
+                dateModified="2026-11-01"
                 slug="how-to-survive-new-trucking-authority-mc-leasing"
                 imageUrl="/images/blog/hero-new-carrier.jpg"
             />
@@ -51,7 +52,7 @@ export default function BlogPost() {
                         <header className="mb-12 text-center md:text-left">
                             <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 px-4 py-1.5 border border-accent/20 mb-4">
                                 <span className="relative flex h-2 w-2">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                                    <span className="animate-ping inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                                     <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
                                 </span>
                                 <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent">
@@ -81,18 +82,18 @@ export default function BlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border bg-muted">
                             <img
-                                src="/images/modern-semi-truck-driving-on-highway-at-dawn.jpg"
+                                src="/images/modern-semi-truck-driving-on-highway-at-dawn.webp"
                                 alt="A modern semi-truck driving on a scenic highway at dawn, representing the proud beginning of a new owner-operator carrier business."
                                 className="object-cover w-full h-full"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                            <div className="inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                         </div>
                     </Reveal>
 
                     <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
                         <Reveal delayMs={200}>
                             <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Starting a trucking company is an exciting milestone—until reality hits on day one. You quickly discover that your brand-new authority is frozen out of high-paying freight, factoring companies hold your payments, and brokers reject your carrier packet with the dreaded phrase: <strong>&ldquo;No New MC.&rdquo;</strong> For most new owner-operators and small fleets, the first 90 days are a brutal stress test. The good news is you do not have to navigate this alone. <a href="/" className="text-accent font-bold hover:underline">Priority Dispatch LLC</a> was built specifically to help new carriers overcome these exact barriers through expert MC leasing support, professional dispatch services, and real-world operational guidance.
+                                Starting a trucking company is an exciting milestone—until reality hits on day one. You quickly discover that your brand-new authority is frozen out of high-paying freight, factoring companies hold your payments, and brokers reject your carrier packet with the dreaded phrase: <strong>&ldquo;No New MC.&rdquo;</strong> For most new owner-operators and small fleets, the first 90 days are a tough stress test. The good news is you do not have to navigate this alone. <a href="/" className="text-accent font-bold hover:underline">Priority Dispatch LLC</a> was built specifically to help new carriers overcome these exact barriers through expert MC leasing support, professional dispatch services, and real-world operational guidance.
                             </p>
 
                             <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
@@ -342,7 +343,7 @@ export default function BlogPost() {
                                     <br /><span className="text-sm text-muted-foreground">Demand weekly settlements and clear documentation of factoring fees.</span>
                                 </li>
                                 <li>
-                                    <strong>Is there forced dispatch, or do I retain the absolute right to refuse loads?</strong>
+                                    <strong>Is there forced dispatch, or do I retain the right to refuse loads?</strong>
                                     <br /><span className="text-sm text-muted-foreground">Forced dispatch ruins operational flexibility. Retain your right to choose your lanes.</span>
                                 </li>
                                 <li>

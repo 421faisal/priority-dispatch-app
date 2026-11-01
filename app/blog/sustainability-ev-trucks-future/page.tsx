@@ -36,8 +36,9 @@ export default function BlogPost() {
             <SiteHeader />
             <BlogArticleSchema
                 title="Sustainability and EV Trucks: The Reality of 2026"
-                description="Massive 2,600-word critical assessment of the 2026 Electric Vehicle (EV) commercial trucking landscape, detailing Megawatt Charging Systems (MCS), BaaS financial models, and the severe limitations of long-haul battery transport."
+                description="A critical assessment of the 2026 Electric Vehicle (EV) commercial trucking landscape, detailing Megawatt Charging Systems (MCS), BaaS financial models, and the severe limitations of long-haul battery transport."
                 datePublished="2026-03-03"
+                dateModified="2026-11-01"
                 slug="sustainability-ev-trucks-future"
                 imageUrl="/images/blog/hero-autonomous-truck.jpg"
             />
@@ -50,7 +51,7 @@ export default function BlogPost() {
                         </a>
                         <header className="mb-12 text-center md:text-left">
                             <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                Sustainability & EV Trucks: The Brutal Financial Reality of Green Freight in 2026
+                                Sustainability & EV Trucks: The Tough Financial Reality of Green Freight in 2026
                             </h1>
                             <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
                                 <span className="flex items-center gap-2 font-medium text-foreground">
@@ -72,11 +73,11 @@ export default function BlogPost() {
                     <Reveal delayMs={100}>
                         <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border group">
                             <img
-                                src="/modern-semi-truck-driving-on-highway-at-dawn.jpg"
-                                alt="A highly advanced, fully electric Class-8 semi-truck silently executing an incredibly heavy payload transport down a dedicated zero-emission corridor at dawn."
+                                src="/modern-semi-truck-driving-on-highway-at-dawn.webp"
+                                alt="A highly advanced, fully electric Class-8 semi-truck silently executing a heavy payload transport down a dedicated zero-emission corridor at dawn."
                                 className="object-cover w-full h-full transform transition-transform duration-700 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
+                            <div className="inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-8">
                                 <p className="text-accent text-sm tracking-widest uppercase font-extrabold mb-2">Sustainability · Electric Logistics · Future of Freight</p>
                                 <h2 className="text-white text-3xl md:text-4xl font-bold">The 2026 EV Paradigm Shift</h2>
                             </div>
@@ -101,7 +102,7 @@ export default function BlogPost() {
                             </p>
 
                             <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
+                                <div className="top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
                                 <h3 className="font-bold text-2xl flex items-center gap-2 mb-4 text-foreground">
                                     <Zap className="h-6 w-6 text-accent" />
                                     The Infrastructure Bottleneck
@@ -119,7 +120,7 @@ export default function BlogPost() {
                                 Why Shippers are Paying a "Green Premium"
                             </h2>
                             <p>
-                                Shippers—especially Fortune 500 companies—are under massive pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
+                                Shippers—especially Fortune 500 companies—are under large pressure to reduce their carbon footprint. They are willing to pay "Green Premiums" for zero-emission deliveries to meet their ESG (Environmental, Social, and Governance) goals.
                             </p>
                             <p>
                                 At <strong>Priority Dispatch LLC</strong>, we help our carriers secure these high-paying contracts. If you've invested in an EV truck, you shouldn't be hunting for cheap loads on a standard load board. You should be in high-value, dedicated lanes where shippers are willing to pay for your sustainability.

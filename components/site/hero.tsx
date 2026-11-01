@@ -9,8 +9,11 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-4 py-10 md:py-14">
         <div className="relative overflow-hidden rounded-xl shadow-lg">
           <img
-            src="/images/hero-truck.jpg"
+            src="/images/hero-truck.webp"
             alt="Modern semi-truck on a highway at dawn"
+            width={1200}
+            height={630}
+            fetchPriority="high"
             className="absolute inset-0 h-full w-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/75" aria-hidden />
@@ -22,7 +25,7 @@ export function Hero() {
                   Dispatchers online now
                 </div>
                 <h1 className="mt-4 text-balance text-4xl font-extrabold leading-tight md:text-6xl">
-                  Truck Dispatcher for Owner-Operators: More Loads, Better Rates
+                  USA Truck Dispatcher: More Loads, Better Rates
                 </h1>
                 <p className="mt-2 text-xl font-semibold text-accent md:text-2xl">Priority Dispatch LLC</p>
                 <p className="mt-4 text-pretty text-base opacity-95 md:text-lg">
