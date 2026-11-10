@@ -10,6 +10,8 @@ export interface Location {
     abbr: string
     /** Set for a multi-state region page; areaServed then lists these states */
     regionStates?: string[]
+    /** Set for a city page: the state the city is in */
+    cityOf?: string
     title: string
     description: string
     h1: string
@@ -53,7 +55,7 @@ export const locations: Location[] = [
         state: "the East Coast",
         abbr: "East Coast",
         regionStates: ["New York", "New Jersey", "Pennsylvania", "Maryland", "Virginia", "North Carolina", "South Carolina", "Massachusetts", "Connecticut", "Delaware"],
-        title: "East Coast Truck Dispatcher | Owner-Operator Dispatch Service",
+        title: "East Coast Truck Dispatcher for Owner-Operators",
         description: "East Coast truck dispatching for owner-operators: NY/NJ ports, Pennsylvania warehouses, I-95 and I-81 lanes, the Carolinas. From 4% of gross, no contracts.",
         h1: "East Coast Truck Dispatcher for Owner-Operators",
         summary: "Priority Dispatch LLC dispatches owner-operators up and down the East Coast, from the Port of New York and New Jersey and the Pennsylvania warehouse corridors to Baltimore, Virginia and the Carolinas. The East Coast has the densest population in the country, so freight demand is constant and short lanes often pay well per mile. Fees run from 4% of the gross load, with no contract.",
@@ -178,6 +180,7 @@ export const locations: Location[] = [
     },
     {
         slug: "georgia",
+        members: ["atlanta"],
         state: "Georgia",
         abbr: "GA",
         title: "Truck Dispatcher in Georgia | Atlanta & Savannah Loads",
@@ -213,10 +216,28 @@ export const locations: Location[] = [
         posts: ["2026-freight-market-outlook", "owner-operator-guide", "combatting-freight-fraud-2026"],
     },
     {
+        slug: "atlanta",
+        state: "Atlanta",
+        abbr: "GA",
+        cityOf: "Georgia",
+        title: "Truck Dispatch Service in Atlanta, GA | Priority Dispatch",
+        description: "Independent truck dispatch service for Atlanta owner-operators: Fulton Industrial, I-285 warehouses and Savannah port freight. From 4% of gross, no contract.",
+        h1: "Truck Dispatch Service for Atlanta Owner-Operators",
+        summary: "Priority Dispatch LLC is an independent truck dispatch service for owner-operators and small fleets based in or running through metro Atlanta. We book loads out of the Fulton Industrial corridor, the I-75 and I-85 distribution centers and the rail yards around the city, check every broker and handle the paperwork, from 4% of the gross load with no contract.",
+        hubs: ["Fulton Industrial Boulevard", "McDonough / Henry County (I-75 south)", "Union City / South Fulton", "Hartsfield-Jackson airport cargo area", "Gwinnett County (I-85 north)", "Austell and Fairburn rail yards"],
+        corridors: ["I-285 (the Perimeter, connecting every interstate around the city)", "I-75 (Florida and Macon to Atlanta to Chattanooga)", "I-85 (Montgomery to Atlanta to Charlotte)", "I-20 (Birmingham to Atlanta to Augusta)"],
+        freight: ["Retail and e-commerce freight from the large distribution centers on the south side and along I-85", "Import containers and transload freight moved up from the Port of Savannah", "Intermodal freight from the rail yards west and south of the city (power only and dry van)", "Food, beverage and poultry freight from metro Atlanta and North Georgia (reefer)", "Building materials for the region's construction market (flatbed)"],
+        seasons: [{"name": "Holiday peak", "detail": "From October through December the south-side and I-85 distribution centers run hardest, and dry van and box truck demand out of Atlanta rises."}, {"name": "Summer heat", "detail": "Hot months raise reefer demand for food and beverage loads and make tight appointment times more important."}, {"name": "Winter storms", "detail": "Snow and ice are rare in Atlanta, but when they come they can shut down the interstates. We watch the forecast and move appointments early."}],
+        tips: [{"title": "A reliable reload market", "detail": "Atlanta ships a lot of freight in every direction, which makes it one of the best places in the Southeast to reload, especially after a run into Florida."}, {"title": "Plan around the Perimeter", "detail": "Through trucks are generally routed around the city on I-285 rather than through downtown, and rush hours on I-285 are heavy. We set pickup and delivery times to avoid the worst traffic."}, {"title": "Book parking before you arrive", "detail": "Truck parking around metro Atlanta fills up early. We plan your stop and reload together so you are not hunting for parking after hours."}],
+        equipment: ["dry-van-dispatch", "reefer-dispatch", "power-only-dispatch", "box-truck-dispatch", "flatbed-dispatch"],
+        faqs: [{"q": "Do you dispatch trucks in Atlanta?", "a": "Yes. We dispatch owner-operators and small fleets based in metro Atlanta and drivers running through it, and we book loads in all 48 states."}, {"q": "Are you a local dispatcher in Atlanta?", "a": "We are an independent dispatch service that works remotely by phone, WhatsApp and email, so our team is not in an Atlanta office. What matters for your loads is lane knowledge: which Atlanta shippers, warehouses and lanes pay, and where the reloads are."}, {"q": "How much does truck dispatching cost in Atlanta?", "a": "Our fee is 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans, paid only after the broker pays you. No setup fee and no contract, and fleets of 2 or more trucks get negotiable rates."}, {"q": "Which loads leave Atlanta most often?", "a": "Retail and e-commerce freight from the big distribution centers, transload freight from the Port of Savannah, intermodal freight from the rail yards and food and beverage loads. Lanes to Florida, the Carolinas, Texas and the Midwest are common."}],
+        posts: ["owner-operator-guide", "how-to-use-load-boards", "truck-dispatcher-cost"],
+    },
+    {
         slug: "illinois",
         state: "Illinois",
         abbr: "IL",
-        title: "Truck Dispatcher in Illinois | Chicago Owner-Operator Dispatch",
+        title: "Truck Dispatcher in Illinois and Chicago",
         description: "Illinois truck dispatching for owner-operators: Chicago and Joliet intermodal, food and consumer goods freight. From 4% of gross, paid after you get paid.",
         h1: "Truck Dispatcher in Illinois and Chicago",
         summary: "Priority Dispatch LLC dispatches owner-operators running in Illinois, centered on Chicago, the busiest rail and freight hub in the United States. We book intermodal, dry van, reefer and flatbed loads in and out of Chicagoland and central Illinois, from 4% of the gross load with no contract.",
@@ -301,7 +322,7 @@ export const locations: Location[] = [
         slug: "pennsylvania",
         state: "Pennsylvania",
         abbr: "PA",
-        title: "Truck Dispatcher in Pennsylvania | Lehigh Valley & Harrisburg",
+        title: "Truck Dispatcher in Pennsylvania | Lehigh Valley Loads",
         description: "Pennsylvania truck dispatching for owner-operators: Lehigh Valley and Harrisburg warehouses, Philadelphia and Pittsburgh. From 4% of gross, no contracts.",
         h1: "Truck Dispatcher in Pennsylvania",
         summary: "Priority Dispatch LLC dispatches owner-operators in Pennsylvania, home to some of the largest warehouse corridors on the East Coast in the Lehigh Valley and around Harrisburg and Carlisle. We book distribution, food, steel and energy freight across the state, from 4% of the gross load with no contract.",
@@ -318,7 +339,7 @@ export const locations: Location[] = [
         slug: "new-jersey",
         state: "New Jersey",
         abbr: "NJ",
-        title: "Truck Dispatcher in New Jersey | NY/NJ Port & Warehouse Loads",
+        title: "Truck Dispatcher in New Jersey | Port & Warehouse Loads",
         description: "New Jersey truck dispatching for owner-operators: Port Newark and Elizabeth containers, Exit 8A warehouses and NYC freight. From 4% of gross, no contracts.",
         h1: "Truck Dispatcher in New Jersey",
         summary: "Priority Dispatch LLC dispatches owner-operators in New Jersey, home to Port Newark and Elizabeth, the busiest container terminals on the East Coast, and the warehouse clusters that feed New York City. We book port, distribution and regional freight, from 4% of the gross load with no contract.",

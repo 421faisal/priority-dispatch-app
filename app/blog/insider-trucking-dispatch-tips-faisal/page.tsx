@@ -7,13 +7,13 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+    title: "Insider Trucking Tips I Learned the Hard Way",
     description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/insider-trucking-dispatch-tips-faisal",
     },
     openGraph: {
-        title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+        title: "Insider Trucking Tips I Learned the Hard Way",
         description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
         url: "https://prioritydispatchllc.com/blog/insider-trucking-dispatch-tips-faisal",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Insider Trucking Tips I Learned the Hard Way | Priority Dispatch",
+        title: "Insider Trucking Tips I Learned the Hard Way",
         description: "Faisal Bilal shares hard-won lessons on negotiating detention, spotting bad brokers, surviving freight recessions and managing cash flow on the road.",
         images: ["/images/blog/photos/insider-trucking-dispatch-tips-faisal-og.jpg"],
     },

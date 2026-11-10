@@ -80,7 +80,9 @@ export default async function LocationPage(props: { params: Promise<{ state: str
             url,
             description: loc.summary,
             provider: { "@type": "Organization", name: "Priority Dispatch LLC", url: BASE, telephone: "+16893148347" },
-            areaServed: loc.regionStates
+            areaServed: loc.cityOf
+                ? { "@type": "City", name: loc.state, containedInPlace: { "@type": "State", name: loc.cityOf } }
+                : loc.regionStates
                 ? loc.regionStates.map((name) => ({ "@type": "State", name }))
                 : { "@type": "State", name: loc.state, containedInPlace: { "@type": "Country", name: "United States" } },
             offers: rates.map((r) => ({
@@ -264,7 +266,7 @@ export default async function LocationPage(props: { params: Promise<{ state: str
                     <div>
                         {members.length > 0 && (
                             <>
-                                <h2 className="text-2xl font-extrabold">State guides in {loc.state}</h2>
+                                <h2 className="text-2xl font-extrabold">{loc.regionStates ? `State guides in ${loc.state}` : `Area guides in ${loc.state}`}</h2>
                                 <ul className="mt-4 mb-8 space-y-3">
                                     {members.map((m) => (
                                         <li key={m.slug}>

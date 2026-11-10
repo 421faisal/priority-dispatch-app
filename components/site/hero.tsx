@@ -91,6 +91,11 @@ export function Hero() {
                             </li>
                         ))}
                     </ul>
+                    <p className="mt-6 text-sm">
+                        <a href="/es/despacho-de-camiones" hrefLang="es" lang="es" className="font-semibold underline decoration-accent underline-offset-2">
+                            ¿Hablas español? Información en español
+                        </a>
+                    </p>
                 </div>
                 <div className="relative">
                     <img

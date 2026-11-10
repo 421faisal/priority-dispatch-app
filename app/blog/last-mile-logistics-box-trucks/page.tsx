@@ -7,13 +7,13 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+    title: "Last-Mile Logistics: Box Truck Opportunities",
     description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/last-mile-logistics-box-trucks",
     },
     openGraph: {
-        title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+        title: "Last-Mile Logistics: Box Truck Opportunities",
         description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
         url: "https://prioritydispatchllc.com/blog/last-mile-logistics-box-trucks",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Last-Mile Logistics: Box Truck Opportunities | Priority Dispatch",
+        title: "Last-Mile Logistics: Box Truck Opportunities",
         description: "E-commerce growth has created a large niche for last-mile delivery. Learn how box truck carriers find steady freight and grow their profits in 2026.",
         images: ["/images/blog/photos/last-mile-logistics-box-trucks-og.jpg"],
     },

@@ -7,13 +7,13 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+    title: "Mental Health for Long-Haul Truck Drivers",
     description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/mental-health-long-haul-drivers",
     },
     openGraph: {
-        title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+        title: "Mental Health for Long-Haul Truck Drivers",
         description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
         url: "https://prioritydispatchllc.com/blog/mental-health-long-haul-drivers",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Mental Health for Long-Haul Truck Drivers | Priority Dispatch",
+        title: "Mental Health for Long-Haul Truck Drivers",
         description: "Long-haul trucking can take a heavy mental toll. Practical ways drivers fight isolation and burnout, and how good fleets and dispatchers support well-being.",
         images: ["/images/blog/photos/mental-health-long-haul-drivers-og.jpg"],
     },

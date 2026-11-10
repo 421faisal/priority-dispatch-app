@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button"
 import Reveal from "@/components/site/reveal"
 
 export const metadata: Metadata = {
-    title: "Meet the Founder — Muhammad Faisal Bilal | Priority Dispatch LLC",
+    title: "Muhammad Faisal Bilal, Founder | Priority Dispatch LLC",
     description:
         "Meet Muhammad Faisal Bilal, founder and CEO of Priority Dispatch LLC, a Computer Science graduate driving innovation in truck dispatching for owner-operators.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/about-owner",
     },
     openGraph: {
-        title: "Meet the Founder — Muhammad Faisal Bilal | Priority Dispatch LLC",
+        title: "Muhammad Faisal Bilal, Founder | Priority Dispatch LLC",
         description:
             "Learn about Muhammad Faisal Bilal, founder and CEO of Priority Dispatch LLC.",
         url: "https://prioritydispatchllc.com/about-owner",

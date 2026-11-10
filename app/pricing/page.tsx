@@ -18,14 +18,14 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch LLC",
+    title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch",
     description:
         "Truck dispatch rates: 4% for dry van, reefer, flatbed and power only, 6% box truck and hotshot, 10% sprinter van. Paid after you get paid. No contracts.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/pricing",
     },
     openGraph: {
-        title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch LLC",
+        title: "Truck Dispatch Rates: From 4% of Gross | Priority Dispatch",
         description: "Clear pricing for professional truck dispatch services. No contracts, no setup fees.",
         url: "https://prioritydispatchllc.com/pricing",
         type: "website",

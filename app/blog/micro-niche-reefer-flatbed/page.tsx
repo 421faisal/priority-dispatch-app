@@ -7,13 +7,13 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Reefer & Flatbed Niches: Specializing in 2026 | Priority Dispatch",
+    title: "Reefer and Flatbed Niches: Specializing in 2026",
     description: "Dry van rates are leveling off while reefer and flatbed demand grows. A practical guide to moving into higher-paying specialized trucking niches in 2026.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/micro-niche-reefer-flatbed",
     },
     openGraph: {
-        title: "Reefer & Flatbed Niches: Specializing in 2026 | Priority Dispatch",
+        title: "Reefer and Flatbed Niches: Specializing in 2026",
         description: "Dry van rates are leveling off while reefer and flatbed demand grows. A practical guide to moving into higher-paying specialized trucking niches in 2026.",
         url: "https://prioritydispatchllc.com/blog/micro-niche-reefer-flatbed",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Reefer & Flatbed Niches: Specializing in 2026 | Priority Dispatch",
+        title: "Reefer and Flatbed Niches: Specializing in 2026",
         description: "Dry van rates are leveling off while reefer and flatbed demand grows. A practical guide to moving into higher-paying specialized trucking niches in 2026.",
         images: ["/images/blog/photos/micro-niche-reefer-flatbed-og.jpg"],
     },

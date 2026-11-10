@@ -7,13 +7,13 @@ import { BlogArticleSchema } from "@/components/site/blog-article-schema"
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+    title: "2026 Freight Market Outlook: Rates and Recovery",
     description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
     },
     openGraph: {
-        title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+        title: "2026 Freight Market Outlook: Rates and Recovery",
         description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
         url: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "2026 Freight Market Outlook: Rates & Recovery | Priority Dispatch",
+        title: "2026 Freight Market Outlook: Rates and Recovery",
         description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
         images: ["/images/blog/photos/2026-freight-market-outlook-og.jpg"],
     },

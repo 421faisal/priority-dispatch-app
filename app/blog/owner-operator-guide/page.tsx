@@ -7,13 +7,13 @@ import { Calendar, User, Clock, ArrowLeft, Linkedin, Briefcase, TrendingUp, Shie
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+    title: "Owner-Operator Guide: How to Maximize Your Revenue",
     description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/owner-operator-guide",
     },
     openGraph: {
-        title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+        title: "Owner-Operator Guide: How to Maximize Your Revenue",
         description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
         url: "https://prioritydispatchllc.com/blog/owner-operator-guide",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Owner-Operator Guide: Maximize Your Revenue | Priority Dispatch",
+        title: "Owner-Operator Guide: How to Maximize Your Revenue",
         description: "Practical tips for owner-operators to earn more: lane planning, cutting deadhead, equipment choices, and how professional dispatching protects your profit.",
         images: ["/images/blog/photos/owner-operator-guide-og.jpg"],
     },

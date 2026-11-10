@@ -7,13 +7,13 @@ import { Calendar, User, Clock, ArrowLeft, Linkedin, Zap, Scale, MessageSquare, 
 import { RelatedPosts } from "@/components/site/related-posts"
 
 export const metadata: Metadata = {
-    title: "What Is Freight Dispatching? Guide for Owner-Operators",
+    title: "What Is Freight Dispatching? What a Freight Dispatcher Does",
     description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
     },
     openGraph: {
-        title: "What Is Freight Dispatching? Guide for Owner-Operators",
+        title: "What Is Freight Dispatching? What a Freight Dispatcher Does",
         description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
         url: "https://prioritydispatchllc.com/blog/what-is-freight-dispatching",
         siteName: "Priority Dispatch LLC",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "What Is Freight Dispatching? Guide for Owner-Operators",
+        title: "What Is Freight Dispatching? What a Freight Dispatcher Does",
         description: "Freight dispatching explained: what dispatchers do, how they negotiate rates, vet brokers and plan lanes, what dispatching costs, and when you may not need one.",
         images: ["/images/blog/photos/what-is-freight-dispatching-og.jpg"],
     },

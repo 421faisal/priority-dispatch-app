@@ -7,13 +7,13 @@ import { MapPin, Truck, Globe, Navigation, ArrowRight } from "lucide-react"
 import { locations } from "@/lib/locations"
 
 export const metadata: Metadata = {
-    title: "USA Truck Dispatch Services in All 48 States | Priority Dispatch",
+    title: "USA Truck Dispatch Services in All 48 States",
     description: "USA truck dispatching in all 48 states from Kissimmee, FL, with lane knowledge in the Midwest, the East Coast, California, Texas and the Southeast.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/areas-we-serve",
     },
     openGraph: {
-        title: "USA Truck Dispatch Services in All 48 States | Priority Dispatch",
+        title: "USA Truck Dispatch Services in All 48 States",
         description: "USA truck dispatching in all 48 states from Kissimmee, FL, with lane knowledge in the Midwest, the East Coast, California, Texas and the Southeast.",
         url: "https://prioritydispatchllc.com/areas-we-serve",
         siteName: "Priority Dispatch LLC",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "USA Truck Dispatch Services in All 48 States | Priority Dispatch",
+        title: "USA Truck Dispatch Services in All 48 States",
         description: "USA truck dispatching in all 48 states from Kissimmee, FL.",
     },
 }

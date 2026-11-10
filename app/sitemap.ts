@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/truck-dispatcher/pennsylvania`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/truck-dispatcher/new-jersey`,        lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/truck-dispatcher/north-carolina`,    lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
+        { url: `${baseUrl}/truck-dispatcher/atlanta`,      lastModified: new Date('2026-11-10'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/truck-dispatcher/florida`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/truck-dispatcher/texas`,        lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
         { url: `${baseUrl}/truck-dispatcher/georgia`,      lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },

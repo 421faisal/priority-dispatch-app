@@ -7,13 +7,13 @@ import { ArrowRight, CheckCircle2, ShieldCheck, Building, FileText, Anchor } fro
 import { ServiceExtras } from "@/components/site/service-extras"
 
 export const metadata: Metadata = {
-    title: "New Carrier Setup & MC Lease Services | Priority Dispatch LLC",
+    title: "New Carrier Setup & MC Lease Services | Priority Dispatch",
     description: "Expert A-Z setup for new trucking companies. We handle your LLC, MC Authority, BOC-3, Insurance compliance, IFTA, IRP plates, and build your website.",
     alternates: {
         canonical: "https://prioritydispatchllc.com/services/new-carrier-setup",
     },
     openGraph: {
-        title: "New Carrier Setup & MC Lease Services | Priority Dispatch LLC",
+        title: "New Carrier Setup & MC Lease Services | Priority Dispatch",
         description: "Expert A-Z setup for new trucking companies. We handle your LLC, MC Authority, BOC-3, Insurance compliance, IFTA, IRP plates, and build your website.",
         url: "https://prioritydispatchllc.com/services/new-carrier-setup",
         siteName: "Priority Dispatch LLC",

@@ -145,7 +145,7 @@ export const tools: Tool[] = [
         slug: "detention-pay-calculator",
         name: "Detention Pay Calculator",
         short: "What to bill for time waiting at shippers and receivers after free time.",
-        title: "Detention Pay Calculator for Truck Drivers | Priority Dispatch",
+        title: "Detention Pay Calculator for Truck Drivers",
         description:
             "Free detention pay calculator. Enter check-in and release times, free time and your hourly rate to see billable detention, rounded the way brokers bill it.",
         h1: "Detention Pay Calculator",

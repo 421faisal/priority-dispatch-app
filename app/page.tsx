@@ -15,7 +15,7 @@ import { SiteFooter } from "@/components/site/site-footer"
 import type { Metadata } from "next"
 
 const title = "Truck Dispatcher & Dispatch Services USA | Priority Dispatch"
-const description = "USA truck dispatching services for owner-operators and small fleets in all 48 states. High-paying loads, 24/7 support, from 4% of gross, no contracts."
+const description = "Truck and freight dispatch services for owner-operators and small fleets in all 48 states. High-paying loads, 24/7 support, from 4% of gross, no contracts."
 
 export const metadata: Metadata = {
   title,
