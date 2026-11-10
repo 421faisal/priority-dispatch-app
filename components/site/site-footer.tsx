@@ -168,16 +168,6 @@ export function SiteFooter() {
                 Send us a Message
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Priority+Dispatch+LLC+Kissimmee+FL"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                className="text-accent hover:underline font-medium"
-              >
-                View Google Business Profile
-              </a>
-            </li>
           </ul>
         </div>
         <div>
