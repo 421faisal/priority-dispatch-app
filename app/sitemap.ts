@@ -51,7 +51,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         { url: `${baseUrl}/services/hotshot-dispatch`,     lastModified: new Date('2026-11-01'), changeFrequency: 'monthly', priority: 0.9 },
 
         // ── Careers (high priority — always hiring) ──────────────────────
-        { url: `${baseUrl}/careers`,                       lastModified: new Date('2026-10-01'), changeFrequency: 'weekly',  priority: 0.9 },
+        { url: `${baseUrl}/careers`,                       lastModified: new Date('2026-11-10'), changeFrequency: 'weekly',  priority: 0.9 },
+        { url: `${baseUrl}/careers/class-a-cdl-dry-van-driver-torrance-ca`, lastModified: new Date('2026-11-10'), changeFrequency: 'weekly', priority: 0.8 },
+        { url: `${baseUrl}/careers/box-truck-driver-torrance-ca`, lastModified: new Date('2026-11-10'), changeFrequency: 'weekly', priority: 0.8 },
 
         // ── Blog Index ───────────────────────────────────────────────────
         { url: `${baseUrl}/blog`,                          lastModified: new Date('2026-10-31'), changeFrequency: 'weekly',  priority: 0.8 },

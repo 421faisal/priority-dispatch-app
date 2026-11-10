@@ -41,4 +41,4 @@ GitHub `421faisal/priority-dispatch-app`, branch `main`. Vercel builds every pus
 48 pages indexed (Search Console); SEO audit score 81/100 (see the latest audit). On 10 Nov the 9 "crawled -
 currently not indexed" posts were handled: 7 rewritten on `components/site/article-shell.tsx` (sources, FAQ, photo,
 author box) and 2 merged with 308 redirects in `next.config.mjs`. New guides should use ArticleShell. Open items:
-watch those URLs in Search Console; collect real reviews; partner links; expand the contact and carrier setup pages.
+watch those URLs in Search Console; driver hiring pages (Torrance, CA) live from 10 Nov: data in `lib/driver-jobs.ts`, pages `app/careers/[role]`, applications with license photo emailed by `app/api/driver-apply` (pay figures not published until the owner gives them); collect real reviews; partner links; expand the contact and carrier setup pages.
