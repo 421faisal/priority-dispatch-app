@@ -38,6 +38,7 @@ GitHub `421faisal/priority-dispatch-app`, branch `main`. Vercel builds every pus
 
 ## Status (10 Nov 2026)
 
-48 pages indexed (Search Console); SEO audit score 81/100 (see the latest audit). Open items: rewrite or merge
-the older speculative blog posts that are "crawled - currently not indexed"; collect real reviews; partner links;
-expand the contact and carrier setup pages.
+48 pages indexed (Search Console); SEO audit score 81/100 (see the latest audit). On 10 Nov the 9 "crawled -
+currently not indexed" posts were handled: 7 rewritten on `components/site/article-shell.tsx` (sources, FAQ, photo,
+author box) and 2 merged with 308 redirects in `next.config.mjs`. New guides should use ArticleShell. Open items:
+watch those URLs in Search Console; collect real reviews; partner links; expand the contact and carrier setup pages.
