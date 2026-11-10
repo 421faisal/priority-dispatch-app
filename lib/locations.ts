@@ -102,7 +102,7 @@ export const locations: Location[] = [
             { q: "What do I need to run freight in California?", a: "Beyond your normal authority and insurance, your truck must meet California Air Resources Board (CARB) rules, including the Clean Truck Check program. We ask about compliance before booking California loads." },
             { q: "How much does a California truck dispatcher cost?", a: "Our fee is 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans, paid only after the broker pays you. No contract, no setup fee." },
         ],
-        posts: ["reefer-market-deep-dive", "sustainability-ev-trucks-future", "intermodal-vs-over-the-road"],
+        posts: ["reefer-market-deep-dive", "epa-2027-pre-buy-strategy", "intermodal-vs-over-the-road"],
     },
     {
         slug: "texas",
@@ -139,7 +139,7 @@ export const locations: Location[] = [
             { q: "How much does truck dispatching cost in Texas?", a: "Our fee is 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans, paid only after the broker pays you. No setup fee, no contract and no minimum loads." },
             { q: "Can you dispatch hotshot trucks in the Permian Basin?", a: "Yes. We dispatch hotshot and flatbed carriers to oilfield and construction freight in West Texas and nationwide." },
         ],
-        posts: ["navigating-freight-rate-rebound", "micro-niche-reefer-flatbed", "how-to-choose-dispatch-service"],
+        posts: ["2026-freight-market-outlook", "micro-niche-reefer-flatbed", "how-to-choose-dispatch-service"],
     },
     {
         slug: "florida",
@@ -316,7 +316,7 @@ export const locations: Location[] = [
         tips: [{"title": "Central hubs, many directions", "detail": "From Kansas City or St. Louis you can head to Texas, Chicago, the Southeast or the West, which makes reloading easy."}, {"title": "Reefer for food freight", "detail": "Missouri's food processing plants give reefer carriers steady loads year-round."}, {"title": "Use I-44 for Texas runs", "detail": "I-44 to Oklahoma connects you to Texas freight, a strong lane pairing with Missouri."}],
         equipment: ["dry-van-dispatch", "reefer-dispatch", "flatbed-dispatch", "hotshot-dispatch", "power-only-dispatch"],
         faqs: [{"q": "Do you dispatch trucks in Kansas City and St. Louis?", "a": "Yes. We dispatch owner-operators running in and out of Kansas City, St. Louis and the rest of Missouri, and book loads in all 48 states."}, {"q": "Which equipment does best in Missouri?", "a": "Dry van and reefer have the most steady freight, with flatbed and hotshot work tied to construction and farm equipment."}, {"q": "How much does a Missouri truck dispatcher charge?", "a": "Our fee is 4% of the gross load for dry van, reefer, flatbed, step deck and power only, 6% for box trucks and hotshots, and 10% for sprinter vans, paid only after the broker pays you. No setup fee and no contract."}],
-        posts: ["navigating-freight-rate-rebound", "owner-operator-guide", "truck-dispatcher-cost"],
+        posts: ["2026-freight-market-outlook", "owner-operator-guide", "truck-dispatcher-cost"],
     },
     {
         slug: "pennsylvania",

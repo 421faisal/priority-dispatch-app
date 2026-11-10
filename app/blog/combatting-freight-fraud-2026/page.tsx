@@ -1,260 +1,103 @@
 import type { Metadata } from "next"
-import { SiteHeader } from "@/components/site/site-header"
-import { SiteFooter } from "@/components/site/site-footer"
-import Reveal from "@/components/site/reveal"
-import { Calendar, User, Clock, ArrowLeft, Linkedin, ShieldAlert, CheckSquare, Search, AlertTriangle, Fingerprint, Gavel, ShieldCheck, Lock, Activity, ServerCrash } from "lucide-react"
-import { BlogArticleSchema } from "@/components/site/blog-article-schema"
-import { RelatedPosts } from "@/components/site/related-posts"
+import { ArticleShell } from "@/components/site/article-shell"
+
+const slug = "combatting-freight-fraud-2026"
+const title = "Freight Fraud & Double Brokering: A Carrier Checklist"
+const description =
+    "The freight scams hitting carriers in 2026 (double brokering, identity theft, fake pickups) and a step-by-step checklist to vet brokers before you book."
+const url = `https://prioritydispatchllc.com/blog/${slug}`
+const image = `/images/blog/photos/${slug}-og.jpg`
 
 export const metadata: Metadata = {
-    title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
-    description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
-    alternates: {
-        canonical: "https://prioritydispatchllc.com/blog/combatting-freight-fraud-2026",
-    },
-    openGraph: {
-        title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
-        description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
-        url: "https://prioritydispatchllc.com/blog/combatting-freight-fraud-2026",
-        siteName: "Priority Dispatch LLC",
-        type: "article",
-        publishedTime: "2026-03-12",
-        authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/photos/combatting-freight-fraud-2026-og.jpg"],
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "Freight Fraud & Double Brokering in 2026 | Priority Dispatch",
-        description: "Freight fraud and double brokering hit record highs in 2026. Learn the chameleon carrier red flags, a full broker vetting checklist and FMCSA's new safeguards.",
-        images: ["/images/blog/photos/combatting-freight-fraud-2026-og.jpg"],
-    },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "article", publishedTime: "2026-03-12", modifiedTime: "2026-11-10", authors: ["Muhammad Faisal Bilal"], images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
 }
 
-export default function BlogPost() {
+const faqs = [
+    { q: "What is double brokering?", a: "A company books a load from a broker, then re-brokers it to another carrier without permission, often at a lower rate, and disappears with the payment. The carrier that hauled the load may never get paid." },
+    { q: "How do I check if a broker is real?", a: "Look the broker up on FMCSA by MC or USDOT number, confirm active broker authority and a bond or trust on file, and call the phone number listed there, not the number in the email. Check that the email domain matches the company." },
+    { q: "What is FMCSA's Motus system?", a: "Motus is FMCSA's new registration system, launched on May 19, 2026. It adds identity verification with a government ID and a facial scan plus business validation, to make it harder for fraudsters to register or take over carrier and broker identities. MC numbers still exist." },
+    { q: "Should I ever pay to get a load?", a: "No. Legitimate brokers do not charge carriers to book freight. A request for a fee, a deposit or a change of payment details by email is a red flag." },
+]
+
+export default function FraudGuide() {
     return (
-        <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
-            <SiteHeader />
-            <BlogArticleSchema
-                title="Combatting Freight Fraud and Double Brokering in 2026"
-                description="A comprehensive manifesto detailing the exact vetting protocols and defensive technologies needed to survive freight identity theft and double brokering."
-                datePublished="2026-03-12"
-                dateModified="2026-11-01"
-                slug="combatting-freight-fraud-2026"
-                imageUrl="/images/blog/photos/combatting-freight-fraud-2026-og.jpg"
-            />
-            <article className="py-24">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <Reveal>
-                        <a href="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-accent mb-8 transition-colors">
-                            <ArrowLeft className="h-4 w-4" />
-                            Back to Blog
-                        </a>
-                        <header className="mb-12 text-center md:text-left">
-                            <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                Combatting Freight Fraud and Double Brokering in 2026: The Anti-Fraud Handbook
-                            </h1>
-                            <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <Calendar className="h-4 w-4 text-accent" />
-                                    March 12, 2026
-                                </span>
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <User className="h-4 w-4 text-accent" />
-                                    Muhammad Faisal Bilal
-                                </span>
-                                <span className="flex items-center gap-2">
-                                    <Clock className="h-4 w-4 text-accent" />
-                                    26 min read
-                                </span>
-                            </div>
-                        </header>
-                    </Reveal>
+        <ArticleShell
+            slug={slug}
+            title={title}
+            description={description}
+            h1="Freight Fraud and Double Brokering: How Carriers Protect Themselves"
+            datePublished="2026-03-12"
+            dateModified="2026-11-10"
+            dateLabel="Updated November 10, 2026"
+            readMinutes={7}
+            photo={slug}
+            photoAlt="Padlock and chain securing metal doors"
+            faqs={faqs}
+            sources={[
+                { label: "FMCSA: launch of the Motus anti-fraud registration system (May 19, 2026)", url: "https://www.fmcsa.dot.gov/newsroom/trumps-transportation-secretary-sean-p-duffy-launches-new-anti-fraud-registration-system" },
+                { label: "FMCSA SAFER company snapshot", url: "https://safer.fmcsa.dot.gov/CompanySnapshot.aspx" },
+            ]}
+        >
+            <p className="border-l-4 border-accent pl-6 text-xl text-muted-foreground">
+                <strong>Short answer:</strong> most freight fraud against carriers comes down to someone pretending to be a broker,
+                shipper or carrier they are not. You protect yourself by checking every broker on FMCSA, calling back on a number
+                you found yourself, getting everything on a rate confirmation that matches, and never paying to get a load.
+            </p>
 
-                    <Reveal delayMs={100}>
-                        <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img width={1200} height={800}
-                                src="/images/blog/photos/combatting-freight-fraud-2026.webp"
-                                alt="Padlock and chain securing metal doors"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                    </Reveal>
+            <h2>The scams carriers see most</h2>
+            <ul>
+                <li><strong>Double brokering:</strong> a fake or rogue company books the load and re-brokers it to you. You haul it, they collect, you do not get paid.</li>
+                <li><strong>Broker identity theft:</strong> scammers use a real broker&apos;s name and MC with a look-alike email domain or phone number.</li>
+                <li><strong>Fictitious pickups:</strong> a thief poses as a carrier to collect freight at the shipper and steal the load. Carriers&apos; identities get used for this too.</li>
+                <li><strong>Payment change requests:</strong> an email &quot;from the broker&quot; or &quot;from your factoring company&quot; asks you to update bank details.</li>
+                <li><strong>Account takeovers:</strong> phishing emails steal load board or FMCSA portal logins and use your authority to book loads.</li>
+            </ul>
 
-                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
-                        <Reveal delayMs={200}>
-                            <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                Freight fraud, identity theft, and the proliferation of "Chameleon Carriers" have exploded to horrifying record highs this year, draining an estimated <strong>$1.2 Billion annually</strong> from the global and domestic supply chain. In 2026, these criminals are no longer solitary actors in basements; they are highly sophisticated, multi-national cyber-syndicates utilizing AI voice clones, digital IP spoofing, and forged FMCSA data. This 2,500+ word manifesto dissects the anatomy of modern freight scams and provides the zero-tolerance vetting protocols you must implement to protect your motor carrier authority and your livelihood.
-                            </p>
+            <h2>Broker vetting checklist (before every new broker)</h2>
+            <ol>
+                <li>Look up the MC or USDOT number on FMCSA and confirm <strong>active broker authority</strong>.</li>
+                <li>Check there is a <strong>broker bond or trust</strong> on file.</li>
+                <li>Compare the <strong>email domain and phone number</strong> with the company&apos;s FMCSA record and website. One letter off is a warning.</li>
+                <li><strong>Call back</strong> using the number you found yourself, not the one in the email, and confirm the load and the person.</li>
+                <li>Check the broker&apos;s <strong>credit and days to pay</strong> in your load board or factoring tools.</li>
+                <li>Read the <strong>rate confirmation</strong>: broker name and MC, pickup number, addresses and rate must match what you agreed.</li>
+                <li>Be careful with loads paying <strong>far above</strong> the lane rate with pressure to move &quot;right now&quot;.</li>
+            </ol>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <ShieldAlert className="h-8 w-8 text-red-500 shrink-0" />
-                                The Anatomy of Modern Double Brokering
-                            </h2>
-                            <p>
-                                Understanding how the enemy operates is the first step in neutralizing them. The classic "Double Brokering" scam of 2022 was relatively straightforward, but in 2026, It has evolved into complex, multi-layered "Cargo Pilfering and Rate Skimming."
-                            </p>
-                            <p>
-                                <strong>Phase 1: Procurement.</strong> The fraudsters set up a legitimate-looking "Chameleon Carrier" MC authority (often buying aged, dormant MC numbers to bypass the 90-day probationary period enforced by brokers). They book a high-value load directly from a reputable Mega-Broker (like CH Robinson or TQL). By accepting a very low rate, they win the bid instantly.
-                            </p>
-                            <p>
-                                <strong>Phase 2: The Bait.</strong> The fraudster immediately turns around and re-posts that exact same freight on the DAT or Truckstop load boards, but this time posing as a "Broker." Crucially, they post the load at a high, highly attractive rate (e.g., $4.50/mile for a standard van load) to guarantee a desperate, legitimate owner-operator snatches it up quickly.
-                            </p>
-                            <p>
-                                <strong>Phase 3: The Ghosting.</strong> The legitimate owner-operator arrives at the shipper, loads the freight, and delivers it safely using their own fuel, time, and wear-and-tear. The shipper pays the mega-broker, who legally pays the fraudster's "Chameleon Carrier." The fraudster immediately liquidates the bank account, deletes their VOIP phone numbers, and disappears into the ether.
-                            </p>
-                            <p>
-                                The legitimate owner-operator is left with a $2,500 fuel and operational bill and zero compensation. When they try to file a claim on the fraudster's bond, they discover the bond was forged or already fully drained.
-                            </p>
+            <h2>Protect your own authority</h2>
+            <ul>
+                <li>Never share FMCSA portal, load board or email passwords. Turn on two-factor login everywhere it is offered.</li>
+                <li>Keep your contact details on FMCSA current so brokers can verify you.</li>
+                <li>Confirm payment-change requests by phone with your factoring company. We work with{" "}
+                    <a href="https://www.bobtail.com/" target="_blank" rel="noopener noreferrer">Bobtail</a> for factoring.</li>
+                <li>When you stop working with a dispatcher, close everything out. Read{" "}
+                    <a href="/blog/never-share-your-mc-case-study">how one uncancelled load damaged a carrier&apos;s reputation</a>.</li>
+            </ul>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Fingerprint className="h-8 w-8 text-accent shrink-0" />
-                                AI Voice Deepfakes and Geo-Spoofing
-                            </h2>
-                            <p>
-                                The most serious technological leap in 2026 is the deployment of generative Artificial Intelligence in freight fraud. 
-                            </p>
-                            <p>
-                                Fraudsters are actively scraping audio clips from corporate LinkedIn videos, YouTube interviews, and podcast appearances made by prominent logistics executives and broker agents. They feed this audio into AI tools to create perfect <strong>Voice Deepfakes</strong>. 
-                            </p>
-                            <p>
-                                When an owner-operator calls the phone number provided on a fake rate confirmation, the AI—sounding exactly like the broker the carrier has known for five years—answers the phone, complete with local colloquialisms, and successfully "verifies" the fraudulent load.
-                            </p>
-                            
-                            <h3 className="text-2xl font-bold mt-8 mb-4 flex items-center gap-2">
-                                <ServerCrash className="h-6 w-6 text-red-500" />
-                                Geographic IP Anomalies
-                            </h3>
-                            <p>
-                                Furthermore, scammers are utilizing enterprise-grade VPNs (Virtual Private Networks) to mask their physical locations. An email originating from an IP address in Eastern Europe, India, or South America will artificially display as pinging directly from a server in Chicago or Atlanta. If your dispatch service is merely looking at the text of an email rather than auditing the exact routing headers of the IP transmission, your freight is at severe risk of interception.
-                            </p>
+            <h2>What changed in 2026: FMCSA&apos;s Motus system</h2>
+            <p>
+                On May 19, 2026, FMCSA launched Motus, a new registration system that replaces the old ones. New registrations go
+                through identity verification with a government ID and a facial scan, plus checks that the business is real. The
+                goal is to make it harder to create fake companies or take over real ones. MC numbers and BOC-3 rules have not
+                changed at launch, so keep checking MC records the same way.
+            </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <CheckSquare className="h-8 w-8 text-green-500 shrink-0" />
-                                The Zero-Tolerance Vetting Protocol
-                            </h2>
-                            <p>
-                                Speed kills in logistics, but rushing through your vetting process is financial suicide. If your internal or outsourced dispatch vetting process takes less than 10 minutes per new broker entity, you are hopelessly exposed. Here is the uncompromising, iron-clad standard enforced at Priority Dispatch LLC on every single load:
-                            </p>
-
-                            <div className="bg-card border border-border rounded-xl p-8 shadow-sm my-8">
-                                <ul className="space-y-6">
-                                    <li className="flex items-start gap-4">
-                                        <div className="mt-1 flex items-center justify-center bg-green-500/20 rounded-full p-2">
-                                            <ShieldCheck className="h-5 w-5 text-green-500" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-lg text-foreground mb-1">1. Domain Authenticity Scrutiny</h3>
-                                            <p className="text-sm text-muted-foreground leading-relaxed">
-                                                We outright reject any communication, email, or packet arriving from a generic domain provider (@gmail.com, @yahoo.com, @aol.com). A verified, legitimate brokerage will ALWAYS utilize a registered corporate domain. Furthermore, we check the domain age via ICANN lookup. If a broker claims to have been in business for 8 years, but their website domain was registered 14 days ago in a foreign country, the load is immediately canceled.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li className="flex items-start gap-4">
-                                        <div className="mt-1 flex items-center justify-center bg-green-500/20 rounded-full p-2">
-                                            <Lock className="h-5 w-5 text-green-500" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-lg text-foreground mb-1">2. Factorability as the Complete Litmus Test</h3>
-                                            <p className="text-sm text-muted-foreground leading-relaxed">
-                                                Before we permit an owner-operator to sign a rate confirmation, we run the broker's MC number through Tier-1 Non-Recourse factoring databases. If the factoring company refuses to approve the credit, or if their days-to-pay (DTP) average has recently slipped past 35 days, we kill the deal. If a multibillion-dollar bank won't trust the broker to pay, our carriers certainly will not either.
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li className="flex items-start gap-4">
-                                        <div className="mt-1 flex items-center justify-center bg-green-500/20 rounded-full p-2">
-                                            <Activity className="h-5 w-5 text-green-500" />
-                                        </div>
-                                        <div>
-                                            <h3 className="font-bold text-lg text-foreground mb-1">3. Direct Surety Bond Verification</h3>
-                                            <p className="text-sm text-muted-foreground leading-relaxed">
-                                                Counterfeit Certificate of Insurance (COI) PDFs are alarmingly common. Fraudsters easily Photoshop legitimate policies. Our dispatchers never dial the phone number printed on the COI. We independently locate the underwriter's contact information via the FMCSA SAFER database, call the principal underwriter directly, and verbally verify that the $75,000 BMC-84 bond is currently active, fully funded, and devoid of pending claims.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Gavel className="h-8 w-8 text-accent shrink-0" />
-                                The SAFE Freight Act & Legislative Relief
-                            </h2>
-                            <p>
-                                Recognizing the serious bleeding occurring within the independent carrier sector, the U.S. House of Representatives recently introduced the <strong>SAFE Freight Act</strong> (Securing America’s Freight Economy). 
-                            </p>
-                            <p>
-                                This legislation seeks to double the mandatory broker surety bond requirement from $75,000 up to $150,000 to weed out undercapitalized actors. More critically, it establishes a dedicated Federal task force designed to implement a "Three Strikes and You’re Out" immediate revocation protocol for entities credibly accused of unauthorized brokering, accompanied by severe felony wire-fraud penalties.
-                            </p>
-                            <p>
-                                However, federal laws iterate slowly, and carrier bankruptcies happen quickly. Until the FMCSA establishes a biometrically secured national dispatch portal, your only defense is aggressive offense.
-                            </p>
-
-                            <h3 className="text-2xl font-bold mt-8 mb-4">Weaponizing the Bond Interpleader</h3>
-                            <p>
-                                If you discover mid-transit that you have been double-brokered, the most potent weapon in 2026 is filing an immediate <strong>Bond Interpleader</strong>. By legally notifying the underlying, original shipper and the actual mega-broker holding the freight that a fraud occurred, <em>before</em> the delivery invoice is paid, you can place a serious legal freeze on the funds.
-                            </p>
-                            <p>
-                                The surety company is then forced to bypass the fraudulent "Chameleon Carrier" entity entirely, legally directing the compensation directly to the actual motor carrier whose wheels touched the pavement. It requires intense administrative work, but it is the strongest method for recovering stolen revenue.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion: Your Data is Your Armor</h2>
-                            <p>
-                                In 2026, you cannot simply trust a friendly voice on the phone or a visually appealing PDF document. You must operate on the fundamental premise of <strong>"Zero Trust Logistics."</strong> Every entity is a threat until and legally proven otherwise.
-                            </p>
-                            <p>
-                                As an independent owner-operator gripping a steering wheel for 11 hours a day, attempting to perform enterprise-grade cyber investigations on your smartphone between weigh stations is an impossible expectation. You require a dedicated human firewall.
-                            </p>
-                            <p>
-                                At <strong>Priority Dispatch LLC</strong>, security is integrated into our DNA. We maintain active blacklists, utilize advanced API credit tracking, and act as your defensive line. We do not just secure premium freight—we guarantee that the invoice clears the bank. <a href="/contact" className="text-accent font-bold hover:underline">Contact our tactical dispatch team today</a> to audit your current security protocols and shield your hard-earned revenue from industry predators.
-                            </p>
-
-                            {/* Internal Links */}
-                            <div className="mt-16 rounded-xl border-l-4 border-accent bg-muted p-8 shadow-sm">
-                                <h3 className="font-bold text-2xl text-foreground mb-6 flex items-center gap-2">
-                                    <ShieldAlert className="h-6 w-6 text-accent" />
-                                    Essential Related Reading
-                                </h3>
-                                <ul className="space-y-4 text-base">
-                                    <li className="flex items-start gap-2">
-                                        <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
-                                        <span>
-                                            <a href="/blog/how-to-choose-dispatch-service" className="text-foreground font-bold hover:text-accent transition-colors">How to Choose a Genuine Dispatch Service</a> 
-                                            <br/><span className="text-sm text-muted-foreground">Learn the red flags of offshore scam dispatchers and why verifying a U.S. EIN is mandatory.</span>
-                                        </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
-                                        <span>
-                                            <a href="/faq" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch FAQ — Security & Billing</a> 
-                                            <br/><span className="text-sm text-muted-foreground">Find out exactly how we process your invoices to non-recourse factoring companies to eliminate payment risk.</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </Reveal>
-
-                        {/* Author Bio */}
-                        {/* Author Bio */}
-                        <Reveal delayMs={250}>
-                            <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
-                                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
-                                    <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
-                                </p>
-                                <a 
-                                    href="https://www.linkedin.com/in/muhammad-faisal-bilal" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
-                                >
-                                    Connect on LinkedIn →
-                                </a>
-                            </div>
-                        </Reveal>
-                    </div>
-                </div>
-                <RelatedPosts slug="combatting-freight-fraud-2026" />
-            </article>
-            <SiteFooter />
-        </main>
+            <h2>If you think you have been scammed</h2>
+            <ol>
+                <li>Stop work on the load if it is still in progress and call the shipper and the real broker.</li>
+                <li>Save every email, text, rate confirmation and call log.</li>
+                <li>Report it to the real broker, your factoring company and FMCSA, and to police if freight was stolen.</li>
+                <li>Warn your dispatcher so the same contact is blocked for your other trucks.</li>
+            </ol>
+            <p>
+                Checking brokers on every load is part of the service at Priority Dispatch; see{" "}
+                <a href="/owner-operator-dispatch">how owner-operator dispatch works</a> and{" "}
+                <a href="/blog/how-to-choose-dispatch-service">how to choose a dispatch service</a>.
+            </p>
+        </ArticleShell>
     )
 }

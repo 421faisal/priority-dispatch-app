@@ -1,232 +1,109 @@
 import type { Metadata } from "next"
-import { SiteHeader } from "@/components/site/site-header"
-import { SiteFooter } from "@/components/site/site-footer"
-import Reveal from "@/components/site/reveal"
-import { Calendar, User, Clock, ArrowLeft, Linkedin, BarChart2, Globe, Shield, TrendingUp, ShieldAlert, Ship, Fuel, Target, Briefcase, Truck } from "lucide-react"
-import { BlogArticleSchema } from "@/components/site/blog-article-schema"
-import { RelatedPosts } from "@/components/site/related-posts"
+import { ArticleShell } from "@/components/site/article-shell"
+
+const slug = "2026-freight-market-outlook"
+const title = "How to Read the Freight Market as an Owner-Operator"
+const description =
+    "How to read the trucking freight market: load-to-truck ratios, spot vs. contract rates, seasonal swings and what to do when rates rise or fall."
+const url = `https://prioritydispatchllc.com/blog/${slug}`
+const image = `/images/blog/photos/${slug}-og.jpg`
 
 export const metadata: Metadata = {
-    title: "2026 Freight Market Outlook: Rates and Recovery",
-    description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
-    alternates: {
-        canonical: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
-    },
-    openGraph: {
-        title: "2026 Freight Market Outlook: Rates and Recovery",
-        description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
-        url: "https://prioritydispatchllc.com/blog/2026-freight-market-outlook",
-        siteName: "Priority Dispatch LLC",
-        type: "article",
-        publishedTime: "2026-03-03",
-        authors: ["Muhammad Faisal Bilal"],
-        images: ["/images/blog/photos/2026-freight-market-outlook-og.jpg"],
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "2026 Freight Market Outlook: Rates and Recovery",
-        description: "What carriers should expect from the 2026 freight market: rate stabilization, regional supply chain shifts and how to capture the best-paying loads.",
-        images: ["/images/blog/photos/2026-freight-market-outlook-og.jpg"],
-    },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "article", publishedTime: "2026-03-03", modifiedTime: "2026-11-10", authors: ["Muhammad Faisal Bilal"], images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
 }
 
-export default function BlogPostOutlook() {
+const faqs = [
+    { q: "What is a load-to-truck ratio?", a: "The number of loads posted on a load board for each truck posted, for a given equipment type and area. A rising ratio means more freight than trucks, which usually pushes spot rates up. A falling ratio means the opposite." },
+    { q: "What is the difference between spot and contract rates?", a: "Spot rates are set load by load, mostly on load boards, and move quickly with supply and demand. Contract rates are agreed in advance between shippers and carriers or brokers and change slowly. Spot rates usually lead contract rates up and down." },
+    { q: "When is freight busiest?", a: "Produce season (late spring into summer, earlier in the South), the run-up to the holidays (late summer through fall), and the ends of months and quarters. Holiday weeks and the weeks right after them tend to be slow." },
+    { q: "Should I take a low rate to stay moving?", a: "Only if the rate across all miles, including deadhead, covers your cost per mile, or if it positions you in a much stronger market for the next load. Run the numbers before you accept." },
+]
+
+export default function FreightMarketGuide() {
     return (
-        <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
-            <SiteHeader />
-            <BlogArticleSchema
-                title="2026 Freight Market Outlook: Navigating the Great Capacity Rebound"
-                description="Comprehensive analysis of the 2026 freight market, covering rate stabilization, regional shifts like Mexico nearshoring, and strategic capacity alignment."
-                datePublished="2026-03-03"
-                dateModified="2026-11-01"
-                slug="2026-freight-market-outlook"
-                imageUrl="/images/blog/photos/2026-freight-market-outlook-og.jpg"
-            />
-            <article className="py-24">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <Reveal>
-                        <a href="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-accent mb-8 transition-colors">
-                            <ArrowLeft className="h-4 w-4" />
-                            Back to Blog
-                        </a>
-                        <header className="mb-12 text-center md:text-left">
-                            <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                2026 Freight Market Outlook: Navigating the Great Capacity Rebound
-                            </h1>
-                            <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <Calendar className="h-4 w-4 text-accent" />
-                                    March 3, 2026
-                                </span>
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <User className="h-4 w-4 text-accent" />
-                                    Muhammad Faisal Bilal
-                                </span>
-                                <span className="flex items-center gap-2">
-                                    <Clock className="h-4 w-4 text-accent" />
-                                    28 min read
-                                </span>
-                            </div>
-                        </header>
-                    </Reveal>
+        <ArticleShell
+            slug={slug}
+            title={title}
+            description={description}
+            h1="How to Read the Freight Market as an Owner-Operator"
+            datePublished="2026-03-03"
+            dateModified="2026-11-10"
+            dateLabel="Updated November 10, 2026"
+            readMinutes={7}
+            photo={slug}
+            photoAlt="Two semi-trucks with dry vans on an interstate"
+            faqs={faqs}
+        >
+            <p className="border-l-4 border-accent pl-6 text-xl text-muted-foreground">
+                <strong>Short answer:</strong> you do not need a forecast to make good decisions. Watch three things every week:
+                the load-to-truck ratio for your equipment, the gap between spot and contract rates, and the season. When ratios
+                and spot rates climb, negotiate harder and plan longer reloads. When they fall, protect your cost per mile and lean
+                on brokers who pay on time.
+            </p>
 
-                    <Reveal delayMs={100}>
-                        <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img width={1200} height={800}
-                                src="/images/blog/photos/2026-freight-market-outlook.webp"
-                                alt="Two semi-trucks with dry vans on an interstate"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                    </Reveal>
+            <h2>1. Load-to-truck ratios</h2>
+            <p>
+                Load boards publish how many loads are posted per truck, by equipment and by region. For you, the trend matters more
+                than the number: a ratio rising week after week in your area means freight is getting tighter and brokers will
+                have to pay more to cover loads. Compare your outbound market with the market you are delivering into. A strong
+                pickup market and a weak delivery market mean you should price in the reload.
+            </p>
 
-                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
-                        <Reveal delayMs={200}>
-                            <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                The freight recession of 2023 and 2024 was tough. We all felt it. But as we move deep into 2026, the market has finally turned the corner. If you are an owner-operator or small fleet owner, this is the exact moment you transition from "surviving" to "growing." Here is a no-nonsense look at where rates are heading and where the best freight is moving this year.
-                            </p>
+            <h2>2. Spot vs. contract rates</h2>
+            <p>
+                Spot rates react first. When spot rates rise above contract rates, shippers&apos; contracted carriers start
+                turning loads down and more freight spills onto the boards, which is when owner-operators have the most leverage.
+                When spot rates sit well below contract rates, competition for each board load is heavy and building repeat
+                relationships with good brokers matters most.
+            </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <BarChart2 className="h-8 w-8 text-accent shrink-0" />
-                                The Macro Landscape: A Tighter, Stronger Market
-                            </h2>
-                            <p>
-                                The "Capacity Purge" is officially over. Over 45,000 small and mid-sized carriers left the market during the deep freight recession. Because so many trucks went out of business or got repossessed, we finally have less capacity chasing the same amount of freight. 
-                            </p>
-                            <p>
-                                Combine that with the DOT CDL crackdowns that pulled thousands of disqualified drivers off the road, and you get the perfect recipe for higher spot rates. The market floor for standard 53' Dry Van has firmly reset around $2.25 to $2.35 per mile on national averages. Reefer and step-deck Flatbed are seeing floors at $2.85 to $3.10 per mile. If a broker offers less than this, smart carriers are simply hanging up the phone.
-                            </p>
+            <h2>3. Seasons that move rates</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Season</th>
+                        <th>What usually happens</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Produce season</td><td>Reefer demand jumps in growing regions; dry van and flatbed capacity gets pulled in too</td></tr>
+                    <tr><td>Late summer to fall</td><td>Import and retail freight build toward the holidays; dry van busier</td></tr>
+                    <tr><td>Spring to fall construction</td><td>Flatbed and step deck demand stronger</td></tr>
+                    <tr><td>Month and quarter ends</td><td>Shippers push freight out; short-term spikes</td></tr>
+                    <tr><td>Holiday weeks and early January</td><td>Fewer loads, longer waits</td></tr>
+                </tbody>
+            </table>
+            <p>
+                Our region guides go deeper: <a href="/truck-dispatcher/midwest">Midwest</a> (harvest and winter),{" "}
+                <a href="/truck-dispatcher/california">California</a> (produce and ports) and{" "}
+                <a href="/truck-dispatcher/florida">Florida</a> (outbound imbalance).
+            </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Globe className="h-8 w-8 text-accent shrink-0" />
-                                Geopolitics: The Mexican Nearshoring Boom
-                            </h2>
-                            <p>
-                                Mexico is now the #1 trading partner of the United States. Large corporations have moved their factories out of Asia and directly across the Southern border to avoid supply chain disruptions. 
-                            </p>
-                            <p>
-                                For American truck drivers, this is the biggest opportunity in the last twenty years. The "Silicon Border" — stretching from Laredo down to McAllen and across to Otay Mesa, CA — is pumping out electronics, auto parts, and goods that need to reach the Midwest fast.
-                            </p>
+            <h2>What to do when rates are rising</h2>
+            <ul>
+                <li>Counter-offer more often; brokers have less room to say no when trucks are scarce.</li>
+                <li>Ask for detention, layover and TONU terms in writing on every rate confirmation.</li>
+                <li>Plan reloads before you deliver, so a strong market does not turn into empty miles.</li>
+                <li>Consider equipment that is short in your region, such as reefer in produce season.</li>
+            </ul>
 
-                            <div className="bg-card border border-border rounded-xl p-8 my-10 shadow-sm relative overflow-hidden">
-                                <div className="top-0 right-0 w-32 h-32 bg-accent/5 rounded-bl-full -mr-10 -mt-10 pointer-events-none"></div>
-                                <h3 className="font-bold text-2xl mb-6 flex items-center gap-2">
-                                    <Target className="h-6 w-6 text-accent" />
-                                    Highest Paying Lanes in 2026
-                                </h3>
-                                <ul className="space-y-4 text-base">
-                                    <li className="flex items-center gap-3 border-b border-border pb-3">
-                                        <Truck className="h-5 w-5 text-accent" />
-                                        <span className="font-semibold">Laredo, TX to Dallas/Fort Worth, TX</span>
-                                    </li>
-                                    <li className="flex items-center gap-3 border-b border-border pb-3">
-                                        <Truck className="h-5 w-5 text-accent" />
-                                        <span className="font-semibold">El Paso, TX to Phoenix, AZ</span>
-                                    </li>
-                                    <li className="flex items-center gap-3 border-b border-border pb-3">
-                                        <Truck className="h-5 w-5 text-accent" />
-                                        <span className="font-semibold">Otay Mesa, CA to Los Angeles Basin</span>
-                                    </li>
-                                    <li className="flex items-center gap-3 pt-1">
-                                        <Truck className="h-5 w-5 text-accent" />
-                                        <span className="font-semibold">McAllen, TX to Atlanta, GA</span>
-                                    </li>
-                                </ul>
-                            </div>
+            <h2>What to do when rates are falling</h2>
+            <ul>
+                <li>Know your break-even rate. Use the <a href="/toolbox/cost-per-mile-calculator">cost per mile calculator</a>.</li>
+                <li>Count deadhead in every decision with the <a href="/toolbox/load-profit-calculator">load profit calculator</a>.</li>
+                <li>Stay with brokers who pay on time; a high rate from a slow payer can cost more than it earns.</li>
+                <li>Watch for freight fraud, which rises when carriers are hungry for loads. See our <a href="/blog/combatting-freight-fraud-2026">broker vetting checklist</a>.</li>
+            </ul>
 
-                            <p>
-                                <strong>The Strategy:</strong> Park your trucks in the "Texas Triangle" (Dallas, Houston, San Antonio). The volume of northbound freight is overwhelming the available regional drivers, meaning you can basically name your price.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Shield className="h-8 w-8 text-accent shrink-0" />
-                                The Insurance Wall
-                            </h2>
-                            <p>
-                                Why aren't thousands of new carriers rushing in to ruin the rates again? Simple: Insurance. With mega-shippers now demanding $2,000,000 in general liability to haul their freight, the barrier to entry is huge.
-                            </p>
-                            <p>
-                                A new MC authority today faces $20,000+ per truck in insurance premiums alone. This acts like a wall, keeping the cheap, high-risk operators out of the premium freight pools. If you are an established, safe carrier, this moat protects your bottom line.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Fuel className="h-8 w-8 text-accent shrink-0" />
-                                The EPA 2027 Equipment Squeeze
-                            </h2>
-                            <p>
-                                Heavy-duty regulations hitting in 2027 are scaring the mega-fleets. Because nobody wants to deal with the expensive and unproven 2027 engines, fleets are panic-buying the current 2026 trucks. This means brand new trucks are hard to find.
-                            </p>
-                            <p>
-                                Since mega-fleets can't expand their fleets as fast as they want, the excess freight has to spill over into the spot market. This directly benefits agile owner-operators who are ready to take on the overflow at higher margins.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <TrendingUp className="h-8 w-8 text-accent shrink-0" />
-                                Tactical Shift: Mini-Contracts
-                            </h2>
-                            <p>
-                                Living 100% on the load board in 2026 is still risky because brokers will always try to compress your margins. The real money right now is in <strong>Mini-Contracts</strong>.
-                            </p>
-                            <p>
-                                At Priority Dispatch LLC, we are locking our carriers into 3-to-6 month dedicated lanes with mid-sized shippers. It guarantees you steady, high-paying revenue to cover your truck payments, while still allowing us to renegotiate the rate upwards as the market heats up towards Q4.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-4 text-primary">Conclusion</h2>
-                            <p>
-                                The days of surviving on sheer luck are over. The carriers bringing in generational wealth this year are those who run their trucks like a true business. 
-                            </p>
-                            <p>
-                                We know the data, we know the shippers, and we fight the brokers for every single cent so that you can focus on moving freight safely. <a href="/contact" className="text-accent font-bold hover:underline">Get in touch with Priority Dispatch LLC today</a> and start claiming the profitability your operation actually deserves.
-                            </p>
-
-                            {/* Internal Links */}
-                            <div className="mt-16 rounded-xl border-l-4 border-accent bg-muted p-8 shadow-sm">
-                                <h3 className="font-bold text-2xl text-foreground mb-6 flex items-center gap-2">
-                                    <Briefcase className="h-6 w-6 text-accent" />
-                                    More Carrier Resources
-                                </h3>
-                                <ul className="space-y-4 text-base">
-                                    <li className="flex items-start gap-2">
-                                        <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
-                                        <span>
-                                            <a href="/blog/combatting-freight-fraud-2026" className="text-foreground font-bold hover:text-accent transition-colors">Combatting Freight Fraud in 2026</a> 
-                                            <br/><span className="text-sm text-muted-foreground">Learn exactly how to bulletproof your MC against load board identity theft.</span>
-                                        </span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
-                                        <span>
-                                            <a href="/services" className="text-foreground font-bold hover:text-accent transition-colors">Priority Dispatch Services</a> 
-                                            <br/><span className="text-sm text-muted-foreground">Discover how we keep your trucks moving in the highest paying zones without the back-office headache.</span>
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </Reveal>
-
-                        {/* Author Bio */}
-                        {/* Author Bio */}
-                        <Reveal delayMs={250}>
-                            <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
-                                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
-                                    <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
-                                </p>
-                                <a 
-                                    href="https://www.linkedin.com/in/muhammad-faisal-bilal" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
-                                >
-                                    Connect on LinkedIn →
-                                </a>
-                            </div>
-                        </Reveal>
-                    </div>
-                </div>
-                <RelatedPosts slug="2026-freight-market-outlook" />
-            </article>
-            <SiteFooter />
-        </main>
+            <h2>How a dispatcher uses this</h2>
+            <p>
+                A dispatcher watches these signals across lanes every day, so you can negotiate from data instead of guesswork. See{" "}
+                <a href="/owner-operator-dispatch">owner-operator dispatch</a> and <a href="/pricing">our rates</a>.
+            </p>
+        </ArticleShell>
     )
 }

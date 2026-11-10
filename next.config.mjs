@@ -83,6 +83,17 @@ const nextConfig = {
         destination: '/blog',
         permanent: true,
       },
+      // Weak posts merged into rewritten guides (Nov 2026, crawled-not-indexed)
+      {
+        source: '/blog/navigating-freight-rate-rebound',
+        destination: '/blog/2026-freight-market-outlook',
+        permanent: true,
+      },
+      {
+        source: '/blog/sustainability-ev-trucks-future',
+        destination: '/blog/epa-2027-pre-buy-strategy',
+        permanent: true,
+      },
       // Existing redirects
       {
         source: '/get-started',

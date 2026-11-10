@@ -208,7 +208,7 @@ export default function BlogPost() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/blog/navigating-freight-rate-rebound" className="text-foreground font-bold hover:text-accent transition-colors">Navigating the Rate Rebound</a> 
+                                            <a href="/blog/2026-freight-market-outlook" className="text-foreground font-bold hover:text-accent transition-colors">Navigating the Rate Rebound</a> 
                                             <br/><span className="text-sm text-muted-foreground">Expert strategies for negotiating higher rates in a tightening market.</span>
                                         </span>
                                     </li>

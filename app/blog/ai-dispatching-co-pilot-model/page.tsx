@@ -207,7 +207,7 @@ export default function BlogPostCoPilot() {
                                     <li className="flex items-start gap-2">
                                         <ArrowLeft className="h-5 w-5 text-accent shrink-0 mt-0.5" /> 
                                         <span>
-                                            <a href="/blog/navigating-freight-rate-rebound" className="text-foreground font-bold hover:text-accent transition-colors">Data-Driven Rebound Tactics</a> 
+                                            <a href="/blog/2026-freight-market-outlook" className="text-foreground font-bold hover:text-accent transition-colors">Data-Driven Rebound Tactics</a> 
                                             <br/><span className="text-sm text-muted-foreground">See how the Co-Pilot model perfectly integrates with our aggressive spot market rebound strategies.</span>
                                         </span>
                                     </li>

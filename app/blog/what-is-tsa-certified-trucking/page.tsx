@@ -1,331 +1,97 @@
 import type { Metadata } from "next"
-import { SiteHeader } from "@/components/site/site-header"
-import { SiteFooter } from "@/components/site/site-footer"
-import Reveal from "@/components/site/reveal"
-import { BlogArticleSchema } from "@/components/site/blog-article-schema"
-import { Calendar, User, Clock, ArrowLeft, Plane, Shield, DollarSign, TrendingUp, AlertCircle, CheckCircle2, Award } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { RelatedPosts } from "@/components/site/related-posts"
+import { ArticleShell } from "@/components/site/article-shell"
+
+const slug = "what-is-tsa-certified-trucking"
+const title = "TSA Certified Trucking: What It Means & How to Get It"
+const description =
+    "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how it works and the loads it unlocks."
+const url = `https://prioritydispatchllc.com/blog/${slug}`
+const image = `/images/blog/photos/${slug}-og.jpg`
 
 export const metadata: Metadata = {
-    title: "TSA Certified Trucking: What It Means & How to Get It",
-    description: "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how to qualify, cost and the loads it unlocks.",
-    alternates: {
-        canonical: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
-    },
-    openGraph: {
-        title: "TSA Certified Trucking: What It Means & How to Get It",
-        description: "TSA certified trucking means the driver passed a TSA Security Threat Assessment to haul air cargo. Who needs it, how to qualify, cost and the loads it unlocks.",
-        url: "https://prioritydispatchllc.com/blog/what-is-tsa-certified-trucking",
-        type: "article",
-        images: ["/images/blog/photos/what-is-tsa-certified-trucking-og.jpg"],
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "TSA Certified Trucking: What It Means & How to Get It",
-        description: "TSA certified in trucking explained: who needs it, how drivers and carriers qualify.",
-    },
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, siteName: "Priority Dispatch LLC", type: "article", publishedTime: "2026-05-22", modifiedTime: "2026-11-10", authors: ["Muhammad Faisal Bilal"], images: [image] },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
 }
 
-export default function TSACertifiedBlogPost() {
+const faqs = [
+    { q: "Is there a TSA certification for truck drivers?", a: "Not a single card. What people call TSA certified usually means the driver has passed a TSA Security Threat Assessment (STA) so an indirect air carrier can let them handle air cargo without an escort. For port work the separate credential is the TWIC card." },
+    { q: "How do I get a TSA Security Threat Assessment?", a: "Usually through the company you haul air cargo for. Indirect air carriers (freight forwarders approved by TSA) submit the STA for their employees and agents, typically with TSA Form 419F. Ask the forwarder or airline cargo contact what they require." },
+    { q: "Is a TSA STA the same as a TWIC?", a: "No. A TWIC is for unescorted access to secure areas of ports and maritime facilities. A TSA STA for air cargo covers unescorted access to cargo moving to aircraft. Both involve a TSA background check." },
+    { q: "Does a hazmat endorsement help?", a: "TSA can accept certain comparable background checks, so a hazmat endorsement or TWIC may make the process easier. The indirect air carrier decides what it can accept under its security program." },
+]
+
+export default function TsaGuide() {
     return (
-        <main className="min-h-screen bg-background text-foreground transition-colors duration-300">
-            <SiteHeader />
-            <BlogArticleSchema
-                title="What Does TSA Certified Mean in Trucking? Complete Guide 2026"
-                description="TSA certification unlocks air cargo and high-security freight in trucking. Learn how to become TSA certified and how Priority Dispatch LLC helps certified owner-operators access premium expedited loads."
-                datePublished="2026-05-22"
-                dateModified="2026-11-01"
-                slug="what-is-tsa-certified-trucking"
-                imageUrl="/images/blog/photos/what-is-tsa-certified-trucking-og.jpg"
-            />
-            <article className="py-24">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <Reveal>
-                        <a href="/blog" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-accent mb-8 transition-colors">
-                            <ArrowLeft className="h-4 w-4" />
-                            Back to Blog
-                        </a>
-                        <header className="mb-12 text-center md:text-left">
-                            <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl text-primary mb-6 leading-tight">
-                                What Does TSA Certified Mean in Trucking? (2026 Guide)
-                            </h1>
-                            <div className="flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground border-b border-border pb-8">
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <Calendar className="h-4 w-4 text-accent" />
-                                    May 22, 2026
-                                </span>
-                                <span className="flex items-center gap-2 font-medium text-foreground">
-                                    <User className="h-4 w-4 text-accent" />
-                                    Muhammad Faisal Bilal
-                                </span>
-                                <span className="flex items-center gap-2">
-                                    <Clock className="h-4 w-4 text-accent" />
-                                    13 min read
-                                </span>
-                            </div>
-                        </header>
-                    </Reveal>
+        <ArticleShell
+            slug={slug}
+            title={title}
+            description={description}
+            h1="What Does TSA Certified Mean in Trucking?"
+            datePublished="2026-05-22"
+            dateModified="2026-11-10"
+            dateLabel="Updated November 10, 2026"
+            readMinutes={5}
+            photo={slug}
+            photoAlt="Cargo being loaded onto a jet at an airport"
+            faqs={faqs}
+            sources={[
+                { label: "TSA Indirect Air Carrier Management System", url: "https://iac.tsa.dhs.gov/iac/home.go" },
+                { label: "49 CFR Part 1548: Indirect Air Carrier Security", url: "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-XII/subchapter-C/part-1548" },
+            ]}
+        >
+            <p className="border-l-4 border-accent pl-6 text-xl text-muted-foreground">
+                <strong>Short answer:</strong> in trucking, &quot;TSA certified&quot; usually means the driver has passed a TSA
+                Security Threat Assessment (STA). It is required before an indirect air carrier, a TSA-approved freight forwarder,
+                can let you handle air cargo without an escort. In practice it lets you haul freight to and from airport cargo
+                areas for airlines and forwarders.
+            </p>
 
-                    <Reveal delayMs={100}>
-                        <div className="relative mb-12 aspect-[16/9] overflow-hidden rounded-2xl shadow-xl border border-border">
-                            <img width={1200} height={800}
-                                src="/images/blog/photos/what-is-tsa-certified-trucking.webp"
-                                alt="Cargo being loaded onto a jet at an airport"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
-                    </Reveal>
+            <h2>Why air cargo has its own rules</h2>
+            <p>
+                Cargo that will fly on passenger and cargo planes is screened and tracked under TSA security programs. Indirect air
+                carriers, the forwarders that consolidate freight for airlines, must make sure everyone with unescorted access to
+                that cargo, from their facility until it is handed to the airline, has passed a security threat assessment. A
+                truck driver moving that cargo is often one of those people.
+            </p>
 
-                    <div className="prose prose-lg dark:prose-invert prose-primary mx-auto max-w-none text-foreground/90 leading-relaxed">
-                        <Reveal delayMs={200}>
-                            <p className="text-xl text-muted-foreground italic mb-8 border-l-4 border-accent pl-6">
-                                In trucking, TSA certified usually means the driver has passed a TSA Security Threat Assessment (STA), which is required for unescorted access to air cargo handled by airlines and freight forwarders. In short, it lets you haul secure air cargo to and from airports. This certification is increasingly important for carriers who want to work in airport freight and expedited logistics — two of the fastest-growing and highest-paying segments in trucking.
-                            </p>
+            <h2>Who needs it</h2>
+            <ul>
+                <li>Drivers hauling for an indirect air carrier between its facility and the airport</li>
+                <li>Owner-operators leased to or contracted by a forwarder for air freight runs</li>
+                <li>Owners and officers of a trucking company that becomes an authorized representative for an air carrier</li>
+            </ul>
+            <p>
+                If you never touch cargo going onto aircraft, you do not need an STA. Regular warehouse-to-warehouse freight near an
+                airport does not require one.
+            </p>
 
-                            <p>
-                                If you are an owner-operator trying to understand how TSA certification fits into your business, <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a> regularly dispatches certified drivers on air cargo and high-security lanes across the continental United States.
-                            </p>
+            <h2>How it works</h2>
+            <ol>
+                <li><strong>Find the forwarder or air carrier</strong> you will haul for. They hold the TSA security program.</li>
+                <li><strong>Complete the STA application</strong> they give you (often TSA Form 419F) with your identity details.</li>
+                <li><strong>The company submits it to TSA,</strong> which checks terrorism, immigration and criminal records.</li>
+                <li><strong>Follow their training and handling rules,</strong> such as seals, chain-of-custody paperwork and secure parking.</li>
+            </ol>
+            <p>
+                An STA completed for one employer generally does not need to be repeated if you move to another position that needs
+                one, as long as you stayed continuously in such a position. Ask the new carrier what it can accept.
+            </p>
 
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Shield className="h-8 w-8 text-accent shrink-0" />
-                                What Is TSA Certification in Trucking?
-                            </h2>
-                            <p>
-                                TSA certification in trucking relates to the <strong>Indirect Air Carrier (IAC)</strong> program and related security initiatives managed by the Transportation Security Administration. It ensures that drivers and carriers handling air cargo meet federal security standards before freight reaches passenger or cargo aircraft.
-                            </p>
-
-                            <p>
-                                The certification verifies that a driver or company has passed thorough background checks, fingerprinting, identity verification, and security training — giving shippers and airlines confidence that their freight is protected at every step.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Plane className="h-8 w-8 text-accent shrink-0" />
-                                Why Is TSA Certification Important for Truckers?
-                            </h2>
-                            <p>
-                                Air cargo involves strict security requirements because freight may travel on the same aircraft as passengers or in dedicated cargo planes. A security breach at the ground transport stage can compromise an entire supply chain.
-                            </p>
-
-                            <p>
-                                TSA certified carriers may transport:
-                            </p>
-                            <ul className="space-y-2 my-6">
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                    <span>Airport freight from major U.S. hubs</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                    <span>Bonded air cargo moving under customs supervision</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                    <span>High-value or time-sensitive shipments</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                    <span>Expedited freight for e-commerce and manufacturing</span>
-                                </li>
-                            </ul>
-
-                            <p>
-                                For owner-operators, TSA certification means qualifying for loads that non-certified drivers cannot touch. When paired with professional dispatch services from <a href="https://prioritydispatchllc.com/services" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, your certification becomes a direct pipeline to premium freight contracts.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <Award className="h-8 w-8 text-accent shrink-0" />
-                                How to Become TSA Certified in Trucking
-                            </h2>
-                            <p>
-                                The certification process typically involves the following requirements:
-                            </p>
-
-                            <div className="my-10 p-8 bg-card border border-border rounded-xl shadow-sm">
-                                <h3 className="text-2xl font-bold mb-6">Certification Requirements:</h3>
-                                <ul className="space-y-3">
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                        <span>Passing a federal background check with TSA</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                        <span>Completing fingerprinting at an authorized enrollment center</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                        <span>Providing identity verification documents</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                        <span>Going through a carrier or sponsor approval process</span>
-                                    </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle2 className="h-5 w-5 text-accent shrink-0 mt-1" />
-                                        <span>Completing security awareness training</span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <p>
-                                Some trucking companies or freight forwarders sponsor drivers through the process — particularly when they need a steady pool of certified drivers for airport pickups. As an independent owner-operator, you may need to initiate the process independently or through an IAC-registered company.
-                            </p>
-
-                            <p>
-                                If you are unsure about the best path forward, reach out to <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>. Our team works with carriers of all certification levels and can point you toward freight lanes that match your current credentials while you pursue TSA certification.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <TrendingUp className="h-8 w-8 text-accent shrink-0" />
-                                Benefits of TSA Certification for Owner-Operators
-                            </h2>
-
-                            <div className="space-y-6 my-8">
-                                <div className="p-6 bg-card border border-border rounded-xl">
-                                    <h3 className="text-xl font-bold mb-3">Access to Airport Loads</h3>
-                                    <p className="text-muted-foreground">
-                                        TSA certified drivers can haul air freight from major U.S. airports — a category of freight that is almost entirely inaccessible to non-certified carriers. This includes both inbound and outbound airport freight.
-                                    </p>
-                                </div>
-
-                                <div className="p-6 bg-card border border-border rounded-xl">
-                                    <h3 className="text-xl font-bold mb-3">Premium Freight Rates</h3>
-                                    <p className="text-muted-foreground">
-                                        Expedited air cargo consistently pays above-average rates due to the time-sensitive nature of the freight and the security requirements involved. Certified carriers face less competition for these loads.
-                                    </p>
-                                </div>
-
-                                <div className="p-6 bg-card border border-border rounded-xl">
-                                    <h3 className="text-xl font-bold mb-3">More Business Opportunities</h3>
-                                    <p className="text-muted-foreground">
-                                        Certified carriers qualify for specialized freight contracts with freight forwarders, airlines, and large shippers. At <a href="https://prioritydispatchllc.com" className="text-accent hover:underline font-semibold">Priority Dispatch LLC</a>, we actively connect TSA certified owner-operators with these contracts to maximize their revenue per mile.
-                                    </p>
-                                </div>
-
-                                <div className="p-6 bg-card border border-border rounded-xl">
-                                    <h3 className="text-xl font-bold mb-3">Stronger Industry Reputation</h3>
-                                    <p className="text-muted-foreground">
-                                        Security-cleared carriers are trusted more by brokers, shippers, and logistics partners. TSA certification signals professionalism and reliability — qualities that help you build long-term broker relationships and command better rates.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6 flex items-center gap-3 text-primary">
-                                <DollarSign className="h-8 w-8 text-accent shrink-0" />
-                                Typical Costs of TSA Certification
-                            </h2>
-
-                            <div className="my-8 overflow-x-auto">
-                                <table className="w-full border-collapse border border-border rounded-lg overflow-hidden">
-                                    <thead className="bg-muted">
-                                        <tr>
-                                            <th className="border border-border px-6 py-3 text-left font-bold">Expense</th>
-                                            <th className="border border-border px-6 py-3 text-left font-bold">Estimated Cost</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td className="border border-border px-6 py-3">Fingerprinting</td>
-                                            <td className="border border-border px-6 py-3">$50 – $100</td>
-                                        </tr>
-                                        <tr className="bg-muted/30">
-                                            <td className="border border-border px-6 py-3">Background Checks</td>
-                                            <td className="border border-border px-6 py-3">Varies by state and program</td>
-                                        </tr>
-                                        <tr>
-                                            <td className="border border-border px-6 py-3">Security Training</td>
-                                            <td className="border border-border px-6 py-3">Company or sponsor dependent</td>
-                                        </tr>
-                                        <tr className="bg-muted/30">
-                                            <td className="border border-border px-6 py-3">Administrative Fees</td>
-                                            <td className="border border-border px-6 py-3">Varies</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <p className="text-sm text-muted-foreground italic">
-                                If a sponsor company covers your certification costs, this can significantly reduce the upfront investment required.
-                            </p>
-
-                            <h2 className="text-3xl font-bold mt-12 mb-6">FAQs About TSA Certification in Trucking</h2>
-
-                            <div className="space-y-6 my-8">
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2">Is TSA certification mandatory for all truck drivers?</h3>
-                                    <p className="text-muted-foreground">
-                                        No. TSA certification is mainly required for drivers handling secure air cargo operations at airports and for freight that travels on commercial aircraft.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2">Can owner-operators become TSA certified?</h3>
-                                    <p className="text-muted-foreground">
-                                        Yes. Independent owner-operators are eligible for TSA certification and can use it to access air cargo freight independently.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2">Does TSA certification expire?</h3>
-                                    <p className="text-muted-foreground">
-                                        Yes. Renewals and updated background checks are typically required periodically. Check with your certifying authority for specific timelines.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2">Is TSA certification useful for local drivers?</h3>
-                                    <p className="text-muted-foreground">
-                                        It depends on your freight profile. If you operate near major airports or handle time-sensitive expedited freight, TSA certification can meaningfully increase your earning potential.
-                                    </p>
-                                </div>
-
-                                <div>
-                                    <h3 className="text-xl font-bold mb-2">What type of freight specifically requires TSA certification?</h3>
-                                    <p className="text-muted-foreground">
-                                        Mostly air cargo, expedited high-security shipments, and any freight destined to travel on commercial or cargo aircraft.
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div className="my-12 p-8 bg-accent/10 border-2 border-accent rounded-2xl text-center">
-                                <h3 className="text-2xl font-bold mb-4">TSA Certified and Looking for Premium Air Cargo Loads?</h3>
-                                <p className="text-lg mb-6 text-muted-foreground">
-                                    Priority Dispatch LLC dispatches across all 48 U.S. states and matches certified owner-operators with the right freight. Maximize your TSA certification with our expert dispatch services.
-                                </p>
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                    <a href="/carrier-setup">
-                                        <Button size="lg" className="bg-accent text-accent-foreground hover:opacity-90">
-                                            Get Started Today
-                                        </Button>
-                                    </a>
-                                    <a href="/contact">
-                                        <Button size="lg" variant="outline">
-                                            Contact Our Team
-                                        </Button>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div className="mt-12 p-6 bg-card border border-border rounded-xl">
-                                <h2 className="text-2xl font-bold mb-2">About the Author</h2>
-                                <p className="text-muted-foreground leading-relaxed text-sm md:text-base mb-4">
-                                    <strong>Muhammad Faisal Bilal</strong> is the Founder & CEO of Priority Dispatch LLC. With expertise in connecting TWIC-certified owner-operators with premium port freight, he helps drivers maximize their earnings through strategic load placement across all 48 states.
-                                </p>
-                                <a 
-                                    href="https://www.linkedin.com/in/muhammad-faisal-bilal" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 text-accent hover:underline font-semibold"
-                                >
-                                    Connect on LinkedIn →
-                                </a>
-                            </div>
-                        </Reveal>
-                    </div>
-                </div>
-                <RelatedPosts slug="what-is-tsa-certified-trucking" />
-            </article>
-            <SiteFooter />
-        </main>
+            <h2>What it unlocks for owner-operators</h2>
+            <p>
+                Air freight runs are often short, time-sensitive moves between forwarders and airport cargo buildings. They suit
+                straight trucks, box trucks and sprinter vans as well as semis, and expedited loads can pay a premium because they
+                cannot wait. Reliability matters more than anything: missing a flight cut-off loses the load and the customer.
+            </p>
+            <p>
+                If you hold an STA or a <a href="/blog/what-is-twic-card-trucking">TWIC card</a>, tell your dispatcher so they
+                can target that freight. See our <a href="/services/box-truck-dispatch">box truck dispatch</a> and{" "}
+                <a href="/pricing">rates</a>, or <a href="/blog/what-is-bonded-carrier-trucking">what a bonded carrier is</a>{" "}
+                for another kind of secure freight.
+            </p>
+        </ArticleShell>
     )
 }
