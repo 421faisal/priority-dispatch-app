@@ -46,6 +46,7 @@ const jobPostingSchema = {
             },
             "datePosted": "2026-10-15",
             "employmentType": "FULL_TIME",
+            "validThrough": "2027-02-10T23:59:59-05:00",
             "hiringOrganization": {
                 "@type": "Organization",
                 "name": "Priority Dispatch LLC",
@@ -103,6 +104,7 @@ const jobPostingSchema = {
             },
             "datePosted": "2026-10-15",
             "employmentType": "FULL_TIME",
+            "validThrough": "2027-02-10T23:59:59-05:00",
             "hiringOrganization": {
                 "@type": "Organization",
                 "name": "Priority Dispatch LLC",

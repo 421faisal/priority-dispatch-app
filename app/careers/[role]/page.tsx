@@ -64,7 +64,8 @@ export default async function DriverJobPage({ params }: { params: Promise<{ role
         },
         qualifications: job.requirements.join(". "),
         responsibilities: job.duties.join(". "),
-        experienceRequirements: { "@type": "OccupationalExperienceRequirements", monthsOfExperience: 0 },
+        // Google: a job open to new drivers says "no requirements" (a 0-month value is flagged)
+        experienceRequirements: "no requirements",
         industry: "Trucking and freight transportation",
         occupationalCategory: job.id.startsWith("box") ? "53-3033.00 Light Truck Drivers" : "53-3032.00 Heavy and Tractor-Trailer Truck Drivers",
         url,
