@@ -187,14 +187,14 @@ export function CareersClient() {
                 <div className="mx-auto max-w-5xl px-4">
                     <h2 className="text-3xl font-bold text-center mb-3">Truck Driver Jobs in Torrance, CA</h2>
                     <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
-                        Dedicated OTR and regional drivers. We provide the truck, pay by percentage or per mile, and new drivers can apply.
+                        Dedicated OTR and regional drivers. We provide the truck: $0.65 per mile on dry van, 28% of the load on box trucks. New drivers can apply.
                     </p>
                     <div className="grid gap-6 md:grid-cols-2">
                         {driverJobs.map(dj => (
                             <a key={dj.slug} href={`/careers/${dj.slug}`} className="group block rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-md">
                                 <h3 className="text-xl font-bold mb-2 group-hover:text-accent">{dj.title}</h3>
                                 <p className="flex items-center gap-1 text-sm text-muted-foreground"><MapPin className="h-4 w-4" />Torrance, CA · {dj.shortLicense}</p>
-                                <p className="mt-3 text-sm text-muted-foreground">{dj.equipment}. Percentage or per-mile pay.</p>
+                                <p className="mt-3 text-sm text-muted-foreground">{dj.equipment}. Pay: {dj.payShort}.</p>
                                 <span className="mt-4 inline-flex items-center gap-1 font-semibold text-accent">See the job and apply <ArrowRight className="h-4 w-4" /></span>
                             </a>
                         ))}

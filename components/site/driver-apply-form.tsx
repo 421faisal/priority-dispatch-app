@@ -125,21 +125,13 @@ export function DriverApplyForm({ jobId, jobTitle }: { jobId: string; jobTitle: 
                 </div>
             </div>
 
-            <div className="grid gap-5 sm:grid-cols-2">
+            <div>
                 <div>
                     <label htmlFor="routes" className={label}>Routes</label>
                     <select id="routes" name="routes" className={field} defaultValue="Either">
                         <option>Either</option>
                         <option>OTR</option>
                         <option>Regional</option>
-                    </select>
-                </div>
-                <div>
-                    <label htmlFor="payType" className={label}>Pay you prefer</label>
-                    <select id="payType" name="payType" className={field} defaultValue="Not sure yet">
-                        <option>Not sure yet</option>
-                        <option>Percentage of the load</option>
-                        <option>Per mile</option>
                     </select>
                 </div>
             </div>

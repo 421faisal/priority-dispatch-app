@@ -6,7 +6,7 @@ import Reveal from "@/components/site/reveal"
 import { Button } from "@/components/ui/button"
 import { DriverApplyForm } from "@/components/site/driver-apply-form"
 import { ArrowRight, BadgeCheck, CheckCircle2, DollarSign, MapPin, MessageCircle, PhoneCall, Route, Truck } from "lucide-react"
-import { BASE, DATE_POSTED, PAY_LINE, VALID_THROUGH, driverJobBySlug, driverJobs } from "@/lib/driver-jobs"
+import { BASE, DATE_POSTED, VALID_THROUGH, driverJobBySlug, driverJobs } from "@/lib/driver-jobs"
 
 export const dynamicParams = false
 
@@ -46,7 +46,7 @@ export default async function DriverJobPage({ params }: { params: Promise<{ role
         "@context": "https://schema.org",
         "@type": "JobPosting",
         title: job.title,
-        description: `<p>${job.lead}</p><p><strong>Equipment:</strong> ${job.equipment}. <strong>License:</strong> ${job.license}. <strong>Pay:</strong> ${PAY_LINE}</p><p><strong>Requirements:</strong></p><ul>${job.requirements.map((r) => `<li>${r}</li>`).join("")}</ul><p><strong>What you do:</strong></p><ul>${job.duties.map((d) => `<li>${d}</li>`).join("")}</ul>`,
+        description: `<p>${job.lead}</p><p><strong>Equipment:</strong> ${job.equipment}. <strong>License:</strong> ${job.license}. <strong>Pay:</strong> ${job.payLine}</p><p><strong>Requirements:</strong></p><ul>${job.requirements.map((r) => `<li>${r}</li>`).join("")}</ul><p><strong>What you do:</strong></p><ul>${job.duties.map((d) => `<li>${d}</li>`).join("")}</ul>`,
         identifier: { "@type": "PropertyValue", name: "Priority Dispatch LLC", value: job.id },
         datePosted: DATE_POSTED,
         validThrough: `${VALID_THROUGH}T23:59:59-08:00`,
@@ -90,7 +90,7 @@ export default async function DriverJobPage({ params }: { params: Promise<{ role
         { icon: Truck, label: "Equipment", value: job.equipment },
         { icon: BadgeCheck, label: "License", value: job.shortLicense },
         { icon: Route, label: "Routes", value: "OTR and regional" },
-        { icon: DollarSign, label: "Pay", value: "Percentage or per mile" },
+        { icon: DollarSign, label: "Pay", value: job.payShort },
         { icon: CheckCircle2, label: "Experience", value: "New drivers welcome" },
     ]
 
@@ -178,7 +178,7 @@ export default async function DriverJobPage({ params }: { params: Promise<{ role
                         <Reveal>
                             <div className="rounded-2xl border border-border bg-muted p-6">
                                 <h2 className="text-2xl font-extrabold tracking-tight text-primary">How the pay works</h2>
-                                <p className="mt-3 text-muted-foreground">{PAY_LINE}</p>
+                                <p className="mt-3 text-muted-foreground">{job.payLine}</p>
                                 <p className="mt-3 text-muted-foreground">
                                     Questions before you apply? Call us or send a WhatsApp message to the same number.
                                 </p>

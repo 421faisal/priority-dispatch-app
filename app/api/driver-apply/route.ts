@@ -25,7 +25,6 @@ export async function POST(request: NextRequest) {
         const licenseType = text(form.get("licenseType"), 80)
         const experience = text(form.get("experience"), 80)
         const routes = text(form.get("routes"), 40) || "Either"
-        const payType = text(form.get("payType"), 60) || "Not sure yet"
         const consent = text(form.get("consent"))
         const file = form.get("license")
 
@@ -55,7 +54,6 @@ export async function POST(request: NextRequest) {
             ["License", licenseType],
             ["Experience", experience],
             ["Routes", routes],
-            ["Pay preference", payType],
             ["Base", "Torrance, CA"],
         ]
 
